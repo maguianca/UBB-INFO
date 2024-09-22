@@ -1,0 +1,1 @@
+2 2 nr_biti:1 3 3 nr_biti:2 23 17 nr_biti:4 16 10 nr_biti:1 12 c nr_biti:2 
