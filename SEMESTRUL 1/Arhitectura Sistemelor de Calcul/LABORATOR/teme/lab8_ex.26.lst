@@ -1,0 +1,78 @@
+     1                                  ; Declare the EntryPoint (a label defining the very first instruction of the program)
+     2                                  bits 32
+     3                                  global start        
+     4                                  
+     5                                  extern exit, fopen, fread, fclose, printf
+     6                                  import exit msvcrt.dll  
+     7                                  import fopen msvcrt.dll  
+     8                                  import fread msvcrt.dll
+     9                                  import fclose msvcrt.dll
+    10                                  import printf msvcrt.dll
+    11                                  
+    12                                  ; Our data is declared here (the variables needed by our program)
+    13                                  segment data use32 class=data
+    14 00000000 6F75747075742E7478-         nume_fisier db "output.txt", 0  ; File name to be created
+    14 00000009 7400               
+    15 0000000B 7700                        mod_acces db "w", 0              ; Open the file for writing
+    16                                      len equ 100                      ; Maximum number of characters to read
+    17 0000000D 00<rept>                    text times (len + 1) db 0        ; Buffer to store the input text
+    18 00000072 FFFFFFFF                    descriptor_fis dd -1             ; File descriptor variable
+    19 00000076 576F72642077697468-         formatc db "Word with uppercase letter: %s", 13, 10, 0
+    19 0000007F 207570706572636173-
+    19 00000088 65206C65747465723A-
+    19 00000091 2025730D0A00       
+    20                                  
+    21                                  ; Our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24                                          ; Open the file for writing
+    25                                          ; eax = fopen(nume_fisier, mod_acces)
+    26 00000000 68[0B000000]                    push dword mod_acces
+    27 00000005 68[00000000]                    push dword nume_fisier
+    28 0000000A FF15[00000000]                  call [fopen]
+    29 00000010 83C408                          add esp, 4*2                ; Free parameters from the stack
+    30                                  
+    31 00000013 A3[72000000]                    mov [descriptor_fis], eax   ; Save the file descriptor
+    32                                  
+    33                                          ; Check if fopen was successful (if EAX != 0)
+    34 00000018 83F800                          cmp eax, 0
+    35 0000001B 7459                            je final                    ; Jump to final if fopen failed
+    36                                  
+    37                                      citire:
+    38                                          ; Read words from the keyboard until '$' is encountered
+    39                                          ; eax = fread(text, 1, len, descriptor_fis)
+    40 0000001D FF35[72000000]                  push dword [descriptor_fis]
+    41 00000023 6A64                            push dword len
+    42 00000025 6A01                            push dword 1
+    43 00000027 68[0D000000]                    push dword text
+    44 0000002C FF15[00000000]                  call [fread]
+    45 00000032 83C410                          add esp, 4*4                 ; Free parameters from the stack
+    46                                  
+    47                                          ; Check if '$' is encountered
+    48 00000035 803D[0D000000]24                cmp byte [text], '$'
+    49 0000003C 7438                            je final                    ; Jump to final if '$' is encountered
+    50                                  
+    51                                          ; Check if the word contains at least one uppercase letter
+    52 0000003E BE00000000                      mov esi, 0
+    53                                      verif_uper:
+    54 00000043 80BE[0D000000]00                cmp byte [text + esi], 0
+    55 0000004A 74D1                            je citire                   ; Jump to citire if the end of the word is reached
+    56 0000004C 80BE[0D000000]41                cmp byte [text + esi], 'A'
+    57 00000053 7209                            jb  nu_majuscule            ; Jump to nu_majuscule if the character is not a letter
+    58 00000055 80BE[0D000000]5A                cmp byte [text + esi], 'Z'
+    59 0000005C 7603                            jbe gasit_majuscule         ; Jump to gasit_majuscule if the character is an uppercase letter
+    60                                      nu_majuscule:
+    61 0000005E 46                              inc esi
+    62 0000005F EBE2                            jmp verif_uper
+    63                                      gasit_majuscule:
+    64                                          ; Print the word with at least one uppercase letter
+    65 00000061 68[0D000000]                    push dword text
+    66 00000066 68[76000000]                    push dword formatc
+    67 0000006B FF15[00000000]                  call [printf]
+    68 00000071 83C408                          add esp, 4*2                ; Free parameters from the stack
+    69 00000074 EBA7                            jmp citire
+    70                                  
+    71                                      final:
+    72                                          ; Exit(0)
+    73 00000076 6A00                            push    dword 0            ; Push the parameter for exit onto the stack
+    74 00000078 FF15[00000000]                  call    [exit]             ; Call exit to terminate the program

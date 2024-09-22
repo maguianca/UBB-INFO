@@ -1,0 +1,59 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  extern exit, fopen, fprintf, fclose, scanf
+     7                                  import exit msvcrt.dll  
+     8                                  import fopen msvcrt.dll  
+     9                                  import fprintf msvcrt.dll
+    10                                  import fclose msvcrt.dll
+    11                                  import scanf msvcrt.dll
+    12                                  
+    13                                  ; our data is declared here (the variables needed by our program)
+    14                                  segment data use32 class=data
+    15 00000000 6F75747075742E7478-         nume_fisier db "output.txt", 0
+    15 00000009 7400               
+    16 0000000B 7700                        mod_acces db "w", 0
+    17 0000000D 00000000                    descriptor_fisier dd 0
+    18 00000011 <res 00000064>              text resb 100
+    19 00000075 257300                      format db "%s", 0
+    20                                  
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24                                          ; FILE * fopen(const char* nume_fisier, const char * mod_acces)
+    25 00000000 68[0B000000]                    push dword mod_acces
+    26 00000005 68[00000000]                    push dword nume_fisier
+    27 0000000A FF15[00000000]                  call [fopen]
+    28 00000010 83C408                          add esp, 4 * 2
+    29 00000013 83F800                          cmp eax, 0
+    30 00000016 7445                            je final ; eroare la deschiderea fisierului
+    31 00000018 A3[0D000000]                    mov [descriptor_fisier], eax
+    32                                          
+    33                                      citire_scriere:
+    34                                          ; Citim un cuvant de la tastatura
+    35 0000001D 68[11000000]                    push dword text
+    36 00000022 68[75000000]                    push dword format
+    37 00000027 FF15[00000000]                  call [scanf]
+    38 0000002D 83C408                          add esp, 4 * 2
+    39                                          
+    40                                          ; Scriem cuvantul in fisier
+    41 00000030 68[11000000]                    push dword text
+    42 00000035 FF35[0D000000]                  push dword [descriptor_fisier]
+    43 0000003B FF15[00000000]                  call [fprintf]
+    44 00000041 83C408                          add esp, 4 * 2
+    45                                          
+    46                                          ; Testam daca cuvantul este diferit de "$"
+    47 00000044 A1[11000000]                    mov eax, [text]
+    48 00000049 803824                          cmp byte [eax],'$'
+    49 0000004C 75CF                            jne citire_scriere ; Daca nu am intalnit '$', reluam bucla
+    50                                          
+    51                                          ; Inchidem fisierul
+    52 0000004E FF35[0D000000]                  push dword [descriptor_fisier]
+    53 00000054 FF15[00000000]                  call [fclose]
+    54 0000005A 83C404                          add esp, 4
+    55                                      
+    56                                      final:
+    57 0000005D 6A00                            push dword 0      
+    58 0000005F FF15[00000000]                  call [exit]
