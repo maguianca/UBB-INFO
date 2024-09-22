@@ -1,0 +1,87 @@
+     1                                  bits 32 
+     2                                  global start        
+     3                                  
+     4                                  
+     5                                  extern exit  
+     6                                  extern fopen
+     7                                  extern fprintf
+     8                                  extern fclose
+     9                                  extern scanf,fscanf,fread
+    10                                  import exit msvcrt.dll   
+    11                                  import fclose msvcrt.dll
+    12                                  import fprintf msvcrt.dll
+    13                                  import fopen msvcrt.dll
+    14                                  import scanf msvcrt.dll 
+    15                                  import fscanf msvcrt.dll 
+    16                                  import fread msvcrt.dll 
+    17                                  
+    18                                  
+    19                                  segment data use32 class=data
+    20 00000000 7700                        mod_acces db "w",0
+    21 00000002 257300                      format db "%s", 0
+    22 00000005 <res 0000000F>              nume_fisier resb 15
+    23 00000014 <res 00000064>              text resb 100
+    24 00000078 00000000                    descriptor_fisier dd 0
+    25 0000007C 6F75747075742E7478-         fisier db "output.txt"
+    25 00000085 74                 
+    26 00000086 00000000                    descriptor_fisier_2 dd 0
+    27                                      
+    28 0000008A 64000000                    count dd 100
+    29 0000008E 01000000                    dimensiune dd 1
+    30 00000092 <res 00000064>              sir resb 100
+    31                                      
+    32 000000F6 7200                        mod_acces_read db "r",0
+    33                                      
+    34                                      
+    35                                      
+    36                                  segment code use32 class=code
+    37                                      start:
+    38                                      
+    39 00000000 68[05000000]                    push dword nume_fisier
+    40 00000005 68[02000000]                    push dword format
+    41 0000000A FF15[00000000]                  call [scanf]
+    42 00000010 83C408                          add esp, 4*2
+    43                                      
+    44                                          ;FILE * fopen(const char* nume_fisier, const char * mod_acces) *=>pointer, lucrez cu adresa
+    45 00000013 68[F6000000]                    push dword mod_acces_read
+    46 00000018 68[05000000]                    push dword nume_fisier
+    47 0000001D FF15[00000000]                  call [fopen]
+    48 00000023 83C408                          add esp, 4 * 2
+    49 00000026 83F800                          cmp eax, 0
+    50 00000029 7479                            je final ; eroare la deschiderea fisierului
+    51 0000002B A3[78000000]                    mov [descriptor_fisier], eax
+    52                                          
+    53                                      
+    54 00000030 FF35[78000000]                  push dword [descriptor_fisier]
+    55 00000036 FF35[8A000000]                  push dword [count]
+    56 0000003C FF35[8E000000]                  push dword [dimensiune]
+    57 00000042 68[92000000]                    push dword sir
+    58 00000047 FF15[00000000]                  call [fread]
+    59 0000004D 83C410                          add esp, 4*4
+    60                                          
+    61 00000050 68[00000000]                    push dword mod_acces
+    62 00000055 68[7C000000]                    push dword fisier
+    63 0000005A FF15[00000000]                  call [fopen]
+    64 00000060 83C408                          add esp,4*2
+    65 00000063 83F800                          cmp eax,0
+    66 00000066 743C                            je final
+    67 00000068 A3[86000000]                    mov [descriptor_fisier_2],eax
+    68                                          
+    69 0000006D 68[92000000]                    push dword sir
+    70 00000072 68[02000000]                    push dword format
+    71 00000077 FF35[86000000]                  push dword [descriptor_fisier_2]
+    72 0000007D FF15[00000000]                  call [fprintf]
+    73 00000083 83C40C                          add esp,4*3
+    74                                          
+    75                                          
+    76                                          ;int fclose(FILE * descriptor)
+    77 00000086 FF35[78000000]                  push dword [descriptor_fisier]
+    78 0000008C FF15[00000000]                  call [fclose]
+    79 00000092 83C404                          add esp, 4
+    80                                          
+    81 00000095 FF35[86000000]                  push dword [descriptor_fisier_2]
+    82 0000009B FF15[00000000]                  call [fclose]
+    83 000000A1 83C404                          add esp, 4
+    84                                          final:
+    85 000000A4 6A00                            push    dword 0      
+    86 000000A6 FF15[00000000]                  call    [exit]       

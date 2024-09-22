@@ -1,0 +1,129 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit,fopen,fprintf,fclose,scanf               
+     8                                  import exit msvcrt.dll    
+     9                                  import fopen msvcrt.dll    
+    10                                  import fclose msvcrt.dll    
+    11                                  import fprintf msvcrt.dll    
+    12                                  import scanf msvcrt.dll    
+    13                                  
+    14                                  ; our data is declared here (the variables needed by our program)
+    15                                  segment data use32 class=data
+    16 00000000 7700                        mod_acces db "w",0
+    17 00000002 737472696E672E7478-         nume_fisier db "string.txt"
+    17 0000000B 74                 
+    18 0000000C 00000000                    descriptor_fisier dd 0
+    19                                      
+    20 00000010 <res 00000064>              text resb 100
+    21 00000074 256300                      format db "%c",0
+    22                                      
+    23 00000077 00<rept>                    majuscule times 100 db 0
+    24 000000DB 00000000                    maj dd 0
+    25 000000DF 00<rept>                    minuscule times 100 db 0
+    26 00000143 00000000                    min dd 0
+    27                                      
+    28 00000147 00<rept>                    inv_maj times 100 db 0
+    29 000001AB 00<rept>                    inv_min times 100 db 0
+    30                                      
+    31 0000020F 257300                      format_afisare db "%s",0
+    32                                     
+    33                                  
+    34                                  ; our code starts here
+    35                                  segment code use32 class=code
+    36                                       inverseaza_majuscule:
+    37 00000000 60                              pushad 
+    38 00000001 8B0D[DB000000]                  mov ecx,dword[maj]
+    39 00000007 BE[77000000]                    mov esi,majuscule
+    40 0000000C BF[47010000]                    mov edi,inv_maj
+    41 00000011 033D[DB000000]                  add edi,dword[maj]
+    42 00000017 4F                              dec edi
+    43                                        repeta_1:
+    44 00000018 FC                              cld
+    45 00000019 AC                              lodsb 
+    46 0000001A FD                              std
+    47 0000001B AA                              stosb
+    48 0000001C E2FA                            loop repeta_1
+    49 0000001E 61                              popad 
+    50 0000001F C3                              ret
+    51                                      inverseaza_minuscule:
+    52 00000020 60                              pushad 
+    53 00000021 8B0D[43010000]                  mov ecx,dword[min]
+    54 00000027 BE[DF000000]                    mov esi,minuscule
+    55 0000002C BF[AB010000]                    mov edi,inv_min
+    56 00000031 033D[43010000]                  add edi,dword[min]
+    57 00000037 4F                              dec edi
+    58                                        repeta_2:
+    59 00000038 FC                              cld
+    60 00000039 AC                              lodsb 
+    61 0000003A FD                              std
+    62 0000003B AA                              stosb
+    63 0000003C E2FA                            loop repeta_2
+    64 0000003E 61                              popad 
+    65 0000003F C3                              ret
+    66                                  
+    67                                      start:
+    68 00000040 68[00000000]                    push dword mod_acces
+    69 00000045 68[02000000]                    push dword nume_fisier
+    70 0000004A FF15[00000000]                  call [fopen]
+    71 00000050 83C408                          add esp,4*2
+    72                                          
+    73 00000053 83F800                          cmp eax,0
+    74 00000056 0F849C000000                    je finalizare_scriere
+    75 0000005C A3[0C000000]                    mov [descriptor_fisier],eax
+    76                                      citire:
+    77 00000061 68[10000000]                    push dword text
+    78 00000066 68[74000000]                    push dword format
+    79 0000006B FF15[00000000]                  call [scanf]
+    80 00000071 83C408                          add esp,4*2
+    81                                          
+    82 00000074 B800000000                      mov eax,0
+    83 00000079 A0[10000000]                    mov al,byte[text]
+    84 0000007E 3C2E                            cmp al,'.'
+    85 00000080 743A                            je afisare
+    86 00000082 3C41                            cmp al,'A'
+    87 00000084 7234                            jb peste
+    88 00000086 3C5A                            cmp al,'Z'
+    89 00000088 7715                            ja sare
+    90 0000008A 8B1D[DB000000]                  mov ebx,dword[maj]
+    91 00000090 8883[77000000]                  mov [majuscule+ebx],al
+    92 00000096 8305[DB000000]01                add dword[maj],1
+    93 0000009D EB1B                            jmp peste
+    94                                          sare:
+    95 0000009F 3C7A                            cmp al,'z'
+    96 000000A1 7717                            ja peste
+    97 000000A3 3C61                            cmp al,'a'
+    98 000000A5 7213                            jb peste
+    99 000000A7 8B1D[43010000]                  mov ebx,dword[min]
+   100 000000AD 8883[DF000000]                  mov [minuscule+ebx],al
+   101 000000B3 8305[43010000]01                add dword[min],1
+   102                                          peste:
+   103 000000BA EBA5                            jmp citire
+   104                                          
+   105                                          
+   106                                      afisare:
+   107 000000BC E83FFFFFFF                      call inverseaza_majuscule
+   108 000000C1 E85AFFFFFF                      call inverseaza_minuscule
+   109                                          
+   110 000000C6 68[47010000]                    push dword inv_maj  ;majuscule
+   111 000000CB 68[0F020000]                    push dword format_afisare
+   112 000000D0 FF35[0C000000]                  push dword [descriptor_fisier]
+   113 000000D6 FF15[00000000]                  call [fprintf]
+   114 000000DC 83C40C                          add esp,4*3
+   115                                          
+   116 000000DF 68[AB010000]                    push dword inv_min   ;minuscule
+   117 000000E4 68[0F020000]                    push dword format_afisare
+   118 000000E9 FF35[0C000000]                  push dword [descriptor_fisier]
+   119 000000EF FF15[00000000]                  call [fprintf]
+   120 000000F5 83C40C                          add esp,4*3
+   121                                      
+   122                                      finalizare_scriere:
+   123 000000F8 FF35[0C000000]                  push dword [descriptor_fisier]
+   124 000000FE FF15[00000000]                  call [fclose]
+   125 00000104 83C404                          add esp,4
+   126 00000107 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   127 00000109 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
+   128                                     
