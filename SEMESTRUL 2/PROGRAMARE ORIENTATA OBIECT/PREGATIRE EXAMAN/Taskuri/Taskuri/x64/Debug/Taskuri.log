@@ -1,0 +1,4 @@
+﻿  teste.cpp
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Taskuri\Taskuri\teste.cpp(30,20): warning C4101: 'ex': unreferenced local variable
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Taskuri\Taskuri\teste.cpp(38,23): warning C4101: 'ex': unreferenced local variable
+  Taskuri.vcxproj -> C:\Programare orientata obiect\PREGATIRE EXAMEN\Taskuri\x64\Debug\Taskuri.exe
