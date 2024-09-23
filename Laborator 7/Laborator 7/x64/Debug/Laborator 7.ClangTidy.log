@@ -1,0 +1,44 @@
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7/domeniu.h:36:2: warning: definition of implicit copy assignment operator for 'Turism' is deprecated because it has a user-provided copy constructor [clang-diagnostic-deprecated-copy-with-user-provided-copy]
+        Turism(const Turism& ot) :denumire{ ot.denumire }, destinatie{ ot.destinatie }, tip{ ot.tip }, pret{ ot.pret } {
+        ^
+Suppressed 6 warnings (6 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7/vector.h:117:14: note: in implicit copy assignment operator for 'Turism' first required here
+        elems[lg++] = el;
+                    ^
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7\repo.cpp:8:11: note: in instantiation of member function 'VectD<Turism>::add' requested here
+                vacante.add(oferta);
+                        ^
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7/vector.h:52:27: warning: initializer order does not match the declaration order [clang-diagnostic-reorder-ctor]
+VectD<ElementT>::VectD() :elems{ new ElementT[INITIAL_CAPACITY] }, cap{ INITIAL_CAPACITY }, lg{ 0 } {}
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                           ~~~~~~~
+                          lg{ 0 }                                                           elems{ new ElementT[INITIAL_CAPACITY] }
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7\service.cpp:29:16: note: in instantiation of member function 'VectD<Turism>::VectD' requested here
+        VectD<Turism> rez;
+                      ^
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7/vector.h:52:27: note: field 'elems' will be initialized after field 'cap'
+VectD<ElementT>::VectD() :elems{ new ElementT[INITIAL_CAPACITY] }, cap{ INITIAL_CAPACITY }, lg{ 0 } {}
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7/vector.h:52:68: note: field 'cap' will be initialized after field 'lg'
+VectD<ElementT>::VectD() :elems{ new ElementT[INITIAL_CAPACITY] }, cap{ INITIAL_CAPACITY }, lg{ 0 } {}
+                                                                   ^~~~~~~~~~~~~~~~~~~~~~~
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7\repo.cpp:17:5: warning: Value stored to 'ok' is never read [clang-analyzer-deadcode.DeadStores]
+                                ok = 1;
+                                ^    ~
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7\repo.cpp:17:5: note: Value stored to 'ok' is never read
+                                ok = 1;
+                                ^    ~
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7\teste.cpp:274:24: warning: adding 'char' to a string does not append to the string [clang-diagnostic-string-plus-int]
+                Turism f{ "Excursie" + (char)(i + 1) ,"Paris","sejur" + (char)(i + 1), (double)800+i };
+                          ~~~~~~~~~~~^~~~~~~~~~~~~~~
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7\teste.cpp:274:24: note: use array indexing to silence this warning
+                Turism f{ "Excursie" + (char)(i + 1) ,"Paris","sejur" + (char)(i + 1), (double)800+i };
+                                     ^
+                          &          [              ]
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7\teste.cpp:274:57: warning: adding 'char' to a string does not append to the string [clang-diagnostic-string-plus-int]
+                Turism f{ "Excursie" + (char)(i + 1) ,"Paris","sejur" + (char)(i + 1), (double)800+i };
+                                                              ~~~~~~~~^~~~~~~~~~~~~~~
+C:\Structuri de date si algoritmi\Laborator 7\Laborator 7\teste.cpp:274:57: note: use array indexing to silence this warning
+                Turism f{ "Excursie" + (char)(i + 1) ,"Paris","sejur" + (char)(i + 1), (double)800+i };
+                                                                      ^
+                                                              &       [              ]
