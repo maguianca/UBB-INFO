@@ -1,0 +1,7 @@
+1,3,OXX---OOO,X,Neterminat
+2,3,XXOXOXXOO,O,Terminat
+3,3,OXXXOXOOO,O,InDerulare
+4,3,XO-X-----,O,Neinceput
+10,3,XOXOXO---,X,Neterminat
+0,4,XXXXOOOOXOX-OOOO,O,Neterminat
+11,5,XXXXOOOO----OOOOX--------,X,Neterminat
