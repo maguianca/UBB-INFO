@@ -1,7 +1,0 @@
-﻿  Reading Qt configuration (C:/Qt/6.5.3/msvc2019_64/bin/qmake)
-  GUIModele.cpp
-C:\Programare orientata obiect\Qt Laborator 10-11\Qt Laborator 10-11\TableModel.h(17,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'GUIModele.cpp')
-  
-  moc_QtLaborator1011.cpp
-  Qt Laborator 10-11.vcxproj -> C:\Programare orientata obiect\Qt Laborator 10-11\x64\Debug\Qt Laborator 10-11.exe
