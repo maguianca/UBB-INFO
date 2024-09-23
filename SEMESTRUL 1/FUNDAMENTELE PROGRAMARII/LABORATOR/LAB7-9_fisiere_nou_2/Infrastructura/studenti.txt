@@ -1,0 +1,7 @@
+2,Elena,4
+3,Ema,2
+8,Cici,9
+10,Eli,8
+1,Anca,7
+12,Patri,3
+11,David,5

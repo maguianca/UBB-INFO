@@ -1,0 +1,7 @@
+4,Anca,Gheorghe Doja Oradea,12.05.2004
+5,Ema,Dorobanti Cluj,10.04.2003
+6,Anca,Cipariu Cluj,10.10.2004
+7,Iana,21dec Cluj,10.10.2010
+8,Emanuela,1978 Oradea,10.10.2011
+2,Cici,moscovei Bucuresti,1.1.2023
+3,Cecilia,Armatei Romane Cluj,2.2.2023

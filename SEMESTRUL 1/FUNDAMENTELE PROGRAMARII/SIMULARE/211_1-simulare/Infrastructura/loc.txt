@@ -1,0 +1,6 @@
+1,dorobanti,Cluj,1752,985
+2,bucuresti,Cluj,1952,754
+3,piata,Oradea,745,256
+4,enescu,Oradea,1254,263
+5,expo,Cluj,2100,962
+6,piatra,Cluj,3425,1274

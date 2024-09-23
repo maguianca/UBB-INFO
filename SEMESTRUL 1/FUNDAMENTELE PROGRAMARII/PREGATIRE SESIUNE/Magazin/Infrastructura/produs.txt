@@ -1,0 +1,4 @@
+2,Tort,100.0
+3,Magneziu,9.0
+1,Apa,8.0
+10,Wiki,8.9

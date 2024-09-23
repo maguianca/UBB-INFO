@@ -1,0 +1,8 @@
+1,Bober,2023/12/12,Poland,mammal,10
+2,Taxim,1994/11/01,Romania,reptila,60
+3,OBB,2003/1/2,Australia,reptila,7
+4,Exi,2014/1/1,Africa,reptila,8
+5,Epi,2021/2/2,Somalia,sobolan,2
+6,Cipi,2020/2/2,Ungaria,sobolan,4
+7,Pip,2018/3/10,Ciad,insecta,7
+8,Tigru,2023/2/2,Ciad,sobolan,3

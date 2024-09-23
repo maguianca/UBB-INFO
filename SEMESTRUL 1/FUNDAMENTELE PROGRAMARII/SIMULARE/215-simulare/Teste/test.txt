@@ -1,0 +1,1 @@
+C1,corp_iluminat,Lampa A,3,300.0

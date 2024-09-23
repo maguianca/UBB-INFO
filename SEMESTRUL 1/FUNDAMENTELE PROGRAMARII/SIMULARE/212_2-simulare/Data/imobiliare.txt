@@ -1,0 +1,10 @@
+1,Cernei,40000,vanzare
+2,Muresului,2000,inchiriere
+3,Oasului,81200,vanzare
+4,Muntelui,7500,inchiriere
+5,neamtului,1200,inchiriere
+6,Dobai,21000,vanzare
+7,Cretul,1451,inchiriere
+8,Marasti,17445,vanzare
+9,21dec,1245,inchiriere
+10,dorobanti,174555,vanzare

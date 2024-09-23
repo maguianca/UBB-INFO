@@ -1,0 +1,4 @@
+C1,corp_iluminat,Lampa A,3,300.0
+C2,corp_iluminat,Veioza B,7,100.0
+C3,spatiu_depozitare,Dulap,9,1000.0
+C4,canapea,Alma,2,1500.0

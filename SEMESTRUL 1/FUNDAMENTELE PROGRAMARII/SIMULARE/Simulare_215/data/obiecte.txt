@@ -1,0 +1,10 @@
+1,Corp iluminat,lampa venetia,12,12.9
+2,Scaun,scaun verde,34,34.5
+3,Scaun,scaun mov,20,20.7
+4,Corp iluminat,candelabru,2,2.99
+5,Masa,Masa roz,100,243.67
+6,Masa,Masa gri,100,100.4
+7,Masa,Masa galbena,50,50.3
+8,Scaun,Scaun rogvaiv,100,100.89
+9,Corp iluminat,Lampa de masa,20,30.23
+C10,Scaun,Scaun lemn masiv,200,300.34
