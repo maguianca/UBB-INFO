@@ -1,0 +1,12 @@
+﻿  gui.cpp
+  main.cpp
+  service.cpp
+  teste.cpp
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Ex_melodii1\Ex_melodii1\model.h(11,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'gui.cpp')
+  
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Ex_melodii1\Ex_melodii1\model.h(11,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Ex_melodii1\Ex_melodii1\gui.cpp(120,20): warning C4101: 'ex': unreferenced local variable
+  Ex_melodii1.vcxproj -> C:\Programare orientata obiect\PREGATIRE EXAMEN\Ex_melodii1\x64\Debug\Ex_melodii1.exe
