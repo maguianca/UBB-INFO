@@ -1,0 +1,21 @@
+[2024-04-24 08:53:15] [info] Start Program:
+Path:"C:\Programare orientata obiect\Lab 9 repo\x64\Debug\Lab 9 repo.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\Lab 9 repo\Lab 9 repo\"
+Modules: Selected: C:\Programare orientata obiect\Lab 9 repo\x64\Debug\Lab 9 repo.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\Lab 9 repo\Lab 9 repo Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\tikx5s3z.yru 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-04-24 08:53:15] [info] Module: C:\Programare orientata obiect\Lab 9 repo\x64\Debug\Lab 9 repo.exe is selected because it matches selected pattern: C:\Programare orientata obiect\Lab 9 repo\x64\Debug\Lab 9 repo.exe
+[2024-04-24 08:53:17] [info] ----------------------------------------------------
+[2024-04-24 08:53:17] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\tikx5s3z.yru
+[2024-04-24 08:53:17] [info] ----------------------------------------------------
