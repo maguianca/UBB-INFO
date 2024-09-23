@@ -1,0 +1,139 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <algorithm>
+#include <limits>
+#include <list>
+
+using namespace std;
+
+ifstream fin("input.txt");
+ofstream fout("output.txt");
+
+struct Edge
+{
+    int flow, capacity;
+    int u, v;
+};
+
+struct Vertex
+{
+    int h, e;
+};
+
+void preflux(vector<Edge>& edge, vector<Vertex>& ver, int s)
+{
+    ver[s].h = ver.size();
+    for (int i = 0; i < edge.size(); i++)
+    {
+        if (edge[i].u == s)
+        {
+            edge[i].flow = edge[i].capacity;
+            ver[edge[i].v].e += edge[i].flow;
+            edge.push_back({ -edge[i].flow, 0, edge[i].v, s });
+        }
+    }
+}
+
+void update(vector<Edge>& edge, int i, int flow)
+{
+    int u = edge[i].v, v = edge[i].u;
+
+    for (int j = 0; j < edge.size(); j++)
+    {
+        if (edge[j].v == v && edge[j].u == u)
+        {
+            edge[j].flow -= flow;
+            return;
+        }
+    }
+    Edge e = { 0, flow, u, v };
+    edge.push_back(e);
+}
+
+bool pompare(vector<Edge>& edge, vector<Vertex>& ver, int u)
+{
+    for (int i = 0; i < edge.size(); i++)
+    {
+        if (edge[i].u == u)
+        {
+            if (edge[i].flow == edge[i].capacity)
+                continue;
+            if (ver[u].h > ver[edge[i].v].h)
+            {
+                int flow = min(edge[i].capacity - edge[i].flow, ver[u].e);
+                ver[u].e -= flow;
+                ver[edge[i].v].e += flow;
+                edge[i].flow += flow;
+                update(edge, i, flow);
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+void inaltare(vector<Edge>& edge, vector<Vertex>& ver, int u)
+{
+    int mh = INT_MAX;
+    for (int i = 0; i < edge.size(); i++)
+    {
+        if (edge[i].u == u)
+        {
+            if (edge[i].flow == edge[i].capacity)
+                continue;
+            if (ver[edge[i].v].h < mh)
+            {
+                mh = ver[edge[i].v].h;
+            }
+        }
+    }
+    ver[u].h = mh + 1;
+}
+
+int pompare_preflux(vector<Edge>& edge, vector<Vertex>& ver, int s, int t)
+{
+    preflux(edge, ver, s);
+
+    list<int> active_vertices;
+    for (int i = 0; i < ver.size(); i++)
+    {
+        if (i != s && i != t)
+            active_vertices.push_back(i);
+    }
+
+    auto current = active_vertices.begin();
+    while (current != active_vertices.end())
+    {
+        int u = *current;
+        bool pushed = pompare(edge, ver, u);
+        if (!pushed)
+        {
+            inaltare(edge, ver, u);
+            active_vertices.erase(current);
+            active_vertices.push_front(u);
+            current = active_vertices.begin();
+        }
+        else
+        {
+            ++current;
+        }
+    }
+    
+    return ver[t].e;
+}
+
+int main()
+{
+    int V, E, u, v, cantitatea;
+    fin >> V >> E;
+    vector<Edge> edge;
+    vector<Vertex> ver(V);
+    for (int i = 0; i < E; i++)
+    {
+        fin >> u >> v >> cantitatea;
+        edge.push_back({ 0, cantitatea, u, v });
+    }
+    fout << pompare_preflux(edge, ver, 0, V - 1);
+    return 0;
+}

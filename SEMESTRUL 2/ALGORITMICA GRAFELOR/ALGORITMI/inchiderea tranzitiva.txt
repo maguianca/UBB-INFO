@@ -1,0 +1,22 @@
+void inchidere_matrice(){
+
+    for (int i = 1; i <=n; ++i) {
+        for (int j =1; j <=n; ++j) {
+            matrice_inchidere[i][j] = matrice[i][j];
+        }
+    }
+
+   
+    for (int k = 1; k <=n; k++) {
+        for (int i =1; i <=n; i++) {
+            for (int j =1; j <=n; j++) {
+                if(matrice_inchidere[i][j]==1|| matrice_inchidere[i][k]==1 && matrice_inchidere[k][j]==1)
+                    matrice_inchidere[i][j] = 1;
+                else
+                    matrice_inchidere[i][j] = 0;
+            }
+        }
+    }
+
+
+}

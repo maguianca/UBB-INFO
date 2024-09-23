@@ -1,0 +1,3 @@
+D:/2024_2/UBB/SDA/Lab7_v2/cmake-build-debug/CMakeFiles/Lab7_v2.dir
+D:/2024_2/UBB/SDA/Lab7_v2/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/2024_2/UBB/SDA/Lab7_v2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

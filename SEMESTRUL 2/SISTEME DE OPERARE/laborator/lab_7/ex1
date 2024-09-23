@@ -1,0 +1,36 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+ 
+int main(int argc, char* argv[])
+{
+	//definesc argumentele
+	char* args[]={ "ls","-l",NULL};
+    int pid = fork();
+    if (pid == -1)                      
+    {
+        perror("fork() error: ");
+        exit(EXIT_FAILURE);
+    }
+
+    if (pid == 0)                       
+    {
+        if(execvp(args[0],args)<0){
+		 perror("execvp(): ");
+		exit(EXIT_FAILURE);
+	}
+	exit(0);
+    }
+    else                                
+    {
+        int status;
+	wait(&status);
+	#parintele apeleaza wait ->suspenda executia 
+	#sigchld ->wait returneaza ->wait aseapta semnalul sigchld
+	#waitpid(pis,&status,0);
+    }
+
+    return 0;
+}

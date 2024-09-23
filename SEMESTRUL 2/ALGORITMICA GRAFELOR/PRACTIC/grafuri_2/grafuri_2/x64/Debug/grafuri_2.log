@@ -1,0 +1,6 @@
+﻿  main1.cpp
+  main3.cpp
+C:\Programare orientata obiect\grafuri_2\grafuri_2\main3.cpp(6,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+main3.obj : error LNK2005: main already defined in main1.obj
+C:\Programare orientata obiect\grafuri_2\x64\Debug\grafuri_2.exe : fatal error LNK1169: one or more multiply defined symbols found

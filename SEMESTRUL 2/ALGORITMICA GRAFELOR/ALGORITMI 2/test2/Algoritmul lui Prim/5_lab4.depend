@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1716715532 source:d:\2024_2\ubb\algoritmica_grafelor\test2\algoritmul lui prim\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+

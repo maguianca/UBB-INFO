@@ -1,0 +1,2 @@
+C:\Structuri de date si algoritmi\copie_lab6_7\x64\Debug\copie_lab6_7.exe.lastcodeanalysissucceeded
+C:\Structuri de date si algoritmi\copie_lab6_7\copie_lab6_7\x64\Debug\NativeCodeAnalysis.read.1.tlog

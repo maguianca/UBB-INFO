@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\Graf2_problema3\Graf2_problema3\main.cpp(67,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\Graf2_problema3\Graf2_problema3\main.cpp(68,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Graf2_problema3.vcxproj -> C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\Graf2_problema3\x64\Debug\Graf2_problema3.exe

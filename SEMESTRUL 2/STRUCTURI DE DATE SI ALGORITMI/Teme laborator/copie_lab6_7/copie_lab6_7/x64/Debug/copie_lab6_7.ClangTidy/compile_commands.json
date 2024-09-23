@@ -1,0 +1,32 @@
+[
+  {
+    "directory": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\domeniu.cpp\"",
+    "file": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\domeniu.cpp"
+  },
+  {
+    "directory": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\main.cpp\"",
+    "file": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\main.cpp"
+  },
+  {
+    "directory": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\repo.cpp\"",
+    "file": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\repo.cpp"
+  },
+  {
+    "directory": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\service.cpp\"",
+    "file": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\service.cpp"
+  },
+  {
+    "directory": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\teste.cpp\"",
+    "file": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\teste.cpp"
+  },
+  {
+    "directory": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\UI.cpp\"",
+    "file": "C:\\Structuri de date si algoritmi\\copie_lab6_7\\copie_lab6_7\\UI.cpp"
+  }
+]

@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\graf2_ex3\graf2_ex3\main.cpp(50,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\graf2_ex3\graf2_ex3\main.cpp(51,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\graf2_ex3\graf2_ex3\main.cpp(136,35): warning C4305: '=': truncation from '__int64' to 'int'
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\graf2_ex3\graf2_ex3\main.cpp(136,35): warning C4309: '=': truncation of constant value
+  graf2_ex3.vcxproj -> C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\graf2_ex3\x64\Debug\graf2_ex3.exe

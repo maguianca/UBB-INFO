@@ -1,0 +1,19 @@
+﻿  App.cpp
+  IteratorMultime.cpp
+C:\Structuri de date si algoritmi\Lab3_Multime_LDI\Lab3_Multime_LDI\Multime.h(12,2): warning C4091: 'typedef ': ignored on left of 'Nod' when no variable is declared
+  (compiling source file 'IteratorMultime.cpp')
+  
+  Multime.cpp
+C:\Structuri de date si algoritmi\Lab3_Multime_LDI\Lab3_Multime_LDI\Multime.h(12,2): warning C4091: 'typedef ': ignored on left of 'Nod' when no variable is declared
+  (compiling source file 'Multime.cpp')
+  
+  TestExtins.cpp
+C:\Structuri de date si algoritmi\Lab3_Multime_LDI\Lab3_Multime_LDI\Multime.h(12,2): warning C4091: 'typedef ': ignored on left of 'Nod' when no variable is declared
+  (compiling source file 'TestExtins.cpp')
+  
+  TestScurt.cpp
+C:\Structuri de date si algoritmi\Lab3_Multime_LDI\Lab3_Multime_LDI\Multime.h(12,2): warning C4091: 'typedef ': ignored on left of 'Nod' when no variable is declared
+  (compiling source file 'TestScurt.cpp')
+  
+  Generating Code...
+  Lab3_Multime_LDI.vcxproj -> C:\Structuri de date si algoritmi\Lab3_Multime_LDI\x64\Debug\Lab3_Multime_LDI.exe

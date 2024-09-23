@@ -1,0 +1,21 @@
+#!/bin/awk
+
+BEGIN{
+suma=0
+}
+
+{
+	for(i=1;i<=NF;i++)
+	{
+		if(match($i,/\<[0-9]+\>/)!=0)
+		{
+			print $i
+			suma+= $i
+		}
+	}
+}
+
+END{
+	print "suma:",suma
+}
+

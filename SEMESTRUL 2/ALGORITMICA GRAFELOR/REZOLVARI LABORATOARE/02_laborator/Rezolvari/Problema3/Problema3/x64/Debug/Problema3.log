@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\02_laborator\Rezolvari\Problema3\Problema3\main.cpp(28,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Problema3.vcxproj -> C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\02_laborator\Rezolvari\Problema3\x64\Debug\Problema3.exe

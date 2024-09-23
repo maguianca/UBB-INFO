@@ -1,0 +1,21 @@
+void Dijkstra(int sursa)
+{
+	for(int i=1;i<=n;i++)
+		dist[i]=INF;
+	dist[sursa]=0;
+	queue<int>Q;
+	Q.push(sursa);
+	while(!Q.empty())
+	{
+		int val=Q.fron();
+		Q.pop();
+		for(auto p:GNew[val])
+		{
+			if(dist[val]+p.second<dist[p.first])
+			{
+				Q.push(p.first);
+				dist[p.first]=dist[val]+p.second;
+			}
+		}
+	}
+}

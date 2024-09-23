@@ -1,0 +1,12 @@
+#!/bin/awk 
+BEGIN{
+	minute=0
+	x_minute=0
+}
+{
+	x_minute=ARGV[1]
+}
+END{
+	print "minute",x_minute
+}
+

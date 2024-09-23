@@ -1,0 +1,17 @@
+#!/bin/awk
+
+{
+	for(i=1;i<=NF;i++)
+	{
+		cuvant=$i
+		for(j=i+1;j<=NF;j++){
+		if(cuvant==$j)
+		{
+			print NR,cuvant
+			break
+		}		
+}
+	}
+}
+
+

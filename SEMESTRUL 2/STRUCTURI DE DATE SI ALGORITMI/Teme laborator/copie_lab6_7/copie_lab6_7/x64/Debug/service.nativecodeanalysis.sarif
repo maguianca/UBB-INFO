@@ -1,0 +1,59 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.38.33134.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/structuri de date si algoritmi/copie_lab6_7/copie_lab6_7/service.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "853b4e96ec77eec8515ae1cc36166f09137901cf545bbccb757ac38eed0dfaea"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/structuri de date si algoritmi/copie_lab6_7/copie_lab6_7/service.h"
+          },
+          "hashes": {
+            "sha-256": "87f6514bd253501e21c3346bd2bcdc4d5d45012bd71e9ebeddbb5385ead3ed9f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/structuri de date si algoritmi/copie_lab6_7/copie_lab6_7/domeniu.h"
+          },
+          "hashes": {
+            "sha-256": "f25f56c9f90ef34ec46a41431b8f434dc2edc32ce06f1345714aca0e37baa204"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/structuri de date si algoritmi/copie_lab6_7/copie_lab6_7/repo.h"
+          },
+          "hashes": {
+            "sha-256": "0c289cfba6b2fed084f6c8cecc2f97e81a06a10306db2c76804ae5edd7d6fb13"
+          }
+        }
+      ]
+    }
+  ]
+}

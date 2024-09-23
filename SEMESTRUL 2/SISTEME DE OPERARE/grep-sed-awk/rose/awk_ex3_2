@@ -1,0 +1,17 @@
+#!/bin/awk
+BEGIN{
+consoane=0
+vocale=0
+IGNORECASE=1
+}
+
+{
+        vocale+=gsub(/[aeiou]/,"")
+	#returneaza nr de substitutii
+	consoane+=gsub(/[^aeiou]/,"")
+}
+
+
+END{
+        print "Fisierul",FILENAME, "contine",vocale,"vocale si",consoane,"consoane."
+}

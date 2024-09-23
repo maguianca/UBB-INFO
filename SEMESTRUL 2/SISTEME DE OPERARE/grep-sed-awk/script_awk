@@ -1,0 +1,5 @@
+#!/bin/awk
+BEGIN {print "Nume Prenume Data nasterii Telefon Salariu"}{print}
+{print $1 "\t" $2 "\t" $3 "\t" $4 "\t" $5 "\t" $6}
+END {print "Numarul total de angajati: "NR}
+

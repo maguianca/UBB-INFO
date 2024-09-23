@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1716715554 source:d:\2024_2\ubb\algoritmica_grafelor\laborator\laborator4\4_lab4\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<unordered_map>
+	<string>
+	<fstream>
+	<algorithm>
+
+1716716022 source:d:\2024_2\ubb\algoritmica_grafelor\test2\decodare huffman\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<unordered_map>
+	<string>
+	<fstream>
+	<algorithm>
+

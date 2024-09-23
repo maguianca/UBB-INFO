@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\05_laborator\2\p2.c\p2.c\main.cpp(25,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  p2.c.vcxproj -> C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\05_laborator\2\p2.c\x64\Debug\p2.c.exe

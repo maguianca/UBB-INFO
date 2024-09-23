@@ -1,0 +1,21 @@
+#!/bin/awk
+
+BEGIN{ 
+	sumap=0 
+	index=0 
+	sumai=0
+} 
+{
+	if(NR%2==0){ 
+		sumap=sumap+$1}
+	else
+	{
+		sumai+=$1
+		index+=1
+	}
+} 
+END
+{
+print "Suma nr pare",pare 
+print"Suma nr impare",sumai/index
+}

@@ -1,0 +1,25 @@
+1. [SED, 0.25p] : Afisati intregul continut al fisierului passwd.fake, dar inversand primul cu al doilea prenume al persoanelor care au doua prenume. Prenumele sunt concatenate cu -, ex: Ana-Maria -> Maria-Ana
+
+2. [AWK, 0.25p] : Afisati continutul coloanelor 3 si 5 de pe toate liniile exceptand prima, dintr-un fisier in care separatorul este virgula. Nu se va folosi comanda tail.
+
+3. [SED, 0.25p] : Eliminati, dintr-un fisier, toate aparitiile caracterelor .+*?:"= fara 'd/\./g;a folosi range expressions ( adica [abcd] )
+                  Eliminati, dintr-un fisier, toate liniile pe care apar caracterele .+*?:"= .
+
+4. [GREP, 0.25p] : Afisati toate cuvintele mai lungi de 5 litere dintr-un fisier text, fiecare pe cate o linie.
+
+4. [AWK, 0.5p] : Sa se afiseze toate fisierele din directorul curent asupra carora utilizatorul curent are drepturi de scriere. (vezi chmod, ls -l)
+
+5. [SED, 0.5p] : Fara a folosi AWK, afisati doar continutul coloanelor 3 si 5 dintr-un fisier in care separatorul este virgula.
+
+6. [GREP, 0.5p] : Sa se afiseze userii din sistem, alaturi de numarul de procese active, sortat in ordine descrescatoare dupa acest numar.
+
+7. [SED, 0.5p] : Determinati care este familia cu cei mai multi membri, folosind datele din passwd.fake. Doi oameni sunt considerati a fi parte din aceeasi familie daca au acelasi nume de familie.
+Daca exista mai multe familii cu numar maxim de membri, se va afisa doar una din ele.
+
+8. [GREP, 0.5p] : Afisati toate liniile care contin cel mult 4 cifre, nu neaparat consecutive.
+
+9. [GREP + SED + AWK, 1p] : Sa se determine numarul maxim dintr-un fisier text, in care fiecare linie contine un numar in forma naturala ( ex. 151.38 ) sau exponentiala (ex. 1.5138e2 = 1.5138 * 10^2 = 151.38).
+
+10. [GREP + SED + AWK, 1p] : Identificati toti profesorii care s-au conectat in sistem (last) pentru perioada mai lunga de X minute. Se considera profesor orice cont care nu are structura de cont de student. X este o valoare data ca argument programului awk
+
+11. [AWK, 2p] : Afisati toti utilizatorii inca logati in sistem ( comanda last ), inlocuind mesajul "Still logged in" cu ora actuala si timpul trecut de la momentul logarii (comanda date), exact ca la un user delogat. Se recomanda functia getline.
