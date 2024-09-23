@@ -1,0 +1,21 @@
+[2024-06-07 10:37:44] [info] Start Program:
+Path:"C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii2\x64\Debug\Melodii2.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii2\Melodii2\"
+Modules: Selected: C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii2\x64\Debug\Melodii2.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii2\Melodii2 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\da2rvif4.e0c 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-06-07 10:37:44] [info] Module: C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii2\x64\Debug\Melodii2.exe is selected because it matches selected pattern: C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii2\x64\Debug\Melodii2.exe
+[2024-06-07 10:37:46] [info] ----------------------------------------------------
+[2024-06-07 10:37:46] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\da2rvif4.e0c
+[2024-06-07 10:37:46] [info] ----------------------------------------------------
