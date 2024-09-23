@@ -1,0 +1,5 @@
+﻿  gui.cpp
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Ex_Tractoare\Ex_Tractoare\model.h(15,33): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'gui.cpp')
+  
+  Ex_Tractoare.vcxproj -> C:\Programare orientata obiect\PREGATIRE EXAMEN\Ex_Tractoare\x64\Debug\Ex_Tractoare.exe

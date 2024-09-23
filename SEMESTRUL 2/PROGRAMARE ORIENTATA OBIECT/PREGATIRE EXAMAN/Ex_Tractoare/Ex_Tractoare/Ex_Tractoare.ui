@@ -1,0 +1,28 @@
+<UI version="4.0" >
+ <class>Ex_TractoareClass</class>
+ <widget class="QMainWindow" name="Ex_TractoareClass" >
+  <property name="objectName" >
+   <string notr="true">Ex_TractoareClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Ex_Tractoare</string>
+  </property>  <widget class="QMenuBar" name="menuBar" />
+  <widget class="QToolBar" name="mainToolBar" />
+  <widget class="QWidget" name="centralWidget" />
+  <widget class="QStatusBar" name="statusBar" />
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="Ex_Tractoare.qrc"/>
+ </resources>
+ <connections/>
+</UI>
