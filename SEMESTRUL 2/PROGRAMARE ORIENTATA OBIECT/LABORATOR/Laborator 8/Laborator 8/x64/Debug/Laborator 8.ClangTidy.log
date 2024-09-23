@@ -1,0 +1,20 @@
+C:\Programare orientata obiect\Laborator 8\Laborator 8/domeniu.h:36:2: warning: definition of implicit copy assignment operator for 'Turism' is deprecated because it has a user-provided copy constructor [clang-diagnostic-deprecated-copy-with-user-provided-copy]
+        Turism(const Turism& ot) :denumire{ ot.denumire }, destinatie{ ot.destinatie }, tip{ ot.tip }, pret{ ot.pret } {
+        ^
+Suppressed 4 warnings (4 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility:130:14: note: in implicit copy assignment operator for 'Turism' first required here
+    _Left    = _STD move(_Right);
+             ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\algorithm:5367:13: note: in instantiation of function template specialization 'std::swap<Turism, 0>' requested here
+            swap(*_UTarget, *(_UFirst + _Off)); // intentional ADL
+            ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\algorithm:5376:5: note: in instantiation of function template specialization 'std::_Random_shuffle1<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Turism>>>, std::_Rng_from_urng<long long, std::mersenne_twister_engine<unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>>' requested here
+    _Random_shuffle1(_First, _Last, _RngFunc);
+    ^
+C:\Programare orientata obiect\Laborator 8\Laborator 8\CosOferte.cpp:12:5: note: in instantiation of function template specialization 'std::shuffle<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Turism>>>, std::mersenne_twister_engine<unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>>' requested here
+    shuffle(oferte.begin(), oferte.end(), std::default_random_engine(std::random_device{}())); //amesteca vectorul v
+    ^
+C:\Programare orientata obiect\Laborator 8\Laborator 8\CosOferte.cpp:13:29: warning: comparison of integers of different signs: 'size_type' (aka 'unsigned long long') and 'int' [clang-diagnostic-sign-compare]
+    while (cosOferte.size() < numar && !oferte.empty()) {
+           ~~~~~~~~~~~~~~~~ ^ ~~~~~

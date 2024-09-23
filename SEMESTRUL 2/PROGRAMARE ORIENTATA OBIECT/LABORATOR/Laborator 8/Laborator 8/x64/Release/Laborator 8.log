@@ -1,0 +1,28 @@
+﻿  CosOferte.cpp
+  domeniu.cpp
+  main.cpp
+  repo.cpp
+  service.cpp
+  teste.cpp
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(10,14): error C2220: the following warning is treated as an error
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(10,14): warning C4189: 'rezultat': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(29,14): warning C4189: 'rezultat': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(38,24): warning C4101: 'ex': unreferenced local variable
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(49,14): warning C4189: 'rezultat': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(72,14): warning C4189: 'rez': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(83,14): warning C4189: 'rez': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(96,14): warning C4189: 'rezultat': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(102,24): warning C4101: 'ex': unreferenced local variable
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(114,14): warning C4189: 'rez': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(127,14): warning C4189: 'rez': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(144,14): warning C4189: 'rez': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(165,14): warning C4189: 'rez': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(199,14): warning C4189: 'rez': local variable is initialized but not referenced
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(229,23): warning C4101: 'ex': unreferenced local variable
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(238,23): warning C4101: 'ex': unreferenced local variable
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(247,23): warning C4101: 'ex': unreferenced local variable
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(256,23): warning C4101: 'ex': unreferenced local variable
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(265,23): warning C4101: 'ex': unreferenced local variable
+C:\Programare orientata obiect\Laborator 8\Laborator 8\teste.cpp(287,24): warning C4101: 'ex': unreferenced local variable
+  UI.cpp
+  validator.cpp

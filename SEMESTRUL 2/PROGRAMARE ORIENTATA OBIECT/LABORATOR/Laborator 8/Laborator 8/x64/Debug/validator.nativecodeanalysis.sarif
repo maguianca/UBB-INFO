@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.38.33134.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/validator.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "27c4886140f691b4ff2f4be6b08f63634b213ebe5ffca18a1d202ccc643437a1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/domeniu.h"
+          },
+          "hashes": {
+            "sha-256": "7ec0f87a3f6193ed4b85ac2b65d42938a81deb88bc61b9231d5d823674cbdf0a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/validator.h"
+          },
+          "hashes": {
+            "sha-256": "fa9d3e72cb315926b882665bf256ef89c587591959f0e6573de9336ba58eca4c"
+          }
+        }
+      ]
+    }
+  ]
+}
