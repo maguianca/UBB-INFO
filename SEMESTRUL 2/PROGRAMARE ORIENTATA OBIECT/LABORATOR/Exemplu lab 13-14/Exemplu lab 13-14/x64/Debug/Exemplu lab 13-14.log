@@ -1,0 +1,11 @@
+﻿  StoreGUIModele.cpp
+  main.cpp
+C:\Programare orientata obiect\Exemplu lab 13-14\Exemplu lab 13-14\TableModel.h(17,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'StoreGUIModele.cpp')
+  
+C:\Programare orientata obiect\Exemplu lab 13-14\Exemplu lab 13-14\TableModel.h(17,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Programare orientata obiect\Exemplu lab 13-14\Exemplu lab 13-14\StoreGUIModele.cpp(223,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Programare orientata obiect\Exemplu lab 13-14\Exemplu lab 13-14\StoreGUIModele.cpp(237,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Exemplu lab 13-14.vcxproj -> C:\Programare orientata obiect\Exemplu lab 13-14\x64\Debug\Exemplu lab 13-14.exe
