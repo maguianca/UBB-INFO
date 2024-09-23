@@ -1,0 +1,21 @@
+[2024-03-19 21:02:47] [info] Start Program:
+Path:"C:\Programare orientata obiect\Lab2_4_implementare_dinamica_copie_finala\x64\Debug\Lab2_4_implementare_dinamica_copie_finala.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\Lab2_4_implementare_dinamica_copie_finala\Lab2_4_implementare_dinamica_copie_finala\"
+Modules: Selected: C:\Programare orientata obiect\Lab2_4_implementare_dinamica_copie_finala\x64\Debug\Lab2_4_implementare_dinamica_copie_finala.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\Lab2_4_implementare_dinamica_copie_finala\Lab2_4_implementare_dinamica_copie_finala Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\jkewvzbf.tpv 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-03-19 21:02:47] [info] Module: C:\Programare orientata obiect\Lab2_4_implementare_dinamica_copie_finala\x64\Debug\Lab2_4_implementare_dinamica_copie_finala.exe is selected because it matches selected pattern: C:\Programare orientata obiect\Lab2_4_implementare_dinamica_copie_finala\x64\Debug\Lab2_4_implementare_dinamica_copie_finala.exe
+[2024-03-19 21:02:49] [info] ----------------------------------------------------
+[2024-03-19 21:02:49] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\jkewvzbf.tpv
+[2024-03-19 21:02:49] [info] ----------------------------------------------------
