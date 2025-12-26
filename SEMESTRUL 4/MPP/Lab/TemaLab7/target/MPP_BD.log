@@ -1,0 +1,3 @@
+07 Apr 2025 07:51:55,460 ERROR ro.mpp2025.Repository.JdbcUtils 41 getNewConnection - java.sql.SQLException: The url cannot be null
+07 Apr 2025 08:14:33,017 ERROR ro.mpp2025.Repository.JdbcUtils 41 getNewConnection - java.sql.SQLException: The url cannot be null
+07 Apr 2025 08:16:34,176 ERROR ro.mpp2025.Repository.JdbcUtils 41 getNewConnection - java.sql.SQLException: The url cannot be null

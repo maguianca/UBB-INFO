@@ -1,0 +1,4 @@
+1,3,ana,ba,Neterminat
+2,3,xscfbana,aaab,Terminat
+3,3,c,ad,InDerulare
+4,3,ddh,dhj,Neinceput

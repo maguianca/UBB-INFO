@@ -1,0 +1,21 @@
+[2024-04-03 09:31:48] [info] Start Program:
+Path:"C:\Structuri de date si algoritmi\copie_lab6_7\x64\Debug\copie_lab6_7.exe"
+Arguments:
+Working directory: "C:\Structuri de date si algoritmi\copie_lab6_7\copie_lab6_7\"
+Modules: Selected: C:\Structuri de date si algoritmi\copie_lab6_7\x64\Debug\copie_lab6_7.exe Excluded: 
+Sources: Selected: C:\Structuri de date si algoritmi\copie_lab6_7\copie_lab6_7 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\vjkr0af4.yzl 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-04-03 09:31:48] [info] Module: C:\Structuri de date si algoritmi\copie_lab6_7\x64\Debug\copie_lab6_7.exe is selected because it matches selected pattern: C:\Structuri de date si algoritmi\copie_lab6_7\x64\Debug\copie_lab6_7.exe
+[2024-04-03 09:31:51] [info] ----------------------------------------------------
+[2024-04-03 09:31:51] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\vjkr0af4.yzl
+[2024-04-03 09:31:51] [info] ----------------------------------------------------

@@ -1,0 +1,24 @@
+void afisare_drum(int varf, vector<int>parinte)
+{
+	if (parinte[varf] == 0)
+	{
+		cout << varf << "->";
+		return;
+	}
+	afisare_drum(parinte[varf], parinte);
+	cout << varf << "->";
+}
+
+//varianta 2
+vector<int> drum(int sursa, int destinatie, vector<int> parinte, vector<int> dist)
+{
+	vector<int> u;
+	int nod_curent = destinatie;
+	while (nod_curent != sursa) {
+		u.push_back(nod_curent);
+		nod_curent = parinte[nod_curent];
+	}
+	u.push_back(sursa);
+	reverse(u.begin(), u.end());
+	return u;
+}

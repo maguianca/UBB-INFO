@@ -1,0 +1,42 @@
+void Moore(int sursa) {
+    for (int i = 1; i <= n; i++) {
+        Parinte[i] = -1;
+        Distanta[i] = inf;
+    }
+    Distanta[sursa] = 0;
+    Parinte[sursa] = 0;
+    Queue.push(sursa);
+    while (!Queue.empty()) {
+        int nodCurent = Queue.front();
+        Queue.pop();
+        for (auto x : Graf[nodCurent]) {
+            if (Distanta[x] == inf) {
+                Distanta[x] = Distanta[nodCurent] + 1;
+                Parinte[x] = nodCurent;
+                Queue.push(x);
+            }
+        }
+    }
+}
+
+//varianta 2
+void Moore(int sursa) {
+    for (int i = 1; i <= n; i++) {
+        Parinte[i] = -1;
+        Distanta[i] = inf;
+    }
+    Distanta[sursa] = 0;
+    Parinte[sursa] = 0;
+    Queue.push(sursa);
+    while (!Queue.empty()) {
+        int nodCurent = Queue.front();
+        Queue.pop();
+        for (int i=1;i<=n;i++) {
+            if (Distanta[x] == inf && matrice[nodCurent][i]==1) {
+                Distanta[x] = Distanta[nodCurent] + 1;
+                Parinte[x] = nodCurent;
+                Queue.push(x);
+            }
+        }
+    }
+}

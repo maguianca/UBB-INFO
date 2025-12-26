@@ -1,0 +1,6 @@
+Grecia,20-28 iunie,7878,3000
+Spania,12-19 august,1200,700
+Franta,20-28 iunie,1500,500
+SUA,12-19 august,1900,1000
+Grecia,20-28 iunie,3333,1267
+Spania,20-28 iunie,122,2

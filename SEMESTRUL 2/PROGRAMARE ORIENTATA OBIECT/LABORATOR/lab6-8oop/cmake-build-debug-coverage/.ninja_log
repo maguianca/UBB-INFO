@@ -1,0 +1,9 @@
+# ninja log v5
+30	1157	6741466094050929	CMakeFiles/lab4_6oop.dir/Pet.cpp.obj	a795d0d8d61fc63a
+22	1565	6741466098221708	CMakeFiles/lab4_6oop.dir/Medicament.cpp.obj	916eee530e27bc66
+28	1600	6741466098826973	CMakeFiles/lab4_6oop.dir/UI.cpp.obj	bf2705c425af69d3
+14	1612	6741466098979153	CMakeFiles/lab4_6oop.dir/Service.cpp.obj	e99dcc5acd42247
+24	1696	6741466099822501	CMakeFiles/lab4_6oop.dir/Repository.cpp.obj	3b21e9480226d53b
+19	1726	6741466100338451	CMakeFiles/lab4_6oop.dir/Teste.cpp.obj	fb8434435a685b22
+1	1874	6741466101841929	CMakeFiles/lab4_6oop.dir/main.cpp.obj	e19af01458022ee0
+1874	2161	6741466104647500	lab4_6oop.exe	1d1f306643509f44

@@ -1,0 +1,42 @@
+
+.button {
+    -fx-background-radius: 20; /* Rotunjirea colțurilor */
+    -fx-background-color: linear-gradient(to right, #08aaaa, #f915ef); /* Gradient */
+    -fx-text-fill: white; /* Culoarea textului */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 15px; /* Reducerea padding-ului pentru un buton mai subțire */
+    -fx-border-radius: 20;
+    -fx-min-width: 100px; /* Lățimea minimă a butonului */
+    -fx-max-width: 150px; /* Lățimea maximă a butonului */
+}
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff; /* Culoare albă pentru text */
+    -fx-font-family: "Inria Sans", sans-serif; /* Schimbă fontul cu Inria Sans */
+    -fx-font-weight: bold; /* Textul devine îngroșat */
+}
+
+.text-field {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #00c6ff;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+.anchor-pane {
+    -fx-background-color: #FFB6C1;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-radius: 10;
+    -fx-border-color: #00c6ff;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}

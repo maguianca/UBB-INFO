@@ -1,0 +1,37 @@
+int extract_min(vector<int>dist,vector<bool>s)
+{
+	int min = INF, index = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		if (s[i] == false && dist[i] < min)
+		{
+			min = dist[i];
+			index = i;
+		}
+	}
+	return index;
+}
+vector<int> Dijkstra2(int source) {
+	vector<int> dist(n + 1);
+	vector<bool>s(n + 1, false);
+	for (int i = 1; i <= n; ++i) {
+		if (i != source) {
+			dist[i] = INF;
+		}
+		else {
+			dist[i] = 0;
+		}
+	}
+
+	for(int i=1;i<=n;i++){
+		int val = extract_min(dist,s);
+		s[val] = true;
+		for (auto p : G[val]) {
+			if (dist[val] + p.second < dist[p.first]) {
+				dist[p.first] = dist[val] + p.second;
+			}
+		}
+	}
+
+	return dist;
+}

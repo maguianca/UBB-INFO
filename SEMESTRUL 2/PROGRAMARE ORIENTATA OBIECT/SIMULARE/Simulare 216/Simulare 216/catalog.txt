@@ -1,0 +1,3 @@
+1234,Ema,Cosbuc,informatica|jurnalism
+234,Matei,Gojdu,informatica|jurnalism
+1344,Ioana,Cosbuc,jurnalism|desen+pictura

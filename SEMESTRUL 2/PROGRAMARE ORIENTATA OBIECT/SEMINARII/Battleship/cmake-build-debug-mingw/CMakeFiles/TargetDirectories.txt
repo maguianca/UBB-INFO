@@ -1,0 +1,5 @@
+C:/Users/A/CLionProjects/Battleship/cmake-build-debug-mingw/CMakeFiles/Battleship.dir
+C:/Users/A/CLionProjects/Battleship/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+C:/Users/A/CLionProjects/Battleship/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
+C:/Users/A/CLionProjects/Battleship/cmake-build-debug-mingw/CMakeFiles/Battleship_autogen_timestamp_deps.dir
+C:/Users/A/CLionProjects/Battleship/cmake-build-debug-mingw/CMakeFiles/Battleship_autogen.dir

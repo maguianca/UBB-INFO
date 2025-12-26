@@ -1,0 +1,6 @@
+Excursie,Dubai,AllInclusive,6000
+Excursie-Europa,Finlanda-Norvegia-Danemarca,MultiCountry,5600
+Paris,Franta,CityBreak,345
+Ex,Dubai,AllInclusive,6000000
+Pae,Fr,CityBreak,12
+ana,ana,AllInclusive,600

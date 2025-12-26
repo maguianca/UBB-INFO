@@ -1,0 +1,446 @@
+        -:    0:Source:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/UI.c
+        -:    0:Graph:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug-coverage/CMakeFiles/oop_lab2_4_inchirieremasini.dir/UI.c.gcno
+        -:    0:Data:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug-coverage/CMakeFiles/oop_lab2_4_inchirieremasini.dir/UI.c.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#include <stdio.h>
+        -:    3:#include "Repo.h"
+        -:    4:#include "Service.h"
+        -:    5:#include "Domain.h"
+        -:    6:#include "teste.h"
+        -:    7:#include "validator.h"
+function print_menu called 1 returned 100% blocks executed 100%
+        1:    8:void print_menu() {
+        -:    9:    //Afiseaza pe ecran meniul pentru utilizator
+        1:   10:    printf("\nAlege una dintre optiunile urmatoare: \n");
+        1:   10-block  0
+call    0 returned 1
+        1:   11:    printf("-1.Oprire program\n");
+call    0 returned 1
+        1:   12:    printf(" 0.Afisare toate masinile\n");
+call    0 returned 1
+        1:   13:    printf(" 1.Adauga masina \n");
+call    0 returned 1
+        1:   14:    printf(" 2.Actualizare masina\n");
+call    0 returned 1
+        1:   15:    printf(" 3.Inchiriere/Returnare masina\n");
+call    0 returned 1
+        1:   16:    printf(" 4.Vizualizare masina dupa criteriu\n");
+call    0 returned 1
+        1:   17:    printf(" 5.Sortare masina dupa criteriu\n");
+call    0 returned 1
+        1:   18:    printf(" 6.Undo\n");
+call    0 returned 1
+        1:   19:}
+        -:   20:
+function afisare called 0 returned 0% blocks executed 0%
+    #####:   21:void afisare(Repository* MASINI) {
+        -:   22:    //Afiseaza toate masinile din lista de masini
+    #####:   23:    for (int i = 0; i < MASINI->lungime; i++)
+    %%%%%:   23-block  0
+    %%%%%:   23-block  1
+    %%%%%:   23-block  2
+branch  0 never executed
+branch  1 never executed
+        -:   24:    {
+    #####:   25:        printf("Numar inmatriculare: %s\n", get_numar(MASINI->masini[i]));
+    %%%%%:   25-block  0
+call    0 never executed
+call    1 never executed
+    #####:   26:        printf("Categorie: %s\n", get_categorie(MASINI->masini[i]));
+call    0 never executed
+call    1 never executed
+    #####:   27:        printf("Model: %s\n", get_model(MASINI->masini[i]));
+call    0 never executed
+call    1 never executed
+    #####:   28:        if (get_inchiriere(MASINI->masini[i]) == 1) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   29:            printf("Stare: Inchiriata\n");
+    %%%%%:   29-block  0
+call    0 never executed
+        -:   30:        }
+        -:   31:        else {
+    #####:   32:            printf("Stare: Disponibila\n");
+    %%%%%:   32-block  0
+call    0 never executed
+        -:   33:        }
+        -:   34:    }
+    #####:   35:}
+        -:   36:/*
+        -:   37:void afisare_masini(Repository MASINI) {
+        -:   38:
+        -:   39:    for (int i = 0; i < MASINI.lungime; i++)
+        -:   40:    {
+        -:   41:        printf("Numar inmatriculare: %s\n", get_numar(&MASINI.masini[i]));
+        -:   42:        printf("Categorie: %s\n", get_categorie(&MASINI.masini[i]));
+        -:   43:        printf("Model: %s\n", get_model(&MASINI.masini[i]));
+        -:   44:        if (MASINI.masini[i].inchiriata == 1) {
+        -:   45:            printf("Stare: Inchiriata\n");
+        -:   46:        } else {
+        -:   47:            printf("Stare: Disponibila\n");
+        -:   48:        }
+        -:   49:    }
+        -:   50:}
+        -:   51:*/
+        -:   52:
+        -:   53:
+function main called 1 returned 100% blocks executed 9%
+        1:   54:int main() {
+        -:   55:
+        -:   56:    //Repository* MASINI;
+        -:   57:    //MASINI = creeaza_vid();
+        1:   58:    ruleaza_toate_testele();
+        1:   58-block  0
+call    0 returned 1
+        1:   59:    Service store = createService();
+call    0 returned 1
+        -:   60:    int optiune;
+        1:   61:    int continua = 1;
+        2:   62:    while (continua) {
+        2:   62-block  0
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        1:   63:        print_menu();
+        1:   63-block  0
+call    0 returned 1
+        1:   64:        printf("Introduceti optiunea: ");
+call    0 returned 1
+        1:   65:        scanf("%d", &optiune);
+call    0 returned 1
+        -:   66:
+        1:   67:        switch (optiune) {
+branch  0 taken 0
+branch  1 taken 0
+branch  2 taken 0
+branch  3 taken 0
+branch  4 taken 0
+branch  5 taken 0
+branch  6 taken 1
+branch  7 taken 0
+branch  8 taken 0
+    #####:   68:            case 0: {
+    #####:   69:                afisare(store.toate_masinile);
+    %%%%%:   69-block  0
+call    0 never executed
+    #####:   70:                break;
+        -:   71:            }
+    #####:   72:            case 1: {
+        -:   73:                char numar[20], categorie[20], model[20];
+    #####:   74:                printf("Introduceti numar inmatriculare: ");
+    %%%%%:   74-block  0
+call    0 never executed
+    #####:   75:                scanf("%s", numar);
+call    0 never executed
+        -:   76:
+    #####:   77:                printf("Introduceti categorie: ");
+call    0 never executed
+    #####:   78:                scanf("%s", categorie);
+call    0 never executed
+        -:   79:
+    #####:   80:                printf("Introduceti model: ");
+call    0 never executed
+    #####:   81:                scanf("%s", model);
+call    0 never executed
+        -:   82:                int ok;
+    #####:   83:                ok = adauga(&store, numar, categorie, model, 0);
+call    0 never executed
+    #####:   84:                if (ok == -1)
+branch  0 never executed
+branch  1 never executed
+    #####:   85:                    printf("Datele introduse pentru masina sunt invalide. Va rugam introduceti date valide.\n");
+    %%%%%:   85-block  0
+call    0 never executed
+    #####:   86:                else if (ok == 1) printf("Masina a fost adaugata cu succes!\n");
+    %%%%%:   86-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   86-block  1
+call    2 never executed
+    #####:   87:                else if (ok == 0)printf("id existent\n");
+    %%%%%:   87-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   87-block  1
+call    2 never executed
+    #####:   88:                break;
+    %%%%%:   88-block  0
+        -:   89:            }
+    #####:   90:            case 2: {
+        -:   91:                char numar[20];
+    #####:   92:                printf("Introduceti numarul de inmatriculare: ");
+    %%%%%:   92-block  0
+call    0 never executed
+    #####:   93:                scanf("%s", numar);
+call    0 never executed
+        -:   94:                char categorie_noua[20], model_nou[20];
+    #####:   95:                printf("Introdu noua categorie: ");
+call    0 never executed
+    #####:   96:                scanf("%s", categorie_noua);
+call    0 never executed
+        -:   97:
+    #####:   98:                printf("Introdu noul model: ");
+call    0 never executed
+    #####:   99:                scanf("%s", model_nou);
+call    0 never executed
+        -:  100:                int ok;
+        -:  101:
+    #####:  102:                ok = actualizare(&store, numar, categorie_noua, model_nou);
+call    0 never executed
+    #####:  103:                if (ok == -1)
+branch  0 never executed
+branch  1 never executed
+    #####:  104:                    printf("Datele introduse pentru masina sunt invalide. Va rugam introduceti date valide.\n");
+    %%%%%:  104-block  0
+call    0 never executed
+    #####:  105:                else if (ok == 1) printf("Masina a fost actualizata cu succes!");
+    %%%%%:  105-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  105-block  1
+call    2 never executed
+        -:  106:
+    #####:  107:                break;
+    %%%%%:  107-block  0
+        -:  108:
+        -:  109:            }
+    #####:  110:            case 3: {
+    #####:  111:                printf("1. Inchiriere masina\n2.Returnare masina");
+    %%%%%:  111-block  0
+call    0 never executed
+    #####:  112:                int opt = 0;
+    #####:  113:                scanf("%d", &opt);
+call    0 never executed
+    #####:  114:                if (opt == 1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  115:                    printf("Introdu numarul de inmatriculare: ");
+    %%%%%:  115-block  0
+call    0 never executed
+        -:  116:                    char numar[20];
+        -:  117:                    int inchiriat;
+    #####:  118:                    scanf("%s", numar);
+call    0 never executed
+    #####:  119:                    inchiriat = inchiriere(&store, numar);
+call    0 never executed
+    #####:  120:                    if (inchiriat == 1) printf("Masina a fost inchiriata! ");
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  120-block  0
+call    2 never executed
+    #####:  121:                    else if (inchiriat == 0) printf("Masina este deja inchiriata! ");
+    %%%%%:  121-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  121-block  1
+call    2 never executed
+    #####:  122:                    else if (inchiriat == -1) printf("Masina cu acest numar de inmatriculare nu exista! ");
+    %%%%%:  122-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  122-block  1
+call    2 never executed
+    #####:  123:                } else if (opt == 2) {
+    %%%%%:  123-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  124:                    printf("Introdu numarul de inmatriculare: ");
+    %%%%%:  124-block  0
+call    0 never executed
+        -:  125:                    char numar[20];
+        -:  126:                    int returnat;
+    #####:  127:                    scanf("%s", numar);
+call    0 never executed
+    #####:  128:                    returnat = returnare(&store, numar);
+call    0 never executed
+    #####:  129:                    if (returnat == 1) printf("Masina a fost returnata! ");
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  129-block  0
+call    2 never executed
+    #####:  130:                    else if (returnat == 0) printf("Masina nu este inchiriata! ");
+    %%%%%:  130-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  130-block  1
+call    2 never executed
+    #####:  131:                    else if (returnat == -1) printf("Masina cu acest numar de inmatriculare nu exista! ");
+    %%%%%:  131-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  131-block  1
+call    2 never executed
+    #####:  132:                } else printf("Optiune invalida!");
+    %%%%%:  132-block  0
+call    0 never executed
+    #####:  133:                break;
+    %%%%%:  133-block  0
+        -:  134:            }
+    #####:  135:            case 4: {
+    #####:  136:                printf("1. Dupa categorie \n2. Dupa model \n3. Dupa disponibilitate\nIntrodu optiunea ta: ");
+    %%%%%:  136-block  0
+call    0 never executed
+    #####:  137:                int opt = 0;
+    #####:  138:                scanf("%d", &opt);
+call    0 never executed
+    #####:  139:                if (opt == 1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  140:                    printf("Introdu categoria: ");
+    %%%%%:  140-block  0
+call    0 never executed
+        -:  141:                    char categorie[20];
+    #####:  142:                    scanf("%s", categorie);
+call    0 never executed
+    #####:  143:                    Repository *filtrat = vizualizare_categorie(&store, categorie);
+call    0 never executed
+    #####:  144:                    afisare(filtrat);
+call    0 never executed
+    #####:  145:                    distruge(filtrat, distruge_masina);
+call    0 never executed
+    #####:  146:                } else if (opt == 2) {
+    %%%%%:  146-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  147:                    printf("Introdu modelul: ");
+    %%%%%:  147-block  0
+call    0 never executed
+        -:  148:                    char model[20];
+    #####:  149:                    scanf("%s", model);
+call    0 never executed
+    #####:  150:                    Repository *filtrat = vizualizare_model(&store, model);
+call    0 never executed
+    #####:  151:                    afisare(filtrat);
+call    0 never executed
+    #####:  152:                    distruge(filtrat, distruge_masina);
+call    0 never executed
+        -:  153:                    //distruge(vizualizare_model(MASINI, model));
+    #####:  154:                } else if (opt == 3) {
+    %%%%%:  154-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  155:                    Repository *filtrat = vizualizare_disponibilitate(&store);
+    %%%%%:  155-block  0
+call    0 never executed
+    #####:  156:                    afisare(filtrat);
+call    0 never executed
+    #####:  157:                    distruge(filtrat, distruge_masina);
+call    0 never executed
+        -:  158:                } else
+    #####:  159:                    printf("Optiune invalida! ");
+    %%%%%:  159-block  0
+call    0 never executed
+    #####:  160:                break;
+    %%%%%:  160-block  0
+        -:  161:            }
+    #####:  162:            case 5: {
+    #####:  163:                printf("1. Dupa categorie \n2. Dupa model \nIntrodu optiunea ta: ");
+    %%%%%:  163-block  0
+call    0 never executed
+    #####:  164:                int opt = 0;
+    #####:  165:                scanf("%d", &opt);
+call    0 never executed
+    #####:  166:                if (opt == 1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  167:                    printf("1. Crescator\n2.Descrescator\nIntrodu optiunea ta: ");
+    %%%%%:  167-block  0
+call    0 never executed
+    #####:  168:                    int opt2 = 0;
+    #####:  169:                    scanf("%d", &opt2);
+call    0 never executed
+    #####:  170:                    if (opt2 == 1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  171:                        Repository *sort = sortare(&store, comparator_categorie_crescator);
+    %%%%%:  171-block  0
+call    0 never executed
+    #####:  172:                        afisare(sort);
+call    0 never executed
+    #####:  173:                        distruge(sort, distruge_masina);
+call    0 never executed
+    #####:  174:                    } else if (opt2 == 2) {
+    %%%%%:  174-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  175:                        Repository *sort = sortare(&store, comparator_categorie_descrescator);
+    %%%%%:  175-block  0
+call    0 never executed
+    #####:  176:                        afisare(sort);
+call    0 never executed
+    #####:  177:                        distruge(sort, distruge_masina);
+call    0 never executed
+    #####:  178:                    } else printf("Optiune invalida! ");
+    %%%%%:  178-block  0
+call    0 never executed
+    #####:  179:                } else if (opt == 2) {
+    %%%%%:  179-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  180:                    printf("1. Crescator\n2.Descrescator\nIntrodu optiunea ta: ");
+    %%%%%:  180-block  0
+call    0 never executed
+    #####:  181:                    int opt2 = 0;
+    #####:  182:                    scanf("%d", &opt2);
+call    0 never executed
+    #####:  183:                    if (opt2 == 1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  184:                        Repository *sort = sortare(&store, comparator_model_crescator);
+    %%%%%:  184-block  0
+call    0 never executed
+    #####:  185:                        afisare(sort);
+call    0 never executed
+    #####:  186:                        distruge(sort, distruge_masina);
+call    0 never executed
+    #####:  187:                    } else if (opt2 == 2) {
+    %%%%%:  187-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  188:                        Repository *sort = sortare(&store, comparator_model_descrescator);
+    %%%%%:  188-block  0
+call    0 never executed
+    #####:  189:                        afisare(sort);
+call    0 never executed
+    #####:  190:                        distruge(sort, distruge_masina);
+call    0 never executed
+    #####:  191:                    } else printf("Optiune invalida! ");
+    %%%%%:  191-block  0
+call    0 never executed
+    #####:  192:                } else printf("Optiune invalida! ");
+    %%%%%:  192-block  0
+call    0 never executed
+    #####:  193:                break;
+    %%%%%:  193-block  0
+        -:  194:            }
+        1:  195:            case -1: {
+        1:  196:                continua = 0;
+        1:  197:                distruge_service(&store);
+        1:  197-block  0
+call    0 returned 1
+        1:  198:                break;
+        -:  199:            }
+    #####:  200:            case 6: {
+    #####:  201:                int succ = undo(&store);
+    %%%%%:  201-block  0
+call    0 never executed
+    #####:  202:                if (succ)
+branch  0 never executed
+branch  1 never executed
+    #####:  203:                    printf("undo realizat cu succes.\n");
+    %%%%%:  203-block  0
+call    0 never executed
+        -:  204:                else
+    #####:  205:                    printf("Nu se mai poate face undo.\n");
+    %%%%%:  205-block  0
+call    0 never executed
+    #####:  206:                break;
+    %%%%%:  206-block  0
+        -:  207:            }
+    #####:  208:            default:
+    #####:  209:                break;
+    %%%%%:  209-block  0
+        -:  210:        }
+        -:  211:    }
+        -:  212:}

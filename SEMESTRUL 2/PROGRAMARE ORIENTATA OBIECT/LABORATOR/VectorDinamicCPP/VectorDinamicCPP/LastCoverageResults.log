@@ -1,0 +1,21 @@
+[2024-04-09 15:42:20] [info] Start Program:
+Path:"C:\Programare orientata obiect\VectorDinamicCPP\x64\Debug\VectorDinamicCPP.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\VectorDinamicCPP\VectorDinamicCPP\"
+Modules: Selected: C:\Programare orientata obiect\VectorDinamicCPP\x64\Debug\VectorDinamicCPP.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\VectorDinamicCPP\VectorDinamicCPP Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\5c41ent4.zdp 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-04-09 15:42:20] [info] Module: C:\Programare orientata obiect\VectorDinamicCPP\x64\Debug\VectorDinamicCPP.exe is selected because it matches selected pattern: C:\Programare orientata obiect\VectorDinamicCPP\x64\Debug\VectorDinamicCPP.exe
+[2024-04-09 15:42:20] [info] ----------------------------------------------------
+[2024-04-09 15:42:20] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\5c41ent4.zdp
+[2024-04-09 15:42:20] [info] ----------------------------------------------------

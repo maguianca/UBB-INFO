@@ -1,0 +1,3 @@
+Franta,20-28 iunie,1500,500
+SUA,12-19 august,1900,1000
+Spania,12-19 august,1200,700

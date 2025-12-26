@@ -1,0 +1,6 @@
+Film,divertisment,4,com
+Serial,divertisment,7,drama
+Jurnal,stiri,10,informatii
+Reportaj,informare,2,viata la sat
+Scurtmetraj,film,1,nou
+

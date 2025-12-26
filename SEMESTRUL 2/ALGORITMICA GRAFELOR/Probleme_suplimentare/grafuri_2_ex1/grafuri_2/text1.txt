@@ -1,0 +1,99 @@
+#include<iostream>
+#include<fstream>
+#include<queue>
+#define INF 1000000
+using namespace std;
+
+ifstream fin("graf.txt");
+
+struct Graf
+{
+    int nrv;
+    int muchii[100][100] = { 0 };
+};
+
+Graf citire()
+{
+    int n, a, b;
+    Graf G;
+    fin >> n;
+    G.nrv = n;
+    while (fin >> a >> b)
+    {
+        G.muchii[a][b] = 1;
+    }
+    return G;
+}
+
+pair<int*, int*> Moore(Graf G, int u)
+{
+    int* l = new int[G.nrv + 1]; // Vector for distances
+    int* p = new int[G.nrv + 1]; // Vector for parents
+    for (int i = 1; i <= G.nrv; i++)
+    {
+        l[i] = INF;
+        p[i] = -1;
+    }
+    l[u] = 0;
+    queue<int> Q;
+    Q.push(u);
+    while (!Q.empty())
+    {
+        int x = Q.front();
+        Q.pop();
+        for (int i = 1; i <= G.nrv; i++)
+        {
+            if (G.muchii[x][i] == 1  && l[i] == INF)
+            {
+                p[i] = x;
+                l[i] = l[x] + 1;
+                Q.push(i);
+            }
+        }
+    }
+    return make_pair(l, p);
+}
+
+void afisareLungimiDistantaMinima(int* l, int nrv)
+{
+    cout << "Lungimile catre toate varfurile din graf sunt:\n";
+    for (int i = 1; i <= nrv; i++)
+    {
+        cout << "Lungimea catre varful " << i << " este: " << l[i] << endl;
+    }
+}
+
+void drum(int* p, int poz)
+{
+    cout << "Lantul cel mai scurt este:\n";
+    while (poz != -1)
+    {
+        cout << poz;
+        poz = p[poz];
+        if (poz != -1)
+            cout << " -> ";
+    }
+    cout << endl;
+}
+
+int main()
+{
+    int varf;
+    cout << "Introduceti varful:\n";
+    cin >> varf;
+    Graf G = citire();
+    pair<int*, int*> rezultat = Moore(G, varf);
+    int* l = rezultat.first; 
+    int* p = rezultat.second; 
+
+    afisareLungimiDistantaMinima(l, G.nrv); 
+    int lmin = INF;
+    for (int i = 1; i <= G.nrv; i++)
+    {
+        if (l[i] < lmin && l[i] != INF && l[i]!=0)
+            lmin = l[i];
+    }
+    cout << "Distanta minima este: " << lmin << endl; 
+
+    return 0;
+}

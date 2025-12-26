@@ -1,0 +1,104 @@
+        -:    0:Source:C:/Users/Ilinca/Desktop/facultate/semestru 2/oop/lab 7/lab6-8oop/Validators.h
+        -:    0:Graph:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\UI.cpp.gcno
+        -:    0:Data:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\UI.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Ilinca on 30-Mar-22.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB4_6OOP_VALIDATORS_H
+        -:    6:#define LAB4_6OOP_VALIDATORS_H
+        -:    7:
+        -:    8:#pragma once
+        -:    9:#include "Medicament.h"
+        -:   10:#include <vector>
+        -:   11:#include <string>
+        -:   12:using std::vector;
+        -:   13:using std::string;
+        -:   14:
+        -:   15:class Validation_Exception{
+        -:   16:    vector<string> error_msg;
+        -:   17:
+        -:   18:public:
+        -:   19:    Validation_Exception(vector<string> error_mesagges) : error_msg{error_mesagges } {};
+        -:   20:
+function _ZN20Validation_Exception18get_error_messagesB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   21:    string get_error_messages() {
+    #####:   22:        string full_msg = "";
+    %%%%%:   22-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   22-block  1
+call    4 never executed
+    #####:   23:        for(const string e : error_msg) {
+call    0 never executed
+call    1 never executed
+    %%%%%:   23-block  0
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+    %%%%%:   23-block  1
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    #####:   24:            full_msg += e + "\n";
+    %%%%%:   24-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   24-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   24-block  2
+call    6 never executed
+    $$$$$:   24-block  3
+call    7 never executed
+    $$$$$:   24-block  4
+    #####:   25:        }
+call    0 never executed
+    $$$$$:   25-block  0
+call    1 never executed
+    #####:   26:        return full_msg;
+    %%%%%:   26-block  0
+    %%%%%:   26-block  1
+    =====:   27:    }
+    $$$$$:   27-block  0
+call    0 never executed
+        -:   28:};
+        -:   29:
+        -:   30:/*
+        -:   31: * Un medicament este valid daca, are
+        -:   32: * denumirea din mai mult de 2 caractere
+        -:   33: * producatorul din mai mult de 2 caractere
+        -:   34: * substanta activa  din mai mult de 2 caractere
+        -:   35: * pretul este pozitiv
+        -:   36: */
+        -:   37:
+        -:   38:class Medicament_Validator{
+        -:   39:
+        -:   40:public:
+        -:   41:    void valideaza(const Medicament& m){
+        -:   42:        vector<string> errors;
+        -:   43:        if(m.get_denumire().length() < 2)
+        -:   44:            errors.push_back("Denumirea trebuie sa aiba cel putin 2 caractere.");
+        -:   45:        if(m.get_producator().length() < 2)
+        -:   46:            errors.push_back("Producatorul trebuie sa aiba cel putin 2 caractere.");
+        -:   47:        if(m.get_substanta_activa().length() < 1)
+        -:   48:            errors.push_back("Substanta activa trebuie sa aiba cel putin 1 caracter.");
+        -:   49:        if(m.get_denumire().length() < 2)
+        -:   50:            errors.push_back("Denumirea trebuie sa aiba cel putin 2 caractere.");
+        -:   51:        if(m.get_pret() < 0)
+        -:   52:            errors.push_back("Pretul  trebuie sa fie pozitiv.");
+        -:   53:
+        -:   54:        if(errors.size() > 0)
+        -:   55:            throw Validation_Exception(errors);
+        -:   56:
+        -:   57:    }
+        -:   58:};
+        -:   59:
+        -:   60:#endif //LAB4_6OOP_VALIDATORS_H

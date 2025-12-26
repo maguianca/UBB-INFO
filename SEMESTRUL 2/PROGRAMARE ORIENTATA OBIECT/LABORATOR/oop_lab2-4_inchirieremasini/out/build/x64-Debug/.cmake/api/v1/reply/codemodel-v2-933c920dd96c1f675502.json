@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "oop_lab2_4_inchirieremasini",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "oop_lab2_4_inchirieremasini::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-oop_lab2_4_inchirieremasini-Debug-b4e4f85374b94116cc38.json",
+					"name" : "oop_lab2_4_inchirieremasini",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/emanu/CLionProjects/oop_lab2-4_inchirieremasini/out/build/x64-Debug",
+		"source" : "C:/Users/emanu/CLionProjects/oop_lab2-4_inchirieremasini"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

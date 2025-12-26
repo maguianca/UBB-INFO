@@ -1,0 +1,109 @@
+     1                                  bits 32 
+     2                                  global start        
+     3                                  
+     4                                  ; declare external functions needed by our program
+     5                                  extern exit, fopen, fread, fclose, printf
+     6                                  import exit msvcrt.dll  
+     7                                  import fopen msvcrt.dll  
+     8                                  import fread msvcrt.dll
+     9                                  import fclose msvcrt.dll
+    10                                  import printf msvcrt.dll
+    11                                  
+    12                                  ; our data is declared here (the variables needed by our program)
+    13                                  segment data use32 class=data
+    14 00000000 696E7075742E747874-         nume_fisier db "input.txt", 0
+    14 00000009 00                 
+    15 0000000A 7200                        mod_acces db "r", 0
+    16 0000000C 00000000                    descriptor_fisier dd 0
+    17                                      
+    18 00000010 01000000                    dimensiune dd 1
+    19 00000014 64000000                    count dd 100
+    20                                  
+    21 00000018 <res 00000064>              sir resb 100
+    22 0000007C 00000000                    lungime_sir dd 0
+    23 00000080 01000000                    maxim dd 1
+    24                                      
+    25 00000084 256420202000                format_afisare db "%d   ", 0
+    26 0000008A 0A000000                    zece dd 10
+    27 0000008E 00000000                    suma dd 0
+    28                                      
+    29                                  ; our code starts here
+    30                                  segment code use32 class=code
+    31                                      start:
+    32                                          ; FILE * fopen(const char* nume_fisier, const char * mod_acces)
+    33 00000000 68[0A000000]                    push dword mod_acces
+    34 00000005 68[00000000]                    push dword nume_fisier
+    35 0000000A FF15[00000000]                  call [fopen]
+    36 00000010 83C408                          add esp, 4 * 2
+    37                                          
+    38 00000013 83F800                          cmp EAX, 0
+    39 00000016 746D                            je iesireBucla
+    40                                          
+    41 00000018 A3[0C000000]                    mov [descriptor_fisier], EAX
+    42                                          
+    43                                          ; int fread(void * str, int size, int count, FILE * stream)
+    44 0000001D FF35[0C000000]                  push dword [descriptor_fisier]
+    45 00000023 FF35[14000000]                  push dword [count]
+    46 00000029 FF35[10000000]                  push dword [dimensiune]
+    47 0000002F 68[18000000]                    push dword sir
+    48 00000034 FF15[00000000]                  call [fread]
+    49 0000003A 83C410                          add esp, 4*4
+    50                                          
+    51 0000003D A3[7C000000]                    mov [lungime_sir], EAX
+    52                                          
+    53 00000042 BE[18000000]                    mov esi, sir
+    54 00000047 8B0D[7C000000]                  mov ecx, [lungime_sir]
+    55 0000004D FC                              cld
+    56 0000004E E335                            jecxz iesireBucla
+    57                                          
+    58 00000050 B800000000                      mov eax, 0
+    59                                          
+    60                                          bucla:
+    61 00000055 50                                  push eax
+    62 00000056 AC                                  lodsb ; AL
+    63 00000057 88C3                                mov BL, AL
+    64 00000059 58                                  pop eax
+    65                                              
+    66 0000005A 80FB20                              cmp BL, ' '
+    67 0000005D 743D                                je numar
+    68                                              
+    69 0000005F 80FB00                              cmp BL, 0
+    70 00000062 740D                                je afisareNumar
+    71                                              
+    72 00000064 F725[8A000000]                      mul dword [zece]
+    73 0000006A 80EB30                              sub BL, '0'
+    74 0000006D 00D8                                add AL, BL
+    75                                              
+    76                                              finalBucla:
+    77 0000006F E2E4                                loop bucla
+    78                                          
+    79                                          afisareNumar:
+    80                                              ;mov eax,[maxim]
+    81                                              
+    82 00000071 FF35[8E000000]                      push dword [suma]
+    83 00000077 68[84000000]                        push dword format_afisare
+    84 0000007C FF15[00000000]                      call [printf]
+    85 00000082 83C408                              add esp,4*2
+    86                                        
+    87                                          iesireBucla:
+    88 00000085 FF35[0C000000]                  push dword [descriptor_fisier]
+    89 0000008B FF15[00000000]                  call [fclose]
+    90 00000091 83C404                          add esp, 4
+    91                                          
+    92 00000094 6A00                            push    dword 0      
+    93 00000096 FF15[00000000]                  call    [exit]       
+    94                                      numar:
+    95 0000009C 83F808                          cmp eax,8
+    96 0000009F 7206                            jb peste
+    97 000000A1 0105[8E000000]                  add dword[suma],eax
+    98                                          peste:
+    99 000000A7 B800000000                      mov eax,0
+   100 000000AC EBC1                            jmp finalBucla
+   101                                          
+   102                                          
+   103                                          
+   104                                          
+   105                                          
+   106                                          
+   107                                          
+   108                                          

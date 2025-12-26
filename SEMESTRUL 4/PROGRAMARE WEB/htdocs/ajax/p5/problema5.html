@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>File Tree View</title>
+    <style>
+        ul { list-style-type: line; margin-left: 20px; }
+        li { cursor: pointer; }
+    </style>
+</head>
+<body>
+<h2>Tree View - Sistem de fisiere</h2>
+<div id="treeview"></div>
+<hr>
+<pre id="fileContent" style="background:#eee; padding:10px;"></pre>
+
+<script>
+    function ajaxGet(url, callback, isText = false) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                if (isText) {
+                    callback(xhr.responseText);
+                } else {
+                    callback(JSON.parse(xhr.responseText));
+                }
+            }
+        };
+        xhr.send();
+    }
+
+    function createNode(name, path, isDir) {
+        const li = document.createElement("li");
+        li.dataset.path = path;
+
+        const span = document.createElement("span");
+        span.textContent = name;
+        if (isDir) {
+            span.style.fontWeight = "bold";
+        }
+
+        li.appendChild(span);
+
+        if (isDir) {
+            li.onclick = function (e) {
+                e.stopPropagation();
+
+                if (li.classList.contains("loaded")) {
+                    const ul = li.querySelector("ul");
+                    ul.style.display = ul.style.display === "none" ? "block" : "none";
+                    return;
+                }
+
+                ajaxGet("load_dir.php?path=" + encodeURIComponent(path), function (data) {
+                    const ul = document.createElement("ul");
+                    data.forEach(item => {
+                        ul.appendChild(createNode(item.name, item.path, item.type === "dir"));
+                    });
+                    li.appendChild(ul);
+                    li.classList.add("loaded");
+                });
+            };
+        } else {
+            li.onclick = function (e) {
+                e.stopPropagation();
+                ajaxGet("read_file.php?path=" + encodeURIComponent(path), function (text) {
+                    document.getElementById("fileContent").textContent = text;
+                }, true);
+            };
+        }
+
+        return li;
+    }
+
+    function loadRoot() {
+        ajaxGet("load_dir.php?path=.", function (data) {
+            const root = document.createElement("ul");
+            data.forEach(item => {
+                root.appendChild(createNode(item.name, item.path, item.type === "dir"));
+            });
+            document.getElementById("treeview").appendChild(root);
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", loadRoot);
+</script>
+</body>
+</html>

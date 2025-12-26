@@ -1,0 +1,7 @@
+3,pizza,67.0
+22,9seklg,0.0
+7,askjf,0.0
+23,sifon,6.0
+1,pizza,70.0
+12,paste,77.0
+14,otet,8.0

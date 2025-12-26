@@ -1,0 +1,441 @@
+        -:    0:Source:C:/Users/Ilinca/Desktop/facultate/semestru 2/oop/lab 7/lab6-8oop/VectorDinamicTemplate.h
+        -:    0:Graph:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Ilinca on 25-Apr-22.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB4_6OOP_VECTORDINAMICTEMPLATE_H
+        -:    6:#define LAB4_6OOP_VECTORDINAMICTEMPLATE_H
+        -:    7:
+        -:    8:constexpr auto INITIAL_CAPACITY = 10;
+        -:    9:#include <vector>
+        -:   10:#include <assert.h>
+        -:   11:
+        -:   12:template<typename T>
+        -:   13:class IteratorVector;
+        -:   14:
+        -:   15:template<typename T>
+        -:   16:class VectorDinamic {
+        -:   17:    //reprezentare
+        -:   18:    T* elems;
+        -:   19:    int capacitate;
+        -:   20:    int lungime;
+        -:   21:
+        -:   22:    void resize();
+        -:   23:
+        -:   24:public:
+        -:   25:    //default constructor
+        -:   26:    VectorDinamic();
+        -:   27:
+        -:   28:    //copy constructor
+        -:   29:    VectorDinamic(const VectorDinamic& ot);
+        -:   30:
+        -:   31:    //assigment operator
+        -:   32:    VectorDinamic& operator=(const VectorDinamic& ot);
+        -:   33:
+        -:   34:    VectorDinamic& operator=(VectorDinamic&& ot) noexcept ;
+        -:   35:
+        -:   36:    //destructor
+        -:   37:    ~VectorDinamic();
+        -:   38:
+        -:   39:    //add element in vector
+        -:   40:    void add(T elem);
+        -:   41:
+        -:   42:    //get element from position in vector
+        -:   43:    T& get(int poz) noexcept;
+        -:   44:
+        -:   45:    //set element on position in vector
+        -:   46:    void set(T elem, int poz) noexcept;
+        -:   47:
+        -:   48:    //length of vector
+        -:   49:    int size() noexcept;
+        -:   50:
+        -:   51:    void remove(int index);
+        -:   52:
+        -:   53:    friend class IteratorVector<T>;
+        -:   54:    IteratorVector<T> begin() noexcept;
+        -:   55:    IteratorVector<T> end() noexcept;
+        -:   56:
+        -:   57:};
+        -:   58:
+        -:   59:template<typename T>
+        -:   60:class IteratorVector {
+        -:   61:private:
+        -:   62:    const VectorDinamic<T>& vec;
+        -:   63:    int poz = 0;
+        -:   64:public:
+        -:   65:    IteratorVector(const VectorDinamic<T>& v) noexcept;
+        -:   66:    IteratorVector(const VectorDinamic<T>& v, int poz) noexcept;
+        -:   67:    bool valid() const;
+        -:   68:    T& element() const;
+        -:   69:    void next() noexcept;
+        -:   70:    T& operator*();
+        -:   71:    IteratorVector& operator++() noexcept;
+        -:   72:    bool operator==(const IteratorVector& ot) noexcept;
+        -:   73:    bool operator!=(const IteratorVector& ot) noexcept;
+        -:   74:
+        -:   75:};
+        -:   76:
+        -:   77:template<typename T>
+       20:   78:VectorDinamic<T>::VectorDinamic() {
+      220:   79:    this->elems = new T[INITIAL_CAPACITY];
+       20:   80:    this->lungime = 0;
+       20:   81:    this->capacitate = INITIAL_CAPACITY;
+       20:   82:}
+------------------
+_ZN13VectorDinamicI3PetEC1Ev:
+function _ZN13VectorDinamicI3PetEC1Ev called 6 returned 100% blocks executed 100%
+        6:   78:VectorDinamic<T>::VectorDinamic() {
+       66:   79:    this->elems = new T[INITIAL_CAPACITY];
+        6:   79-block  0
+call    0 returned 6
+       60:   79-block  1
+call    1 returned 60
+       66:   79-block  2
+branch  2 taken 60
+branch  3 taken 6 (fallthrough)
+        6:   80:    this->lungime = 0;
+        6:   81:    this->capacitate = INITIAL_CAPACITY;
+        6:   82:}
+------------------
+_ZN13VectorDinamicI10MedicamentEC1Ev:
+function _ZN13VectorDinamicI10MedicamentEC1Ev called 14 returned 100% blocks executed 100%
+       14:   78:VectorDinamic<T>::VectorDinamic() {
+      154:   79:    this->elems = new T[INITIAL_CAPACITY];
+       14:   79-block  0
+call    0 returned 14
+      140:   79-block  1
+call    1 returned 140
+      154:   79-block  2
+branch  2 taken 140
+branch  3 taken 14 (fallthrough)
+       14:   80:    this->lungime = 0;
+       14:   81:    this->capacitate = INITIAL_CAPACITY;
+       14:   82:}
+------------------
+        -:   83:
+        -:   84:template<typename T>
+function _ZN13VectorDinamicI3PetEC1ERKS1_ called 6 returned 100% blocks executed 92%
+        6:   85:VectorDinamic<T>::VectorDinamic(const VectorDinamic<T> &ot) {
+        -:   86:    //constructor de copiere (creeare vector dinamic nou pe baza celui existent)
+     516*:   87:    this->elems = new T[ot.capacitate];
+        6:   87-block  0
+branch  0 taken 6 (fallthrough)
+branch  1 taken 0
+        6:   87-block  1
+    %%%%%:   87-block  2
+        6:   87-block  3
+call    2 returned 6
+      510:   87-block  4
+call    3 returned 510
+      516:   87-block  5
+branch  4 taken 510
+branch  5 taken 6 (fallthrough)
+      307:   88:    for(int i=0; i<ot.lungime; i++)
+        6:   88-block  0
+      307:   88-block  1
+branch  0 taken 301
+branch  1 taken 6 (fallthrough)
+        -:   89:    {
+      301:   90:        this->elems[i] = ot.elems[i];
+      301:   90-block  0
+call    0 returned 301
+        -:   91:    }
+        6:   92:    this->lungime = ot.lungime;
+        6:   93:    this->capacitate = ot.capacitate;
+        6:   94:}
+        -:   95:
+        -:   96://de la istvan
+        -:   97:template<typename T>
+function _ZN13VectorDinamicI3PetEaSEOS1_ called 1 returned 100% blocks executed 89%
+        1:   98:VectorDinamic<T>& VectorDinamic<T>::operator=(VectorDinamic&& ot)  noexcept {
+        1:   99:    if (this == &ot) {
+        1:   99-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  100:        return *this;
+    %%%%%:  100-block  0
+        -:  101:    }
+       81:  102:    delete[] elems;
+        1:  102-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  102-block  1
+       81:  102-block  2
+branch  2 taken 80 (fallthrough)
+branch  3 taken 1
+       80:  102-block  3
+call    4 returned 80
+        1:  102-block  4
+call    5 returned 1
+        -:  103:    // Copy the data pointer from other
+        1:  104:    elems = ot.elems;
+        1:  105:    lungime = ot.lungime;
+        1:  106:    capacitate = ot.capacitate;
+        -:  107:
+        -:  108:    // Release the data pointer from the source object so that
+        -:  109:    // the destructor does not free the memory multiple times.
+        1:  110:    ot.elems = nullptr;
+        1:  111:    ot.lungime = 0;
+        1:  112:    ot.capacitate = 0;
+        1:  113:    return *this;
+        1:  113-block  0
+        -:  114:}
+        -:  115:
+        -:  116:template<typename T>
+function _ZN13VectorDinamicI3PetEaSERKS1_ called 1 returned 100% blocks executed 90%
+        1:  117:VectorDinamic<T>& VectorDinamic<T>::operator=(const VectorDinamic& ot) {
+        1:  118:    if (this ==&ot){
+        1:  118-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  119:        return *this;
+    %%%%%:  119-block  0
+        -:  120:    }
+        -:  121:    //fiindca in obiectul curent punem altceva prin assignment, eliberam memoria alocata anterior
+        -:  122:
+       11:  123:    delete[] this->elems;
+        1:  123-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  123-block  1
+       11:  123-block  2
+branch  2 taken 10 (fallthrough)
+branch  3 taken 1
+       10:  123-block  3
+call    4 returned 10
+        1:  123-block  4
+call    5 returned 1
+        -:  124:
+        -:  125:    //copiem elementele din ot si setam lungime, capacitate
+     161*:  126:    this->elems = new T[ot.capacitate];
+        1:  126-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  126-block  1
+    %%%%%:  126-block  2
+        1:  126-block  3
+call    2 returned 1
+      160:  126-block  4
+call    3 returned 160
+      161:  126-block  5
+branch  4 taken 160
+branch  5 taken 1 (fallthrough)
+      101:  127:    for (int i = 0; i < ot.lungime; i++) {
+        1:  127-block  0
+      101:  127-block  1
+branch  0 taken 100
+branch  1 taken 1 (fallthrough)
+      100:  128:        elems[i] = ot.elems[i];  //utilizeaza operator assignment aferent tipului T
+      100:  128-block  0
+call    0 returned 100
+        -:  129:    }
+        1:  130:    this->lungime = ot.lungime;
+        1:  131:    this->capacitate = ot.capacitate;
+        1:  132:    return *this;
+        1:  132-block  0
+        -:  133:}
+        -:  134:
+        -:  135:template<typename T>
+function _ZN13VectorDinamicI3PetE6resizeEv called 7 returned 100% blocks executed 94%
+        7:  136:void VectorDinamic<T>::resize() {
+        7:  137:    const int newCapacity = this->capacitate * 2;
+     447*:  138:    T* newElems = new T[newCapacity];
+        7:  138-block  0
+branch  0 taken 7 (fallthrough)
+branch  1 taken 0
+        7:  138-block  1
+    %%%%%:  138-block  2
+        7:  138-block  3
+call    2 returned 7
+      440:  138-block  4
+call    3 returned 440
+      447:  138-block  5
+branch  4 taken 440
+branch  5 taken 7 (fallthrough)
+      227:  139:    for (int i = 0; i < this->lungime; i++) {
+        7:  139-block  0
+      227:  139-block  1
+branch  0 taken 220
+branch  1 taken 7 (fallthrough)
+      220:  140:        newElems[i] = this->elems[i];
+      220:  140-block  0
+call    0 returned 220
+        -:  141:    }
+      227:  142:    delete[] this->elems;
+        7:  142-block  0
+branch  0 taken 7 (fallthrough)
+branch  1 taken 0
+        7:  142-block  1
+      227:  142-block  2
+branch  2 taken 220 (fallthrough)
+branch  3 taken 7
+      220:  142-block  3
+call    4 returned 220
+        7:  142-block  4
+call    5 returned 7
+        7:  143:    this->elems = newElems;
+        7:  144:    this->capacitate = newCapacity;
+        -:  145:
+        7:  146:}
+        -:  147:
+        -:  148:template<typename T>
+       32:  149:VectorDinamic<T>::~VectorDinamic() {
+     1072:  150:    delete[] this->elems;
+       32:  151:}
+------------------
+_ZN13VectorDinamicI3PetED1Ev:
+function _ZN13VectorDinamicI3PetED1Ev called 12 returned 100% blocks executed 100%
+       12:  149:VectorDinamic<T>::~VectorDinamic() {
+      872:  150:    delete[] this->elems;
+       12:  150-block  0
+branch  0 taken 11 (fallthrough)
+branch  1 taken 1
+       11:  150-block  1
+      871:  150-block  2
+branch  2 taken 860 (fallthrough)
+branch  3 taken 11
+      860:  150-block  3
+call    4 returned 860
+       11:  150-block  4
+call    5 returned 11
+       12:  151:}
+------------------
+_ZN13VectorDinamicI10MedicamentED1Ev:
+function _ZN13VectorDinamicI10MedicamentED1Ev called 20 returned 100% blocks executed 100%
+       20:  149:VectorDinamic<T>::~VectorDinamic() {
+      200:  150:    delete[] this->elems;
+       20:  150-block  0
+branch  0 taken 18 (fallthrough)
+branch  1 taken 2
+       18:  150-block  1
+      198:  150-block  2
+branch  2 taken 180 (fallthrough)
+branch  3 taken 18
+      180:  150-block  3
+call    4 returned 180
+       18:  150-block  4
+call    5 returned 18
+       20:  151:}
+------------------
+        -:  152:
+        -:  153:template<typename T>
+function _ZN13VectorDinamicI3PetE3addES0_ called 151 returned 100% blocks executed 100%
+      151:  154:void VectorDinamic<T>::add(T elem) {
+      151:  155:    if (this->lungime == this->capacitate)
+      151:  155-block  0
+branch  0 taken 7 (fallthrough)
+branch  1 taken 144
+        7:  156:        resize();
+        7:  156-block  0
+call    0 returned 7
+      151:  157:    int i=this->lungime;
+      151:  158:    this->elems[(i)] = elem;
+      151:  158-block  0
+call    0 returned 151
+      151:  159:    this->lungime++;
+      151:  160:}
+        -:  161:
+        -:  162:template<typename T>
+        -:  163:void VectorDinamic<T>::remove(int index) {
+        -:  164:    if (index < 0 || index >= this->lungime)
+        -:  165:        return;
+        -:  166:    for (int i = index; i < this->lungime - 1; i++)
+        -:  167:        this->elems[i] = this->elems[i + 1];
+        -:  168:    this->lungime--;
+        -:  169:}
+        -:  170:
+        -:  171:template<typename T>
+function _ZN13VectorDinamicI3PetE3getEi called 4 returned 100% blocks executed 100%
+        4:  172:T& VectorDinamic<T>::get(int poz) noexcept {
+        4:  173:    return this->elems[poz];
+        4:  173-block  0
+        -:  174:}
+        -:  175:
+        -:  176:template<typename T>
+        -:  177:void VectorDinamic<T>::set(T elem, int poz) noexcept {
+        -:  178:    this->elems[poz] = elem;
+        -:  179:}
+        -:  180:
+        -:  181:template<typename T>
+function _ZN13VectorDinamicI3PetE4sizeEv called 5 returned 100% blocks executed 100%
+        5:  182:int VectorDinamic<T>::size() noexcept  {
+        5:  183:    return this->lungime;
+        5:  183-block  0
+        -:  184:}
+        -:  185:
+        -:  186:template<typename T>
+function _ZN13VectorDinamicI3PetE5beginEv called 1 returned 100% blocks executed 100%
+        1:  187:IteratorVector<T> VectorDinamic<T>::begin() noexcept {
+        1:  188:    return IteratorVector<T>(*this);
+        1:  188-block  0
+call    0 returned 1
+        -:  189:}
+        -:  190:
+        -:  191:template<typename T>
+function _ZN13VectorDinamicI3PetE3endEv called 1 returned 100% blocks executed 100%
+        1:  192:IteratorVector<T> VectorDinamic<T>::end() noexcept {
+        1:  193:    return IteratorVector<T>(*this, this->lungime);
+        1:  193-block  0
+call    0 returned 1
+        -:  194:}
+        -:  195:
+        -:  196:template<typename T>
+function _ZN14IteratorVectorI3PetEC1ERK13VectorDinamicIS0_E called 1 returned 100% blocks executed 100%
+        1:  197:IteratorVector<T>::IteratorVector(const VectorDinamic<T>& v) noexcept :vec{ v } { };
+        -:  198:template<typename T>
+function _ZN14IteratorVectorI3PetEC1ERK13VectorDinamicIS0_Ei called 1 returned 100% blocks executed 100%
+        1:  199:IteratorVector<T>::IteratorVector(const VectorDinamic<T>& v, int poz) noexcept :vec{ v }, poz{ poz }{};
+        -:  200:
+        -:  201:
+        -:  202:template<typename T>
+        -:  203:bool IteratorVector<T>::valid() const {
+        -:  204:    return this->poz < this->vec.lungime;
+        -:  205:}
+        -:  206:
+        -:  207:template<typename T>
+function _ZNK14IteratorVectorI3PetE7elementEv called 100 returned 100% blocks executed 100%
+      100:  208:T& IteratorVector<T>::element() const {
+      100:  209:    return this->vec.elems[this->poz];
+      100:  209-block  0
+        -:  210:}
+        -:  211:template<typename T>
+function _ZN14IteratorVectorI3PetE4nextEv called 100 returned 100% blocks executed 100%
+      100:  212:void IteratorVector<T>::next() noexcept{
+      100:  213:    this->poz++;
+      100:  214:}
+        -:  215:
+        -:  216:template<typename T>
+function _ZN14IteratorVectorI3PetEdeEv called 100 returned 100% blocks executed 100%
+      100:  217:T& IteratorVector<T>::operator*() {
+      100:  218:    return this->element();
+      100:  218-block  0
+call    0 returned 100
+        -:  219:}
+        -:  220:
+        -:  221:template<typename T>
+function _ZN14IteratorVectorI3PetEppEv called 100 returned 100% blocks executed 100%
+      100:  222:IteratorVector<T>& IteratorVector<T>::operator++() noexcept{
+      100:  223:    this->next();
+      100:  223-block  0
+call    0 returned 100
+      100:  224:    return *this;
+        -:  225:}
+        -:  226:
+        -:  227:template<typename T>
+function _ZN14IteratorVectorI3PetEeqERKS1_ called 101 returned 100% blocks executed 100%
+      101:  228:bool IteratorVector<T>::operator==(const IteratorVector& ot) noexcept {
+      101:  229:    return this->poz == ot.poz;
+      101:  229-block  0
+        -:  230:}
+        -:  231:template<typename T>
+function _ZN14IteratorVectorI3PetEneERKS1_ called 101 returned 100% blocks executed 100%
+      101:  232:bool IteratorVector<T>::operator!=(const IteratorVector& ot) noexcept {
+      101:  233:    return !(*this == ot);
+      101:  233-block  0
+call    0 returned 101
+        -:  234:}
+        -:  235:
+        -:  236:#endif //LAB4_6OOP_VECTORDINAMICTEMPLATE_H

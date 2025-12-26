@@ -1,0 +1,21 @@
+[2024-04-24 01:11:00] [info] Start Program:
+Path:"C:\Programare orientata obiect\Exemplu lab8-9\x64\Debug\Exemplu lab8-9.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\Exemplu lab8-9\Exemplu lab8-9\"
+Modules: Selected: C:\Programare orientata obiect\Exemplu lab8-9\x64\Debug\Exemplu lab8-9.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\Exemplu lab8-9\Exemplu lab8-9 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\fozhhqki.03d 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-04-24 01:11:00] [info] Module: C:\Programare orientata obiect\Exemplu lab8-9\x64\Debug\Exemplu lab8-9.exe is selected because it matches selected pattern: C:\Programare orientata obiect\Exemplu lab8-9\x64\Debug\Exemplu lab8-9.exe
+[2024-04-24 01:11:02] [info] ----------------------------------------------------
+[2024-04-24 01:11:02] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\fozhhqki.03d
+[2024-04-24 01:11:02] [info] ----------------------------------------------------

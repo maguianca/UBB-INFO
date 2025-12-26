@@ -1,0 +1,16 @@
+﻿  GUI.cpp
+  main.cpp
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii1\Melodii1\model.h(11,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii1\Melodii1\model.h(11,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'GUI.cpp')
+  
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii1\Melodii1\tabela.h(11,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'main.cpp')
+  
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii1\Melodii1\tabela.h(11,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'GUI.cpp')
+  
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii1\Melodii1\GUI.cpp(6,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Melodii1.vcxproj -> C:\Programare orientata obiect\PREGATIRE EXAMEN\Melodii1\x64\Debug\Melodii1.exe

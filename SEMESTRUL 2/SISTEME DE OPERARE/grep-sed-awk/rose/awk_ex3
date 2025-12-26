@@ -1,0 +1,26 @@
+#!/bin/awk
+BEGIN{
+consoane=0
+vocale=0
+}
+
+{
+	for(i=1;i<=NF;i++)
+	{
+		cuvant=$i
+		for(j=1;j<length(cuvant);j++)
+		{
+			litera=substr(cuvant,j,1)
+			if(match(tolower(litera),/[aeiou]/)!=0)
+				vocale++
+			else 
+				consoane++
+		}
+	}
+}
+
+
+END{
+	print "Fisierul",FILENAME, "contine",vocale,"vocale si",consoane,"consoane."
+}
+

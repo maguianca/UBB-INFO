@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taximetrie.controller.SoferController">
+   <children>
+      <TableView fx:id="tabel" layoutX="31.0" layoutY="51.0" prefHeight="126.0" prefWidth="222.0">
+        <columns>
+          <TableColumn fx:id="client" prefWidth="99.0" text="Client" />
+          <TableColumn fx:id="adresa" minWidth="5.0" prefWidth="123.0" text="Adresa" />
+        </columns>
+      </TableView>
+      <Button fx:id="accept" layoutX="31.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleAccept" text="Accept" />
+      <Label layoutX="104.0" layoutY="192.0" prefHeight="17.0" prefWidth="52.0" text="Minute:" />
+      <TextField fx:id="minute_field" layoutX="154.0" layoutY="188.0" prefHeight="25.0" prefWidth="99.0" />
+      <TableView fx:id="table_clienti" layoutX="321.0" layoutY="51.0" prefHeight="126.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="nume" prefWidth="197.0" text="Nume" />
+        </columns>
+      </TableView>
+      <Label layoutX="321.0" layoutY="28.0" prefHeight="17.0" prefWidth="123.0" text="Nume Clienti:" />
+      <Button fx:id="next" layoutX="486.0" layoutY="180.0" mnemonicParsing="false" onAction="#handle_next" text="Next" />
+      <Button fx:id="prev" layoutX="321.0" layoutY="180.0" mnemonicParsing="false" onAction="#handle_prev" text="Prev" />
+      <Label fx:id="label_page" layoutX="382.0" layoutY="184.0" prefHeight="17.0" prefWidth="79.0" text=" Page 1/1" />
+      <DatePicker fx:id="date_picker" layoutX="461.0" layoutY="216.0" onAction="#handle_date" prefHeight="25.0" prefWidth="99.0" />
+      <Label fx:id="label_page1" layoutX="321.0" layoutY="220.0" prefHeight="17.0" prefWidth="159.0" text="Comenzile din data:" />
+      <TableView fx:id="tabel_comenzi" layoutX="322.0" layoutY="253.0" prefHeight="101.0" prefWidth="261.0">
+        <columns>
+          <TableColumn fx:id="nume_client" prefWidth="260.0" text="Nume" />
+        </columns>
+      </TableView>
+      <Label layoutX="31.0" layoutY="233.0" prefHeight="17.0" prefWidth="234.0" text="Media comenzilor pe zi din ultimele 3 luni: " />
+      <Label layoutX="31.0" layoutY="262.0" prefHeight="17.0" prefWidth="108.0" text="Cel mai fidel client:" />
+      <Label fx:id="nume_client_fidel" layoutX="151.0" layoutY="262.0" prefHeight="17.0" prefWidth="99.0" text="NUME(curse)" />
+      <Label fx:id="media" layoutX="265.0" layoutY="233.0" text="0" />
+   </children>
+</AnchorPane>

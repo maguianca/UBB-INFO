@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="420" prefWidth="450" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.ChatController">
+
+    <ListView fx:id="friendsList" layoutX="10" layoutY="53.0" prefHeight="336.0" prefWidth="150" />
+    <TextArea fx:id="chatArea" editable="false" layoutX="170" layoutY="53.0" prefHeight="307.0" prefWidth="395.0" wrapText="true" />
+    <TextField fx:id="messageField" layoutX="170" layoutY="370" prefHeight="27.0" prefWidth="300" promptText="Type your message..." />
+    <Button layoutX="480.0" layoutY="366.0" onAction="#sendMessage" prefWidth="90" text="Send" />
+    <Label layoutX="305.0" layoutY="6.0" prefHeight="43.0" prefWidth="210.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Chat " />
+   <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="35.0" prefWidth="72.0" text="Back" />
+</AnchorPane>

@@ -1,0 +1,75 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit,scanf,printf
+     8                                  import exit msvcrt.dll    
+     9                                  import printf msvcrt.dll    
+    10                                  import scanf msvcrt.dll    
+    11                                  
+    12                                  ; our data is declared here (the variables needed by our program)
+    13                                  segment data use32 class=data
+    14 00000000 <res 00000064>              text resb 100
+    15 00000064 00                          nr db 0
+    16 00000065 256300                      format db "%c",0
+    17 00000068 00<rept>                    result times 100 db 0
+    18 000000CC 256400                      format_afisare db "%d",0
+    19 000000CF 44617469206F207072-         mesaj db "Dati o propozitie:",0
+    19 000000D8 6F706F7A697469653A-
+    19 000000E1 00                 
+    20 000000E2 00000000                    len dd 0
+    21                                  
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25 00000000 68[CF000000]                    push dword mesaj
+    26 00000005 FF15[00000000]                  call [printf]
+    27 0000000B 83C404                          add esp,4
+    28 0000000E B900000000                      mov ecx,0
+    29                                      citire:
+    30 00000013 68[00000000]                    push dword text
+    31 00000018 68[65000000]                    push dword format
+    32 0000001D FF15[00000000]                  call [scanf]
+    33 00000023 83C408                          add esp,4*2
+    34                                          
+    35 00000026 B800000000                      mov eax,0
+    36 0000002B A0[00000000]                    mov al,byte[text]
+    37 00000030 3C2E                            cmp al,'.'
+    38 00000032 7436                            je afisare
+    39 00000034 3C20                            cmp al,' '
+    40 00000036 741D                            je numara
+    41 00000038 E80A000000                      call litere
+    42                                          
+    43 0000003D EBD4                            jmp citire
+    44                                          
+    45                                          
+    46                                      
+    47                                       final:
+    48 0000003F 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    49 00000041 FF15[00000000]                  call    [exit]       ; call exit to terminate the progra
+    50                                       litere:
+    51 00000047 60                              pushad 
+    52 00000048 3C61                            cmp al,'a'
+    53 0000004A 7207                            jb peste
+    54 0000004C 3C7A                            cmp al,'z'
+    55 0000004E 7703                            ja peste
+    56                                          ;add byte[nr],1
+    57 00000050 83C101                          add ecx,1
+    58                                          
+    59                                          peste:
+    60 00000053 61                              popad
+    61 00000054 C3                              ret
+    62                                       numara:
+    63 00000055 60                              pushad
+    64 00000056 A1[E2000000]                    mov eax,[len]
+    65 0000005B 8988[68000000]                  mov[result+eax],ecx
+    66 00000061 8305[E2000000]01                add dword[len],1
+    67 00000068 EBA9                            jmp citire
+    68                                       afisare:
+    69 0000006A 68[68000000]                    push dword result
+    70 0000006F 68[CC000000]                    push dword format_afisare
+    71 00000074 FF15[00000000]                  call [printf]
+    72 0000007A 83C408                          add esp,4*2
+    73 0000007D EBC0                            jmp final

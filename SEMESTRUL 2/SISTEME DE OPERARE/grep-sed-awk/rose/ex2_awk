@@ -1,0 +1,20 @@
+#!/bin/awk
+
+BEGIN{
+	nr_linie=0
+	max_len=0
+}
+
+{
+	len=length($0)
+	if (len>max_len)
+	{
+		nr_linie=NR
+		max_len=len
+	}
+}
+
+
+END{
+	print "Linia numarul",nr_linie,"contine",max_len,"caractere."
+}

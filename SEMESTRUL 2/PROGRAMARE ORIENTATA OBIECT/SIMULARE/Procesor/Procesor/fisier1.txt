@@ -1,0 +1,2 @@
+proc1,2,soclu1,120
+proc2,3,soclu2,126

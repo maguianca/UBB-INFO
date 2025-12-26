@@ -1,0 +1,11 @@
+functie care face la fel ca innet_addr (test)
+"127.0.0.1"
+"193.231.20.34"
+rupem dupa . => 193,  231,  20,  34 
+unde apare spatiu pune NULL 193 primul token achii_to int 
+pointer dupa 193 NULL
+<< shiftare cu 24 de biti 
+uint8_t 193, 231, 20, 34
+	o1, o2,..........
+uint32_t
+ip=o1<<24 || o2 <<16|| o3<<8 || o4<<4

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="637.0" styleClass="anchor-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mpp2025.controller.LoginViewController">
+   <children>
+      <Pane layoutY="-5.0" prefHeight="434.0" prefWidth="647.0">
+         <children>
+            <Label layoutX="122.0" layoutY="207.0" text="Parola" />
+            <Label layoutX="112.0" layoutY="158.0" text="Utilizator" />
+            <TextField fx:id="usernameBox" layoutX="216.0" layoutY="152.0" prefHeight="32.0" prefWidth="273.0" />
+            <PasswordField fx:id="passwordBox" layoutX="216.0" layoutY="201.0" prefHeight="32.0" prefWidth="273.0" />
+            <Button fx:id="loginButton" layoutX="271.0" layoutY="291.0" mnemonicParsing="false" onAction="#onLoginButtonClicked" text="Conectare" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

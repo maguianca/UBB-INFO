@@ -1,0 +1,27 @@
+/* Button Styling */
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to right, #ff66b2, #8a2be2); /* Gradient from pink to purple */
+    //-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 6, 0.0, 0, 1); /* Subtle shadow */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-padding: 10 20; /* Padding for a more spacious button */
+}
+
+/* Label Styling */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8a2be2; /* Purple text */
+    //-fx-effect: dropshadow(gaussian, rgba(255, 20, 147, 0.5), 2, 2, 5, 1); /* Soft pink shadow */
+}
+
+/* Table Row Cell Selected Styling */
+.table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, #ff66b2, #8a2be2); /* Gradient from pink to purple */
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white; /* White text on selected row */
+}

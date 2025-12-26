@@ -1,0 +1,7 @@
+#!/bin/sed
+1i DATE DESPRE PERSONAL angajati.txt 
+/49$/d angajati.txt
+s/\([^ ]*\) \([^ ]*\)/\2 \1/ angajati.txt
+20a TERMINAT angajati.txt
+
+

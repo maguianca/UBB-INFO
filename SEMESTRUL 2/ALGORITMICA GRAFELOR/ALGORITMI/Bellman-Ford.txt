@@ -1,0 +1,21 @@
+void Bellman_Ford(int sursa,int destinatie)
+{
+	for (int i = 1; i <= n; i++)
+	{
+		distanta1[i] = INF;
+		p[i] = 0;
+	}
+	distanta1[sursa] = 0;
+	for (int i = 1; i <= n - 1; i++) {
+		for (int j = 1; j <= n; j++) {
+			for (int k = 1; k <= n; k++) {
+				if (matrice[j][k] != 0 && distanta1[j] != INF && distanta1[k] > distanta1[j] + matrice[j][k]) {
+					distanta1[k] = distanta1[j] + matrice[j][k];
+					p[k] = j;
+				}
+			}
+		}
+	}
+	cout << "distanta de la " << sursa << " la destinatie " <<destinatie<< " este " << distanta1[destinatie]<<endl;
+
+}

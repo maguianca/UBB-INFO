@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic filter</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h2>Filter</h2>
+<form id="filterForm"></form>
+<hr>
+<h3>Results</h3>
+<div id="results">Loading</div>
+
+<script>
+    function createSelect(name, options) {
+        const label = document.createElement("label");
+        label.textContent = name.charAt(0).toUpperCase() + name.slice(1) + ": ";
+
+        const select = document.createElement("select");
+        select.name = name;
+        select.innerHTML = `<option value="">--All--</option>`;
+
+        options.forEach(opt => {
+            const option = document.createElement("option");
+            option.value = opt;
+            option.textContent = opt;
+            select.appendChild(option);
+        });
+
+        label.appendChild(select);
+        return label;
+    }
+
+    function buildFilters(filters) {
+        const form = document.getElementById("filterForm");
+        form.innerHTML = "";
+        for (const [key, values] of Object.entries(filters)) {
+            form.appendChild(createSelect(key, values));
+            form.appendChild(document.createElement("br"));
+        }
+
+        $("#filterForm select").on("change", function () {
+            const data = $("#filterForm").serialize();
+            $.post("filter.php", data, function (html) {
+                $("#results").html(html);
+            });
+        });
+    }
+
+    $(document).ready(function () {
+        $.get("get_filter.php", function (data) {
+            buildFilters(data);
+            $("#filterForm select").first().trigger("change");
+        });
+    });
+
+</script>
+</body>
+</html>

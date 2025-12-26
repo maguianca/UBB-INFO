@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen.controller.CentruController">
+    <children>
+        <Label fx:id="numelocatiecentru" layoutX="46.0" layoutY="39.0" text="Nume:    " />
+        <Label fx:id="procent" layoutX="66.0" layoutY="59.0" text="Ocupancy:    " />
+        <TableView fx:id="tabelanimale" layoutX="50.0" layoutY="80.0" prefHeight="250.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="nume" prefWidth="75.0" text="name" />
+                <TableColumn fx:id="centruid" prefWidth="75.0" text="centreId" />
+                <TableColumn fx:id="tip" prefWidth="75.0" text="type" />
+                <TableColumn fx:id="animalactiuni" prefWidth="200.0" text="Actions" />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="animaletip" layoutX="50.0" layoutY="350.0" prefWidth="150.0" />
+        <TableView fx:id="tabelnotificare" layoutX="50.0" layoutY="400.0" prefHeight="100.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="actiuni" prefWidth="150.0" text="Action" />
+                <TableColumn fx:id="idcentru" prefWidth="50.0" text="CentreId" />
+                <TableColumn fx:id="idanimal" prefWidth="50.0" text="AnimalId" />
+                <TableColumn fx:id="text" prefWidth="250.0" text="Notificare" />
+            </columns>
+        </TableView>
+        <Button fx:id="requestTransferButton" layoutX="380.0" layoutY="350.0" text="Request Transfer" onAction="#handleRequestTransfer" />
+    </children>
+</AnchorPane>

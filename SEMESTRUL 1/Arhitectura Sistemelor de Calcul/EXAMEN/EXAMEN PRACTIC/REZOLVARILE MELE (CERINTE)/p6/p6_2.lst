@@ -1,0 +1,126 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit,fclose,fopen,printf,fscanf,fread
+     8                                  import exit msvcrt.dll    
+     9                                  import fclose msvcrt.dll    
+    10                                  import fopen msvcrt.dll    
+    11                                  import printf msvcrt.dll    
+    12                                  import fscanf msvcrt.dll  
+    13                                  import fread msvcrt.dll  
+    14                                  ; our data is declared here (the variables needed by our program)
+    15                                  segment data use32 class=data
+    16 00000000 6E756D6572652E7478-         nume_fisier db "numere.txt",0
+    16 00000009 7400               
+    17 0000000B 7200                        mod_acces db "r",0
+    18 0000000D FFFFFFFF                    descriptor_fisier dd -1
+    19 00000011 256400                      format_citire db "%d",0
+    20 00000014 50617265202850293A-         format_pare db "Pare (P):%s",13,10,0
+    20 0000001D 25730D0A00         
+    21 00000022 496E7061726520284E-         format_impare db"Inpare (N):%s",13,10,0
+    21 0000002B 293A25730D0A00     
+    22 00000032 00<rept>                    pare times 100 db 0
+    23 00000096 00000000                    lp dd 0
+    24 0000009A 00<rept>                    impare times 100 db 0
+    25 000000FE 00000000                    li dd 0
+    26 00000102 01000000                    dimensiune dd 1
+    27 00000106 64000000                    count dd 100
+    28 0000010A 00<rept>                    sir times 100 db 0
+    29 0000016E 0A000000                    zece dd 10
+    30 00000172 00000000                    numar dd 0
+    31 00000176 00000000                    len dd 0
+    32                                      
+    33                                      
+    34                                  ; our code starts here
+    35                                  segment code use32 class=code
+    36                                      start:
+    37 00000000 68[0B000000]                    push dword mod_acces
+    38 00000005 68[00000000]                    push dword nume_fisier
+    39 0000000A FF15[00000000]                  call [fopen]
+    40 00000010 83C408                          add esp,4*2
+    41                                          
+    42 00000013 83F800                          cmp eax,0
+    43 00000016 0F8486000000                    je finalizare_scriere
+    44 0000001C A3[0D000000]                    mov [descriptor_fisier],eax
+    45                                          
+    46 00000021 FF35[0D000000]                  push dword[descriptor_fisier]
+    47 00000027 FF35[06010000]                  push dword [count]
+    48 0000002D FF35[02010000]                  push dword[dimensiune]
+    49 00000033 68[0A010000]                    push dword sir 
+    50 00000038 FF15[00000000]                  call [fread]
+    51 0000003E 83C410                          add esp,4*4
+    52                                          
+    53 00000041 A3[76010000]                    mov dword[len],eax
+    54 00000046 8B0D[76010000]                  mov ecx,[len]
+    55 0000004C E354                            jecxz finalizare_scriere
+    56 0000004E B800000000                      mov eax,0
+    57 00000053 BB00000000                      mov ebx,0
+    58 00000058 BE[0A010000]                    mov esi,sir
+    59 0000005D FC                              cld
+    60                                      bucla:
+    61 0000005E 50                              push eax
+    62 0000005F AC                              lodsb 
+    63 00000060 88C3                            mov bl,al
+    64 00000062 58                              pop eax
+    65 00000063 80FB20                          cmp bl,' '
+    66 00000066 7451                            je numara 
+    67                                          
+    68 00000068 F725[6E010000]                  mul dword[zece]
+    69 0000006E 80EB30                          sub bl,'0'
+    70 00000071 00D8                            add al,bl
+    71 00000073 8305[72010000]01                add dword[numar],1
+    72                                          aici:
+    73 0000007A E2E2                            loop bucla
+    74                                      afisare:
+    75 0000007C 68[9A000000]                    push dword impare
+    76 00000081 68[22000000]                    push dword format_impare
+    77 00000086 FF15[00000000]                  call [printf]
+    78 0000008C 83C408                          add esp,4*2
+    79                                          
+    80 0000008F 68[32000000]                    push dword pare
+    81 00000094 68[14000000]                    push dword format_pare
+    82 00000099 FF15[00000000]                  call [printf]
+    83 0000009F 83C408                          add esp,4*2
+    84                                          
+    85                                          
+    86                                          
+    87                                      finalizare_scriere:
+    88 000000A2 FF35[0D000000]                  push dword[descriptor_fisier]
+    89 000000A8 FF15[00000000]                  call [fclose]
+    90 000000AE 83C404                          add esp,4
+    91 000000B1 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    92 000000B3 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
+    93                                      numara:
+    94 000000B9 60                              pushad
+    95 000000BA A901000000                      test eax,01h
+    96 000000BF 7425                            jz e_par
+    97                                          impar:
+    98 000000C1 FC                              cld
+    99 000000C2 4E                              dec esi
+   100 000000C3 2B35[72010000]                  sub esi,dword[numar]
+   101 000000C9 BF[9A000000]                    mov edi,impare
+   102 000000CE 033D[FE000000]                  add edi,dword[li]
+   103 000000D4 B020                            mov al,' '
+   104 000000D6 F3AE                            repe scasb
+   105 000000D8 8B1D[72010000]                  mov ebx,dword[numar]
+   106 000000DE 011D[FE000000]                  add dword[li],ebx
+   107 000000E4 EB23                            jmp peste
+   108                                          
+   109                                          e_par:
+   110 000000E6 FC                              cld
+   111 000000E7 4E                              dec esi
+   112 000000E8 2B35[72010000]                  sub esi,dword[numar]
+   113 000000EE BF[32000000]                    mov edi,pare
+   114 000000F3 0335[96000000]                  add esi,dword[lp]
+   115 000000F9 B020                            mov al,' '
+   116 000000FB F3AE                            repe scasb
+   117 000000FD 8B1D[72010000]                  mov ebx,dword[numar]
+   118 00000103 011D[96000000]                  add dword[lp],ebx
+   119                                          peste:
+   120 00000109 61                              popad
+   121 0000010A C705[72010000]0000-             mov dword[numar],0
+   121 00000112 0000               
+   122 00000114 E961FFFFFF                      jmp aici

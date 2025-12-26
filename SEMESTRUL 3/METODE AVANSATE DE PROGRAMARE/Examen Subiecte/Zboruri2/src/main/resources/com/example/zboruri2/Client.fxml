@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zboruri2.controller.ClientController">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="38.0" prefHeight="158.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="flight" prefWidth="75.0" text="flightID" />
+          <TableColumn fx:id="purchase" prefWidth="108.0" text="purchaseTime" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tabelzbor" layoutX="19.0" layoutY="215.0" prefHeight="142.0" prefWidth="389.0">
+        <columns>
+          <TableColumn fx:id="from" prefWidth="69.0" text="from" />
+          <TableColumn fx:id="to" prefWidth="57.0" text="to" />
+            <TableColumn fx:id="departure" prefWidth="87.0" text="departureTime" />
+            <TableColumn fx:id="landing" prefWidth="82.0" text="landingTime" />
+            <TableColumn fx:id="seats" prefWidth="37.0" text="seats" />
+            <TableColumn fx:id="disponibil" prefWidth="56.0" text="available" />
+        </columns>
+      </TableView>
+      <Label layoutX="32.0" layoutY="21.0" text="Tickete cumparate" />
+      <ComboBox fx:id="frombox" layoutX="421.0" layoutY="229.0" prefWidth="150.0" promptText="from" />
+      <ComboBox fx:id="tobox" layoutX="421.0" layoutY="254.0" prefHeight="25.0" prefWidth="150.0" promptText="to" />
+      <DatePicker fx:id="date" layoutX="421.0" layoutY="282.0" prefHeight="25.0" prefWidth="160.0" promptText="data" />
+      <Button layoutX="425.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlebuy" prefHeight="25.0" prefWidth="142.0" text="Cumpara" />
+      <Button fx:id="next" layoutX="356.0" layoutY="357.0" mnemonicParsing="false" onAction="#handlenext" text="next" />
+      <Button fx:id="prev" layoutX="19.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleprev" text="prev" />
+      <Label fx:id="labelpage" layoutX="178.0" layoutY="361.0" text="1/1" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+1,ciment,99,250
+2,vopsea,2,5
+3,sapa,10,70
+4,beton,511,24
+5,fire,1700,2
+6,cuie,2000,1
+7,gresie,14,30
+8,parchet,5,20

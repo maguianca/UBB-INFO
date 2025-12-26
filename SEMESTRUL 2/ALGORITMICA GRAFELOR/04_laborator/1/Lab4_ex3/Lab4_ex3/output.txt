@@ -1,0 +1,13 @@
+L: 1
+e: 2
+m: 1
+o: 2
+r: 3
+Coduri Huffman:
+L: 000
+e: 01
+m: 001
+o: 10
+r: 11
+Text codificat:
+00010101111110101001

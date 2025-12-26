@@ -1,0 +1,6 @@
+1 ana tip1 2
+2 ana tip2 4
+4 nan tip 6
+6 naa tip2 2
+8 ana m 4
+10 hdh tip1 10

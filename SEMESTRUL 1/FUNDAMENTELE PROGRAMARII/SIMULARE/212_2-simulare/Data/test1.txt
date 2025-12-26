@@ -1,0 +1,3 @@
+1,Cernei,40000,vanzare
+2,Muresului,2000,inchiriere
+3,Oasului,81200,vanzare

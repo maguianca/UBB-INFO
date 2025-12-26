@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="482.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.FriendshipController">
+   <children>
+      <TableView fx:id="FriendsList" layoutX="15.0" layoutY="87.0" prefHeight="95.0" prefWidth="316.0">
+        <columns>
+          <TableColumn fx:id="LFirstName" prefWidth="109.0" text="First Name" />
+          <TableColumn fx:id="LLastName" minWidth="0.0" prefWidth="123.0" text="Last Name" />
+            <TableColumn fx:id="LDate" minWidth="0.0" prefWidth="83.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="15.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleBack" text="Sign Out">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="13.0" layoutY="62.0" prefHeight="9.0" prefWidth="251.0" text="Friends List">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="FriendsRequest" layoutX="16.0" layoutY="264.0" prefHeight="121.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="RFirstName" prefWidth="75.0" text="First Name" />
+          <TableColumn fx:id="RLastName" prefWidth="77.0" text="Last Name" />
+            <TableColumn fx:id="RDate" minWidth="0.0" prefWidth="90.0" text="Date" />
+            <TableColumn fx:id="RStatus" minWidth="0.0" prefWidth="92.0" text="Status" />
+            <TableColumn fx:id="actionsColumn" prefWidth="127.0" text="Actions" />
+        </columns>
+      </TableView>
+      <Label layoutX="16.0" layoutY="244.0" text="Friends Request">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="profilefield" layoutX="374.0" layoutY="26.0" prefHeight="23.0" prefWidth="90.0" />
+      <Button layoutX="336.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="36.0" prefWidth="128.0" text="Delete Friend">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="339.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleAddNewFriend" prefHeight="25.0" prefWidth="128.0" text="Add New Friend">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="336.0" layoutY="209.0" mnemonicParsing="false" onAction="#handleChat" prefHeight="15.0" prefWidth="128.0" text="Chat" />
+       <Button fx:id="previousButton" layoutX="16.0" layoutY="197.0" mnemonicParsing="false" onAction="#handlePrevious" styleClass="button-thin" text="Previous">
+           <font>
+               <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+           </font>
+       </Button>
+       <Button fx:id="nextButton" layoutX="277.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleNext" prefHeight="25.0" prefWidth="53.0" styleClass="button-thin" text="Next">
+           <font>
+               <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+           </font>
+       </Button>
+      <Label fx:id="pageLabel" layoutX="137.0" layoutY="199.0" prefHeight="21.0" prefWidth="73.0" text="Page 1/1" />
+      <Button fx:id="button" layoutX="119.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleprofile" text="My Profile" />
+      <Button fx:id="update" layoutX="231.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleupdate" text="Update Profile" />
+
+   </children>
+</AnchorPane>

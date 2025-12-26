@@ -1,0 +1,6 @@
+22 TicTAc Marcel,Ioana,Matei inprogress
+122 Ana Enache,Iustin inprogress
+12 EEE Dumitru,Ionel close
+44 Ciuciu Andreea,Ema open
+11 joc Mircea,Ioan open
+1 Aaa Ioana,Grama,Matei close

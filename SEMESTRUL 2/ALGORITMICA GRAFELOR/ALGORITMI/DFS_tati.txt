@@ -1,0 +1,10 @@
+void dfs(int k, int tata)
+{
+  v[k]=1; //vizitam varful curent x
+  t[k] = tata; // completăm vectorul de tați
+  for(int i=1;i<=n;i++) // determinam vecinii nevizitati ai lui x
+    if(a[k][i]==1 && v[i]==0)
+    {
+      dfs(i , k); // continuam parcurgerea cu vecinul curent i; acesta il va avea ca tată pe k
+    }
+}

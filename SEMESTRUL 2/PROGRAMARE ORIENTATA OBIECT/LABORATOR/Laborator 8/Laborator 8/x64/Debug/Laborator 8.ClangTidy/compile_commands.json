@@ -1,0 +1,42 @@
+[
+  {
+    "directory": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\CosOferte.cpp\"",
+    "file": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\CosOferte.cpp"
+  },
+  {
+    "directory": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\domeniu.cpp\"",
+    "file": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\domeniu.cpp"
+  },
+  {
+    "directory": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\main.cpp\"",
+    "file": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\main.cpp"
+  },
+  {
+    "directory": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\repo.cpp\"",
+    "file": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\repo.cpp"
+  },
+  {
+    "directory": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\service.cpp\"",
+    "file": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\service.cpp"
+  },
+  {
+    "directory": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\teste.cpp\"",
+    "file": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\teste.cpp"
+  },
+  {
+    "directory": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\UI.cpp\"",
+    "file": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\UI.cpp"
+  },
+  {
+    "directory": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\validator.cpp\"",
+    "file": "C:\\Programare orientata obiect\\Laborator 8\\Laborator 8\\validator.cpp"
+  }
+]

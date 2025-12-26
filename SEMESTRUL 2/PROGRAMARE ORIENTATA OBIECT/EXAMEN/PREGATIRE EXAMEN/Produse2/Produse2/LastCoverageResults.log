@@ -1,0 +1,21 @@
+[2024-06-19 18:11:18] [info] Start Program:
+Path:"C:\Programare orientata obiect\PREGATIRE EXAMEN\Produse2\x64\Debug\Produse2.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\PREGATIRE EXAMEN\Produse2\Produse2\"
+Modules: Selected: C:\Programare orientata obiect\PREGATIRE EXAMEN\Produse2\x64\Debug\Produse2.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\PREGATIRE EXAMEN\Produse2\Produse2 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\adunusuh.5c5 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-06-19 18:11:19] [info] Module: C:\Programare orientata obiect\PREGATIRE EXAMEN\Produse2\x64\Debug\Produse2.exe is selected because it matches selected pattern: C:\Programare orientata obiect\PREGATIRE EXAMEN\Produse2\x64\Debug\Produse2.exe
+[2024-06-19 18:45:44] [info] ----------------------------------------------------
+[2024-06-19 18:45:44] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\adunusuh.5c5
+[2024-06-19 18:45:44] [info] ----------------------------------------------------

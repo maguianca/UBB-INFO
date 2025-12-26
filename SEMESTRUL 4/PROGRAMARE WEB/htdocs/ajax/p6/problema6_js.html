@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic filter</title>
+</head>
+<body>
+<h2>Filter</h2>
+<form id="filterForm"></form>
+<hr>
+<h3>Results</h3>
+<div id="results">Loading</div>
+
+<script>
+    function ajaxGet(url, callback) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                callback(JSON.parse(xhr.responseText));
+            }
+        };
+        xhr.send();
+    }
+    function ajaxPost(url, data, callback) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                callback(xhr.responseText);
+            }
+        };
+        xhr.send(data);
+    }
+
+    function createSelect(name, options) {
+        const label = document.createElement("label");
+        label.textContent = name.charAt(0).toUpperCase() + name.slice(1) + ": ";
+
+        const select = document.createElement("select");
+        select.name = name;
+
+        const defaultOpt = document.createElement("option");
+        defaultOpt.value = "";
+        defaultOpt.textContent = "--All--";
+        select.appendChild(defaultOpt);
+
+        options.forEach(opt => {
+            const option = document.createElement("option");
+            option.value = opt;
+            option.textContent = opt;
+            select.appendChild(option);
+        });
+
+        label.appendChild(select);
+        return label;
+    }
+
+    function buildFilters(filters) {
+        const form = document.getElementById("filterForm");
+        form.innerHTML = "";
+
+        for (const [key, values] of Object.entries(filters)) {
+            form.appendChild(createSelect(key, values));
+            form.appendChild(document.createElement("br"));
+        }
+
+        const selects = form.querySelectorAll("select");
+        selects.forEach(select => {
+            select.addEventListener("change", function () {
+                const formData = new FormData(form);
+                const params = new URLSearchParams(formData).toString();
+                ajaxPost("filter.php", params, function (html) {
+                    document.getElementById("results").innerHTML = html;
+                });
+            });
+        });
+
+        if (selects.length > 0) {
+            selects[0].dispatchEvent(new Event("change"));
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        ajaxGet("get_filter.php", function (data) {
+            buildFilters(data);
+        });
+    });
+</script>
+</body>
+</html>

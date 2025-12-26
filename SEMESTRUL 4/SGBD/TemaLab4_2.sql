@@ -1,0 +1,77 @@
+use JewelryShop
+GO
+
+select * from Angajati
+insert into Angajati(nume,post,id_magazin)
+values('anca','m',1),('den','m',1),('ian','m',1);
+
+-----DIRTY READS---------
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED  
+BEGIN TRAN 
+PRINT 'UPDATE'
+UPDATE Bijuterie SET gramaj_bij=10.5 WHERE id_bij=5
+WAITFOR DELAY '00:00:5' 
+PRINT 'CANCEL'
+ROLLBACK TRAN
+
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED 
+BEGIN TRAN 
+PRINT 'FIRST READ'
+SELECT * FROM Bijuterie WHERE id_bij=5
+WAITFOR DELAY '00:00:10' 
+PRINT 'SECOND READ'
+SELECT * FROM Bijuterie WHERE id_bij=5
+COMMIT TRAN
+
+/*
+DIRTY READS ELIMINARE CU 
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED 
+*/
+
+---NON-REAPEATABLE READS T1-----
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+BEGIN TRAN
+PRINT 'FIRST READ'
+SELECT * FROM Angajati 
+WAITFOR DELAY '00:00:10'
+PRINT 'SECOND READ'
+SELECT * FROM Angajati 
+COMMIT TRAN
+
+
+-----PHANTOM READS T2------
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+BEGIN TRAN
+PRINT 'INSERT PHANTOM'
+WAITFOR DELAY '00:00:05'
+INSERT INTO Angajati(nume,post,id_magazin) VALUES('Ioana','m',1)
+COMMIT
+
+-------DEADLOCK T2----------
+CREATE OR ALTER PROCEDURE DeadLock2
+AS
+BEGIN
+    BEGIN TRY
+        WAITFOR DELAY '00:00:02';
+
+        BEGIN TRANSACTION;
+
+        PRINT 'LOCK id=2';
+        UPDATE Angajati SET post = 'mana' WHERE id_angajat = 2;
+
+        WAITFOR DELAY '00:00:10';
+
+        PRINT 'LOCK id=1';
+        UPDATE Angajati SET post = 'mana' WHERE id_angajat = 1;
+
+        COMMIT;
+    END TRY
+    BEGIN CATCH
+        PRINT 'Eroare detectatã în DeadLock2. Se face ROLLBACK.';
+        IF @@TRANCOUNT > 0
+            ROLLBACK;
+        THROW;
+    END CATCH
+END;
+
+exec DeadLock2

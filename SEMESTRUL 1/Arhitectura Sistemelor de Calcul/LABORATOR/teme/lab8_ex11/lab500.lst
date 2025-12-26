@@ -1,0 +1,61 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  extern exit, fopen, fprintf, fclose, scanf
+     7                                  import exit msvcrt.dll  
+     8                                  import fopen msvcrt.dll  
+     9                                  import fprintf msvcrt.dll
+    10                                  import fclose msvcrt.dll
+    11                                  import scanf msvcrt.dll
+    12                                  
+    13                                  ; our data is declared here (the variables needed by our program)
+    14                                  segment data use32 class=data
+    15 00000000 6F7574707574303030-         nume_fisier db "output000.txt", 0
+    15 00000009 2E74787400         
+    16 0000000E 7700                        mod_acces db "w", 0
+    17 00000010 00000000                    descriptor_fisier dd 0
+    18 00000014 <res 00000064>              text resb 100
+    19 00000078 256300                      format db "%c", 0
+    20                                  
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24                                          ; FILE * fopen(const char* nume_fisier, const char * mod_acces)
+    25 00000000 68[0E000000]                    push dword mod_acces
+    26 00000005 68[00000000]                    push dword nume_fisier
+    27 0000000A FF15[00000000]                  call [fopen]
+    28 00000010 83C408                          add esp, 4 * 2
+    29 00000013 83F800                          cmp eax, 0
+    30 00000016 7447                            je final ; eroare la deschiderea fisierului
+    31 00000018 A3[10000000]                    mov [descriptor_fisier], eax
+    32                                          
+    33                                      citire_scriere:
+    34                                          ; Citim un cuvant de la tastatura
+    35                                          
+    36 0000001D 68[78000000]                    push dword format
+    37 00000022 8D05[14000000]                  lea eax, [text]
+    38 00000028 50                              push eax
+    39 00000029 FF15[00000000]                  call [scanf]
+    40 0000002F 83C408                          add esp, 4 * 2
+    41                                          
+    42                                          ; Scriem cuvantul in fisier
+    43 00000032 68[14000000]                    push dword text
+    44 00000037 FF35[10000000]                  push dword [descriptor_fisier]
+    45 0000003D FF15[00000000]                  call [fprintf]
+    46 00000043 83C408                          add esp, 4 * 2
+    47                                          
+    48                                          ; Testam daca cuvantul este diferit de "$"
+    49 00000046 A1[14000000]                    mov eax, [text]
+    50 0000004B 833824                          cmp dword [eax], '$'
+    51 0000004E 75CD                            jne citire_scriere ; Daca nu am intalnit '$', reluam bucla
+    52                                          
+    53                                          ; Inchidem fisierul
+    54 00000050 FF35[10000000]                  push dword [descriptor_fisier]
+    55 00000056 FF15[00000000]                  call [fclose]
+    56 0000005C 83C404                          add esp, 4
+    57                                      
+    58                                      final:
+    59 0000005F 6A00                            push dword 0      
+    60 00000061 FF15[00000000]                  call [exit]

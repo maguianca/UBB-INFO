@@ -1,0 +1,281 @@
+        -:    0:Source:C:/Users/Ilinca/Desktop/facultate/semestru 2/oop/lab 7/lab6-8oop/VectorDinamicTemplate.h
+        -:    0:Graph:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Teste.cpp.gcno
+        -:    0:Data:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Teste.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Ilinca on 25-Apr-22.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB4_6OOP_VECTORDINAMICTEMPLATE_H
+        -:    6:#define LAB4_6OOP_VECTORDINAMICTEMPLATE_H
+        -:    7:
+        -:    8:constexpr auto INITIAL_CAPACITY = 10;
+        -:    9:#include <vector>
+        -:   10:#include <assert.h>
+        -:   11:
+        -:   12:template<typename T>
+        -:   13:class IteratorVector;
+        -:   14:
+        -:   15:template<typename T>
+        -:   16:class VectorDinamic {
+        -:   17:    //reprezentare
+        -:   18:    T* elems;
+        -:   19:    int capacitate;
+        -:   20:    int lungime;
+        -:   21:
+        -:   22:    void resize();
+        -:   23:
+        -:   24:public:
+        -:   25:    //default constructor
+        -:   26:    VectorDinamic();
+        -:   27:
+        -:   28:    //copy constructor
+        -:   29:    VectorDinamic(const VectorDinamic& ot);
+        -:   30:
+        -:   31:    //assigment operator
+        -:   32:    VectorDinamic& operator=(const VectorDinamic& ot);
+        -:   33:
+        -:   34:    VectorDinamic& operator=(VectorDinamic&& ot) noexcept ;
+        -:   35:
+        -:   36:    //destructor
+        -:   37:    ~VectorDinamic();
+        -:   38:
+        -:   39:    //add element in vector
+        -:   40:    void add(T elem);
+        -:   41:
+        -:   42:    //get element from position in vector
+        -:   43:    T& get(int poz) noexcept;
+        -:   44:
+        -:   45:    //set element on position in vector
+        -:   46:    void set(T elem, int poz) noexcept;
+        -:   47:
+        -:   48:    //length of vector
+        -:   49:    int size() noexcept;
+        -:   50:
+        -:   51:    void remove(int index);
+        -:   52:
+        -:   53:    friend class IteratorVector<T>;
+        -:   54:    IteratorVector<T> begin() noexcept;
+        -:   55:    IteratorVector<T> end() noexcept;
+        -:   56:
+        -:   57:};
+        -:   58:
+        -:   59:template<typename T>
+        -:   60:class IteratorVector {
+        -:   61:private:
+        -:   62:    const VectorDinamic<T>& vec;
+        -:   63:    int poz = 0;
+        -:   64:public:
+        -:   65:    IteratorVector(const VectorDinamic<T>& v) noexcept;
+        -:   66:    IteratorVector(const VectorDinamic<T>& v, int poz) noexcept;
+        -:   67:    bool valid() const;
+        -:   68:    T& element() const;
+        -:   69:    void next() noexcept;
+        -:   70:    T& operator*();
+        -:   71:    IteratorVector& operator++() noexcept;
+        -:   72:    bool operator==(const IteratorVector& ot) noexcept;
+        -:   73:    bool operator!=(const IteratorVector& ot) noexcept;
+        -:   74:
+        -:   75:};
+        -:   76:
+        -:   77:template<typename T>
+function _ZN13VectorDinamicI10MedicamentEC1Ev called 0 returned 0% blocks executed 0%
+    #####:   78:VectorDinamic<T>::VectorDinamic() {
+    #####:   79:    this->elems = new T[INITIAL_CAPACITY];
+    %%%%%:   79-block  0
+call    0 never executed
+    %%%%%:   79-block  1
+call    1 never executed
+    %%%%%:   79-block  2
+branch  2 never executed
+branch  3 never executed
+    #####:   80:    this->lungime = 0;
+    #####:   81:    this->capacitate = INITIAL_CAPACITY;
+    #####:   82:}
+        -:   83:
+        -:   84:template<typename T>
+        -:   85:VectorDinamic<T>::VectorDinamic(const VectorDinamic<T> &ot) {
+        -:   86:    //constructor de copiere (creeare vector dinamic nou pe baza celui existent)
+        -:   87:    this->elems = new T[ot.capacitate];
+        -:   88:    for(int i=0; i<ot.lungime; i++)
+        -:   89:    {
+        -:   90:        this->elems[i] = ot.elems[i];
+        -:   91:    }
+        -:   92:    this->lungime = ot.lungime;
+        -:   93:    this->capacitate = ot.capacitate;
+        -:   94:}
+        -:   95:
+        -:   96://de la istvan
+        -:   97:template<typename T>
+function _ZN13VectorDinamicI10MedicamentEaSEOS1_ called 2 returned 100% blocks executed 89%
+        2:   98:VectorDinamic<T>& VectorDinamic<T>::operator=(VectorDinamic&& ot)  noexcept {
+        2:   99:    if (this == &ot) {
+        2:   99-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:  100:        return *this;
+    %%%%%:  100-block  0
+        -:  101:    }
+       22:  102:    delete[] elems;
+        2:  102-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:  102-block  1
+       22:  102-block  2
+branch  2 taken 20 (fallthrough)
+branch  3 taken 2
+       20:  102-block  3
+call    4 returned 20
+        2:  102-block  4
+call    5 returned 2
+        -:  103:    // Copy the data pointer from other
+        2:  104:    elems = ot.elems;
+        2:  105:    lungime = ot.lungime;
+        2:  106:    capacitate = ot.capacitate;
+        -:  107:
+        -:  108:    // Release the data pointer from the source object so that
+        -:  109:    // the destructor does not free the memory multiple times.
+        2:  110:    ot.elems = nullptr;
+        2:  111:    ot.lungime = 0;
+        2:  112:    ot.capacitate = 0;
+        2:  113:    return *this;
+        2:  113-block  0
+        -:  114:}
+        -:  115:
+        -:  116:template<typename T>
+        -:  117:VectorDinamic<T>& VectorDinamic<T>::operator=(const VectorDinamic& ot) {
+        -:  118:    if (this ==&ot){
+        -:  119:        return *this;
+        -:  120:    }
+        -:  121:    //fiindca in obiectul curent punem altceva prin assignment, eliberam memoria alocata anterior
+        -:  122:
+        -:  123:    delete[] this->elems;
+        -:  124:
+        -:  125:    //copiem elementele din ot si setam lungime, capacitate
+        -:  126:    this->elems = new T[ot.capacitate];
+        -:  127:    for (int i = 0; i < ot.lungime; i++) {
+        -:  128:        elems[i] = ot.elems[i];  //utilizeaza operator assignment aferent tipului T
+        -:  129:    }
+        -:  130:    this->lungime = ot.lungime;
+        -:  131:    this->capacitate = ot.capacitate;
+        -:  132:    return *this;
+        -:  133:}
+        -:  134:
+        -:  135:template<typename T>
+        -:  136:void VectorDinamic<T>::resize() {
+        -:  137:    const int newCapacity = this->capacitate * 2;
+        -:  138:    T* newElems = new T[newCapacity];
+        -:  139:    for (int i = 0; i < this->lungime; i++) {
+        -:  140:        newElems[i] = this->elems[i];
+        -:  141:    }
+        -:  142:    delete[] this->elems;
+        -:  143:    this->elems = newElems;
+        -:  144:    this->capacitate = newCapacity;
+        -:  145:
+        -:  146:}
+        -:  147:
+        -:  148:template<typename T>
+function _ZN13VectorDinamicI10MedicamentED1Ev called 0 returned 0% blocks executed 0%
+    #####:  149:VectorDinamic<T>::~VectorDinamic() {
+    #####:  150:    delete[] this->elems;
+    %%%%%:  150-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  150-block  1
+    %%%%%:  150-block  2
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  150-block  3
+call    4 never executed
+    %%%%%:  150-block  4
+call    5 never executed
+    #####:  151:}
+        -:  152:
+        -:  153:template<typename T>
+        -:  154:void VectorDinamic<T>::add(T elem) {
+        -:  155:    if (this->lungime == this->capacitate)
+        -:  156:        resize();
+        -:  157:    int i=this->lungime;
+        -:  158:    this->elems[(i)] = elem;
+        -:  159:    this->lungime++;
+        -:  160:}
+        -:  161:
+        -:  162:template<typename T>
+        -:  163:void VectorDinamic<T>::remove(int index) {
+        -:  164:    if (index < 0 || index >= this->lungime)
+        -:  165:        return;
+        -:  166:    for (int i = index; i < this->lungime - 1; i++)
+        -:  167:        this->elems[i] = this->elems[i + 1];
+        -:  168:    this->lungime--;
+        -:  169:}
+        -:  170:
+        -:  171:template<typename T>
+function _ZN13VectorDinamicI10MedicamentE3getEi called 0 returned 0% blocks executed 0%
+    #####:  172:T& VectorDinamic<T>::get(int poz) noexcept {
+    #####:  173:    return this->elems[poz];
+    %%%%%:  173-block  0
+        -:  174:}
+        -:  175:
+        -:  176:template<typename T>
+        -:  177:void VectorDinamic<T>::set(T elem, int poz) noexcept {
+        -:  178:    this->elems[poz] = elem;
+        -:  179:}
+        -:  180:
+        -:  181:template<typename T>
+function _ZN13VectorDinamicI10MedicamentE4sizeEv called 0 returned 0% blocks executed 0%
+    #####:  182:int VectorDinamic<T>::size() noexcept  {
+    #####:  183:    return this->lungime;
+    %%%%%:  183-block  0
+        -:  184:}
+        -:  185:
+        -:  186:template<typename T>
+        -:  187:IteratorVector<T> VectorDinamic<T>::begin() noexcept {
+        -:  188:    return IteratorVector<T>(*this);
+        -:  189:}
+        -:  190:
+        -:  191:template<typename T>
+        -:  192:IteratorVector<T> VectorDinamic<T>::end() noexcept {
+        -:  193:    return IteratorVector<T>(*this, this->lungime);
+        -:  194:}
+        -:  195:
+        -:  196:template<typename T>
+        -:  197:IteratorVector<T>::IteratorVector(const VectorDinamic<T>& v) noexcept :vec{ v } { };
+        -:  198:template<typename T>
+        -:  199:IteratorVector<T>::IteratorVector(const VectorDinamic<T>& v, int poz) noexcept :vec{ v }, poz{ poz }{};
+        -:  200:
+        -:  201:
+        -:  202:template<typename T>
+        -:  203:bool IteratorVector<T>::valid() const {
+        -:  204:    return this->poz < this->vec.lungime;
+        -:  205:}
+        -:  206:
+        -:  207:template<typename T>
+        -:  208:T& IteratorVector<T>::element() const {
+        -:  209:    return this->vec.elems[this->poz];
+        -:  210:}
+        -:  211:template<typename T>
+        -:  212:void IteratorVector<T>::next() noexcept{
+        -:  213:    this->poz++;
+        -:  214:}
+        -:  215:
+        -:  216:template<typename T>
+        -:  217:T& IteratorVector<T>::operator*() {
+        -:  218:    return this->element();
+        -:  219:}
+        -:  220:
+        -:  221:template<typename T>
+        -:  222:IteratorVector<T>& IteratorVector<T>::operator++() noexcept{
+        -:  223:    this->next();
+        -:  224:    return *this;
+        -:  225:}
+        -:  226:
+        -:  227:template<typename T>
+        -:  228:bool IteratorVector<T>::operator==(const IteratorVector& ot) noexcept {
+        -:  229:    return this->poz == ot.poz;
+        -:  230:}
+        -:  231:template<typename T>
+        -:  232:bool IteratorVector<T>::operator!=(const IteratorVector& ot) noexcept {
+        -:  233:    return !(*this == ot);
+        -:  234:}
+        -:  235:
+        -:  236:#endif //LAB4_6OOP_VECTORDINAMICTEMPLATE_H

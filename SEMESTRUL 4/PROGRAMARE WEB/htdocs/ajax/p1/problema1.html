@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectare statii tren</title>
+    <script>
+        function updatejQuery() {
+            const departure = $("#departure").val();
+            $.get("get_destinations.php", { departure: departure }, function(data) {
+                const arrival = $("#arrival");
+                arrival.empty();
+                data.forEach(function(city) {
+                    arrival.append($("<option>").val(city).text(city));
+                });
+            }, "json");
+        }
+        function updatePlainJS() {
+            const departure = document.getElementById("departure").value;
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "get_destinations.php?departure=" + encodeURIComponent(departure), true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const data = JSON.parse(xhr.responseText);
+                    const arrival = document.getElementById("arrival");
+                    arrival.innerHTML = "";
+                    data.forEach(function(city) {
+                        const option = document.createElement("option");
+                        option.value = city;
+                        option.textContent = city;
+                        arrival.appendChild(option);
+                    });
+                }
+            };
+            xhr.send();
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h2>Selectare statii tren</h2>
+
+<label for="departure">Statie de plecare:</label>
+<select id="departure" onchange="updatePlainJS();" >
+    <option value="none" selected>None</option>
+    <option value="Cluj">Cluj</option>
+    <option value="Bucuresti">Bucuresti</option>
+    <option value="Iasi">Iasi</option>
+</select>
+
+<br><br>
+
+<label for="arrival">Statie de sosire:</label>
+<select id="arrival">
+</select>
+</body>
+</html>

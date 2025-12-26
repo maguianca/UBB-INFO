@@ -1,0 +1,4 @@
+C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S '/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini' -B '/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug'"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug

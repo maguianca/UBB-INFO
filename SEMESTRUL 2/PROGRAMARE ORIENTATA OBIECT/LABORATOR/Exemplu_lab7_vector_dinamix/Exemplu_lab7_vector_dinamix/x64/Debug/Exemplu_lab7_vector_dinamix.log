@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Programare orientata obiect\Exemplu_lab7_vector_dinamix\Exemplu_lab7_vector_dinamix\Oferta.h(43,16): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
+  (compiling source file 'main.cpp')
+  
+  Exemplu_lab7_vector_dinamix.vcxproj -> C:\Programare orientata obiect\Exemplu_lab7_vector_dinamix\x64\Debug\Exemplu_lab7_vector_dinamix.exe

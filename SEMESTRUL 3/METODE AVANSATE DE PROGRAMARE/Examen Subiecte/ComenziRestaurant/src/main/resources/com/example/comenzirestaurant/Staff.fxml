@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comenzirestaurant.controller.StaffController">
+   <children>
+      <Label layoutX="40.0" layoutY="28.0" text="Placed Orders" />
+      <TableView fx:id="tabel" layoutX="40.0" layoutY="56.0" prefHeight="138.0" prefWidth="506.0">
+        <columns>
+          <TableColumn fx:id="data" prefWidth="124.0" text="Data" />
+          <TableColumn fx:id="masa" prefWidth="89.0" text="Masa" />
+            <TableColumn fx:id="produse" prefWidth="201.0" text="Produse" />
+            <TableColumn fx:id="status" prefWidth="89.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="40.0" layoutY="200.0" text="Prepering Orders" />
+      <TableView fx:id="tabel1" layoutX="40.0" layoutY="240.0" prefHeight="138.0" prefWidth="506.0">
+         <columns>
+            <TableColumn fx:id="data1" prefWidth="124.0" text="Data" />
+            <TableColumn fx:id="masa1" prefWidth="89.0" text="Masa" />
+            <TableColumn fx:id="produse1" prefWidth="201.0" text="Produse" />
+            <TableColumn fx:id="status1" prefWidth="89.0" text="Status" />
+         </columns>
+      </TableView>
+      <Button fx:id="prepering" layoutX="163.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleprepering" text="PREPERING" />
+      <Button fx:id="placed" layoutX="274.0" layoutY="205.0" mnemonicParsing="false" onAction="#handledelivered" text="DELIVERED" />
+   </children>
+</AnchorPane>

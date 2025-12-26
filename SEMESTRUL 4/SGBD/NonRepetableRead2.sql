@@ -1,0 +1,24 @@
+use JewelryShop
+GO
+
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+BEGIN TRAN 
+PRINT 'START DELAY'
+WAITFOR DELAY '00:00:5'
+PRINT 'UPDATE'
+UPDATE Angajati SET nume='ANCA-Elena' where id_angajat=1
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','UPDATE',GETDATE())
+COMMIT TRAN
+
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+BEGIN TRAN 
+PRINT 'START DELAY'
+WAITFOR DELAY '00:00:5'
+PRINT 'UPDATE'
+UPDATE Angajati SET nume='ANCA-Eena' where id_angajat=1
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','UPDATE',GETDATE())
+COMMIT TRAN
+
+
+
+/* se rezolva cu REPEATBALE READ*/

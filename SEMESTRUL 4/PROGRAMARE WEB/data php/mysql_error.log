@@ -1,0 +1,678 @@
+2025-05-05 15:01:12 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 15772
+2025-05-05 15:01:12 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-05 15:01:12 0 [Note] InnoDB: Uses event mutexes
+2025-05-05 15:01:12 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-05 15:01:12 0 [Note] InnoDB: Number of pools: 1
+2025-05-05 15:01:12 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-05 15:01:12 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-05 15:01:12 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-05 15:01:12 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=300288
+2025-05-05 15:01:13 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-05 15:01:13 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-05 15:01:13 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-05 15:01:13 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-05 15:01:13 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-05 15:01:13 0 [Note] InnoDB: 10.4.32 started; log sequence number 300297; transaction id 170
+2025-05-05 15:01:13 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-05 15:01:13 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-05 15:01:13 0 [Note] InnoDB: Buffer pool(s) load completed at 250505 15:01:13
+2025-05-05 15:01:13 0 [Note] Server socket created on IP: '::'.
+2025-05-26 23:23:51 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 23812
+2025-05-26 23:23:51 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-26 23:23:51 0 [Note] InnoDB: Uses event mutexes
+2025-05-26 23:23:51 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-26 23:23:51 0 [Note] InnoDB: Number of pools: 1
+2025-05-26 23:23:51 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-26 23:23:51 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-26 23:23:51 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-26 23:23:51 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=300306
+2025-05-26 23:23:51 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-26 23:23:51 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-26 23:23:51 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-26 23:23:51 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-26 23:23:51 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-26 23:23:51 0 [Note] InnoDB: 10.4.32 started; log sequence number 300315; transaction id 170
+2025-05-26 23:23:51 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-26 23:23:51 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-26 23:23:51 0 [Note] InnoDB: Buffer pool(s) load completed at 250526 23:23:51
+2025-05-26 23:23:51 0 [Note] Server socket created on IP: '::'.
+2025-05-27  9:31:57 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 4668
+2025-05-27  9:31:57 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-27  9:31:57 0 [Note] InnoDB: Uses event mutexes
+2025-05-27  9:31:57 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-27  9:31:57 0 [Note] InnoDB: Number of pools: 1
+2025-05-27  9:31:57 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-27  9:31:57 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-27  9:31:57 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-27  9:31:57 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=407766
+2025-05-27  9:31:57 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-27  9:31:57 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-27  9:31:57 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-27  9:31:57 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-27  9:31:57 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-27  9:31:57 0 [Note] InnoDB: 10.4.32 started; log sequence number 407775; transaction id 340
+2025-05-27  9:31:57 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-27  9:31:57 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-27  9:31:57 0 [Note] Server socket created on IP: '::'.
+2025-05-29  0:04:59 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 34180
+2025-05-29  0:04:59 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29  0:04:59 0 [Note] InnoDB: Uses event mutexes
+2025-05-29  0:04:59 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29  0:04:59 0 [Note] InnoDB: Number of pools: 1
+2025-05-29  0:04:59 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29  0:04:59 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29  0:04:59 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29  0:04:59 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=507060
+2025-05-29  0:04:59 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29  0:04:59 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29  0:04:59 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29  0:04:59 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29  0:04:59 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29  0:04:59 0 [Note] InnoDB: Waiting for purge to start
+2025-05-29  0:04:59 0 [Note] InnoDB: 10.4.32 started; log sequence number 507069; transaction id 579
+2025-05-29  0:04:59 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29  0:04:59 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29  0:04:59 0 [Note] Server socket created on IP: '::'.
+2025-05-29  0:26:51 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 15316
+2025-05-29  0:26:51 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29  0:26:51 0 [Note] InnoDB: Uses event mutexes
+2025-05-29  0:26:51 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29  0:26:51 0 [Note] InnoDB: Number of pools: 1
+2025-05-29  0:26:51 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29  0:26:51 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29  0:26:51 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29  0:26:51 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=507060
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=198] with future log sequence number 511202
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=9, page number=3] with future log sequence number 511222
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=335] with future log sequence number 511202
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=196] with future log sequence number 509999
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=2, page number=5] with future log sequence number 510247
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=333] with future log sequence number 509999
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=195] with future log sequence number 509300
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=1, page number=3] with future log sequence number 510207
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=332] with future log sequence number 509300
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=194] with future log sequence number 509030
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=35, page number=3] with future log sequence number 508954
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=35, page number=2] with future log sequence number 508954
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=199] with future log sequence number 511600
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=16, page number=3] with future log sequence number 511620
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=336] with future log sequence number 511600
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=198] with future log sequence number 511398
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=335] with future log sequence number 511398
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=196] with future log sequence number 511354
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=333] with future log sequence number 511354
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=195] with future log sequence number 511310
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=332] with future log sequence number 511310
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=194] with future log sequence number 511266
+2025-05-29  0:26:51 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=331] with future log sequence number 511266
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=7] log sequence number 508470 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=11] log sequence number 510046 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=48] log sequence number 507371 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=312] log sequence number 507371 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=49] log sequence number 507426 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=313] log sequence number 507426 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=193] log sequence number 507470 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=330] log sequence number 507470 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=194] log sequence number 511266 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=331] log sequence number 511266 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=195] log sequence number 511310 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=332] log sequence number 511310 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=196] log sequence number 511354 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=333] log sequence number 511354 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=198] log sequence number 511398 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=335] log sequence number 511398 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=199] log sequence number 511600 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=336] log sequence number 511600 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=8] log sequence number 510127 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=10] log sequence number 510167 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=12] log sequence number 510147 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=307] log sequence number 510107 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=0, page number=308] log sequence number 510020 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29  0:26:51 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29  0:26:51 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29  0:26:51 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29  0:26:51 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29  0:26:51 0 [Note] InnoDB: 10.4.32 started; log sequence number 507069; transaction id 613
+2025-05-29  0:26:51 2 [ERROR] InnoDB: Page [page id: space=0, page number=9] log sequence number 508041 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29  0:26:51 2 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29  0:26:51 2 [ERROR] InnoDB: Page [page id: space=16, page number=3] log sequence number 511620 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Page [page id: space=1, page number=3] log sequence number 510207 is in the future! Current system log sequence number 507078.
+2025-05-29  0:26:51 2 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  0:26:51 0 [Note] Server socket created on IP: '::'.
+2025-05-29  9:13:47 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 35356
+2025-05-29  9:13:47 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29  9:13:47 0 [Note] InnoDB: Uses event mutexes
+2025-05-29  9:13:47 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29  9:13:47 0 [Note] InnoDB: Number of pools: 1
+2025-05-29  9:13:47 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29  9:13:47 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29  9:13:47 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29  9:13:47 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=507078
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=198] with future log sequence number 511202
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=9, page number=3] with future log sequence number 511222
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=335] with future log sequence number 511202
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=196] with future log sequence number 509999
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=2, page number=5] with future log sequence number 510247
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=333] with future log sequence number 509999
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=195] with future log sequence number 509300
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=1, page number=3] with future log sequence number 510207
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=332] with future log sequence number 509300
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=194] with future log sequence number 509030
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=35, page number=3] with future log sequence number 508954
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=35, page number=2] with future log sequence number 508954
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=199] with future log sequence number 511600
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=16, page number=3] with future log sequence number 511620
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=336] with future log sequence number 511600
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=198] with future log sequence number 511398
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=335] with future log sequence number 511398
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=196] with future log sequence number 511354
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=333] with future log sequence number 511354
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=195] with future log sequence number 511310
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=332] with future log sequence number 511310
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=194] with future log sequence number 511266
+2025-05-29  9:13:47 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=331] with future log sequence number 511266
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=7] log sequence number 508470 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=11] log sequence number 510046 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=48] log sequence number 507371 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=312] log sequence number 507371 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=49] log sequence number 507426 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=313] log sequence number 507426 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=193] log sequence number 507470 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=330] log sequence number 507470 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=194] log sequence number 511266 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=331] log sequence number 511266 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=195] log sequence number 511310 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=332] log sequence number 511310 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=196] log sequence number 511354 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=333] log sequence number 511354 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=198] log sequence number 511398 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=335] log sequence number 511398 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=199] log sequence number 511600 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=336] log sequence number 511600 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=8] log sequence number 510127 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=10] log sequence number 510167 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=12] log sequence number 510147 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=307] log sequence number 510107 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=0, page number=308] log sequence number 510020 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29  9:13:47 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29  9:13:47 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29  9:13:47 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29  9:13:47 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29  9:13:47 0 [Note] InnoDB: 10.4.32 started; log sequence number 507087; transaction id 613
+2025-05-29  9:13:47 2 [ERROR] InnoDB: Page [page id: space=0, page number=9] log sequence number 508041 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29  9:13:47 2 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Page [page id: space=1, page number=3] log sequence number 510207 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 2 [ERROR] InnoDB: Page [page id: space=16, page number=3] log sequence number 511620 is in the future! Current system log sequence number 507096.
+2025-05-29  9:13:47 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 2 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2025-05-29  9:13:47 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:04:09 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 12084
+2025-05-29 12:04:09 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:04:09 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:04:09 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:04:09 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:04:09 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:04:09 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:04:09 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:04:09 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=556315
+2025-05-29 12:04:09 0 [Note] InnoDB: Starting final batch to recover 8 pages from redo log.
+2025-05-29 12:04:10 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:04:10 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:04:10 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:04:10 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:04:10 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:04:10 0 [Note] InnoDB: 10.4.32 started; log sequence number 557485; transaction id 763
+2025-05-29 12:04:10 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:04:10 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:04:10 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:09:19 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 18260
+2025-05-29 12:09:19 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:09:19 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:09:19 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:09:19 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:09:19 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:09:19 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:09:19 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:09:19 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:09:19 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:09:19 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:09:19 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:09:19 0 [Note] InnoDB: 10.4.32 started; log sequence number 558105; transaction id 763
+2025-05-29 12:09:19 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:09:19 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:09:19 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:09:22 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 39928
+2025-05-29 12:09:22 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:09:22 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:09:22 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:09:22 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:09:22 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:09:22 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:09:22 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:09:22 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:09:22 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:09:22 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:09:22 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:09:22 0 [Note] InnoDB: 10.4.32 started; log sequence number 558114; transaction id 763
+2025-05-29 12:09:22 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:09:22 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:09:22 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:09:49 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 10448
+2025-05-29 12:09:49 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:09:49 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:09:49 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:09:49 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:09:49 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:09:49 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:09:49 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:09:49 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=558114
+2025-05-29 12:09:49 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:09:49 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:09:49 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:09:49 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:09:49 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:09:49 0 [Note] InnoDB: 10.4.32 started; log sequence number 558123; transaction id 763
+2025-05-29 12:09:49 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:09:49 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:09:49 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:13:09 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 26468
+2025-05-29 12:13:09 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:13:09 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:13:09 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:13:09 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:13:09 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:13:09 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:13:09 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:13:09 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:13:09 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:13:09 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:13:09 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:13:09 0 [Note] InnoDB: 10.4.32 started; log sequence number 558132; transaction id 763
+2025-05-29 12:13:09 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:13:09 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:13:09 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:13:18 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 32076
+2025-05-29 12:13:18 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:13:18 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:13:18 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:13:18 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:13:18 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:13:18 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:13:18 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:13:18 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:13:18 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:13:18 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:13:18 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:13:18 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:13:18 0 [Note] InnoDB: 10.4.32 started; log sequence number 558132; transaction id 763
+2025-05-29 12:13:18 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:13:18 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:13:18 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:22:53 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 3276
+2025-05-29 12:22:53 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:22:53 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:22:53 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:22:53 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:22:53 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:22:53 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:22:53 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:22:53 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:22:53 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:22:53 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:22:53 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:22:53 0 [Note] InnoDB: Waiting for purge to start
+2025-05-29 12:22:53 0 [Note] InnoDB: 10.4.32 started; log sequence number 558141; transaction id 763
+2025-05-29 12:22:53 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:22:53 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:22:53 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:23:06 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 488
+2025-05-29 12:23:06 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:23:06 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:23:06 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:23:06 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:23:06 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:23:06 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:23:06 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:23:06 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:23:06 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:23:06 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:23:06 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:23:06 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:23:06 0 [Note] InnoDB: 10.4.32 started; log sequence number 558141; transaction id 763
+2025-05-29 12:23:06 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:23:06 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:23:06 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:26:53 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 21616
+2025-05-29 12:26:53 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:26:53 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:26:53 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:26:53 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:26:53 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:26:53 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:26:53 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:26:53 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:26:53 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:26:53 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:26:53 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:26:53 0 [Note] InnoDB: 10.4.32 started; log sequence number 558150; transaction id 763
+2025-05-29 12:26:53 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:26:53 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:26:53 0 [Note] InnoDB: Buffer pool(s) load completed at 250529 12:26:53
+2025-05-29 12:26:53 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:27:12 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 22856
+2025-05-29 12:27:12 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:27:12 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:27:12 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:27:12 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:27:12 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:27:12 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:27:12 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:27:12 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:27:12 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:27:12 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:27:12 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:27:12 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:27:12 0 [Note] InnoDB: 10.4.32 started; log sequence number 558150; transaction id 763
+2025-05-29 12:27:12 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:27:12 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:27:12 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:27:40 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 8512
+2025-05-29 12:27:40 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:27:40 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:27:40 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:27:40 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:27:40 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:27:40 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:27:40 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:27:40 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:27:40 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:27:40 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:27:40 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:27:40 0 [Note] InnoDB: 10.4.32 started; log sequence number 558159; transaction id 763
+2025-05-29 12:27:40 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:27:40 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:27:40 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:27:50 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 17080
+2025-05-29 12:27:50 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:27:50 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:27:50 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:27:50 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:27:50 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:27:50 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:27:50 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:27:50 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:27:50 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:27:50 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:27:50 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:27:50 0 [Note] InnoDB: 10.4.32 started; log sequence number 558168; transaction id 763
+2025-05-29 12:27:50 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:27:50 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:27:50 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:28:16 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 18840
+2025-05-29 12:28:16 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:28:16 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:28:16 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:28:16 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:28:16 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:28:16 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:28:16 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:28:16 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:28:16 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:28:16 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:28:16 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:28:16 0 [Note] InnoDB: 10.4.32 started; log sequence number 558177; transaction id 763
+2025-05-29 12:28:16 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:28:16 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:28:16 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:28:57 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 18280
+2025-05-29 12:28:57 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:28:57 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:28:57 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:28:57 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:28:57 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:28:57 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:28:57 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:28:57 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:28:57 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:28:57 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:28:57 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:28:57 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:28:57 0 [Note] InnoDB: 10.4.32 started; log sequence number 558177; transaction id 763
+2025-05-29 12:28:57 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:28:58 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:28:58 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:29:36 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 24768
+2025-05-29 12:29:36 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:29:36 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:29:36 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:29:36 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:29:36 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:29:36 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:29:36 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:29:36 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:29:36 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:29:36 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:29:36 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:29:36 0 [Note] InnoDB: 10.4.32 started; log sequence number 558186; transaction id 763
+2025-05-29 12:29:36 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:29:36 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:29:36 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:29:43 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 23880
+2025-05-29 12:29:43 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:29:43 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:29:43 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:29:43 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:29:43 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:29:43 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:29:43 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:29:43 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:29:43 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:29:43 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:29:43 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:29:43 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:29:43 0 [Note] InnoDB: 10.4.32 started; log sequence number 558186; transaction id 763
+2025-05-29 12:29:43 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:29:43 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:29:43 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:30:05 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 18204
+2025-05-29 12:30:05 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:30:05 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:30:05 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:30:05 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:30:05 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:30:05 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:30:05 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:30:05 0 [Note] InnoDB: The log sequence number 558186 in the system tablespace does not match the log sequence number 558195 in the ib_logfiles!
+2025-05-29 12:30:05 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:30:05 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:30:05 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:30:05 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:30:05 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:30:05 0 [Note] InnoDB: 10.4.32 started; log sequence number 558195; transaction id 763
+2025-05-29 12:30:05 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:30:05 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:30:05 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:31:36 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 23284
+2025-05-29 12:31:36 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:31:36 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:31:36 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:31:36 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:31:36 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:31:36 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:31:36 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:31:36 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:31:36 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:31:36 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:31:36 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:31:36 0 [Note] InnoDB: 10.4.32 started; log sequence number 558204; transaction id 763
+2025-05-29 12:31:36 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:31:36 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:31:36 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:31:39 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 20708
+2025-05-29 12:31:39 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:31:39 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:31:39 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:31:39 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:31:39 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:31:39 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:31:39 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:31:40 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:31:40 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:31:40 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:31:40 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:31:40 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:31:40 0 [Note] InnoDB: 10.4.32 started; log sequence number 558204; transaction id 763
+2025-05-29 12:31:40 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:31:40 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:31:40 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:40:42 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 10344
+2025-05-29 12:40:42 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:40:42 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:40:42 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:40:42 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:40:42 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:40:42 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:40:42 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:40:42 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:40:42 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:40:42 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:40:42 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:40:42 0 [Note] InnoDB: 10.4.32 started; log sequence number 558213; transaction id 763
+2025-05-29 12:40:42 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:40:42 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:40:42 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:42:20 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 3304
+2025-05-29 12:42:20 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:42:20 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:42:20 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:42:20 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:42:20 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:42:20 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:42:20 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:42:20 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:42:20 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:42:20 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:42:20 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:42:20 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:42:20 0 [Note] InnoDB: 10.4.32 started; log sequence number 558222; transaction id 763
+2025-05-29 12:42:20 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:42:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:42:20 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:44:55 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 4148
+2025-05-29 12:44:55 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:44:55 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:44:55 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:44:55 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:44:55 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:44:55 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:44:55 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:44:55 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:44:55 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:44:55 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:44:55 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:44:55 0 [Note] InnoDB: 10.4.32 started; log sequence number 558231; transaction id 763
+2025-05-29 12:44:55 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:44:55 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:44:55 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:45:11 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 18004
+2025-05-29 12:45:11 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:45:11 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:45:11 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:45:11 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:45:11 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:45:11 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:45:11 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:45:11 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:45:11 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2025-05-29 12:45:11 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:45:11 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:45:11 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:45:11 0 [Note] InnoDB: 10.4.32 started; log sequence number 558231; transaction id 763
+2025-05-29 12:45:11 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:45:11 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:45:11 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:45:29 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 16928
+2025-05-29 12:45:29 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:45:29 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:45:29 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:45:29 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:45:29 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:45:29 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:45:29 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:45:29 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:45:29 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:45:29 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:45:29 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:45:29 0 [Note] InnoDB: 10.4.32 started; log sequence number 558240; transaction id 763
+2025-05-29 12:45:29 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:45:29 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:45:29 0 [Note] Server socket created on IP: '::'.
+2025-05-29 12:47:01 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 24952
+2025-05-29 12:47:01 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2025-05-29 12:47:01 0 [Note] InnoDB: Uses event mutexes
+2025-05-29 12:47:01 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2025-05-29 12:47:01 0 [Note] InnoDB: Number of pools: 1
+2025-05-29 12:47:01 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2025-05-29 12:47:01 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2025-05-29 12:47:01 0 [Note] InnoDB: Completed initialization of buffer pool
+2025-05-29 12:47:01 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2025-05-29 12:47:01 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2025-05-29 12:47:01 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2025-05-29 12:47:01 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2025-05-29 12:47:01 0 [Note] InnoDB: 10.4.32 started; log sequence number 558249; transaction id 763
+2025-05-29 12:47:01 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2025-05-29 12:47:01 0 [Note] Plugin 'FEEDBACK' is disabled.
+2025-05-29 12:47:01 0 [Note] Server socket created on IP: '::'.

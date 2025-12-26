@@ -1,0 +1,547 @@
+        -:    0:Source:C:/Users/Ilinca/Desktop/facultate/semestru 2/oop/lab 7/lab6-8oop/Repository.cpp
+        -:    0:Graph:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Repository.cpp.gcno
+        -:    0:Data:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Repository.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Ilinca on 30-Mar-22.
+        -:    3://
+        -:    4:
+        -:    5:#include "Repository.h"
+        -:    6:#include "VectorDinamicTemplate.h"
+        -:    7:#include <assert.h>
+        -:    8:
+function _ZN21Medicament_Repository4findENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_ called 35 returned 26% blocks executed 60%
+       35:    9:const Medicament& Medicament_Repository::find(string denumire, string producator) {
+       62:   10:    for(const Medicament& m: this->all_medicamente){
+       35:   10-block  0
+call    0 returned 35
+call    1 returned 35
+       36:   10-block  1
+call    2 returned 36
+branch  3 taken 36 (fallthrough)
+branch  4 taken 0 (throw)
+       27:   10-block  2
+call    5 returned 27
+       62:   10-block  3
+call    6 returned 62
+branch  7 taken 36
+branch  8 taken 26 (fallthrough)
+       36:   11:        if(m.get_denumire() == denumire && m.get_producator() == producator){
+       36:   11-block  0
+call    0 returned 36
+branch  1 taken 36 (fallthrough)
+branch  2 taken 0 (throw)
+       36:   11-block  1
+call    3 returned 36
+branch  4 taken 9 (fallthrough)
+branch  5 taken 27
+        9:   11-block  2
+call    6 returned 9
+branch  7 taken 9 (fallthrough)
+branch  8 taken 0 (throw)
+        9:   11-block  3
+call    9 returned 9
+branch 10 taken 9 (fallthrough)
+branch 11 taken 0
+        9:   11-block  4
+       27:   11-block  5
+       36:   11-block  6
+branch 12 taken 9 (fallthrough)
+branch 13 taken 27
+        9:   11-block  7
+call   14 returned 9
+       36:   11-block  8
+branch 15 taken 36 (fallthrough)
+branch 16 taken 0
+       36:   11-block  9
+call   17 returned 36
+       36:   11-block 10
+branch 18 taken 9 (fallthrough)
+branch 19 taken 27
+    $$$$$:   11-block 11
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   11-block 12
+call   22 never executed
+    $$$$$:   11-block 13
+    $$$$$:   11-block 14
+branch 23 never executed
+branch 24 never executed
+    $$$$$:   11-block 15
+call   25 never executed
+    $$$$$:   11-block 16
+        9:   12:            return m;
+        9:   12-block  0
+        9:   12-block  1
+        -:   13:        }
+        -:   14:    }
+       26:   15:    throw Repo_Exception("Medicamentul cu denumirea "+denumire+" si producatorul "+producator+" nu este in lista");
+       26:   15-block  0
+call    0 returned 26
+call    1 returned 26
+branch  2 taken 26 (fallthrough)
+branch  3 taken 0 (throw)
+       26:   15-block  1
+call    4 returned 26
+branch  5 taken 26 (fallthrough)
+branch  6 taken 0 (throw)
+       26:   15-block  2
+call    7 returned 26
+branch  8 taken 26 (fallthrough)
+branch  9 taken 0 (throw)
+       26:   15-block  3
+call   10 returned 26
+branch 11 taken 26 (fallthrough)
+branch 12 taken 0 (throw)
+       26:   15-block  4
+call   13 returned 26
+branch 14 taken 26 (fallthrough)
+branch 15 taken 0 (throw)
+       26:   15-block  5
+call   16 returned 26
+call   17 returned 26
+call   18 returned 26
+call   19 returned 26
+call   20 returned 0
+    $$$$$:   15-block  6
+call   21 never executed
+    $$$$$:   15-block  7
+    $$$$$:   15-block  8
+call   22 never executed
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+call   23 never executed
+    $$$$$:   15-block 11
+    $$$$$:   15-block 12
+call   24 never executed
+    $$$$$:   15-block 13
+    $$$$$:   15-block 14
+call   25 never executed
+        -:   16:}
+        -:   17:
+function _ZN21Medicament_Repository6existsERK10Medicament called 32 returned 100% blocks executed 95%
+       32:   18:bool Medicament_Repository::exists(const Medicament &m) {
+        -:   19:    try{
+       82:   20:        find(m.get_denumire(),m.get_producator());
+       32:   20-block  0
+call    0 returned 32
+branch  1 taken 32 (fallthrough)
+branch  2 taken 0 (throw)
+       32:   20-block  1
+call    3 returned 32
+branch  4 taken 32 (fallthrough)
+branch  5 taken 0 (throw)
+       32:   20-block  2
+call    6 returned 32
+branch  7 taken 7 (fallthrough)
+branch  8 taken 25 (throw)
+        7:   20-block  3
+call    9 returned 7
+call   10 returned 7
+       25:   20-block  4
+call   11 returned 25
+       25:   20-block  5
+       25:   20-block  6
+call   12 returned 25
+       25:   20-block  7
+        7:   21:        return true;
+        -:   22:    }
+       25:   23:    catch (Repo_Exception) {
+       25:   23-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 25
+       25:   23-block  1
+call    2 returned 25
+call    3 returned 25
+       25:   24:        return false;
+       25:   25:    }
+call    0 returned 25
+call    1 returned 25
+        -:   26:}
+        -:   27:
+function _ZN21Medicament_Repository19get_all_medicamenteEv called 17 returned 100% blocks executed 100%
+       17:   28:VectorDinamic<Medicament>& Medicament_Repository::get_all_medicamente() {
+       17:   29:    return this->all_medicamente;
+       17:   29-block  0
+        -:   30:}
+        -:   31:
+function _ZN21Medicament_Repository5storeERK10Medicament called 24 returned 92% blocks executed 50%
+       24:   32:void Medicament_Repository::store(const Medicament& m) {
+       24:   33:    if(exists(m)){
+       24:   33-block  0
+call    0 returned 24
+branch  1 taken 2 (fallthrough)
+branch  2 taken 22
+        2:   34:        throw Repo_Exception("Medicamentul cu denumirea "+m.get_denumire()+" si producatorul "+m.get_producator()+" nu este in lista");
+        2:   34-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   34-block  1
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:   34-block  2
+call    7 returned 2
+branch  8 taken 2 (fallthrough)
+branch  9 taken 0 (throw)
+        2:   34-block  3
+call   10 returned 2
+branch 11 taken 2 (fallthrough)
+branch 12 taken 0 (throw)
+        2:   34-block  4
+call   13 returned 2
+branch 14 taken 2 (fallthrough)
+branch 15 taken 0 (throw)
+        2:   34-block  5
+call   16 returned 2
+branch 17 taken 2 (fallthrough)
+branch 18 taken 0 (throw)
+        2:   34-block  6
+call   19 returned 2
+branch 20 taken 2 (fallthrough)
+branch 21 taken 0 (throw)
+        2:   34-block  7
+call   22 returned 2
+call   23 returned 2
+call   24 returned 2
+call   25 returned 2
+call   26 returned 2
+call   27 returned 2
+call   28 returned 0
+    $$$$$:   34-block  8
+call   29 never executed
+    $$$$$:   34-block  9
+    $$$$$:   34-block 10
+call   30 never executed
+    $$$$$:   34-block 11
+    $$$$$:   34-block 12
+call   31 never executed
+    $$$$$:   34-block 13
+    $$$$$:   34-block 14
+call   32 never executed
+    $$$$$:   34-block 15
+    $$$$$:   34-block 16
+call   33 never executed
+    $$$$$:   34-block 17
+    $$$$$:   34-block 18
+call   34 never executed
+    $$$$$:   34-block 19
+    $$$$$:   34-block 20
+call   35 never executed
+        -:   35:    }
+       22:   36:    this->all_medicamente.add(m);
+       22:   36-block  0
+call    0 returned 22
+call    1 returned 22
+branch  2 taken 22 (fallthrough)
+branch  3 taken 0 (throw)
+       22:   36-block  1
+call    4 returned 22
+    $$$$$:   36-block  2
+call    5 never executed
+       22:   37:}
+        -:   38:
+        -:   39:
+function _ZN21Medicament_Repository20modificare_pret_repoERK10Medicament called 3 returned 67% blocks executed 59%
+        3:   40:void Medicament_Repository::modificare_pret_repo(const Medicament &med) {
+        3:   41:    if(!exists(med)){
+        3:   41-block  0
+call    0 returned 3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 2
+        1:   42:        throw Repo_Exception("Medicamentul dorit nu este in lista!\n");
+        1:   42-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   42-block  1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   42-block  2
+call    8 returned 1
+call    9 returned 1
+call   10 returned 0
+    $$$$$:   42-block  3
+call   11 never executed
+    $$$$$:   42-block  4
+    $$$$$:   42-block  5
+call   12 never executed
+    $$$$$:   42-block  6
+    $$$$$:   42-block  7
+call   13 never executed
+        -:   43:    }
+        2:   44:    int i = 0;
+        6:   45:    for(auto& medic : this->all_medicamente){
+        2:   45-block  0
+call    0 returned 2
+call    1 returned 2
+        4:   45-block  1
+call    2 returned 4
+branch  3 taken 4 (fallthrough)
+branch  4 taken 0 (throw)
+        6:   45-block  2
+call    5 returned 6
+branch  6 taken 4
+branch  7 taken 2 (fallthrough)
+        4:   46:        if(medic.get_denumire() == med.get_denumire() && medic.get_producator() == med.get_producator() && medic.get_substanta_activa() == med.get_substanta_activa()){
+        4:   46-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   46-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   46-block  2
+call    6 returned 4
+branch  7 taken 2 (fallthrough)
+branch  8 taken 2
+        2:   46-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:   46-block  4
+call   12 returned 2
+branch 13 taken 2 (fallthrough)
+branch 14 taken 0 (throw)
+        2:   46-block  5
+call   15 returned 2
+branch 16 taken 2 (fallthrough)
+branch 17 taken 0
+        2:   46-block  6
+call   18 returned 2
+branch 19 taken 2 (fallthrough)
+branch 20 taken 0 (throw)
+        2:   46-block  7
+call   21 returned 2
+branch 22 taken 2 (fallthrough)
+branch 23 taken 0 (throw)
+        2:   46-block  8
+call   24 returned 2
+branch 25 taken 2 (fallthrough)
+branch 26 taken 0
+        2:   46-block  9
+        2:   46-block 10
+        4:   46-block 11
+branch 27 taken 2 (fallthrough)
+branch 28 taken 2
+        2:   46-block 12
+call   29 returned 2
+        4:   46-block 13
+branch 30 taken 2 (fallthrough)
+branch 31 taken 2
+        2:   46-block 14
+call   32 returned 2
+        4:   46-block 15
+branch 33 taken 2 (fallthrough)
+branch 34 taken 2
+        2:   46-block 16
+call   35 returned 2
+        4:   46-block 17
+branch 36 taken 2 (fallthrough)
+branch 37 taken 2
+        2:   46-block 18
+call   38 returned 2
+        4:   46-block 19
+branch 39 taken 4 (fallthrough)
+branch 40 taken 0
+        4:   46-block 20
+call   41 returned 4
+        4:   46-block 21
+branch 42 taken 4 (fallthrough)
+branch 43 taken 0
+        4:   46-block 22
+call   44 returned 4
+        4:   46-block 23
+branch 45 taken 2 (fallthrough)
+branch 46 taken 2
+    $$$$$:   46-block 24
+branch 47 never executed
+branch 48 never executed
+    $$$$$:   46-block 25
+call   49 never executed
+    $$$$$:   46-block 26
+    $$$$$:   46-block 27
+branch 50 never executed
+branch 51 never executed
+    $$$$$:   46-block 28
+call   52 never executed
+    $$$$$:   46-block 29
+    $$$$$:   46-block 30
+branch 53 never executed
+branch 54 never executed
+    $$$$$:   46-block 31
+call   55 never executed
+    $$$$$:   46-block 32
+    $$$$$:   46-block 33
+branch 56 never executed
+branch 57 never executed
+    $$$$$:   46-block 34
+call   58 never executed
+    $$$$$:   46-block 35
+    $$$$$:   46-block 36
+branch 59 never executed
+branch 60 never executed
+    $$$$$:   46-block 37
+call   61 never executed
+    $$$$$:   46-block 38
+    $$$$$:   46-block 39
+branch 62 never executed
+branch 63 never executed
+    $$$$$:   46-block 40
+call   64 never executed
+    $$$$$:   46-block 41
+        2:   47:            medic.set_pret(med.get_pret());
+        2:   47-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   47-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        -:   48:            //medic=med;
+        -:   49:        }
+        4:   50:        i++;
+        4:   50-block  0
+call    0 returned 4
+        -:   51:    }
+        2:   52:}
+        2:   52-block  0
+        -:   53:
+function _ZN21Medicament_Repository9findindexENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_ called 3 returned 100% blocks executed 77%
+        3:   54:int Medicament_Repository::findindex(string denumire, string producator) {
+        6:   55:    for (int i=0; i<this->all_medicamente.size();i++) {
+        3:   55-block  0
+        3:   55-block  1
+        6:   55-block  2
+call    0 returned 6
+branch  1 taken 5
+branch  2 taken 1 (fallthrough)
+        5:   56:        if(this->all_medicamente.get(i).get_denumire() == denumire && this->all_medicamente.get(i).get_producator() == producator) {
+        5:   56-block  0
+call    0 returned 5
+call    1 returned 5
+branch  2 taken 5 (fallthrough)
+branch  3 taken 0 (throw)
+        5:   56-block  1
+call    4 returned 5
+branch  5 taken 2 (fallthrough)
+branch  6 taken 3
+        2:   56-block  2
+call    7 returned 2
+call    8 returned 2
+branch  9 taken 2 (fallthrough)
+branch 10 taken 0 (throw)
+        2:   56-block  3
+call   11 returned 2
+branch 12 taken 2 (fallthrough)
+branch 13 taken 0
+        2:   56-block  4
+        3:   56-block  5
+        5:   56-block  6
+branch 14 taken 2 (fallthrough)
+branch 15 taken 3
+        2:   56-block  7
+call   16 returned 2
+        5:   56-block  8
+branch 17 taken 5 (fallthrough)
+branch 18 taken 0
+        5:   56-block  9
+call   19 returned 5
+        5:   56-block 10
+branch 20 taken 2 (fallthrough)
+branch 21 taken 3
+    $$$$$:   56-block 11
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   56-block 12
+call   24 never executed
+    $$$$$:   56-block 13
+    $$$$$:   56-block 14
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   56-block 15
+call   27 never executed
+        2:   57:            return i;
+        2:   57-block  0
+        -:   58:        }
+        -:   59:    }
+        1:   60:    return -1;
+        1:   60-block  0
+        -:   61:}
+        -:   62:
+function _ZN21Medicament_Repository13stergere_repoERK10Medicament called 3 returned 67% blocks executed 58%
+        3:   63:void Medicament_Repository::stergere_repo(const Medicament &med) {
+        3:   64:    if(!exists(med)){
+        3:   64-block  0
+call    0 returned 3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 2
+        1:   65:        throw Repo_Exception("Medicamentul nu este in lista.\n");
+        1:   65-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   65-block  1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   65-block  2
+call    8 returned 1
+call    9 returned 1
+call   10 returned 0
+    $$$$$:   65-block  3
+call   11 never executed
+    $$$$$:   65-block  4
+    $$$$$:   65-block  5
+call   12 never executed
+    $$$$$:   65-block  6
+    $$$$$:   65-block  7
+call   13 never executed
+        -:   66:}
+        -:   67:    /*
+        -:   68:    int i=0;
+        -:   69:    for( auto& medic : this->all_medicamente){
+        -:   70:        if(medic.get_denumire() == med.get_denumire() && medic.get_producator() == med.get_producator() && medic.get_substanta_activa() == med.get_substanta_activa() && medic.get_pret() == med.get_pret()){
+        -:   71:            this->all_medicamente.remove(this->all_medicamente.begin()+i);
+        -:   72:        }
+        -:   73:        i++;
+        -:   74:    }
+        -:   75:}
+        -:   76:     */
+        2:   77:    const int index = findindex(med.get_denumire(), med.get_producator());
+        2:   77-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   77-block  1
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:   77-block  2
+call    7 returned 2
+call    8 returned 2
+    $$$$$:   77-block  3
+call    9 never executed
+    $$$$$:   77-block  4
+    $$$$$:   77-block  5
+call   10 never executed
+        2:   78:    if(index != -1)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        -:   79:    {
+        2:   80:    this->all_medicamente.remove(index);
+        2:   80-block  0
+call    0 returned 2
+        -:   81:    }
+        2:   82:}
+        2:   82-block  0

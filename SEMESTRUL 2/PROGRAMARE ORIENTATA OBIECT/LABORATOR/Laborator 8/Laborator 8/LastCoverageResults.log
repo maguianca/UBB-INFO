@@ -1,0 +1,21 @@
+[2024-04-17 08:55:28] [info] Start Program:
+Path:"C:\Programare orientata obiect\Laborator 8\x64\Debug\Laborator 8.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\Laborator 8\Laborator 8\"
+Modules: Selected: C:\Programare orientata obiect\Laborator 8\x64\Debug\Laborator 8.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\Laborator 8\Laborator 8 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\0puh1rqj.s3f 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-04-17 08:55:28] [info] Module: C:\Programare orientata obiect\Laborator 8\x64\Debug\Laborator 8.exe is selected because it matches selected pattern: C:\Programare orientata obiect\Laborator 8\x64\Debug\Laborator 8.exe
+[2024-04-17 08:55:32] [info] ----------------------------------------------------
+[2024-04-17 08:55:32] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\0gsdgcuc.cor
+[2024-04-17 08:55:32] [info] ----------------------------------------------------

@@ -1,0 +1,6 @@
+﻿  gui.cpp
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Produse2\Produse2\model.h(13,33): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'gui.cpp')
+  
+C:\Programare orientata obiect\PREGATIRE EXAMEN\Produse2\Produse2\gui.cpp(60,20): warning C4101: 'ex': unreferenced local variable
+  Produse2.vcxproj -> C:\Programare orientata obiect\PREGATIRE EXAMEN\Produse2\x64\Debug\Produse2.exe

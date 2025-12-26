@@ -1,0 +1,3 @@
+1,Bober,2023/12/12,Poland,mammal,10
+2,Taxim,1994/11/01,Romania,reptila,60
+3,OBB,2003/1/2,Australia,reptila,7

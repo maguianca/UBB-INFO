@@ -1,0 +1,68 @@
+/*.root {
+    -fx-background-image: url(../images/logo.gif);
+}
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2A5058;
+    -fx-effect: dropshadow( gaussian , rgba(214, 66, 20, 0.5), 0,0,0,1 );
+}
+#logintext{
+    -fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #2A5058;
+}
+#textResponse {
+    -fx-fill: FIREBRICK;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+*/
+
+/* Root Container with background image */
+.root {
+    -fx-background-image: url(../images/logo.gif);  /* Keep your logo GIF */
+    -fx-background-size: cover; /* Ensures the background covers the entire container */
+}
+
+/* Button Styling */
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to right, #ff66b2, #8a2be2); /* Gradient from pink to purple */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 6, 0.0, 0, 1);
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-padding: 10 20; /* Add padding to make the button more spacious */
+}
+
+/* Label Styling */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8a2be2; /* Purple text */
+    -fx-effect: dropshadow(gaussian, rgba(255, 20, 147, 0.5), 2, 2, 5, 1); /* Subtle pink shadow */
+}
+
+/* Login Text */
+#logintext {
+    -fx-font-size: 36px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #ff66b2; /* Soft pink */
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to bottom, #ff66b2, #8a2be2); /* Gradient effect on text */
+}
+
+/* Text Response Styling */
+#textResponse {
+    -fx-fill: #ff1493; /* Deep pink (Fuchsia) */
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 0, 0, 10, 1);
+}

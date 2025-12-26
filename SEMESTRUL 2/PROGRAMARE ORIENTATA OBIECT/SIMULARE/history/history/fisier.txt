@@ -1,0 +1,4 @@
+3,razboi mondial 3,AFHJ,1944-04-12,1945-06-13
+4,razboi mondial 4,AFH,1999-02-22,2003-03-11
+14,razboi mondial 4,AFH,1999-02-22,2003-03-11
+34,razboi mondial 4,AFH,1999-02-22,2003-03-11

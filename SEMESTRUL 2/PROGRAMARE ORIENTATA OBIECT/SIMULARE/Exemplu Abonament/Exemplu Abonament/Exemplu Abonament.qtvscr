@@ -1,0 +1,429 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FontFamily="Segoe UI" FontSize="12">
+  <FlowDocument.Tag><![CDATA[{
+  "timestamp": "2024-05-16 19:55:19",
+  "files": {
+    "C:\\Programare orientata obiect\\Pregatire Simulare\\Exemplu Abonament\\Exemplu Abonament\\Exemplu Abonament.vcxproj": {
+      "before": "7VlbT+NGFN7nSv0FfYksqsADcbiUpcXxik3YKGq4iAR4qbSa2CdkurbHGo/ZpN3+9Eo99lxsh2RDRAtbBFKQPPOduXw+5ztnxn//8OaN824aBrU74AllUcvaaTStGkQe82l027JSMd4+tN6533/nXHD2O3ii1oExSQMxJPwWRNKy3qc08K0ajhLh00SI+BfbTrwJhCRphNTjLGFj0fBYaPtwBwGLgdthMsrM7N1mc8/C0Ws1pycg7HKWxrU+GUHQstSEbRaN6W3KicAFJhKM8EW9tV7kBakPLasDo/T2yw2N9na1BdpUhnJzjGNXG7OlZH/ORUDEmPHQzQdxbPMsEdgg+VhkvmJxlxAASWDF8hTqORYo2Zse7D+WOxziP2Hua0t7MG9rLs6xjYdKh0UHQFcWs4rTdgM2IkHhptdt5SfXMsLcnbeNpmPfa1Ze9SvMPjPuS6fLLB1bNymEGq6bUt/9k3g7xD/8qbntv/V/3t7fHfvbh97B3jbsj5sA+DvwR38ZV81t1DCXjIkzEkISEw/ckymEcZAej1iEbZFw7Gq/MsJQ8NnnRIa+DgizsWa2sa9CsmHy1RS8qdgPY8ZFTe2tZW1sXreVwFwQMdn67dToSDuOG0qCGjG+gcSq2YveB8alTzPJaFn1jc1KlG592djUq9+qt1r1klrULS0/FRMdCFUJGc5icI/jOKBerk5zsZp3K+quEshn6dMRJ5xC4gqegmPfb1cGeoFDxoIEhHu3s79XxJJuVeD2hHDiCeADRF5FFOUbx660LuUeSS9eR20d2io69nTEjTG+/jXmbiYsAKTglpPwPBY0pH/kr1K9nqXdz0q80eenI/3leCvK/tPR9lJ8tbeeQFeFWRpX0uTJVECUVZwoWAIrTZUwMcfmE+XYcmqoGA9Q7cCXkvwwC61xgwlgzWqtpXKV5JCvCZPYfT5QyHmWNDuUz6erUrZppAjTeauktTCliUg2MVOtPU59y6SsPvNIgPmoQwTR+cOkxwdR+xii5tLBK1Xm1LKk4MiV6JWm5TRpj3p5ROk4q+haFvqnJDswm6DNjhxY7dIoL2UluiQb61W22tXaQZuFMQ1ANaCe3RAeoQz3swO6m//HYrPSKAsehA46/fYEvE+qQjKPBnDBAfXfgyRhvFh74t70zvZ2jz52Tt5fdY8+ts/PBuf9k6MfN5fgt7KTwuKRzFRZjY5ndBJ5cIolr1rSfKuq1ez5fTt9Gn0qOBiko8EsQcJdHCDBstCxiyYzZRciwLsIWc335PTZMUPNvbRbL8LMKc+TBUHlnPfIt67jJr+6qBdnl0e99w9p5GUbzb0j2wX6i9r0wi7DWC8SnGKy9zRMn30WdBgj41ay8DSPBrDMN6SXnf3PvewkIqMA2uennePhBxZkl3GK60U9hhR1goFLGAPHWzxzzFzQYYyWuqykfmm3HMCxn8KjSyeeZ1axV/1SmvkE+lXJ+/PqvV7W0trzjavXq259e7pVJGZ0OeOFxbcGc2va8OJYV26LoSGh0QNQs+5VbzXsEmKWUMH4bDV2APyOerAaOASsgMowGeYFB8V3mkKI1WeXRZRMKoTcA4b5VleAShtdgdTbXAGTmzSg1VscwlQUuyP6mhwaYipKG6zCBFJZBtyfZr1LFSG/uOn51B2EPBOoT2bmWkVdni++IzEfBNx/AA==",
+      "after": "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"
+    }
+  }
+}]]></FlowDocument.Tag>
+  <Section Margin="0,24" TextAlignment="Center">
+    <Paragraph FontSize="24" FontWeight="Bold" Margin="12,0">
+      <LineBreak />
+      <Span Foreground="Gray">Qt Visual Studio Tools</Span>
+    </Paragraph>
+    <Paragraph FontSize="42" Margin="12,0" FontWeight="Bold">
+      <Span TextDecorations="Underline">Project Format Conversion</Span>
+    </Paragraph>
+    <Paragraph Margin="12,8" FontSize="18">
+      <Span>Report generated on 2024-05-16 19:55:19</Span>
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Files</Span>
+    </Paragraph>
+    <Paragraph Margin="24,12,0,0">
+      <Span FontFamily="Consolas" FontSize="14" Background="WhiteSmoke"><![CDATA[C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj]]></Span>
+      <LineBreak />
+      <Hyperlink NavigateUri="file://C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj?before">[Before]</Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj?after">[After]</Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj?diff&amp;before&amp;after">
+                        [Diff before/after]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj?diff&amp;before&amp;current">
+                        [Diff before/current]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj?diff&amp;after&amp;current">
+                        [Diff after/current]
+                    </Hyperlink>
+      <LineBreak />
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Changes</Span>
+    </Paragraph>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Enabling multi-processor compilation]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Project format version]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Keyword>QtVS_v304</Keyword>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Fallback for QTMSBUILD environment variable]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Default Qt properties]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt build settings]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Warn if Qt/MSBuild is not found]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </Target>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt property sheet]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt targets]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Programare orientata obiect\Pregatire Simulare\Exemplu Abonament\Exemplu Abonament\Exemplu Abonament.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+  </Section>
+  <Section>
+    <Paragraph />
+  </Section>
+</FlowDocument>
+<!--LFf1JlCPCoIylbn6Hv7Lz0W1/W9ccNksllTX6fmG5H0=-->

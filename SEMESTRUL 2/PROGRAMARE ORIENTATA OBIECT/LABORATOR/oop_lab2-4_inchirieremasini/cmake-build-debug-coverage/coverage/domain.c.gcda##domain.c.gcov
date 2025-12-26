@@ -1,0 +1,87 @@
+        -:    0:Source:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/domain.c
+        -:    0:Graph:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug-coverage/CMakeFiles/oop_lab2_4_inchirieremasini.dir/domain.c.gcno
+        -:    0:Data:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug-coverage/CMakeFiles/oop_lab2_4_inchirieremasini.dir/domain.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdlib.h>
+        -:    2:#include <string.h>
+        -:    3:#include "Domain.h"
+        -:    4:
+function get_numar called 69 returned 100% blocks executed 100%
+       69:    5:char* get_numar(Masina* masina) {
+        -:    6:    //Returneaza numarul masinii
+       69:    7:    return masina->numar;
+       69:    7-block  0
+        -:    8:}
+        -:    9:
+function get_categorie called 70 returned 100% blocks executed 100%
+       70:   10:char* get_categorie(Masina* masina) {
+        -:   11:    //Returneaza categoria masinii
+       70:   12:    return masina->categorie;
+       70:   12-block  0
+        -:   13:}
+        -:   14:
+function get_model called 72 returned 100% blocks executed 100%
+       72:   15:char* get_model(Masina* masina) {
+        -:   16:    //Returneaza modelul masinii
+       72:   17:    return masina->model;
+       72:   17-block  0
+        -:   18:}
+function get_inchiriere called 62 returned 100% blocks executed 100%
+       62:   19:int get_inchiriere(Masina* masina) {
+        -:   20:    //Returneaza statusul masinii
+       62:   21:    return masina->inchiriata;
+       62:   21-block  0
+        -:   22:}
+function set_numar called 1 returned 100% blocks executed 100%
+        1:   23:void set_numar(Masina* masina, char* numar_nou) {
+        -:   24:    //Seteaza numarul masinii
+        1:   25:    strcpy(masina->numar, numar_nou);
+        1:   26:}
+        -:   27:
+function set_categorie called 1 returned 100% blocks executed 100%
+        1:   28:void set_categorie(Masina* masina, char* categorie_noua) {
+        -:   29:    //Seteaza categoria masinii
+        1:   30:    strcpy(masina->categorie, categorie_noua);
+        1:   31:}
+        -:   32:
+function set_model called 1 returned 100% blocks executed 100%
+        1:   33:void set_model(Masina* masina, char* model_nou) {
+        -:   34:    //Seteaza modelul masinii
+        1:   35:    strcpy(masina->model, model_nou);
+        1:   36:}
+function set_inchiriere called 4 returned 100% blocks executed 100%
+        4:   37:void set_inchiriere(Masina* masina, int inchiriere)
+        -:   38:{
+        -:   39:    //Seteaza statusul masinii
+        4:   40:    masina->inchiriata = inchiriere;
+        4:   41:}
+function creare_masina called 85 returned 100% blocks executed 100%
+       85:   42:Masina* creare_masina(char* numar, char* categorie, char* model, int inchiriere) {
+        -:   43:    //Creeaza o masina
+       85:   44:    Masina* masina = (Masina*)malloc(sizeof(Masina));
+        -:   45:    //set_numar(&masina, numar);
+        -:   46:    //set_categorie(&masina, categorie);
+        -:   47:    //set_model(&masina, model);
+       85:   48:    int nr =(int) strlen(numar) + 1;
+       85:   49:    masina->numar = malloc(nr * sizeof(char));
+       85:   50:    strcpy(masina->numar, numar);
+       85:   51:    nr = (int)strlen(categorie) + 1;
+       85:   52:    masina->categorie = malloc(nr * sizeof(char));
+       85:   53:    strcpy(masina->categorie, categorie);
+       85:   54:    nr = (int)strlen(model) + 1;
+       85:   55:    masina->model = malloc(nr * sizeof(char));
+       85:   56:    strcpy(masina->model, model);
+       85:   57:    masina->inchiriata = inchiriere;
+       85:   58:    return masina;
+       85:   58-block  0
+        -:   59:}
+        -:   60:
+function distruge_masina called 85 returned 100% blocks executed 100%
+       85:   61:void distruge_masina(Masina* m) {
+        -:   62:    //Distruge o masina
+       85:   63:    free(m->numar);
+       85:   64:    free(m->model);
+       85:   65:    free(m->categorie);
+        -:   66:    //m->inchiriata = -100;
+       85:   67:    free(m);
+       85:   68:}

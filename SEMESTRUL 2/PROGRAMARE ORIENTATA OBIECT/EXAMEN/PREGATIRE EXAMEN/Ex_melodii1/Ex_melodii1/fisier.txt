@@ -1,0 +1,4 @@
+123 aa aa 9
+1222 aa aa 9
+102 aa bana 10
+10 aa bana 10

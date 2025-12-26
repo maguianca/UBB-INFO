@@ -1,0 +1,3 @@
+1,rochie cu paiete,s,890,True
+23,fusta aurie,m,125,True
+24,rochie mireasa,xs,8900,False

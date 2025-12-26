@@ -1,0 +1,4 @@
+/mnt/c/Users/A/CLionProjects/Battleship/cmake-build-debug/CMakeFiles/Battleship.dir
+/mnt/c/Users/A/CLionProjects/Battleship/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/A/CLionProjects/Battleship/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/A/CLionProjects/Battleship/cmake-build-debug/CMakeFiles/Battleship_autogen.dir

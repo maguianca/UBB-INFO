@@ -1,0 +1,227 @@
+        -:    0:Source:C:/Users/Ilinca/Desktop/facultate/semestru 2/oop/lab 7/lab6-8oop/Validators.h
+        -:    0:Graph:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Service.cpp.gcno
+        -:    0:Data:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Service.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Ilinca on 30-Mar-22.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB4_6OOP_VALIDATORS_H
+        -:    6:#define LAB4_6OOP_VALIDATORS_H
+        -:    7:
+        -:    8:#pragma once
+        -:    9:#include "Medicament.h"
+        -:   10:#include <vector>
+        -:   11:#include <string>
+        -:   12:using std::vector;
+        -:   13:using std::string;
+        -:   14:
+        -:   15:class Validation_Exception{
+        -:   16:    vector<string> error_msg;
+        -:   17:
+        -:   18:public:
+function _ZN20Validation_ExceptionC1ESt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EE called 4 returned 100% blocks executed 100%
+        4:   19:    Validation_Exception(vector<string> error_mesagges) : error_msg{error_mesagges } {};
+        4:   19-block  0
+call    0 returned 4
+        -:   20:
+        -:   21:    string get_error_messages() {
+        -:   22:        string full_msg = "";
+        -:   23:        for(const string e : error_msg) {
+        -:   24:            full_msg += e + "\n";
+        -:   25:        }
+        -:   26:        return full_msg;
+        -:   27:    }
+        -:   28:};
+        -:   29:
+        -:   30:/*
+        -:   31: * Un medicament este valid daca, are
+        -:   32: * denumirea din mai mult de 2 caractere
+        -:   33: * producatorul din mai mult de 2 caractere
+        -:   34: * substanta activa  din mai mult de 2 caractere
+        -:   35: * pretul este pozitiv
+        -:   36: */
+        -:   37:
+        -:   38:class Medicament_Validator{
+        -:   39:
+        -:   40:public:
+function _ZN20Medicament_Validator9valideazaERK10Medicament called 23 returned 83% blocks executed 64%
+       23:   41:    void valideaza(const Medicament& m){
+       23:   42:        vector<string> errors;
+       23:   42-block  0
+call    0 returned 23
+       23:   43:        if(m.get_denumire().length() < 2)
+call    0 returned 23
+branch  1 taken 23 (fallthrough)
+branch  2 taken 0 (throw)
+       23:   43-block  0
+call    3 returned 23
+call    4 returned 23
+branch  5 taken 1 (fallthrough)
+branch  6 taken 22
+        1:   44:            errors.push_back("Denumirea trebuie sa aiba cel putin 2 caractere.");
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   44-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   44-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   44-block  3
+call    9 never executed
+    $$$$$:   44-block  4
+    $$$$$:   44-block  5
+call   10 never executed
+    $$$$$:   44-block  6
+       23:   45:        if(m.get_producator().length() < 2)
+       23:   45-block  0
+call    0 returned 23
+branch  1 taken 23 (fallthrough)
+branch  2 taken 0 (throw)
+       23:   45-block  1
+call    3 returned 23
+call    4 returned 23
+branch  5 taken 1 (fallthrough)
+branch  6 taken 22
+        1:   46:            errors.push_back("Producatorul trebuie sa aiba cel putin 2 caractere.");
+        1:   46-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   46-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   46-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   46-block  3
+call    9 never executed
+    $$$$$:   46-block  4
+    $$$$$:   46-block  5
+call   10 never executed
+    $$$$$:   46-block  6
+       23:   47:        if(m.get_substanta_activa().length() < 1)
+       23:   47-block  0
+call    0 returned 23
+branch  1 taken 23 (fallthrough)
+branch  2 taken 0 (throw)
+       23:   47-block  1
+call    3 returned 23
+call    4 returned 23
+branch  5 taken 1 (fallthrough)
+branch  6 taken 22
+        1:   48:            errors.push_back("Substanta activa trebuie sa aiba cel putin 1 caracter.");
+        1:   48-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   48-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   48-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   48-block  3
+call    9 never executed
+    $$$$$:   48-block  4
+    $$$$$:   48-block  5
+call   10 never executed
+    $$$$$:   48-block  6
+       23:   49:        if(m.get_denumire().length() < 2)
+       23:   49-block  0
+call    0 returned 23
+branch  1 taken 23 (fallthrough)
+branch  2 taken 0 (throw)
+       23:   49-block  1
+call    3 returned 23
+call    4 returned 23
+branch  5 taken 1 (fallthrough)
+branch  6 taken 22
+        1:   50:            errors.push_back("Denumirea trebuie sa aiba cel putin 2 caractere.");
+        1:   50-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   50-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   50-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   50-block  3
+call    9 never executed
+    $$$$$:   50-block  4
+    $$$$$:   50-block  5
+call   10 never executed
+    $$$$$:   50-block  6
+       23:   51:        if(m.get_pret() < 0)
+       23:   51-block  0
+call    0 returned 23
+branch  1 taken 23 (fallthrough)
+branch  2 taken 0 (throw)
+       23:   51-block  1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 22
+        1:   52:            errors.push_back("Pretul  trebuie sa fie pozitiv.");
+        1:   52-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   52-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   52-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   52-block  3
+call    9 never executed
+    $$$$$:   52-block  4
+    $$$$$:   52-block  5
+call   10 never executed
+    $$$$$:   52-block  6
+        -:   53:
+       23:   54:        if(errors.size() > 0)
+       23:   54-block  0
+call    0 returned 23
+branch  1 taken 4 (fallthrough)
+branch  2 taken 19
+        4:   55:            throw Validation_Exception(errors);
+        4:   55-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   55-block  1
+call    4 returned 4
+branch  5 taken 4 (fallthrough)
+branch  6 taken 0 (throw)
+        4:   55-block  2
+call    7 returned 4
+call    8 returned 4
+    $$$$$:   55-block  3
+call    9 never executed
+    $$$$$:   55-block  4
+    $$$$$:   55-block  5
+call   10 never executed
+        -:   56:
+       23:   57:    }
+       19:   57-block  0
+call    0 returned 19
+        4:   57-block  1
+call    1 returned 4
+        -:   58:};
+        -:   59:
+        -:   60:#endif //LAB4_6OOP_VALIDATORS_H

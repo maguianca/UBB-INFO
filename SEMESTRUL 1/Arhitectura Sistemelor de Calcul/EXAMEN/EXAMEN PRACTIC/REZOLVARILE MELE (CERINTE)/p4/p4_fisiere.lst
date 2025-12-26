@@ -1,0 +1,116 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit,scanf,printf,fopen,fclose,fprintf
+     8                                  import exit msvcrt.dll    
+     9                                  import printf msvcrt.dll    
+    10                                  import scanf msvcrt.dll    
+    11                                  import fclose msvcrt.dll    
+    12                                  import fopen msvcrt.dll    
+    13                                  import fprintf msvcrt.dll    
+    14                                  
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17 00000000 <res 00000064>              text resb 100
+    18 00000064 00000000                    nr dd 0
+    19 00000068 256300                      format db "%c",0
+    20 0000006B 25642000                    format_afisare db "%d ",0
+    21 0000006F 44617469206F207072-         mesaj db "Dati o propozitie:",0
+    21 00000078 6F706F7A697469653A-
+    21 00000081 00                 
+    22 00000082 00000000                    len dd 0
+    23 00000086 00<rept>                    result times 100 db 0
+    24 000000EA 7700                        mod_acces db "w",0
+    25 000000EC 6F75747075742E7478-         nume_fisier db "output.txt",0
+    25 000000F5 7400               
+    26 000000F7 FFFFFFFF                    descriptor_fisier dd -1
+    27                                      
+    28                                  
+    29                                  ; our code starts here
+    30                                  segment code use32 class=code
+    31                                      start:
+    32 00000000 68[6F000000]                    push dword mesaj
+    33 00000005 FF15[00000000]                  call [printf]
+    34 0000000B 83C404                          add esp,4
+    35                                          
+    36 0000000E B900000000                      mov ecx,0
+    37                                          
+    38 00000013 68[EA000000]                    push dword mod_acces
+    39 00000018 68[EC000000]                    push dword nume_fisier 
+    40 0000001D FF15[00000000]                  call [fopen]
+    41                                          
+    42 00000023 83F800                          cmp eax, 0
+    43 00000026 743B                            je finalizare_scriere
+    44 00000028 A3[F7000000]                    mov [descriptor_fisier],eax
+    45 0000002D C705[64000000]0000-             mov dword[nr],0
+    45 00000035 0000               
+    46                                      citire:
+    47 00000037 68[00000000]                    push dword text
+    48 0000003C 68[68000000]                    push dword format
+    49 00000041 FF15[00000000]                  call [scanf]
+    50 00000047 83C408                          add esp,4*2
+    51                                          
+    52 0000004A B800000000                      mov eax,0
+    53 0000004F A0[00000000]                    mov al,byte[text]
+    54 00000054 3C2E                            cmp al,'.'
+    55 00000056 7466                            je numara_2
+    56 00000058 3C20                            cmp al,' '
+    57 0000005A 743A                            je numara
+    58 0000005C E819000000                      call litere
+    59                                          
+    60                                          aici:
+    61 00000061 EBD4                            jmp citire
+    62                                          
+    63                                          
+    64                                      
+    65                                       finalizare_scriere:
+    66 00000063 FF35[F7000000]                  push dword [descriptor_fisier]
+    67 00000069 FF15[00000000]                  call [fclose]
+    68 0000006F 83C404                          add esp,4
+    69                                          
+    70 00000072 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    71 00000074 FF15[00000000]                  call    [exit]       ; call exit to terminate the progra
+    72                                       litere:
+    73 0000007A 60                              pushad 
+    74                                      lit_mare:
+    75 0000007B 3C41                            cmp al,'A'
+    76 0000007D 7215                            jb peste
+    77 0000007F 3C5A                            cmp al,'Z'
+    78 00000081 7702                            ja lit_mica
+    79 00000083 EB08                            jmp aduna
+    80                                      lit_mica:
+    81 00000085 3C61                            cmp al,'a'
+    82 00000087 720B                            jb peste
+    83 00000089 3C7A                            cmp al,'z'
+    84 0000008B 7707                            ja peste 
+    85                                      aduna:
+    86 0000008D 8305[64000000]01                add dword[nr],1
+    87                                          
+    88                                          peste:
+    89 00000094 61                              popad
+    90 00000095 C3                              ret
+    91                                       numara:
+    92 00000096 60                              pushad
+    93 00000097 FF35[64000000]                  push dword [nr]
+    94 0000009D 68[6B000000]                    push dword format_afisare
+    95 000000A2 FF35[F7000000]                  push dword [descriptor_fisier]
+    96 000000A8 FF15[00000000]                  call [fprintf]
+    97 000000AE 83C40C                          add esp,4*3
+    98 000000B1 61                              popad
+    99 000000B2 C705[64000000]0000-             mov dword[nr],0
+    99 000000BA 0000               
+   100 000000BC EBA3                            jmp aici
+   101                                       numara_2:
+   102 000000BE 60                              pushad
+   103 000000BF FF35[64000000]                  push dword [nr]
+   104 000000C5 68[6B000000]                    push dword format_afisare
+   105 000000CA FF35[F7000000]                  push dword [descriptor_fisier]
+   106 000000D0 FF15[00000000]                  call [fprintf]
+   107 000000D6 83C40C                          add esp,4*3
+   108 000000D9 61                              popad
+   109 000000DA C705[64000000]0000-             mov dword[nr],0
+   109 000000E2 0000               
+   110 000000E4 E97AFFFFFF                      jmp finalizare_scriere

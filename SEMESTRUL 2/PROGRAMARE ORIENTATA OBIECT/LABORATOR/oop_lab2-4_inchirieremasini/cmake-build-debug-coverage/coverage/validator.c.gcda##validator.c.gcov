@@ -1,0 +1,75 @@
+        -:    0:Source:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/validator.c
+        -:    0:Graph:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug-coverage/CMakeFiles/oop_lab2_4_inchirieremasini.dir/validator.c.gcno
+        -:    0:Data:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug-coverage/CMakeFiles/oop_lab2_4_inchirieremasini.dir/validator.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <ctype.h>
+        -:    2:#include <string.h>
+        -:    3:
+function validate_masina called 33 returned 100% blocks executed 100%
+       33:    4:int validate_masina(const char* numar, const char* categorie, const char* model) {
+        -:    5:    //Returneaza 1 daca masina este valida, 0 altfel
+        -:    6:    int i;
+      226:    7:    for (i = 0; i < strlen(numar); i++) {
+       33:    7-block  0
+      193:    7-block  1
+      226:    7-block  2
+branch  0 taken 194
+branch  1 taken 32 (fallthrough)
+      194:    8:        if (!isalnum(numar[i])) {
+      194:    8-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 193
+        1:    9:            return 0;
+        1:    9-block  0
+        -:   10:        }
+        -:   11:    }
+      193:   12:    for (i = 0; i < strlen(categorie); i++) {
+       32:   12-block  0
+      161:   12-block  1
+      193:   12-block  2
+branch  0 taken 165
+branch  1 taken 28 (fallthrough)
+      165:   13:        if (!isalpha(categorie[i]) && !isspace(categorie[i])) {
+      165:   13-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 161
+        4:   13-block  1
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0
+        4:   14:            return 0;
+        4:   14-block  0
+        -:   15:        }
+        -:   16:    }
+      182:   17:    for (i = 0; i < strlen(model); i++) {
+       28:   17-block  0
+      154:   17-block  1
+      182:   17-block  2
+branch  0 taken 155
+branch  1 taken 27 (fallthrough)
+      155:   18:        if (!isalpha(model[i]) && !isspace(model[i])) {
+      155:   18-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 154
+        1:   18-block  1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0
+        1:   19:            return 0;
+        1:   19-block  0
+        -:   20:        }
+        -:   21:    }
+       27:   22:    if (strlen(numar) == 0 || strlen(categorie) == 0 || strlen(model) == 0) {
+       27:   22-block  0
+branch  0 taken 26 (fallthrough)
+branch  1 taken 1
+       26:   22-block  1
+branch  2 taken 26 (fallthrough)
+branch  3 taken 0
+       26:   22-block  2
+branch  4 taken 0 (fallthrough)
+branch  5 taken 26
+        1:   23:        return 0;
+        1:   23-block  0
+        -:   24:    }
+       26:   25:    return 1;
+       26:   25-block  0
+        -:   26:}

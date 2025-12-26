@@ -1,0 +1,3 @@
+C:/Users/emanu/CLionProjects/oop_lab2-4_inchirieremasini/out/build/x64-Debug/CMakeFiles/oop_lab2_4_inchirieremasini.dir
+C:/Users/emanu/CLionProjects/oop_lab2-4_inchirieremasini/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/emanu/CLionProjects/oop_lab2-4_inchirieremasini/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

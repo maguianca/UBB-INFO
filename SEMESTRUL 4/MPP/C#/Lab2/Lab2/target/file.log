@@ -1,0 +1,39 @@
+﻿2025-03-19 19:06:06,148 [1] INFO Lab2.Repository.DBAngajatRepo - Initializing DBAngajatRepo
+2025-03-19 19:06:06,167 [1] INFO Lab2.Repository.DBBiletRepo - Initializing DBBiletRepo
+2025-03-19 19:06:06,168 [1] INFO Lab2.Repository.DBSpectacolRepo - Initializing DBSpectacolRepo
+2025-03-19 19:06:06,193 [1] INFO Lab2.Repository.DBAngajatRepo - Finding all angajati
+2025-03-19 19:06:06,360 [1] INFO Lab2.Repository.DBAngajatRepo - Updating angajat with id 7
+2025-03-19 19:06:06,366 [1] INFO Lab2.Repository.DBAngajatRepo - Updated 1 records
+2025-03-19 19:06:06,367 [1] INFO Lab2.Repository.DBSpectacolRepo - Finding all spectacole
+2025-03-19 19:06:06,375 [1] INFO Lab2.Repository.DBBiletRepo - Finding all bilete
+2025-03-19 19:06:06,376 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 1
+2025-03-19 19:06:06,377 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 2
+2025-03-19 19:06:06,377 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 2
+2025-03-19 19:06:06,378 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 1
+2025-03-19 19:06:06,380 [1] INFO Lab2.Program - Hello logging world
+2025-03-19 19:45:21,703 [1] INFO Lab2.Repository.DBAngajatRepo - Initializing DBAngajatRepo
+2025-03-19 19:45:21,711 [1] INFO Lab2.Repository.DBBiletRepo - Initializing DBBiletRepo
+2025-03-19 19:45:21,712 [1] INFO Lab2.Repository.DBSpectacolRepo - Initializing DBSpectacolRepo
+2025-03-19 19:45:21,722 [1] INFO Lab2.Repository.DBAngajatRepo - Finding all angajati
+2025-03-19 19:45:21,851 [1] INFO Lab2.Repository.DBAngajatRepo - Updating angajat with id 7
+2025-03-19 19:45:21,858 [1] INFO Lab2.Repository.DBAngajatRepo - Updated 1 records
+2025-03-19 19:45:21,859 [1] INFO Lab2.Repository.DBSpectacolRepo - Finding all spectacole
+2025-03-19 19:45:21,864 [1] INFO Lab2.Repository.DBBiletRepo - Finding all bilete
+2025-03-19 19:45:21,864 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 1
+2025-03-19 19:45:21,865 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 2
+2025-03-19 19:45:21,865 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 2
+2025-03-19 19:45:21,865 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 1
+2025-03-19 19:45:21,866 [1] INFO Lab2.Program - Hello logging world
+2025-03-20 10:12:24,622 [1] INFO Lab2.Repository.DBAngajatRepo - Initializing DBAngajatRepo
+2025-03-20 10:12:24,629 [1] INFO Lab2.Repository.DBBiletRepo - Initializing DBBiletRepo
+2025-03-20 10:12:24,630 [1] INFO Lab2.Repository.DBSpectacolRepo - Initializing DBSpectacolRepo
+2025-03-20 10:12:24,642 [1] INFO Lab2.Repository.DBAngajatRepo - Finding all angajati
+2025-03-20 10:12:24,731 [1] INFO Lab2.Repository.DBAngajatRepo - Updating angajat with id 7
+2025-03-20 10:12:24,736 [1] INFO Lab2.Repository.DBAngajatRepo - Updated 1 records
+2025-03-20 10:12:24,736 [1] INFO Lab2.Repository.DBSpectacolRepo - Finding all spectacole
+2025-03-20 10:12:24,745 [1] INFO Lab2.Repository.DBBiletRepo - Finding all bilete
+2025-03-20 10:12:24,746 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 1
+2025-03-20 10:12:24,746 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 2
+2025-03-20 10:12:24,747 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 2
+2025-03-20 10:12:24,747 [1] INFO Lab2.Repository.DBBiletRepo - Finding spectacol with id 1
+2025-03-20 10:12:24,749 [1] INFO Lab2.Program - Hello logging world

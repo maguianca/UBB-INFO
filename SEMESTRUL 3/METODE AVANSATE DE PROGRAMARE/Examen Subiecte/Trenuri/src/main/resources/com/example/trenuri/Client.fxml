@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trenuri.controller.ClientController">
+   <children>
+      <ComboBox fx:id="departure" layoutX="17.0" layoutY="82.0" prefWidth="150.0" />
+      <ComboBox fx:id="destination" layoutX="25.0" layoutY="175.0" prefWidth="150.0" />
+      <Label layoutX="54.0" layoutY="43.0" text="Departure City" />
+      <Label layoutX="32.0" layoutY="137.0" text="Destination City" />
+      <CheckBox fx:id="direct" layoutX="32.0" layoutY="233.0" mnemonicParsing="false" text="Direct Routes Only" />
+      <Button fx:id="search" layoutX="74.0" layoutY="294.0" mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+      <ListView fx:id="tabel" layoutX="233.0" layoutY="54.0" prefHeight="200.0" prefWidth="316.0" />
+      <Label fx:id="label" layoutX="252.0" layoutY="277.0" text="0 other user(s) are looking at the same route" textFill="#df1717" />
+   </children>
+</AnchorPane>

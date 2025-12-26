@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="394.0" prefWidth="409.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.EditUserController">
+   <children>
+      <Button layoutX="45.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleUpdateSave" prefHeight="25.0" prefWidth="121.0" text="Save">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="166.0" layoutY="36.0" text="Update">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldUpdateFirst" layoutX="106.0" layoutY="76.0" text="First Name" />
+      <TextField fx:id="fieldUpdateLast" layoutX="106.0" layoutY="116.0" text="Last Name" />
+      <Button layoutX="235.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleUpdateCancel" prefHeight="33.0" prefWidth="133.0" text="Cancel">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="bio" layoutX="106.0" layoutY="162.0" text="Descriere" />
+      <Button fx:id="photo" layoutX="101.0" layoutY="218.0" mnemonicParsing="false" onAction="#handlephoto" prefHeight="35.0" prefWidth="159.0" text="Upload profile photo" />
+   </children>
+</AnchorPane>

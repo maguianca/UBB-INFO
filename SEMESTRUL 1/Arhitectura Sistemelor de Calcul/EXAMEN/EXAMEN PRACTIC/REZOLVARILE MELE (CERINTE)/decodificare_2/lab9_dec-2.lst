@@ -1,0 +1,114 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit,fopen,fprintf,fclose,fread,printf
+     8                                  import exit msvcrt.dll    
+     9                                  import fopen msvcrt.dll    
+    10                                  import fprintf msvcrt.dll    
+    11                                  import fclose msvcrt.dll    
+    12                                  import fread msvcrt.dll    
+    13                                  import printf msvcrt.dll    
+    14                                  
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17 00000000 72322E74787400              nume_fisier db "r2.txt",0
+    18 00000007 7200                        mod_acces db "r",0
+    19 00000009 FFFFFFFF                    descriptor_fisier dd -1
+    20 0000000D 00<rept>                    text times 100 db 0
+    21 00000071 256300                      format db "%c",0
+    22 00000074 4D6573616A756C206F-         afis db "Mesajul original este:",0
+    22 0000007D 726967696E616C2065-
+    22 00000086 7374653A00         
+    23 0000008B 64000000                    count dd 100
+    24 0000008F 01000000                    dimensiune dd 1
+    25 00000093 <res 00000064>              sir resb 100
+    26 000000F7 00000000                    len dd 0
+    27                                      
+    28                                  
+    29                                  ; our code starts here
+    30                                  segment code use32 class=code
+    31                                      start:
+    32 00000000 68[07000000]                    push dword mod_acces
+    33 00000005 68[00000000]                    push dword nume_fisier
+    34 0000000A FF15[00000000]                  call [fopen]
+    35 00000010 83C408                          add esp,4*2
+    36                                          
+    37 00000013 83F800                          cmp eax,0
+    38 00000016 0F848E000000                    je finalizare_scriere
+    39 0000001C A3[09000000]                    mov [descriptor_fisier],eax
+    40                                          
+    41 00000021 68[74000000]                    push dword afis
+    42 00000026 FF15[00000000]                  call [printf]
+    43 0000002C 83C404                          add esp,4
+    44                                          
+    45                                      citire:
+    46 0000002F FF35[09000000]                  push dword [descriptor_fisier]
+    47 00000035 FF35[8B000000]                  push dword [count]
+    48 0000003B FF35[8F000000]                  push dword [dimensiune]
+    49 00000041 68[93000000]                    push dword sir
+    50 00000046 FF15[00000000]                  call [fread]
+    51 0000004C 83C410                          add esp, 4*4
+    52                                          
+    53 0000004F A3[F7000000]                    mov [len], eax
+    54                                          
+    55 00000054 BE[93000000]                    mov esi, sir
+    56                                  
+    57 00000059 8B0D[F7000000]                  mov ecx, [len]
+    58 0000005F FC                              cld
+    59 00000060 E348                            jecxz finalizare_scriere
+    60                                          
+    61 00000062 B800000000                      mov eax, 0
+    62                                      bucla:
+    63 00000067 51                              push ecx
+    64 00000068 B800000000                      mov eax,0
+    65 0000006D AC                              lodsb
+    66 0000006E 3C20                            cmp al,' '
+    67 00000070 7426                            je jump
+    68                                          
+    69 00000072 3C61                            cmp al,'a'
+    70 00000074 730E                            jae aici
+    71                                          
+    72 00000076 3C43                            cmp al,'C'
+    73 00000078 771C                            ja peste
+    74 0000007A 2C41                            sub al,'A'
+    75 0000007C B25A                            mov dl,'Z'
+    76 0000007E 28C2                            sub dl,al
+    77 00000080 88D0                            mov al,dl
+    78 00000082 EB14                            jmp jump
+    79                                          
+    80                                        aici:
+    81 00000084 3C63                            cmp al,'c'
+    82 00000086 770E                            ja peste
+    83 00000088 3C61                            cmp al,'a'
+    84 0000008A 720A                            jb peste
+    85 0000008C 2C61                            sub al,'a'
+    86 0000008E B27A                            mov dl,'z'
+    87 00000090 28C2                            sub dl,al
+    88 00000092 88D0                            mov al,dl
+    89 00000094 EB02                            jmp jump
+    90                                          
+    91                                          peste:
+    92 00000096 2C03                            sub al,3
+    93                                          
+    94                                          jump:
+    95 00000098 50                              push eax  ;afisare caracter
+    96 00000099 68[71000000]                    push dword format
+    97 0000009E FF15[00000000]                  call [printf]
+    98 000000A4 83C408                          add esp,4*2
+    99                                          
+   100 000000A7 59                              pop ecx
+   101                                          
+   102 000000A8 E2BD                            loop bucla
+   103                                          
+   104                                     
+   105                                      
+   106                                      finalizare_scriere:
+   107 000000AA FF35[09000000]                  push dword [descriptor_fisier]
+   108 000000B0 FF15[00000000]                  call [fclose]
+   109 000000B6 83C404                          add esp,4
+   110                                          
+   111 000000B9 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   112 000000BB FF15[00000000]                  call    [exit]       ; call exit to terminate the program

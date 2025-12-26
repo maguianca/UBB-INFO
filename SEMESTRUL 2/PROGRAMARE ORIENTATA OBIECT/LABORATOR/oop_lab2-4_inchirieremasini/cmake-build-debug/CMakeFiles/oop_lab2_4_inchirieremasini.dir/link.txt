@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/oop_lab2_4_inchirieremasini.dir/UI.c.o CMakeFiles/oop_lab2_4_inchirieremasini.dir/service.c.o CMakeFiles/oop_lab2_4_inchirieremasini.dir/repo.c.o CMakeFiles/oop_lab2_4_inchirieremasini.dir/domain.c.o CMakeFiles/oop_lab2_4_inchirieremasini.dir/teste.c.o CMakeFiles/oop_lab2_4_inchirieremasini.dir/validator.c.o -o oop_lab2_4_inchirieremasini 

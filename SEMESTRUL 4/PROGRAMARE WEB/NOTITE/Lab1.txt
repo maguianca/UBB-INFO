@@ -1,0 +1,68 @@
+HTML 4
+tag+atribute de formatare 
+	<center>
+	bgcolor
+
+nu sunt suportate web socket-urile si nici locatia geografica (user location)
+-tag===  font, size, color, <i> face italic
+                            <b>
+readonly='readonly'
+        
+
+HTML 5
+-formatare cu CSS
+
+tag vs atribute
+tag=paranteze unghiulare
+atruibute=atribute la un tag
+
+<tag atribut1=val atribut2=val>
+</tag>                             exista tag-uri care nu se inchid !!!
+
+avem web socket-uri si locatia geografica folosind java script -geo location 
+-tag-uri semantice adica adauga sens pt pag web : header, footer, article, section 
+-atribute pt elem din formulare(input type de mai multe tipuri): number, date, calendar, range 
+-elemente grafice: svg, canvas
+-tag-uri multimedia: audio si video 
+readonly ca si atribut (texteria)
+
+-tag <span>+CSS
+     <em> -face italic si se precizeaza ca textul e imporatnt tag semnatic 
+     <strong> face bold si se precuzeaza ca este important
+
+TEMA: FISIERE DIFERITE PT HTML 4 SI 5 SI VALIDARE PT HTML 4 SI 5 SI DELOC ERORI 
+SE FOLOSESC ABSOLUT TOATE TAG-URILE SPECIFICATE SE POATE PRIMII CERINTA DE ZI SI SE
+POT PRIMI INTREBARI DE TEORIE 
+SE POATE VERICA CU QUIZ-UL DIN W3SCHOOL 
+
+<form method="GET" target="blank">
+              POST
+    <input type="txt" 
+                 ..number, date, image, checkbox, button,hidden
+                 color, calendar, range, radio, submit,password 
+    
+    <label fot=
+    
+</form> 
+
+langa un imput inainte se afiseaza un label 
+
+difeenta dintre nume si id 
+	se creeaza un obiect cu 
+	{"prenume":"Ana"}
+	daca e GET: vedem in url ?prenume=Ana &name=Pop
+	       POST: obiectul vide in body si nu o sa se vada in url 
+			body:{   }
+
+GET=cand vrem sa folosim o inf
+POST=daca vrem sa adaugam o inf
+
+pt o parola adaugam post ca sa nu se vada in url 
+    =type password 
+hidden =se ascunde id-ul produsului de ex se poate retine informatii care nu se vad 
+
+
+
+SGBD
+daca stergem un enevt handler trebuie sa stergem si in Designer 
+

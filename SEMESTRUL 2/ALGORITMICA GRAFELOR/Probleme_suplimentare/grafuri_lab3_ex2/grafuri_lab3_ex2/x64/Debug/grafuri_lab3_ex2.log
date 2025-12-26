@@ -1,0 +1,5 @@
+﻿  p2.cpp
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\grafuri_lab3_ex2\grafuri_lab3_ex2\p2.cpp(76,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\grafuri_lab3_ex2\grafuri_lab3_ex2\p2.cpp(77,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\grafuri_lab3_ex2\grafuri_lab3_ex2\p2.cpp(101,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  grafuri_lab3_ex2.vcxproj -> C:\Users\magui\Documents\Facultate sem 2\Algoritmica grafelor\Probleme_suplimentare\grafuri_lab3_ex2\x64\Debug\grafuri_lab3_ex2.exe

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Editare Angajat</title>
+</head>
+<body>
+
+<h3>Selecteaza un ID:</h3>
+<select id="idSelect"></select>
+
+<h3>Detalii angajat:</h3>
+<form id="angajatForm">
+    <label>Username: <input type="text" id="username"></label><br>
+    <label>Email: <input type="text" id="email"></label><br>
+    <label>Password: <input type="password" id="password"></label><br><br>
+    <button id="saveBtn" disabled>Save</button>
+</form>
+
+<script>
+    let originalData = {};
+    let formModified = false;
+    let currentId = null;
+
+    function ajaxGet(url, callback) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                callback(JSON.parse(xhr.responseText));
+            }
+        };
+        xhr.send();
+    }
+
+    function ajaxPost(url, data, callback) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                callback(JSON.parse(xhr.responseText));
+            }
+        };
+        const params = Object.keys(data).map(
+            key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        ).join("&");
+        xhr.send(params);
+    }
+
+    function loadIds() {
+        ajaxGet("get_ids.php", function (ids) {
+            const select = document.getElementById("idSelect");
+            select.innerHTML = "";
+            ids.forEach(id => {
+                const option = document.createElement("option");
+                option.value = id;
+                option.textContent = id;
+                select.appendChild(option);
+            });
+            if (ids.length > 0) {
+                select.value = ids[0];
+                loadDetails(ids[0]);
+            }
+        });
+    }
+
+    function loadDetails(id) {
+        ajaxGet("get_details.php?id=" + encodeURIComponent(id), function (data) {
+            document.getElementById("username").value = data.username;
+            document.getElementById("email").value = data.email;
+            document.getElementById("password").value = data.password;
+            originalData = { ...data };
+            formModified = false;
+            document.getElementById("saveBtn").disabled = true;
+            currentId = id;
+        });
+    }
+
+    function isFormModified() {
+        return (
+            document.getElementById("username").value !== originalData.username ||
+            document.getElementById("email").value !== originalData.email ||
+            document.getElementById("password").value !== originalData.password
+        );
+    }
+
+    document.getElementById("idSelect").addEventListener("change", function () {
+        const newId = this.value;
+        if (formModified) {
+            if (confirm("Ai modificat datele. Doresti sa le salvezi inainte?")) {
+                document.getElementById("saveBtn").click();
+                setTimeout(() => loadDetails(newId), 200);
+            } else {
+                loadDetails(newId);
+            }
+        } else {
+            loadDetails(newId);
+        }
+    });
+
+    document.querySelectorAll("#angajatForm input").forEach(input => {
+        input.addEventListener("input", function () {
+            formModified = isFormModified();
+            document.getElementById("saveBtn").disabled = !formModified;
+        });
+    });
+
+    document.getElementById("saveBtn").addEventListener("click", function (e) {
+        e.preventDefault();
+        const data = {
+            id: currentId,
+            username: document.getElementById("username").value,
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value
+        };
+        ajaxPost("save_details.php", data, function (resp) {
+            if (resp.success) {
+                alert("Date salvate.");
+                originalData = { ...data };
+                formModified = false;
+                document.getElementById("saveBtn").disabled = true;
+            } else {
+                alert("Eroare la salvare.");
+            }
+        });
+    });
+
+    loadIds();
+</script>
+
+</body>
+</html>

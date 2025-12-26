@@ -1,0 +1,51 @@
+        -:    0:Source:C:/Users/Ilinca/Desktop/facultate/semestru 2/oop/lab 7/lab6-8oop/Pet.h
+        -:    0:Graph:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Ilinca on 25-Apr-22.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB4_6OOP_PET_H
+        -:    6:#define LAB4_6OOP_PET_H
+        -:    7:#include <string>
+        -:    8:
+        -:    9:class Pet
+        -:   10:{
+        -:   11:public:
+function _ZN3PetC1Ev called 1170 returned 100% blocks executed 100%
+     1170:   12:    Pet() = default;
+     1170:   12-block  0
+call    0 returned 1170
+call    1 returned 1170
+function _ZN3PetC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_d called 151 returned 100% blocks executed 80%
+      151:   13:    Pet(std::string t, std::string s, double p) :type{ t }, species{ s }, price{ p } {
+      151:   13-block  0
+call    0 returned 151
+call    1 returned 151
+branch  2 taken 151 (fallthrough)
+branch  3 taken 0 (throw)
+      151:   14:    }
+      151:   14-block  0
+    $$$$$:   14-block  1
+call    0 never executed
+function _ZNK3Pet8getPriceEv called 100 returned 100% blocks executed 100%
+      100:   15:    double getPrice() const noexcept {
+      100:   16:        return price;
+      100:   16-block  0
+        -:   17:    }
+function _ZNK3Pet7getTypeB5cxx11Ev called 4 returned 100% blocks executed 100%
+        4:   18:    std::string getType() const {
+        4:   19:        return type;
+        4:   19-block  0
+call    0 returned 4
+        -:   20:    }
+        -:   21:private:
+        -:   22:    std::string type;
+        -:   23:    std::string species;
+        -:   24:    double price=-1.0;
+        -:   25:
+        -:   26:};
+        -:   27:
+        -:   28:
+        -:   29:#endif //LAB4_6OOP_PET_H

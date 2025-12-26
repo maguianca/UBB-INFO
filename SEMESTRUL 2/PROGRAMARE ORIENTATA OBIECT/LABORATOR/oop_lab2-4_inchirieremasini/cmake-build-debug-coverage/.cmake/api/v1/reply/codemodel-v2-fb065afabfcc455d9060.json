@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "oop_lab2_4_inchirieremasini",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "oop_lab2_4_inchirieremasini::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-oop_lab2_4_inchirieremasini-Debug-57bdbe237a50a5a83a41.json",
+					"name" : "oop_lab2_4_inchirieremasini",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug-coverage",
+		"source" : "/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

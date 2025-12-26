@@ -1,0 +1,14 @@
+﻿  Reading Qt configuration (C:/Qt/6.5.3/msvc2019_64/bin/qmake)
+  uic Simulare216.ui
+  rcc Simulare216.qrc
+  moc Simulare216.h
+   RCC: Warning: No resources in 'C:\Programare orientata obiect\Pregatire Simulare\Simulare 216\Simulare 216\Simulare216.qrc'.
+  teste.cpp
+  gui.cpp
+  repo.cpp
+  service.cpp
+  Simulare216.cpp
+  main.cpp
+  qrc_Simulare216.cpp
+  moc_Simulare216.cpp
+LINK : fatal error LNK1104: cannot open file 'C:\Programare orientata obiect\Pregatire Simulare\Simulare 216\x64\Debug\Simulare 216.exe'

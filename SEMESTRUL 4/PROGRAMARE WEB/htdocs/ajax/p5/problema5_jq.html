@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>File Tree View</title>
+    <style>
+        ul { list-style-type: line; margin-left: 20px; }
+        li { cursor: pointer; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h2>Tree View - Sistem de fisiere</h2>
+<div id="treeview"></div>
+<hr>
+<pre id="fileContent" style="background:#eee; padding:10px;"></pre>
+
+<script>
+    function createNode(name, path, isDir) {
+        const $li = $("<li>").attr("data-path", path);
+        const $span = $("<span>").text(name);
+        if (isDir) {
+            $span.css("font-weight", "bold");
+        }
+        $li.append($span);
+
+        if (isDir) {
+            $li.on("click", function (e) {
+                e.stopPropagation();
+                const $this = $(this);
+
+                if ($this.hasClass("loaded")) {
+                    const $ul = $this.children("ul");
+                    $ul.toggle();
+                    return;
+                }
+
+                $.get("load_dir.php", { path: path }, function (data) {
+                    const $ul = $("<ul>");
+                    data.forEach(function (item) {
+                        $ul.append(createNode(item.name, item.path, item.type === "dir"));
+                    });
+                    $this.append($ul).addClass("loaded");
+                }, "json");
+            });
+        } else {
+            $li.on("click", function (e) {
+                e.stopPropagation();
+                $.get("read_file.php", { path: path }, function (text) {
+                    $("#fileContent").text(text);
+                });
+            });
+        }
+
+        return $li;
+    }
+
+    function loadRoot() {
+        $.get("load_dir.php", { path: "." }, function (data) {
+            const $root = $("<ul>");
+            data.forEach(function (item) {
+                $root.append(createNode(item.name, item.path, item.type === "dir"));
+            });
+            $("#treeview").append($root);
+        }, "json");
+    }
+
+    $(document).ready(loadRoot);
+</script>
+</body>
+</html>

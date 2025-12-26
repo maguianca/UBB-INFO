@@ -1,0 +1,4 @@
+﻿  gui.cpp
+C:\Programare orientata obiect\Pregatire Simulare\Simulare 211\Simulare 211\gui.cpp(12,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Programare orientata obiect\Pregatire Simulare\Simulare 211\Simulare 211\gui.cpp(108,32): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Simulare 211.vcxproj -> C:\Programare orientata obiect\Pregatire Simulare\Simulare 211\x64\Debug\Simulare 211.exe

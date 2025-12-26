@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>X și 0</title>
+    <style>
+        table { border-collapse: collapse; }
+        td {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 2em;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Tic-Tac-Toe</h2>
+<p id="status"></p>
+<table id="board"></table>
+
+<script>
+    let board = [["", "", ""], ["", "", ""], ["", "", ""]];
+    let playerSymbol = Math.random() < 0.5 ? "X" : "O";
+    let aiSymbol = playerSymbol === "X" ? "O" : "X";
+    let gameOver = false;
+
+    function ajaxPost(url, data, callback) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                callback(JSON.parse(xhr.responseText));
+            }
+        };
+        const params = Object.keys(data)
+            .map(k => encodeURIComponent(k) + "=" + encodeURIComponent(data[k]))
+            .join("&");
+        xhr.send(params);
+    }
+
+    function drawBoard() {
+        const table = document.getElementById("board");
+        table.innerHTML = "";
+        for (let i = 0; i < 3; i++) {
+            const row = document.createElement("tr");
+            for (let j = 0; j < 3; j++) {
+                const cell = document.createElement("td");
+                cell.textContent = board[i][j];
+                if (board[i][j] === "" && !gameOver) {
+                    cell.addEventListener("click", () => makeMove(i, j));
+                }
+                row.appendChild(cell);
+            }
+            table.appendChild(row);
+        }
+    }
+
+    function makeMove(row, col) {
+        if (board[row][col] !== "" || gameOver) return;
+
+        board[row][col] = playerSymbol;
+        drawBoard();
+        checkStatus();
+
+        if (!gameOver) {
+            ajaxPost("server.php", {
+                board: JSON.stringify(board),
+                ai: aiSymbol
+            }, function (response) {
+                board = response.board;
+                drawBoard();
+                if (response.status) {
+                    document.getElementById("status").textContent = response.status;
+                    gameOver = true;
+                }
+            });
+        }
+    }
+
+    function checkStatus() {
+        const lines = [
+            // rânduri
+            [[0, 0], [0, 1], [0, 2]],
+            [[1, 0], [1, 1], [1, 2]],
+            [[2, 0], [2, 1], [2, 2]],
+            // coloane
+            [[0, 0], [1, 0], [2, 0]],
+            [[0, 1], [1, 1], [2, 1]],
+            [[0, 2], [1, 2], [2, 2]],
+            // diagonale
+            [[0, 0], [1, 1], [2, 2]],
+            [[0, 2], [1, 1], [2, 0]]
+        ];
+
+        for (const line of lines) {
+            const [a, b, c] = line;
+            if (
+                board[a[0]][a[1]] &&
+                board[a[0]][a[1]] === board[b[0]][b[1]] &&
+                board[a[0]][a[1]] === board[c[0]][c[1]]
+            ) {
+                document.getElementById("status").textContent = "You win!";
+                gameOver = true;
+                return;
+            }
+        }
+
+        if (board.flat().every(cell => cell !== "")) {
+            document.getElementById("status").textContent = "Tie!";
+            gameOver = true;
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        drawBoard();
+        if (playerSymbol === "O") {
+            ajaxPost("server.php", {
+                board: JSON.stringify(board),
+                ai: aiSymbol
+            }, function (response) {
+                board = response.board;
+                drawBoard();
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

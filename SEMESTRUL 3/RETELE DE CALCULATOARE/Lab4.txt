@@ -1,0 +1,45 @@
+functie care face la fel ca innet_addr (test)
+"127.0.0.1"
+"193.231.20.34"
+rupem dupa . => 193,  231,  20,  34 
+unde apare spatiu pune NULL 193 primul token ascii_to int 
+pointer dupa 193 NULL
+<< shiftare cu 24 de biti 
+uint8_t 193, 231, 20, 34
+	o1, o2,..........
+uint32_t
+ip=o1<<24 || o2 <<16|| o3<<8 || o4<<4
+
+gethostbyname 
+default gateway - adresa routerului cu care routerul se invecineaza cu alte calculatoare
+			routerele au mai multe adrese
+DNS Server adresa la care intreaba de ex adresa unui server browser
+ saptamana 7 UDP + TCP TEST
+
+Se poate comunica cu server TCP si client UDP daca avem un server proxy care are ambele, in rest nu se poate adica nu se poate direct
+
+RAW se poate ca administrator, root, se vede headere....nu e comunicare propriu zisa intre TCP si UDP 
+
+Problema: Combinatie TCP UDP 
+Un client TCP trimite unui server TCP un sir de numere. Serverul calculeaza maximul acestor numere, memoreaza maximul lor si trimite clientului inapoi CMMMC dintre maximul primit de la sir si cel mai mare maxim primit vreodata de la un client. ( toti clientii care s-au conectat la server) Pentru a trimite raspunsul inapoi la client, clientul se face receptor (server) UDP pe un port trimis ca prim numar spre server. Serverul raspunde cu CMMMC pe adresa IP a clientului si portul primit de la client.
+(se poate ca serverul TCP sa fie concurent cu fork-client)
+
+Un client TCP trimite unui server TCP CONCURENT un sir de numere. La nivelul serverului, un proces fiu calculeaza maximul acestor numere, memoreaza maximul lor si trimite clientului inapoi CMMMC dintre maximul primit de la sir si cel mai mare maximever primit vreodata de la un client. ( toti clientii care s-au conectat la server) Pentru a memora global maximulever primit de la clienti, procesul fiu care deserveste un client va trimite parintelui prin UDP pe un port separat masimul numerelor primite. Parintele determina daca acest maxim este mai mare ca maximul ever si il memoreaza in maximever daca este caxul.
+
+
+serverul afiseaza adresa ip a cleintului (TCP)
+inet-ntoa(sir carct,... 
+uint32_t ip =25456456254652; pe 4 octeti
+/256    /256    
+uint8_t *o
+o=(uint8_t *)&ip
+printf*"%hhu" , *o)
+o=((uint_8 *) &ip)+1
+
+
+client -conct server server afiseaza adresa ip (adresa ip in structura)
+nota 10 la nivel server mesaj ca clientii se conecteaza de la areas ip diferite(ev si afisare)
+client care ruleaza pe acelasi local calculator server(accepta pe innadr_ANY)(local host placa de retea)
+2 client locali se conecteaza pe 2 adrese diferite a serverului
+
+PROBLEMA sapt6 problema 4

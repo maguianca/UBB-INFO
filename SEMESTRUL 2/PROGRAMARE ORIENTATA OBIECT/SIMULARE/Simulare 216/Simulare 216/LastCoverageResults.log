@@ -1,0 +1,22 @@
+[2024-05-20 21:19:13] [info] Start Program:
+Path:"C:\Programare orientata obiect\Pregatire Simulare\Simulare 216\x64\Debug\Simulare 216.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\Pregatire Simulare\Simulare 216\Simulare 216\"
+Modules: Selected: C:\Programare orientata obiect\Pregatire Simulare\Simulare 216\x64\Debug\Simulare 216.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\Pregatire Simulare\Simulare 216\Simulare 216 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\mb4jvsva.c3x 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-05-20 21:19:13] [info] Module: C:\Programare orientata obiect\Pregatire Simulare\Simulare 216\x64\Debug\Simulare 216.exe is selected because it matches selected pattern: C:\Programare orientata obiect\Pregatire Simulare\Simulare 216\x64\Debug\Simulare 216.exe
+[2024-05-20 21:34:57] [info] ----------------------------------------------------
+[2024-05-20 21:34:57] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\mb4jvsva.c3x
+[2024-05-20 21:34:57] [info] ----------------------------------------------------
+[2024-05-20 21:34:57] [error] Your program stop with error code: 1

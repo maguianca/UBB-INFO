@@ -1,0 +1,446 @@
+        -:    0:Source:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/service.c
+        -:    0:Graph:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug-coverage/CMakeFiles/oop_lab2_4_inchirieremasini.dir/service.c.gcno
+        -:    0:Data:/mnt/c/Programare orientata obiect/oop_lab2-4_inchirieremasini/cmake-build-debug-coverage/CMakeFiles/oop_lab2_4_inchirieremasini.dir/service.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdlib.h>
+        -:    2:#include <string.h>
+        -:    3:#include "repo.h"
+        -:    4:#include "validator.h"
+        -:    5:#include "service.h"
+        -:    6:
+function createService called 11 returned 100% blocks executed 100%
+       11:    7:Service createService() {
+        -:    8:
+        -:    9:    Service stocare;
+       11:   10:    stocare.toate_masinile = creeaza_vid();
+       11:   10-block  0
+call    0 returned 11
+       11:   11:    stocare.lista_undo = creeaza_vid();
+call    0 returned 11
+       11:   12:    return stocare;
+        -:   13:}
+function distruge_service called 11 returned 100% blocks executed 100%
+       11:   14:void distruge_service(Service* stocare)
+        -:   15:{
+       11:   16:    distruge(stocare->toate_masinile,distruge_masina);
+       11:   16-block  0
+call    0 returned 11
+       11:   17:    distruge(stocare->lista_undo,distrugereliste);
+call    0 returned 11
+       11:   18:}
+function adauga called 23 returned 100% blocks executed 100%
+       23:   19:int adauga(Service* stocare, char* numar, char* categorie, char* model, int inchiriere) {
+        -:   20:    //Adauga o masina noua daca este valida
+       23:   21:    Masina* masina_noua = creare_masina(numar, categorie, model, inchiriere);
+       23:   21-block  0
+call    0 returned 23
+       23:   22:    if (!validate_masina(numar, categorie, model)) {
+call    0 returned 23
+branch  1 taken 1 (fallthrough)
+branch  2 taken 22
+        1:   23:        distruge_masina(masina_noua);
+        1:   23-block  0
+call    0 returned 1
+        1:   24:        return -1;
+        -:   25:    }
+       22:   26:    int poz = cauta(stocare, numar);
+       22:   26-block  0
+call    0 returned 22
+       22:   27:    masina_noua->inchiriata = 0;
+       22:   28:    if (poz == -1) {
+branch  0 taken 21 (fallthrough)
+branch  1 taken 1
+       21:   29:        adaugareR(stocare->lista_undo, lista_copie(stocare->toate_masinile));
+       21:   29-block  0
+call    0 returned 21
+call    1 returned 21
+       21:   30:        adaugareR(stocare->toate_masinile, masina_noua);
+call    0 returned 21
+       21:   31:        return 1;}
+        -:   32:    else
+        -:   33:    {
+        1:   34:        distruge_masina(masina_noua);
+        1:   34-block  0
+call    0 returned 1
+        1:   35:        return 0;
+        -:   36:    }
+        -:   37:
+        -:   38:}
+function cauta called 27 returned 100% blocks executed 100%
+       27:   39:int cauta(Service* stocare, char* numar)
+        -:   40:{
+       27:   41:    int poz = -1;
+       46:   42:    for (int i = 0; i < stocare->toate_masinile->lungime; i++)
+       27:   42-block  0
+       19:   42-block  1
+       46:   42-block  2
+branch  0 taken 23
+branch  1 taken 23 (fallthrough)
+        -:   43:    {
+       23:   44:        Masina* m = get(stocare->toate_masinile, i);
+       23:   44-block  0
+call    0 returned 23
+       23:   45:        if (strcmp(m->numar, numar) == 0)
+branch  0 taken 4 (fallthrough)
+branch  1 taken 19
+        -:   46:        {
+        4:   47:            poz = i;
+        4:   48:            break;
+        4:   48-block  0
+        -:   49:        }
+        -:   50:    }
+       27:   51:    return poz;
+       27:   51-block  0
+        -:   52:}
+        -:   53:
+function actualizare called 5 returned 100% blocks executed 100%
+        5:   54:int actualizare(Service* stocare, char* numar, char* categorie_noua, char* model_nou) {
+        -:   55:    //Modifica categoria si modelul (daca sunt valide) pentru o masina identificata prin numar de inmatriculare
+        5:   56:    if (!validate_masina(numar, categorie_noua, model_nou)) {
+        5:   56-block  0
+call    0 returned 5
+branch  1 taken 2 (fallthrough)
+branch  2 taken 3
+        2:   57:        return -1;
+        2:   57-block  0
+        -:   58:    }
+        3:   59:    int poz = cauta(stocare, numar);
+        3:   59-block  0
+call    0 returned 3
+        3:   60:    if (poz != -1)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 1
+        -:   61:    {
+        2:   62:        adaugareR(stocare->lista_undo, lista_copie(stocare->toate_masinile));
+        2:   62-block  0
+call    0 returned 2
+call    1 returned 2
+        2:   63:        Masina* m2 = creare_masina(numar, categorie_noua, model_nou, 0);
+call    0 returned 2
+        2:   64:        Masina* m = get(stocare->toate_masinile, poz);
+call    0 returned 2
+        2:   65:        distruge_masina(m);
+call    0 returned 2
+        2:   66:        set(poz, stocare->toate_masinile, m2);
+call    0 returned 2
+        2:   67:        return 1;}
+        -:   68:    else
+        1:   69:        return 0;
+        1:   69-block  0
+        -:   70:}
+        -:   71:
+function vizualizare_categorie called 2 returned 100% blocks executed 100%
+        2:   72:Repository* vizualizare_categorie(Service* stocare, char* categorie) {
+        -:   73:    // Returneaza toate masinile dintr-o anumită categorie
+        -:   74:    //Repository* masini2 = (Repository*)malloc(sizeof(Repository));
+        2:   75:    Repository* masini2 = creeaza_vid();
+        2:   75-block  0
+call    0 returned 2
+        -:   76:
+        7:   77:    for (int i = 0; i < stocare->toate_masinile->lungime; i++) {
+        5:   77-block  0
+        7:   77-block  1
+branch  0 taken 5
+branch  1 taken 2 (fallthrough)
+        5:   78:        if (strcmp(get_categorie(stocare->toate_masinile->masini[i]), categorie) == 0) {
+        5:   78-block  0
+call    0 returned 5
+branch  1 taken 3 (fallthrough)
+branch  2 taken 2
+        -:   79:            //Masina* x=creare_masina(get_numar(MASINI->masini[i]),get_categorie(MASINI->masini[i]),get_model(MASINI->masini[i]),get_inchiriere(MASINI->masini[i]));
+        3:   80:            adaugareR(masini2, creare_masina(get_numar(stocare->toate_masinile->masini[i]), get_categorie(stocare->toate_masinile->masini[i]), get_model(stocare->toate_masinile->masini[i]), get_inchiriere(stocare->toate_masinile->masini[i])));
+        3:   80-block  0
+call    0 returned 3
+call    1 returned 3
+call    2 returned 3
+call    3 returned 3
+call    4 returned 3
+call    5 returned 3
+        -:   81:            //distruge_masina(x);
+        -:   82:
+        -:   83:        }
+        -:   84:    }
+        -:   85:
+        2:   86:    return masini2;
+        2:   86-block  0
+        -:   87:}
+function vizualizare_disponibilitate called 1 returned 100% blocks executed 100%
+        1:   88:Repository* vizualizare_disponibilitate(Service* stocare) {
+        -:   89:    // Returneaza toate masinile dintr-o anumită categorie
+        -:   90:    //Repository* masini2 = (Repository*)malloc(sizeof(Repository));
+        1:   91:    Repository* masini2 = creeaza_vid();
+        1:   91-block  0
+call    0 returned 1
+        -:   92:
+        4:   93:    for (int i = 0; i < stocare->toate_masinile->lungime; i++) {
+        3:   93-block  0
+        4:   93-block  1
+branch  0 taken 3
+branch  1 taken 1 (fallthrough)
+        3:   94:        if (get_inchiriere(stocare->toate_masinile->masini[i]) == 0) {
+        3:   94-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0
+        -:   95:            //Masina* x=creare_masina(get_numar(MASINI->masini[i]),get_categorie(MASINI->masini[i]),get_model(MASINI->masini[i]),get_inchiriere(MASINI->masini[i]));
+        3:   96:            adaugareR(masini2, creare_masina(get_numar(stocare->toate_masinile->masini[i]), get_categorie(stocare->toate_masinile->masini[i]), get_model(stocare->toate_masinile->masini[i]), get_inchiriere(stocare->toate_masinile->masini[i])));
+        3:   96-block  0
+call    0 returned 3
+call    1 returned 3
+call    2 returned 3
+call    3 returned 3
+call    4 returned 3
+call    5 returned 3
+        -:   97:            //distruge_masina(x);
+        -:   98:
+        -:   99:        }
+        -:  100:    }
+        -:  101:
+        1:  102:    return masini2;
+        1:  102-block  0
+        -:  103:}
+        -:  104:
+function vizualizare_model called 4 returned 100% blocks executed 100%
+        4:  105:Repository* vizualizare_model(Service* stocare, char* model) {
+        -:  106:    // Returneaza toate masinile dintr-un anumit model
+        -:  107:    //Repository* masini2 = (Repository*)malloc(sizeof(Repository));
+        4:  108:    Repository* masini2 = creeaza_vid();
+        4:  108-block  0
+call    0 returned 4
+        -:  109:
+       12:  110:    for (int i = 0; i < size(stocare->toate_masinile); i++) {
+        8:  110-block  0
+       12:  110-block  1
+call    0 returned 12
+branch  1 taken 8
+branch  2 taken 4 (fallthrough)
+        8:  111:        Elem x = get(stocare->toate_masinile, i);
+        8:  111-block  0
+call    0 returned 8
+        8:  112:        if (strcmp(get_model(x), model) == 0) {
+call    0 returned 8
+branch  1 taken 6 (fallthrough)
+branch  2 taken 2
+        6:  113:            adaugareR(masini2, creare_masina(get_numar(x), get_categorie(x), get_model(x), get_inchiriere(x)));
+        6:  113-block  0
+call    0 returned 6
+call    1 returned 6
+call    2 returned 6
+call    3 returned 6
+call    4 returned 6
+call    5 returned 6
+        -:  114:        }
+        -:  115:    }
+        -:  116:
+        4:  117:    return masini2;
+        4:  117-block  0
+        -:  118:}
+        -:  119:
+function comparator_categorie_crescator called 3 returned 100% blocks executed 100%
+        3:  120:int comparator_categorie_crescator(const Masina* a, const Masina* b) {
+        -:  121:    //Returneaza 1 daca cele 2 masini au categoria in ordine crescatoare, 0 altfel
+        3:  122:    return strcmp(a->categorie, b->categorie) > 0;
+        3:  122-block  0
+        -:  123:}
+        -:  124:
+function comparator_categorie_descrescator called 3 returned 100% blocks executed 100%
+        3:  125:int comparator_categorie_descrescator(const Masina* a, const Masina* b) {
+        -:  126:    //Returneaza 1 daca cele 2 masini au categoria in ordine descrescatoare, 0 altfel
+        3:  127:    return strcmp(a->categorie, b->categorie) < 0;
+        3:  127-block  0
+        -:  128:}
+        -:  129:
+function sortare called 4 returned 100% blocks executed 100%
+        4:  130:Repository* sortare(Service* stocare, int (*comparator)(const Masina*, const Masina*)) {
+        -:  131:    //Sorteaza masinile in functie de comparator
+        4:  132:    Repository* sortat = lista_copie(stocare->toate_masinile);
+        4:  132-block  0
+call    0 returned 4
+        4:  133:    int n = stocare->toate_masinile->lungime;
+        -:  134:
+       12:  135:    for (int i = 0; i < n - 1; i++) {
+        8:  135-block  0
+       12:  135-block  1
+branch  0 taken 8
+branch  1 taken 4 (fallthrough)
+       20:  136:        for (int j = 0; j < n - i - 1; j++) {
+        8:  136-block  0
+       12:  136-block  1
+       20:  136-block  2
+branch  0 taken 12
+branch  1 taken 8 (fallthrough)
+       12:  137:            if (comparator(sortat->masini[j], sortat->masini[j + 1]))
+       12:  137-block  0
+call    0 returned 12
+branch  1 taken 5 (fallthrough)
+branch  2 taken 7
+        -:  138:            {
+        5:  139:                Masina* aux = sortat->masini[j];
+        5:  140:                sortat->masini[j] = sortat->masini[j + 1];
+        5:  141:                sortat->masini[j + 1] = aux;
+        5:  141-block  0
+        -:  142:            }
+        -:  143:        }
+        -:  144:    }
+        4:  145:    return sortat;
+        4:  145-block  0
+        -:  146:}
+        -:  147:
+        -:  148:
+        -:  149:/*
+        -:  150:void sortare_categorie_descrescator(Repository* MASINI) {
+        -:  151:    //Sorteaza masinile descrescator dupa categorie
+        -:  152:    int n = MASINI->lungime;
+        -:  153:
+        -:  154:    for (int i = 0; i < n - 1; i++) {
+        -:  155:        for (int j = 0; j < n - i - 1; j++) {
+        -:  156:            if (strcmp(get_categorie(&MASINI->masini[j]), get_categorie(&MASINI->masini[j + 1])) < 0) {
+        -:  157:                Masina aux = MASINI->masini[j];
+        -:  158:                MASINI->masini[j] = MASINI->masini[j + 1];
+        -:  159:                MASINI->masini[j + 1] = aux;
+        -:  160:            }
+        -:  161:        }
+        -:  162:    }
+        -:  163:}
+        -:  164:*/
+        -:  165:
+function comparator_model_crescator called 3 returned 100% blocks executed 100%
+        3:  166:int comparator_model_crescator(const Masina* a, const Masina* b) {
+        -:  167:    //Returneaza 1 daca cele 2 masini au modelul in ordine crescatoare, 0 altfel
+        3:  168:    return strcmp(a->model, b->model) > 0;
+        3:  168-block  0
+        -:  169:}
+        -:  170:
+function comparator_model_descrescator called 3 returned 100% blocks executed 100%
+        3:  171:int comparator_model_descrescator(const Masina* a, const Masina* b) {
+        -:  172:    //Returneaza 1 daca cele 2 masini au modelul in ordine descrescatoare, 0 altfel
+        3:  173:    return strcmp(a->model, b->model) < 0;
+        3:  173-block  0
+        -:  174:}
+        -:  175:/*
+        -:  176:void sortare_model_crescator(Repository* MASINI, int (*comparator)(const Masina*, const Masina*)) {
+        -:  177:    //Sorteaza masinile crescator dupa model
+        -:  178:    int n = MASINI->lungime;
+        -:  179:
+        -:  180:    for (int i = 0; i < n - 1; i++) {
+        -:  181:        for (int j = 0; j < n - i - 1; j++) {
+        -:  182:            if (strcmp(get_model(&MASINI->masini[j]), get_model(&MASINI->masini[j + 1])) > 0) {
+        -:  183:                Masina aux = MASINI->masini[j];
+        -:  184:                MASINI->masini[j] = MASINI->masini[j + 1];
+        -:  185:                MASINI->masini[j + 1] = aux;
+        -:  186:            }
+        -:  187:        }
+        -:  188:    }
+        -:  189:}
+        -:  190:
+        -:  191:
+        -:  192:
+        -:  193:void sortare_model_descrescator(Repository* MASINI) {
+        -:  194:    //Sorteaza masinile descrescator dupa model
+        -:  195:    int n = MASINI->lungime;
+        -:  196:
+        -:  197:    for (int i = 0; i < n - 1; i++) {
+        -:  198:        for (int j = 0; j < n - i - 1; j++) {
+        -:  199:            if (strcmp(get_model(&MASINI->masini[j]), get_model(&MASINI->masini[j + 1])) < 0) {
+        -:  200:                Masina aux = MASINI->masini[j];
+        -:  201:                MASINI->masini[j] = MASINI->masini[j + 1];
+        -:  202:                MASINI->masini[j + 1] = aux;
+        -:  203:            }
+        -:  204:        }
+        -:  205:    }
+        -:  206:}
+        -:  207:*/
+        -:  208:
+function inchiriere called 4 returned 100% blocks executed 100%
+        4:  209:int inchiriere(Service* stocare, char* numar) {
+        -:  210:    //Marcheaza o masina ca fiind inchiriata, in cazul in care aceasta este disponibila
+        4:  211:    int inchiriat = -1;
+        9:  212:    for (int i = 0; i < stocare->toate_masinile->lungime; i++) {
+        4:  212-block  0
+        5:  212-block  1
+        9:  212-block  2
+branch  0 taken 5
+branch  1 taken 4 (fallthrough)
+        5:  213:        if (strcmp(get_numar(stocare->toate_masinile->masini[i]), numar) == 0) {
+        5:  213-block  0
+call    0 returned 5
+branch  1 taken 3 (fallthrough)
+branch  2 taken 2
+        3:  214:            if (get_inchiriere(stocare->toate_masinile->masini[i]) == 0) {
+        3:  214-block  0
+call    0 returned 3
+branch  1 taken 2 (fallthrough)
+branch  2 taken 1
+        2:  215:                inchiriat = 1;
+        2:  216:                adaugareR(stocare->lista_undo, lista_copie(stocare->toate_masinile));
+        2:  216-block  0
+call    0 returned 2
+call    1 returned 2
+        2:  217:                set_inchiriere(stocare->toate_masinile->masini[i], 1);
+call    0 returned 2
+        -:  218:            }
+        -:  219:            else {
+        1:  220:                inchiriat = 0;
+        1:  220-block  0
+        -:  221:            }
+        -:  222:        }
+        -:  223:    }
+        4:  224:    return inchiriat;
+        4:  224-block  0
+        -:  225:}
+        -:  226:
+function returnare called 4 returned 100% blocks executed 100%
+        4:  227:int returnare(Service* stocare, char* numar) {
+        -:  228:    //Marcheaza o masina ca fiind disponibila, in cazul in care aceasta este inchiriata
+        4:  229:    int returnat = -1;
+        9:  230:    for (int i = 0; i < stocare->toate_masinile->lungime; i++) {
+        4:  230-block  0
+        5:  230-block  1
+        9:  230-block  2
+branch  0 taken 5
+branch  1 taken 4 (fallthrough)
+        5:  231:        if (strcmp(get_numar(stocare->toate_masinile->masini[i]), numar) == 0) {
+        5:  231-block  0
+call    0 returned 5
+branch  1 taken 3 (fallthrough)
+branch  2 taken 2
+        3:  232:            if (get_inchiriere(stocare->toate_masinile->masini[i]) == 1) {
+        3:  232-block  0
+call    0 returned 3
+branch  1 taken 2 (fallthrough)
+branch  2 taken 1
+        2:  233:                returnat = 1;
+        2:  234:                adaugareR(stocare->lista_undo, lista_copie(stocare->toate_masinile));
+        2:  234-block  0
+call    0 returned 2
+call    1 returned 2
+        2:  235:                set_inchiriere(stocare->toate_masinile->masini[i], 0);
+call    0 returned 2
+        -:  236:            }
+        -:  237:            else {
+        1:  238:                returnat = 0;
+        1:  238-block  0
+        -:  239:            }
+        -:  240:        }
+        -:  241:    }
+        4:  242:    return returnat;
+        4:  242-block  0
+        -:  243:}
+function undo called 6 returned 100% blocks executed 100%
+        6:  244:int undo(Service* store) {
+        6:  245:    if (size(store->lista_undo) == 0)
+        6:  245-block  0
+call    0 returned 6
+branch  1 taken 1 (fallthrough)
+branch  2 taken 5
+        1:  246:        return 0;
+        1:  246-block  0
+        5:  247:    Repository* lista = stergere(store->lista_undo, store->lista_undo->lungime - 1);
+        5:  247-block  0
+call    0 returned 5
+        5:  248:    distruge(store->toate_masinile, distruge_masina);
+call    0 returned 5
+        5:  249:    store->toate_masinile = lista;
+        5:  250:    return 1;
+        -:  251:
+        -:  252:}

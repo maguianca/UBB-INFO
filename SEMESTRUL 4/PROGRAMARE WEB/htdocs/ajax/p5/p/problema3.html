@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Editare Angajat</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h3>Selectează un ID:</h3>
+<select id="idSelect"></select>
+
+<h3>Detalii angajat:</h3>
+<form id="angajatForm">
+    <label>Username: <input type="text" id="username"></label><br>
+    <label>Email: <input type="text" id="email"></label><br>
+    <label>Password: <input type="password" id="password"></label><br><br>
+    <button id="saveBtn" disabled>Save</button>
+</form>
+
+<script>
+    let originalData = {};
+    let formModified = false;
+    let currentId = null;
+
+    function loadIds() {
+        $.get("get_ids.php", function(ids) {
+            const select = $("#idSelect");
+            select.empty();
+            ids.forEach(id => {
+                select.append($("<option>").val(id).text(id));
+            });
+            if (ids.length > 0) {
+                select.val(ids[0]).change();
+            }
+        }, "json");
+    }
+
+    function loadDetails(id) {
+        $.get("get_details.php", { id: id }, function(data) {
+            $("#username").val(data.username);
+            $("#email").val(data.email);
+            $("#password").val(data.password);
+            originalData = { ...data };
+            formModified = false;
+            $("#saveBtn").prop("disabled", true);
+            currentId = id;
+        }, "json");
+    }
+
+    function isFormModified() {
+        return (
+            $("#username").val() !== originalData.username ||
+            $("#email").val() !== originalData.email ||
+            $("#password").val() !== originalData.password
+        );
+    }
+
+    $("#idSelect").on("change", function () {
+        const newId = $(this).val();
+        if (formModified) {
+            const confirmChange = confirm("Ai modificat datele. Dorești să le salvezi înainte?");
+            if (confirmChange) {
+                $("#saveBtn").click();
+                setTimeout(() => loadDetails(newId), 200); // delay pentru salvare
+            } else {
+                loadDetails(newId);
+            }
+        } else {
+            loadDetails(newId);
+        }
+    });
+
+    $("#angajatForm input").on("input", function () {
+        formModified = isFormModified();
+        $("#saveBtn").prop("disabled", !formModified);
+    });
+
+    $("#saveBtn").on("click", function (e) {
+        e.preventDefault();
+        const data = {
+            id: currentId,
+            username: $("#username").val(),
+            email: $("#email").val(),
+            password: $("#password").val()
+        };
+        $.post("save_details.php", data, function (resp) {
+            if (resp.success) {
+                alert("Date salvate.");
+                originalData = { ...data };
+                formModified = false;
+                $("#saveBtn").prop("disabled", true);
+            } else {
+                alert("Eroare la salvare.");
+            }
+        }, "json");
+    });
+
+    loadIds();
+</script>
+
+</body>
+</html>

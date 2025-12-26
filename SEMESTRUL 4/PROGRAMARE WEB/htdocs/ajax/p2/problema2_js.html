@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Paginare persoane (XMLHttpRequest)</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Lista persoane</h2>
+<table id="table">
+    <thead>
+    <tr>
+        <th>Nume</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<br>
+<button id="prev">Previous</button>
+<button id="next">Next</button>
+
+<script>
+    let currentPage = 0;
+
+    function loadPage(page) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "get_records.php?page=" + page, true);
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const data = JSON.parse(xhr.responseText);
+                const tbody = document.querySelector("#table tbody");
+                tbody.innerHTML = "";
+
+                if (data.length === 0 && page > 0) {
+                    return;
+                }
+
+                data.forEach(function (person) {
+                    const row = document.createElement("tr");
+
+                    const nameCell = document.createElement("td");
+                    nameCell.textContent = person.username;
+
+                    const emailCell = document.createElement("td");
+                    emailCell.textContent = person.email;
+
+                    row.appendChild(nameCell);
+                    row.appendChild(emailCell);
+
+                    tbody.appendChild(row);
+                });
+
+                document.getElementById("prev").disabled = page === 0;
+                document.getElementById("next").disabled = data.length < 3;
+
+                currentPage = page;
+            }
+        };
+
+        xhr.send();
+    }
+
+    document.getElementById("prev").addEventListener("click", function () {
+        if (currentPage > 0) {
+            loadPage(currentPage - 1);
+        }
+    });
+
+    document.getElementById("next").addEventListener("click", function () {
+        loadPage(currentPage + 1);
+    });
+
+    loadPage(0);
+</script>
+
+</body>
+</html>

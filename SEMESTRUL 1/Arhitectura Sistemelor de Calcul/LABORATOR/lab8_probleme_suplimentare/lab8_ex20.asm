@@ -1,0 +1,1 @@
+Ana are multe rosii.Mihai plimba cainele vecinului.

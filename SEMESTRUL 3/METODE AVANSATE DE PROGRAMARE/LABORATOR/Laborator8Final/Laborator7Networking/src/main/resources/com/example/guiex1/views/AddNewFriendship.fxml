@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="458.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.AddFriendshipController">
+   <children>
+      <TableView fx:id="tableUsers" layoutX="41.0" layoutY="57.0" prefHeight="112.0" prefWidth="346.0">
+        <columns>
+          <TableColumn fx:id="tableColumnFirstName" prefWidth="174.0" text="First Name" />
+          <TableColumn fx:id="tableColumnLastName" prefWidth="182.0" text="Last Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="158.0" layoutY="25.0" prefHeight="19.0" prefWidth="226.0" text="Add New Friendships" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldNume" layoutX="141.0" layoutY="176.0" text="First Name" />
+      <TextField fx:id="fieldPrenume" layoutX="141.0" layoutY="213.0" text="Last Name" />
+      <Label layoutX="39.0" layoutY="176.0" prefHeight="25.0" prefWidth="102.0" text="Select user:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="171.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleAddFriend" text="Add">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="14.0" prefWidth="68.0" text="Back" />
+   </children>
+</AnchorPane>

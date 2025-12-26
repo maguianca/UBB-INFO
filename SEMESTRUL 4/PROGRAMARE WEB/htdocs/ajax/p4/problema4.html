@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>X și 0</title>
+    <style>
+        table { border-collapse: collapse; }
+        td {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 2em;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h2>Tic-Tac-Toe</h2>
+<p id="status"></p>
+<table id="board"></table>
+
+<script>
+    let board = [["", "", ""], ["", "", ""], ["", "", ""]];
+    let playerSymbol = Math.random() < 0.5 ? "X" : "O";
+    let aiSymbol = playerSymbol === "X" ? "O" : "X";
+    let gameOver = false;
+
+    function drawBoard() {
+        const table = $("#board");
+        table.empty();
+        for (let i = 0; i < 3; i++) {
+            const row = $("<tr>");
+            for (let j = 0; j < 3; j++) {
+                const cell = $("<td>").text(board[i][j]);
+                if (board[i][j] === "" && !gameOver) {
+                    cell.on("click", function () {
+                        makeMove(i, j);
+                    });
+                }
+                row.append(cell);
+            }
+            table.append(row);
+        }
+    }
+
+    function makeMove(row, col) {
+        if (board[row][col] !== "" || gameOver) return;
+
+        board[row][col] = playerSymbol;
+        drawBoard();
+        checkStatus();
+
+        if (!gameOver) {
+            $.post("server.php", {
+                board: JSON.stringify(board),
+                ai: aiSymbol
+            }, function (response) {
+                board = response.board;
+                drawBoard();
+                if (response.status) {
+                    $("#status").text(response.status);
+                    gameOver = true;
+                }
+            }, "json");
+        }
+    }
+
+    function checkStatus() {
+        const lines = [
+            // randuri
+            [ [0,0], [0,1], [0,2] ],
+            [ [1,0], [1,1], [1,2] ],
+            [ [2,0], [2,1], [2,2] ],
+            // coloane
+            [ [0,0], [1,0], [2,0] ],
+            [ [0,1], [1,1], [2,1] ],
+            [ [0,2], [1,2], [2,2] ],
+            // diagonale
+            [ [0,0], [1,1], [2,2] ],
+            [ [0,2], [1,1], [2,0] ]
+        ];
+
+        for (const line of lines) {
+            const [a, b, c] = line;
+            if (board[a[0]][a[1]] &&
+                board[a[0]][a[1]] === board[b[0]][b[1]] &&
+                board[a[0]][a[1]] === board[c[0]][c[1]]) {
+                $("#status").text("You win!");
+                gameOver = true;
+                return;
+            }
+        }
+
+        if (board.flat().every(cell => cell !== "")) {
+            $("#status").text("Tie!");
+            gameOver = true;
+        }
+    }
+
+    $(document).ready(function () {
+        drawBoard();
+        if (playerSymbol === "O") {
+            $.post("server.php", {
+                board: JSON.stringify(board),
+                ai: aiSymbol
+            }, function (response) {
+                board = response.board;
+                drawBoard();
+            }, "json");
+        }
+    });
+</script>
+
+</body>
+</html>

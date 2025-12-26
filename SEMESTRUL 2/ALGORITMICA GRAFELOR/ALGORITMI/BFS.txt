@@ -1,0 +1,38 @@
+void BFS(int sursa)
+{
+	vector<int>color;
+	vector<int>distanta;
+	for(int i=1;i<=n;i++)
+	{
+		color.push_back('a');
+		distanta.push_back(INF);
+	}
+	color[sursa]=0;
+	distanta[sursa]=0;
+	queue<int>Q;
+	Q.push(sursa);
+	while(!.Q.empty())
+	{
+		int x=Q.front();
+		Q.pop();
+		for(int v=1;j<=n;v++)
+		{
+			if(a[x][v]=1)
+			{
+				if(color[v]=='a')
+				{
+					color[v]='g';
+					distanta[v]=distanta[x]+1;
+					Q.push(v);
+				}
+			{
+		}
+		color[x]='n'
+	}
+}
+
+
+
+
+
+}

@@ -1,0 +1,4 @@
+Tema sapt 9
+CISCO 
+Fix ce am facut la ora dar 3 retele diferite cu adrese ip doin fiecare clasa, 3 clase de adrese, fiecare retea minim 2 switch uri 
+un singur router cu 3 placi de retea . Fiecare retea cu propriul server DHCP.

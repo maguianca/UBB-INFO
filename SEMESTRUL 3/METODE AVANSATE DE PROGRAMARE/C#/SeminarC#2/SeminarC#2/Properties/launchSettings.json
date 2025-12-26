@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SeminarC#2": {
+      "commandName": "Project",
+      "commandLineArgs": "LIFO"
+    }
+  }
+}

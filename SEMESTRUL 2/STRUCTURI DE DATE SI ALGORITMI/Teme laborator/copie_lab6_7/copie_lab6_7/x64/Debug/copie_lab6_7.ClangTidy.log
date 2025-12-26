@@ -1,0 +1,14 @@
+C:\Structuri de date si algoritmi\copie_lab6_7\copie_lab6_7/domeniu.h:35:2: warning: definition of implicit copy assignment operator for 'Turism' is deprecated because it has a user-provided copy constructor [clang-diagnostic-deprecated-copy-with-user-provided-copy]
+        Turism(const Turism& ot) :denumire{ot.denumire}, destinatie{ot.destinatie}, tip{ot.tip}, pret{ot.pret} {
+        ^
+Suppressed 4 warnings (4 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility:4886:16: note: in implicit copy assignment operator for 'Turism' first required here
+        *_Dest = _STD move(*_First);
+               ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector:1737:14: note: in instantiation of function template specialization 'std::_Move_unchecked<Turism *, Turism *>' requested here
+        _STD _Move_unchecked(_Whereptr + 1, _Mylast, _Whereptr);
+             ^
+C:\Structuri de date si algoritmi\copie_lab6_7\copie_lab6_7\repo.cpp:21:12: note: in instantiation of member function 'std::vector<Turism>::erase' requested here
+                        vacante.erase(vacante.begin() + i);
+                                ^

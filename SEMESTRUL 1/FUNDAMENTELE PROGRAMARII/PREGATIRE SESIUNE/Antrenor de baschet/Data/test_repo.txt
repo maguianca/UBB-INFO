@@ -1,0 +1,8 @@
+Michael,Jordan,200,Pivot
+Mar,Ionel,207,Fundas
+Dumitru,Andrei,173,Pivot
+Pop,Vasile,200,Pivot
+Lama,Viorel,184,Pivot
+Emi,Emanuel,174,Fundas
+Cici,Cipici,175,Pivot
+BIbi,Chiru,176,Fundas

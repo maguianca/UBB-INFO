@@ -1,0 +1,27 @@
+use JewelryShop
+GO
+
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+BEGIN TRAN
+PRINT 'FIRST READ'
+SELECT * FROM Angajati 
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','SELECT',GETDATE())
+WAITFOR DELAY '00:00:10'
+PRINT 'SECOND READ'
+SELECT * FROM Angajati 
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','SELECT',GETDATE())
+COMMIT TRAN
+
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+BEGIN TRAN
+PRINT 'FIRST READ'
+SELECT * FROM Angajati 
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','SELECT',GETDATE())
+WAITFOR DELAY '00:00:10'
+PRINT 'SECOND READ'
+SELECT * FROM Angajati 
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','SELECT',GETDATE())
+COMMIT TRAN
+
+
+/* se rezolva cu REPEATBALE READ*/

@@ -1,0 +1,5 @@
+placa1,soclu1,120
+placa2,soclu2,126
+placa3,4,2
+placa5,soclu4,122
+placa6,soc6,1111

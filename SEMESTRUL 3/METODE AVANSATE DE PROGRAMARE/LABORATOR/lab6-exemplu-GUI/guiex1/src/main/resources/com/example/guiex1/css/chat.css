@@ -1,0 +1,169 @@
+/* Root SplitPane styling */
+.split-pane {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-width: 0;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: #e0e0e0;
+    -fx-padding: 0 1px 0 1px;
+}
+
+/* ListView (Chat options) styling */
+.list-view {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-padding: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #e0e0e0;
+}
+
+.list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 10px 15px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-text-fill: #333333;
+}
+
+.list-view .list-cell:filled:selected {
+    -fx-background-color: #774c9b;
+    -fx-text-fill: white;
+}
+
+.list-view .list-cell:filled:hover {
+    -fx-background-color: #f8f9fa;
+    -fx-text-fill: #000000;
+}
+
+/* Right side VBox styling */
+.vbox {
+    -fx-background-color: white;
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+/* Back button styling */
+.button {
+    -fx-background-color: #774c9b;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #774c9b;
+}
+
+.button:pressed {
+    -fx-background-color: #774c9b;
+}
+
+/* ScrollPane styling */
+.scroll-pane {
+    -fx-background-color: white;
+    -fx-background: white;
+    -fx-border-width: 0;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: white;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: white;
+}
+
+/* Message VBox styling */
+.scroll-pane > .content {
+    -fx-background-color: white;
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 12px;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #6c757d;
+}
+
+.text-field:focused {
+    -fx-border-color: #80bdff;
+    -fx-effect: dropshadow(gaussian, rgba(0,123,255,0.25), 0, 0, 0, 0);
+}
+
+/* Message row styling */
+.h-box {
+    -fx-padding: 5px 10px;
+    -fx-spacing: 10px;
+}
+
+/* Sent message styling */
+.sent-message {
+    -fx-padding: 5px 10px;
+    -fx-spacing: 10px;
+}
+
+.sent-message .label {
+    -fx-background-color: #774c9b;
+    -fx-text-fill: white;
+    -fx-padding: 10px 15px;
+    -fx-background-radius: 15px 15px 0 15px;
+    -fx-wrap-text: true;
+    -fx-font-size: 14px;
+    -fx-max-width: 500px;
+    -fx-min-height: -1;
+    -fx-pref-width: -1;
+}
+
+/* Received message styling */
+.received-message {
+    -fx-padding: 5px 10px;
+    -fx-spacing: 10px;
+}
+
+.received-message .label {
+    -fx-background-color: #e9ecef;
+    -fx-text-fill: #333333;
+    -fx-padding: 10px 15px;
+    -fx-background-radius: 15px 15px 15px 0;
+    -fx-wrap-text: true;
+    -fx-font-size: 14px;
+    -fx-max-width: 500px;
+    -fx-min-height: -1;
+    -fx-pref-width: -1;
+}
+
+/* Message sending HBox styling */
+.message-sending-hbox {
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+/* Scrollbar styling */
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #bebebe;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding:0 5px 0 5px;
+}

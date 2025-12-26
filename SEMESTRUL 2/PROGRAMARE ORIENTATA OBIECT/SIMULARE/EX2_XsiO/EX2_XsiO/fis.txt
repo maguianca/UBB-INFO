@@ -1,0 +1,7 @@
+1,3,OXXXOXOOO,O,Terminat
+2,3,XXOXOXXOO,O,Terminat
+3,3,OXXXOXOOO,O,InDerulare
+4,3,XOOX-----,X,In derulare
+10,3,XOXOXO---,X,Neterminat
+0,4,XXXXOOOOXOX-OOOO,O,Neterminat
+11,5,XXXXOOOOOXOXOOOOXXOXXOOXO,X,Terminat

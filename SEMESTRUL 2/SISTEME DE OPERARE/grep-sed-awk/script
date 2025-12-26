@@ -1,0 +1,6 @@
+#!/bin/awk
+BEGIN { 
+	for (i = 1; i < ARGC ; ++i) {
+		print " $i ARGV[] = ", ARGV[i]
+	} 
+}

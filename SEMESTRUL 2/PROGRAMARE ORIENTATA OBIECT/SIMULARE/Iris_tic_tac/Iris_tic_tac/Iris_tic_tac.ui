@@ -1,0 +1,28 @@
+<UI version="4.0" >
+ <class>Iris_tic_tacClass</class>
+ <widget class="QMainWindow" name="Iris_tic_tacClass" >
+  <property name="objectName" >
+   <string notr="true">Iris_tic_tacClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Iris_tic_tac</string>
+  </property>  <widget class="QMenuBar" name="menuBar" />
+  <widget class="QToolBar" name="mainToolBar" />
+  <widget class="QWidget" name="centralWidget" />
+  <widget class="QStatusBar" name="statusBar" />
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="Iris_tic_tac.qrc"/>
+ </resources>
+ <connections/>
+</UI>

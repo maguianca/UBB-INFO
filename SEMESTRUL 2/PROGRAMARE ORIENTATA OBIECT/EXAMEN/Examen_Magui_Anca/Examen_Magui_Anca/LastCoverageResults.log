@@ -1,0 +1,21 @@
+[2024-06-22 12:48:19] [info] Start Program:
+Path:"C:\Programare orientata obiect\EXAMEN\Examen_Magui_Anca\x64\Debug\Examen_Magui_Anca.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\EXAMEN\Examen_Magui_Anca\Examen_Magui_Anca\"
+Modules: Selected: C:\Programare orientata obiect\EXAMEN\Examen_Magui_Anca\x64\Debug\Examen_Magui_Anca.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\EXAMEN\Examen_Magui_Anca\Examen_Magui_Anca Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\bqgh1vw0.ned 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-06-22 12:48:19] [info] Module: C:\Programare orientata obiect\EXAMEN\Examen_Magui_Anca\x64\Debug\Examen_Magui_Anca.exe is selected because it matches selected pattern: C:\Programare orientata obiect\EXAMEN\Examen_Magui_Anca\x64\Debug\Examen_Magui_Anca.exe
+[2024-06-22 12:48:21] [info] ----------------------------------------------------
+[2024-06-22 12:48:21] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\bqgh1vw0.ned
+[2024-06-22 12:48:21] [info] ----------------------------------------------------

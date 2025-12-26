@@ -1,0 +1,81 @@
+%invers(n,col)=col,n=0
+%              invers(n//10,col*10+n%10),n>0
+%invers(N:Integer,Col:Integer,R:Integer)
+%N-numar initial
+%Col-variabila care ajuta la calcularea inversului
+%R-inversul numarului initial
+%model de flux(i,i,o),determinist
+invers(0,Col,Col):-!.
+invers(N,Col,Rez):-Rest is N mod 10,
+                   Cat is N//10,
+                   C1 is Col*10+Rest,
+                   invers(Cat,C1,Rez).
+
+%numar_inv(n)=invers(n,0)
+%numar_inv(N:integer,R:Integer)
+%N-numar initial
+%R-inversul numarului initial
+%model de flux(i,o) determinist
+numar_inv(N,Rez):-invers(N,0,Rez).
+
+%egal(x,y)=true,x=y
+%          false,altfel
+%egal(X:Integer)
+%model de flux(i) determinist
+%egal(x)->true/false
+egal(X,Y):-X=:=Y,!.
+
+%palindrom(x)= egal(x,numar_inv(x))
+%palindrom(X:Integer)
+%X-numar initial
+%functia verifica daca X este palindrom
+%model de flux(i) determinist
+%palindrom(x)->true/false
+
+palindrom(X):-numar_inv(X,Y),egal(X,Y).
+
+%secventa(l1..ln,p)=[],n=0
+%                   p+secventa(l2..ln,p+1),palindrom(l1)=true,n>0
+%                   secventa(l2..ln,p+1),altfel
+%secventa(L:List,C:Integer,Rez:List)
+%L-lista initiala
+%C-indexul unui valori din lista
+%Rez-lista rezultata cu indexi tututor palindroamelor din L
+%model de flux(i,i,o)
+secventa([],_,[]):-!.
+secventa([H|T],C,[C|Rez]):-palindrom(H),!,
+                           C1 is C+1,
+                           secventa(T,C1,Rez).
+secventa([_|T],C,Rez):-C1 is C+1,secventa(T,C1,Rez).
+
+%parcurgere(l1...ln)=secventa(l1..ln,1)
+%parcurgere(L:List,Rez:List)
+%L-lista initiala
+%R-lista finala cu indexi tuturor palindroamelor din L
+%model de flux(i,o) determinist (i,i)
+parcurgere(L,Rez):-secventa(L,1,Rez).
+
+
+%Teste
+%numar_inv(113,Rez).
+%numar_inv(11,Rez).
+%egal(22,22).
+%egal(12233,12223).
+%palindrom(1222).
+%palindrom(4567654).
+%parcurgere([1,2,3,45,1],Rez).
+%parcurgere([23,34,56,78,90],Rez).
+%parcurgere([23,131,123,43566534,100],Rez).
+
+
+
+
+
+
+
+
+
+
+
+
+

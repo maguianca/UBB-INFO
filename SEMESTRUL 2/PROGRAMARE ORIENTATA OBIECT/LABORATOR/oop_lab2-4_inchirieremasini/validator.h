@@ -1,0 +1,1 @@
+int validate_masina(const char* numar, const char* categorie, const char* model);

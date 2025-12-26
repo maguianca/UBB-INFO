@@ -1,0 +1,44 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  ;Dandu-se un sir de dublucuvinte, sa se obtina un alt sir de dublucuvinte in care se vor pastra doar dublucuvintele din primul sir care au ;un numar par de biti cu valoare 1.
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13 00000000 443322111111221156-         s dd 11223344h, 11221111h,12233456h,23232321h
+    13 00000009 34231221232323     
+    14                                      len equ ($-s)/4
+    15 00000010 00000000<rept>              rez times len dd 0
+    16                                  
+    17                                  ; our code starts here
+    18                                  segment code use32 class=code
+    19                                      start:
+    20 00000000 B904000000                      mov ecx,len
+    21 00000005 E325                            jecxz final
+    22 00000007 BE[00000000]                    mov esi,s
+    23 0000000C BF[10000000]                    mov edi,rez
+    24                                      repeta:
+    25 00000011 51                              push ecx
+    26 00000012 AD                              lodsd 
+    27 00000013 B920000000                      mov ecx,32
+    28 00000018 B300                            mov bl,0
+    29 0000001A 89C2                            mov edx,eax
+    30                                      numara:
+    31 0000001C D1E2                            shl edx,1
+    32 0000001E 80D300                          adc bl,0
+    33 00000021 E2F9                            loop numara 
+    34 00000023 F6C301                          test bl,01h
+    35 00000026 7B01                            jnp nu
+    36                                          
+    37 00000028 AB                              stosd
+    38                                      nu:
+    39 00000029 59                              pop ecx 
+    40 0000002A E2E5                            loop repeta
+    41                                          final:
+    42 0000002C 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    43 0000002E FF15[00000000]                  call    [exit]       ; call exit to terminate the program

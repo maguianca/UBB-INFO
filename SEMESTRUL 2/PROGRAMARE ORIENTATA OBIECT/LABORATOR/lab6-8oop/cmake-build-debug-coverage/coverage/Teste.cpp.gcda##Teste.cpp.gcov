@@ -1,0 +1,2968 @@
+        -:    0:Source:C:/Users/Ilinca/Desktop/facultate/semestru 2/oop/lab 7/lab6-8oop/Teste.cpp
+        -:    0:Graph:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Teste.cpp.gcno
+        -:    0:Data:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Teste.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Ilinca on 30-Mar-22.
+        -:    3://
+        -:    4:
+        -:    5:#include "Teste.h"
+        -:    6:#include "Service.h"
+        -:    7:#include <assert.h>
+        -:    8:
+        -:    9:
+function _Z12test_get_setv called 1 returned 100% blocks executed 48%
+        1:   10:void test_get_set(){
+        2:   11:    Medicament med1{"algocalmin", "beta", "antianalgezic",10.0};
+        1:   11-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   11-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   11-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   11-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   11-block  4
+    $$$$$:   11-block  5
+    $$$$$:   11-block  6
+    $$$$$:   11-block  7
+    $$$$$:   11-block  8
+    $$$$$:   11-block  9
+       1*:   12:    assert(med1.get_denumire() == "algocalmin");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   12-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   12-block  2
+    %%%%%:   12-block  3
+        1:   12-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   12-block  5
+call   11 returned 1
+    $$$$$:   12-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   12-block  7
+call   14 never executed
+    $$$$$:   12-block  8
+       1*:   13:    assert(med1.get_producator() == "beta");
+        1:   13-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   13-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   13-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   13-block  3
+    %%%%%:   13-block  4
+        1:   13-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   13-block  6
+call   11 returned 1
+    $$$$$:   13-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   13-block  8
+call   14 never executed
+    $$$$$:   13-block  9
+       1*:   14:    assert(med1.get_substanta_activa() == "antianalgezic");
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   14-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   14-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   14-block  3
+    %%%%%:   14-block  4
+        1:   14-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   14-block  6
+call   11 returned 1
+    $$$$$:   14-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   14-block  8
+call   14 never executed
+    $$$$$:   14-block  9
+       1*:   15:    assert(med1.get_pret() == 10.0);
+        1:   15-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   15-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   15-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+        1:   15-block  3
+    %%%%%:   15-block  4
+        -:   16:
+        2:   17:    Medicament med2{"parasinus", "alfa","paracetamol", 2.5};
+        1:   17-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   17-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   17-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   17-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   17-block  4
+    $$$$$:   17-block  5
+    $$$$$:   17-block  6
+    $$$$$:   17-block  7
+    $$$$$:   17-block  8
+    $$$$$:   17-block  9
+       1*:   18:    assert(med2.get_denumire() == "parasinus");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   18-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   18-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   18-block  2
+    %%%%%:   18-block  3
+        1:   18-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   18-block  5
+call   11 returned 1
+    $$$$$:   18-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   18-block  7
+call   14 never executed
+    $$$$$:   18-block  8
+       1*:   19:    assert(med2.get_producator() == "alfa");
+        1:   19-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   19-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   19-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   19-block  3
+    %%%%%:   19-block  4
+        1:   19-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   19-block  6
+call   11 returned 1
+    $$$$$:   19-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   19-block  8
+call   14 never executed
+    $$$$$:   19-block  9
+       1*:   20:    assert(med2.get_substanta_activa() == "paracetamol");
+        1:   20-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   20-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   20-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   20-block  3
+    %%%%%:   20-block  4
+        1:   20-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   20-block  6
+call   11 returned 1
+    $$$$$:   20-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   20-block  8
+call   14 never executed
+    $$$$$:   20-block  9
+       1*:   21:    assert(med2.get_pret() == 2.5);
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   21-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   21-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+        1:   21-block  3
+    %%%%%:   21-block  4
+        -:   22:
+        1:   23:    med2.set_denumire("ibuprofen");
+        1:   23-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   23-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   23-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   23-block  3
+call    9 never executed
+    $$$$$:   23-block  4
+    $$$$$:   23-block  5
+call   10 never executed
+    $$$$$:   23-block  6
+        1:   24:    med2.set_producator("theta");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   24-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   24-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   24-block  2
+call    9 never executed
+    $$$$$:   24-block  3
+    $$$$$:   24-block  4
+call   10 never executed
+    $$$$$:   24-block  5
+        1:   25:    med2.set_substanta_activa("fervex");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   25-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   25-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   25-block  2
+call    9 never executed
+    $$$$$:   25-block  3
+    $$$$$:   25-block  4
+call   10 never executed
+    $$$$$:   25-block  5
+        1:   26:    med2.set_pret(3.8);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   27:
+       1*:   28:    assert(med2.get_denumire() == "ibuprofen");
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   28-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   28-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   28-block  3
+    %%%%%:   28-block  4
+        1:   28-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   28-block  6
+call   11 returned 1
+    $$$$$:   28-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   28-block  8
+call   14 never executed
+    $$$$$:   28-block  9
+       1*:   29:    assert(med2.get_producator() == "theta");
+        1:   29-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   29-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   29-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   29-block  3
+    %%%%%:   29-block  4
+        1:   29-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   29-block  6
+call   11 returned 1
+    $$$$$:   29-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   29-block  8
+call   14 never executed
+    $$$$$:   29-block  9
+       1*:   30:    assert(med2.get_substanta_activa() == "fervex");
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   30-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   30-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   30-block  3
+    %%%%%:   30-block  4
+        1:   30-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   30-block  6
+call   11 returned 1
+    $$$$$:   30-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   30-block  8
+call   14 never executed
+    $$$$$:   30-block  9
+       1*:   31:    assert(med2.get_pret() == 3.8);
+        1:   31-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   31-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   31-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+        1:   31-block  3
+    %%%%%:   31-block  4
+        1:   32:}
+        1:   32-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   32-block  1
+call    2 never executed
+    $$$$$:   32-block  2
+call    3 never executed
+        -:   33:
+function _Z13test_add_repov called 1 returned 100% blocks executed 46%
+        1:   34:void test_add_repo(){
+        1:   35:    Medicament_Repository test_repo;
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   36:    Medicament med1{"fervex","beta","ibuprofen",5.9};
+        1:   36-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   36-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   36-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   36-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   36-block  4
+    $$$$$:   36-block  5
+    $$$$$:   36-block  6
+    $$$$$:   36-block  7
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+        1:   37:    test_repo.store(med1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   38:    assert(test_repo.get_all_medicamente().size() == 1);
+        1:   38-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   38-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   38-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   38-block  3
+    %%%%%:   38-block  4
+        -:   39:
+        2:   40:    Medicament med2{ "coldrex","alfa","paracetamol",2.7 };
+        1:   40-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   40-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   40-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   40-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   40-block  4
+    $$$$$:   40-block  5
+    $$$$$:   40-block  6
+    $$$$$:   40-block  7
+    $$$$$:   40-block  8
+    $$$$$:   40-block  9
+        2:   41:    Medicament med3{"fervex","beta","calciu",8.6};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   41-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   41-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   41-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   41-block  3
+    $$$$$:   41-block  4
+    $$$$$:   41-block  5
+    $$$$$:   41-block  6
+    $$$$$:   41-block  7
+    $$$$$:   41-block  8
+        -:   42:
+        -:   43:    try{
+        1:   44:        test_repo.store(med3);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+    #####:   45:        assert(false);
+    %%%%%:   45-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   46:    }
+        1:   47:    catch(Repo_Exception){
+        1:   47-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   47-block  1
+call    2 returned 1
+call    3 returned 1
+        -:   48:        assert(true);
+        1:   49:    }
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   50:}
+        1:   50-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+    $$$$$:   50-block  1
+call    4 never executed
+    $$$$$:   50-block  2
+call    5 never executed
+    $$$$$:   50-block  3
+call    6 never executed
+    $$$$$:   50-block  4
+call    7 never executed
+        -:   51:
+function _Z14test_find_repov called 1 returned 100% blocks executed 49%
+        1:   52:void test_find_repo(){
+        1:   53:    Medicament_Repository test_repo;
+        1:   53-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   54:    Medicament med1{"fervex","beta","ibuprofen",5.9};
+        1:   54-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   54-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   54-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   54-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   54-block  4
+    $$$$$:   54-block  5
+    $$$$$:   54-block  6
+    $$$$$:   54-block  7
+    $$$$$:   54-block  8
+    $$$$$:   54-block  9
+        2:   55:    Medicament med2{ "coldrex","alfa","paracetamol",2.7 };
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   55-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   55-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   55-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   55-block  3
+    $$$$$:   55-block  4
+    $$$$$:   55-block  5
+    $$$$$:   55-block  6
+    $$$$$:   55-block  7
+    $$$$$:   55-block  8
+        2:   56:    Medicament med3{"theraflu","theta","calciu",8.6};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   56-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   56-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   56-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   56-block  3
+    $$$$$:   56-block  4
+    $$$$$:   56-block  5
+    $$$$$:   56-block  6
+    $$$$$:   56-block  7
+    $$$$$:   56-block  8
+        1:   57:    test_repo.store(med1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58:    test_repo.store(med2);
+        1:   58-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   59:
+       1*:   60:    assert(test_repo.exists(med1));
+        1:   60-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   60-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   60-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+        1:   60-block  3
+    %%%%%:   60-block  4
+       1*:   61:    assert(!test_repo.exists(med3));
+        1:   61-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   61-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   61-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+        1:   61-block  3
+    %%%%%:   61-block  4
+        -:   62:
+        2:   63:    auto found_med = test_repo.find("fervex", "beta");
+        1:   63-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   63-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   63-block  2
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   63-block  3
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+call   14 returned 1
+call   15 returned 1
+call   16 returned 1
+    $$$$$:   63-block  4
+    $$$$$:   63-block  5
+    $$$$$:   63-block  6
+    $$$$$:   63-block  7
+       1*:   64:    assert(found_med.get_denumire() == "fervex");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   64-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   64-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   64-block  2
+    %%%%%:   64-block  3
+        1:   64-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   64-block  5
+call   11 returned 1
+    $$$$$:   64-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   64-block  7
+call   14 never executed
+    $$$$$:   64-block  8
+       1*:   65:    assert(found_med.get_producator() == "beta");
+        1:   65-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   65-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   65-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   65-block  3
+    %%%%%:   65-block  4
+        1:   65-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   65-block  6
+call   11 returned 1
+    $$$$$:   65-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   65-block  8
+call   14 never executed
+    $$$$$:   65-block  9
+       1*:   66:    assert(found_med.get_substanta_activa() == "ibuprofen");
+        1:   66-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   66-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   66-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   66-block  3
+    %%%%%:   66-block  4
+        1:   66-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   66-block  6
+call   11 returned 1
+    $$$$$:   66-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   66-block  8
+call   14 never executed
+    $$$$$:   66-block  9
+        -:   67:
+        -:   68:    try{
+       5*:   69:        test_repo.find("parasinus","omega");
+        1:   69-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   69-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   69-block  2
+call    8 returned 1
+branch  9 taken 0 (fallthrough)
+branch 10 taken 1 (throw)
+    %%%%%:   69-block  3
+call   11 never executed
+call   12 never executed
+call   13 never executed
+call   14 never executed
+        1:   69-block  4
+call   15 returned 1
+        1:   69-block  5
+        1:   69-block  6
+call   16 returned 1
+        1:   69-block  7
+        1:   69-block  8
+call   17 returned 1
+        1:   69-block  9
+        1:   69-block 10
+call   18 returned 1
+        1:   69-block 11
+    #####:   70:        assert(false);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   71:    }
+        1:   72:    catch (Repo_Exception& ve){
+        1:   72-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   72-block  1
+call    2 returned 1
+        1:   73:        assert(ve.get_error_message()=="Medicamentul cu denumirea parasinus si producatorul omega nu este in lista");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   73-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    $$$$$:   73-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   73-block  2
+    $$$$$:   73-block  3
+        1:   73-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   73-block  5
+call   11 returned 1
+    $$$$$:   73-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   73-block  7
+call   14 never executed
+    $$$$$:   73-block  8
+        1:   74:    }
+        1:   74-block  0
+call    0 returned 1
+    $$$$$:   74-block  1
+call    1 never executed
+        1:   75:    int const found = test_repo.findindex("mel","sdcs");
+        1:   75-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   75-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   75-block  2
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   75-block  3
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   75-block  4
+call   15 never executed
+    $$$$$:   75-block  5
+    $$$$$:   75-block  6
+call   16 never executed
+    $$$$$:   75-block  7
+    $$$$$:   75-block  8
+call   17 never executed
+    $$$$$:   75-block  9
+    $$$$$:   75-block 10
+call   18 never executed
+    $$$$$:   75-block 11
+       1*:   76:    assert(found == -1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   76-block  0
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+        1:   76-block  1
+    %%%%%:   76-block  2
+        -:   77:
+        1:   78:}
+        1:   78-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+    $$$$$:   78-block  1
+call    5 never executed
+    $$$$$:   78-block  2
+call    6 never executed
+    $$$$$:   78-block  3
+call    7 never executed
+    $$$$$:   78-block  4
+call    8 never executed
+    $$$$$:   78-block  5
+call    9 never executed
+        -:   79:
+function _Z27test_add_medicament_servicev called 1 returned 100% blocks executed 62%
+        1:   80:void test_add_medicament_service(){
+        1:   81:    Medicament_Repository test_repo;
+        1:   81-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   82:    Medicament_Validator test_val;
+        1:   83:    Medicamente_Service test_service{test_repo, test_val};
+        1:   83-block  0
+call    0 returned 1
+        -:   84:
+        1:   85:    test_service.add_medicament("fervex","beta","ibuprofen",89.7);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   85-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   85-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   85-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   85-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:   85-block  4
+call   21 never executed
+    $$$$$:   85-block  5
+    $$$$$:   85-block  6
+call   22 never executed
+    $$$$$:   85-block  7
+    $$$$$:   85-block  8
+call   23 never executed
+    $$$$$:   85-block  9
+    $$$$$:   85-block 10
+call   24 never executed
+    $$$$$:   85-block 11
+    $$$$$:   85-block 12
+call   25 never executed
+    $$$$$:   85-block 13
+    $$$$$:   85-block 14
+call   26 never executed
+    $$$$$:   85-block 15
+        1:   86:    test_service.add_medicament("coldrex","alfa","paracetamol",9.5);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   86-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   86-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   86-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   86-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:   86-block  4
+call   21 never executed
+    $$$$$:   86-block  5
+    $$$$$:   86-block  6
+call   22 never executed
+    $$$$$:   86-block  7
+    $$$$$:   86-block  8
+call   23 never executed
+    $$$$$:   86-block  9
+    $$$$$:   86-block 10
+call   24 never executed
+    $$$$$:   86-block 11
+    $$$$$:   86-block 12
+call   25 never executed
+    $$$$$:   86-block 13
+    $$$$$:   86-block 14
+call   26 never executed
+    $$$$$:   86-block 15
+        1:   87:    test_service.add_medicament("theraflu","omega","calciu",3.8);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   87-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   87-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   87-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   87-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:   87-block  4
+call   21 never executed
+    $$$$$:   87-block  5
+    $$$$$:   87-block  6
+call   22 never executed
+    $$$$$:   87-block  7
+    $$$$$:   87-block  8
+call   23 never executed
+    $$$$$:   87-block  9
+    $$$$$:   87-block 10
+call   24 never executed
+    $$$$$:   87-block 11
+    $$$$$:   87-block 12
+call   25 never executed
+    $$$$$:   87-block 13
+    $$$$$:   87-block 14
+call   26 never executed
+    $$$$$:   87-block 15
+        -:   88:
+       1*:   89:    assert(test_service.get_all_medicamente().size() == 3);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   89-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   89-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:   89-block  2
+    %%%%%:   89-block  3
+        -:   90:    try{
+       7*:   91:        test_service.add_medicament("fervex","beta","ibuprofen",89.7);
+        1:   91-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   91-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   91-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   91-block  3
+call   12 returned 1
+branch 13 taken 0 (fallthrough)
+branch 14 taken 1 (throw)
+    %%%%%:   91-block  4
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:   91-block  5
+call   21 returned 1
+        1:   91-block  6
+        1:   91-block  7
+call   22 returned 1
+        1:   91-block  8
+        1:   91-block  9
+call   23 returned 1
+        1:   91-block 10
+        1:   91-block 11
+call   24 returned 1
+        1:   91-block 12
+        1:   91-block 13
+call   25 returned 1
+        1:   91-block 14
+        1:   91-block 15
+call   26 returned 1
+        1:   91-block 16
+    #####:   92:        assert(false);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   93:    }
+        1:   94:    catch(Repo_Exception&){
+        1:   94-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   94-block  1
+call    2 returned 1
+        -:   95:        assert(true);
+        1:   96:    }
+call    0 returned 1
+        -:   97:
+        -:   98:    try{
+        1:   99:        test_service.add_medicament("emetix","kapa","algocalmin",12.8);
+        1:   99-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   99-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   99-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   99-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   99-block  4
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:   99-block  5
+call   21 never executed
+    $$$$$:   99-block  6
+    $$$$$:   99-block  7
+call   22 never executed
+    $$$$$:   99-block  8
+    $$$$$:   99-block  9
+call   23 never executed
+    $$$$$:   99-block 10
+    $$$$$:   99-block 11
+call   24 never executed
+    $$$$$:   99-block 12
+    $$$$$:   99-block 13
+call   25 never executed
+    $$$$$:   99-block 14
+    $$$$$:   99-block 15
+call   26 never executed
+    $$$$$:   99-block 16
+        -:  100:        assert(true);
+        -:  101:    }
+    =====:  102:    catch(Validation_Exception&) {
+    $$$$$:  102-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  102-block  1
+call    2 never executed
+    =====:  103:        assert(false);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    =====:  104:    }
+    $$$$$:  104-block  0
+call    0 never executed
+    $$$$$:  104-block  1
+call    1 never executed
+        -:  105:
+        -:  106:    try{
+       7*:  107:        test_service.add_medicament("","beta","ibuprofen",89.7);
+        1:  107-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  107-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  107-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  107-block  3
+call   12 returned 1
+branch 13 taken 0 (fallthrough)
+branch 14 taken 1 (throw)
+    %%%%%:  107-block  4
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:  107-block  5
+call   21 returned 1
+        1:  107-block  6
+        1:  107-block  7
+call   22 returned 1
+        1:  107-block  8
+        1:  107-block  9
+call   23 returned 1
+        1:  107-block 10
+        1:  107-block 11
+call   24 returned 1
+        1:  107-block 12
+        1:  107-block 13
+call   25 returned 1
+        1:  107-block 14
+        1:  107-block 15
+call   26 returned 1
+        1:  107-block 16
+    #####:  108:        assert(false);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  109:    }
+        1:  110:    catch(Validation_Exception& ){
+        1:  110-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  110-block  1
+call    2 returned 1
+        -:  111:        assert(true);
+        1:  112:    }
+call    0 returned 1
+        -:  113:
+        -:  114:    try{
+       7*:  115:        test_service.add_medicament("acc","","ibuprofen",89.7);
+        1:  115-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  115-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  115-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  115-block  3
+call   12 returned 1
+branch 13 taken 0 (fallthrough)
+branch 14 taken 1 (throw)
+    %%%%%:  115-block  4
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:  115-block  5
+call   21 returned 1
+        1:  115-block  6
+        1:  115-block  7
+call   22 returned 1
+        1:  115-block  8
+        1:  115-block  9
+call   23 returned 1
+        1:  115-block 10
+        1:  115-block 11
+call   24 returned 1
+        1:  115-block 12
+        1:  115-block 13
+call   25 returned 1
+        1:  115-block 14
+        1:  115-block 15
+call   26 returned 1
+        1:  115-block 16
+    #####:  116:        assert(false);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  117:    }
+        1:  118:    catch (Validation_Exception&){
+        1:  118-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  118-block  1
+call    2 returned 1
+        -:  119:        assert(true);
+        1:  120:    }
+call    0 returned 1
+        -:  121:
+        -:  122:    try{
+       7*:  123:        test_service.add_medicament("acc","beta","",89.7);
+        1:  123-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  123-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  123-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  123-block  3
+call   12 returned 1
+branch 13 taken 0 (fallthrough)
+branch 14 taken 1 (throw)
+    %%%%%:  123-block  4
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:  123-block  5
+call   21 returned 1
+        1:  123-block  6
+        1:  123-block  7
+call   22 returned 1
+        1:  123-block  8
+        1:  123-block  9
+call   23 returned 1
+        1:  123-block 10
+        1:  123-block 11
+call   24 returned 1
+        1:  123-block 12
+        1:  123-block 13
+call   25 returned 1
+        1:  123-block 14
+        1:  123-block 15
+call   26 returned 1
+        1:  123-block 16
+    #####:  124:        assert(false);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  125:    }
+        1:  126:    catch (Validation_Exception&){
+        1:  126-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  126-block  1
+call    2 returned 1
+        -:  127:        assert(true);
+        1:  128:    }
+call    0 returned 1
+        -:  129:
+        -:  130:    try{
+       7*:  131:        test_service.add_medicament("acc","beta","ibuprofen",-89.7);
+        1:  131-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  131-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  131-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  131-block  3
+call   12 returned 1
+branch 13 taken 0 (fallthrough)
+branch 14 taken 1 (throw)
+    %%%%%:  131-block  4
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 never executed
+        1:  131-block  5
+call   21 returned 1
+        1:  131-block  6
+        1:  131-block  7
+call   22 returned 1
+        1:  131-block  8
+        1:  131-block  9
+call   23 returned 1
+        1:  131-block 10
+        1:  131-block 11
+call   24 returned 1
+        1:  131-block 12
+        1:  131-block 13
+call   25 returned 1
+        1:  131-block 14
+        1:  131-block 15
+call   26 returned 1
+        1:  131-block 16
+    #####:  132:        assert(false);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  133:    }
+        1:  134:    catch (Validation_Exception&){
+        1:  134-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  134-block  1
+call    2 returned 1
+        -:  135:        assert(true);
+        1:  136:    }
+call    0 returned 1
+        -:  137:
+        1:  138:}
+        1:  138-block  0
+call    0 returned 1
+    $$$$$:  138-block  1
+call    1 never executed
+        -:  139:
+function _Z20test_modificare_repov called 1 returned 100% blocks executed 46%
+        1:  140:void test_modificare_repo(){
+        1:  141:    Medicament_Repository test_repo;
+        1:  141-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  142:    Medicament med1{"fervex", "alfa", "calciu",23.7};
+        1:  142-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  142-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  142-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  142-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  142-block  4
+    $$$$$:  142-block  5
+    $$$$$:  142-block  6
+    $$$$$:  142-block  7
+    $$$$$:  142-block  8
+    $$$$$:  142-block  9
+        1:  143:    test_repo.store(med1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  144:    assert(test_repo.get_all_medicamente().size()==1);
+        1:  144-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  144-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  144-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  144-block  3
+    %%%%%:  144-block  4
+        2:  145:    Medicament med2{"fervex","alfa", "calciu",21};
+        1:  145-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  145-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  145-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  145-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  145-block  4
+    $$$$$:  145-block  5
+    $$$$$:  145-block  6
+    $$$$$:  145-block  7
+    $$$$$:  145-block  8
+    $$$$$:  145-block  9
+        1:  146:    test_repo.modificare_pret_repo(med2);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  147:    assert(test_repo.find("fervex","alfa").get_pret() == 21);
+        1:  147-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  147-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  147-block  2
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:  147-block  3
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:  147-block  4
+branch 14 taken 0 (fallthrough)
+branch 15 taken 1
+    %%%%%:  147-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+        1:  147-block  6
+    %%%%%:  147-block  7
+        1:  147-block  8
+branch 19 taken 1 (fallthrough)
+branch 20 taken 0
+        1:  147-block  9
+call   21 returned 1
+        1:  147-block 10
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0
+        1:  147-block 11
+call   24 returned 1
+        1:  147-block 12
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0
+        1:  147-block 13
+call   27 returned 1
+        1:  147-block 14
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0
+        1:  147-block 15
+call   30 returned 1
+    $$$$$:  147-block 16
+branch 31 never executed
+branch 32 never executed
+    $$$$$:  147-block 17
+call   33 never executed
+    $$$$$:  147-block 18
+    $$$$$:  147-block 19
+branch 34 never executed
+branch 35 never executed
+    $$$$$:  147-block 20
+call   36 never executed
+    $$$$$:  147-block 21
+    $$$$$:  147-block 22
+branch 37 never executed
+branch 38 never executed
+    $$$$$:  147-block 23
+call   39 never executed
+    $$$$$:  147-block 24
+    $$$$$:  147-block 25
+branch 40 never executed
+branch 41 never executed
+    $$$$$:  147-block 26
+call   42 never executed
+    $$$$$:  147-block 27
+        2:  148:    Medicament med3{"coldrex","beta","sodiu",13};
+        1:  148-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  148-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  148-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  148-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  148-block  4
+    $$$$$:  148-block  5
+    $$$$$:  148-block  6
+    $$$$$:  148-block  7
+    $$$$$:  148-block  8
+    $$$$$:  148-block  9
+        -:  149:    try{
+        1:  150:        test_repo.modificare_pret_repo(med3);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+    #####:  151:        assert(false);
+    %%%%%:  151-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  152:    }
+        1:  153:    catch (Repo_Exception& re) {
+        1:  153-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  153-block  1
+call    2 returned 1
+        -:  154:        assert(true);
+        1:  155:    }
+call    0 returned 1
+        1:  156:}
+        1:  156-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+    $$$$$:  156-block  1
+call    4 never executed
+    $$$$$:  156-block  2
+call    5 never executed
+    $$$$$:  156-block  3
+call    6 never executed
+    $$$$$:  156-block  4
+call    7 never executed
+        -:  157:
+function _Z23test_modificare_servicev called 1 returned 100% blocks executed 45%
+        1:  158:void test_modificare_service(){
+        1:  159:    Medicament_Repository test_repo;
+        1:  159-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  160:    Medicament_Validator test_val;
+        1:  161:    Medicamente_Service test_service{test_repo, test_val};
+        1:  161-block  0
+call    0 returned 1
+        -:  162:
+        1:  163:    test_service.add_medicament("fervex","beta","ibuprofen",89.7);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  163-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  163-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  163-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  163-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  163-block  4
+call   21 never executed
+    $$$$$:  163-block  5
+    $$$$$:  163-block  6
+call   22 never executed
+    $$$$$:  163-block  7
+    $$$$$:  163-block  8
+call   23 never executed
+    $$$$$:  163-block  9
+    $$$$$:  163-block 10
+call   24 never executed
+    $$$$$:  163-block 11
+    $$$$$:  163-block 12
+call   25 never executed
+    $$$$$:  163-block 13
+    $$$$$:  163-block 14
+call   26 never executed
+    $$$$$:  163-block 15
+        1:  164:    test_service.add_medicament("coldrex","alfa","paracetamol",9.5);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  164-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  164-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  164-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  164-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  164-block  4
+call   21 never executed
+    $$$$$:  164-block  5
+    $$$$$:  164-block  6
+call   22 never executed
+    $$$$$:  164-block  7
+    $$$$$:  164-block  8
+call   23 never executed
+    $$$$$:  164-block  9
+    $$$$$:  164-block 10
+call   24 never executed
+    $$$$$:  164-block 11
+    $$$$$:  164-block 12
+call   25 never executed
+    $$$$$:  164-block 13
+    $$$$$:  164-block 14
+call   26 never executed
+    $$$$$:  164-block 15
+        1:  165:    test_service.add_medicament("theraflu","omega","calciu",3.8);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  165-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  165-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  165-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  165-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  165-block  4
+call   21 never executed
+    $$$$$:  165-block  5
+    $$$$$:  165-block  6
+call   22 never executed
+    $$$$$:  165-block  7
+    $$$$$:  165-block  8
+call   23 never executed
+    $$$$$:  165-block  9
+    $$$$$:  165-block 10
+call   24 never executed
+    $$$$$:  165-block 11
+    $$$$$:  165-block 12
+call   25 never executed
+    $$$$$:  165-block 13
+    $$$$$:  165-block 14
+call   26 never executed
+    $$$$$:  165-block 15
+        -:  166:
+        1:  167:    test_service.modifica_pret_service("fervex","beta","ibuprofen", 7);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  167-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  167-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  167-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  167-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  167-block  4
+call   21 never executed
+    $$$$$:  167-block  5
+    $$$$$:  167-block  6
+call   22 never executed
+    $$$$$:  167-block  7
+    $$$$$:  167-block  8
+call   23 never executed
+    $$$$$:  167-block  9
+    $$$$$:  167-block 10
+call   24 never executed
+    $$$$$:  167-block 11
+    $$$$$:  167-block 12
+call   25 never executed
+    $$$$$:  167-block 13
+    $$$$$:  167-block 14
+call   26 never executed
+    $$$$$:  167-block 15
+       1*:  168:    assert(test_service.get_all_medicamente().get(0).get_pret() == 7);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  168-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  168-block  1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  168-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+        1:  168-block  3
+    %%%%%:  168-block  4
+        -:  169:
+        1:  170:}
+        1:  170-block  0
+call    0 returned 1
+    $$$$$:  170-block  1
+call    1 never executed
+        -:  171:
+function _Z18test_stergere_repov called 1 returned 100% blocks executed 50%
+        1:  172:void test_stergere_repo(){
+        1:  173:    Medicament_Repository test_repo;
+        1:  173-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  174:    Medicament med1{"coldrex", "alfa","calciu",34.8};
+        1:  174-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  174-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  174-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  174-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  174-block  4
+    $$$$$:  174-block  5
+    $$$$$:  174-block  6
+    $$$$$:  174-block  7
+    $$$$$:  174-block  8
+    $$$$$:  174-block  9
+        1:  175:    test_repo.store(med1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  176:    assert(test_repo.get_all_medicamente().size() == 1);
+        1:  176-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  176-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  176-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  176-block  3
+    %%%%%:  176-block  4
+        -:  177:
+        2:  178:    Medicament med2{"fervex", "beta","sodiu",13};
+        1:  178-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  178-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  178-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  178-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  178-block  4
+    $$$$$:  178-block  5
+    $$$$$:  178-block  6
+    $$$$$:  178-block  7
+    $$$$$:  178-block  8
+    $$$$$:  178-block  9
+        1:  179:    test_repo.store(med2);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  180:    assert(test_repo.get_all_medicamente().size()==2);
+        1:  180-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  180-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  180-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  180-block  3
+    %%%%%:  180-block  4
+        1:  181:    test_repo.stergere_repo(med2);
+        1:  181-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  182:    assert(test_repo.get_all_medicamente().size() == 1);
+        1:  182-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  182-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  182-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  182-block  3
+    %%%%%:  182-block  4
+        -:  183:
+        -:  184:    try{
+        1:  185:        test_repo.stergere_repo(med2);
+        1:  185-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+    #####:  186:        assert(false);
+    %%%%%:  186-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  187:    }
+        1:  188:    catch (Repo_Exception& re){
+        1:  188-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  188-block  1
+call    2 returned 1
+        -:  189:        assert(true);
+        1:  190:    }
+call    0 returned 1
+        -:  191:
+        1:  192:}
+        1:  192-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:  192-block  1
+call    3 never executed
+    $$$$$:  192-block  2
+call    4 never executed
+    $$$$$:  192-block  3
+call    5 never executed
+        -:  193:
+function _Z21test_stergere_servicev called 1 returned 100% blocks executed 45%
+        1:  194:void test_stergere_service() {
+        1:  195:    Medicament_Repository test_repo;
+        1:  195-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  196:    Medicament_Validator test_val;
+        1:  197:    Medicamente_Service test_service{test_repo, test_val};
+        1:  197-block  0
+call    0 returned 1
+        -:  198:
+        1:  199:    test_service.add_medicament("fervex","beta","ibuprofen",7);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  199-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  199-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  199-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  199-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  199-block  4
+call   21 never executed
+    $$$$$:  199-block  5
+    $$$$$:  199-block  6
+call   22 never executed
+    $$$$$:  199-block  7
+    $$$$$:  199-block  8
+call   23 never executed
+    $$$$$:  199-block  9
+    $$$$$:  199-block 10
+call   24 never executed
+    $$$$$:  199-block 11
+    $$$$$:  199-block 12
+call   25 never executed
+    $$$$$:  199-block 13
+    $$$$$:  199-block 14
+call   26 never executed
+    $$$$$:  199-block 15
+        1:  200:    test_service.add_medicament("coldrex","alfa","paracetamol",9.5);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  200-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  200-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  200-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  200-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  200-block  4
+call   21 never executed
+    $$$$$:  200-block  5
+    $$$$$:  200-block  6
+call   22 never executed
+    $$$$$:  200-block  7
+    $$$$$:  200-block  8
+call   23 never executed
+    $$$$$:  200-block  9
+    $$$$$:  200-block 10
+call   24 never executed
+    $$$$$:  200-block 11
+    $$$$$:  200-block 12
+call   25 never executed
+    $$$$$:  200-block 13
+    $$$$$:  200-block 14
+call   26 never executed
+    $$$$$:  200-block 15
+        1:  201:    test_service.add_medicament("theraflu","omega","calciu",3.8);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  201-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  201-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  201-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  201-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  201-block  4
+call   21 never executed
+    $$$$$:  201-block  5
+    $$$$$:  201-block  6
+call   22 never executed
+    $$$$$:  201-block  7
+    $$$$$:  201-block  8
+call   23 never executed
+    $$$$$:  201-block  9
+    $$$$$:  201-block 10
+call   24 never executed
+    $$$$$:  201-block 11
+    $$$$$:  201-block 12
+call   25 never executed
+    $$$$$:  201-block 13
+    $$$$$:  201-block 14
+call   26 never executed
+    $$$$$:  201-block 15
+        -:  202:
+       1*:  203:    assert(test_service.get_all_medicamente().size() == 3);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  203-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  203-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  203-block  2
+    %%%%%:  203-block  3
+        1:  204:    test_service.stergere_service("fervex","beta","ibuprofen", 7);
+        1:  204-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  204-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  204-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  204-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  204-block  4
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  204-block  5
+call   21 never executed
+    $$$$$:  204-block  6
+    $$$$$:  204-block  7
+call   22 never executed
+    $$$$$:  204-block  8
+    $$$$$:  204-block  9
+call   23 never executed
+    $$$$$:  204-block 10
+    $$$$$:  204-block 11
+call   24 never executed
+    $$$$$:  204-block 12
+    $$$$$:  204-block 13
+call   25 never executed
+    $$$$$:  204-block 14
+    $$$$$:  204-block 15
+call   26 never executed
+    $$$$$:  204-block 16
+       1*:  205:    assert(test_service.get_all_medicamente().size() == 2);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  205-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  205-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  205-block  2
+    %%%%%:  205-block  3
+        -:  206:
+        1:  207:}
+        1:  207-block  0
+call    0 returned 1
+    $$$$$:  207-block  1
+call    1 never executed
+        -:  208:
+function _Z21test_filtrare_servicev called 1 returned 100% blocks executed 48%
+        1:  209:void test_filtrare_service(){
+        1:  210:    Medicament_Repository test_repo;
+        1:  210-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  211:    Medicament_Validator test_val;
+        1:  212:    Medicamente_Service test_service{test_repo, test_val};
+        1:  212-block  0
+call    0 returned 1
+        -:  213:
+        1:  214:    test_service.add_medicament("fervex","beta","calciu",89.7);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  214-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  214-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  214-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  214-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  214-block  4
+call   21 never executed
+    $$$$$:  214-block  5
+    $$$$$:  214-block  6
+call   22 never executed
+    $$$$$:  214-block  7
+    $$$$$:  214-block  8
+call   23 never executed
+    $$$$$:  214-block  9
+    $$$$$:  214-block 10
+call   24 never executed
+    $$$$$:  214-block 11
+    $$$$$:  214-block 12
+call   25 never executed
+    $$$$$:  214-block 13
+    $$$$$:  214-block 14
+call   26 never executed
+    $$$$$:  214-block 15
+        1:  215:    test_service.add_medicament("coldrex","alfa","paracetamol",9);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  215-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  215-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  215-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  215-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  215-block  4
+call   21 never executed
+    $$$$$:  215-block  5
+    $$$$$:  215-block  6
+call   22 never executed
+    $$$$$:  215-block  7
+    $$$$$:  215-block  8
+call   23 never executed
+    $$$$$:  215-block  9
+    $$$$$:  215-block 10
+call   24 never executed
+    $$$$$:  215-block 11
+    $$$$$:  215-block 12
+call   25 never executed
+    $$$$$:  215-block 13
+    $$$$$:  215-block 14
+call   26 never executed
+    $$$$$:  215-block 15
+        1:  216:    test_service.add_medicament("theraflu","omega","calciu",9);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  216-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  216-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  216-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  216-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  216-block  4
+call   21 never executed
+    $$$$$:  216-block  5
+    $$$$$:  216-block  6
+call   22 never executed
+    $$$$$:  216-block  7
+    $$$$$:  216-block  8
+call   23 never executed
+    $$$$$:  216-block  9
+    $$$$$:  216-block 10
+call   24 never executed
+    $$$$$:  216-block 11
+    $$$$$:  216-block 12
+call   25 never executed
+    $$$$$:  216-block 13
+    $$$$$:  216-block 14
+call   26 never executed
+    $$$$$:  216-block 15
+        -:  217:
+        -:  218:
+        1:  219:    VectorDinamic<Medicament> rezultat;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  220:    rezultat = test_service.filtrare_substanta_activa("calciu");
+        1:  220-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  220-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  220-block  2
+call    7 returned 1
+call    8 returned 1
+call    9 returned 1
+call   10 returned 1
+    $$$$$:  220-block  3
+call   11 never executed
+    $$$$$:  220-block  4
+    $$$$$:  220-block  5
+call   12 never executed
+    $$$$$:  220-block  6
+       1*:  221:    assert(rezultat.size() == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  221-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        1:  221-block  1
+    %%%%%:  221-block  2
+        -:  222:
+        1:  223:    VectorDinamic<Medicament> rezultat2;
+        1:  223-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  224:    rezultat2 = test_service.filtrare_pret(9);
+        1:  224-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  224-block  1
+call    3 returned 1
+call    4 returned 1
+       1*:  225:    assert(rezultat.size() == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  225-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        1:  225-block  1
+    %%%%%:  225-block  2
+        -:  226:
+        1:  227:}
+        1:  227-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:  227-block  1
+call    3 never executed
+    $$$$$:  227-block  2
+call    4 never executed
+    $$$$$:  227-block  3
+call    5 never executed
+        -:  228:
+function _Z17test_sort_servicev called 1 returned 100% blocks executed 48%
+        1:  229:void test_sort_service(){
+        1:  230:    Medicament_Repository test_repo;
+        1:  230-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  231:    Medicament_Validator test_val;
+        1:  232:    Medicamente_Service test_service{test_repo, test_val};
+        1:  232-block  0
+call    0 returned 1
+        -:  233:
+        1:  234:    test_service.add_medicament("fervex","beta","calciu",89.7);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  234-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  234-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  234-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  234-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  234-block  4
+call   21 never executed
+    $$$$$:  234-block  5
+    $$$$$:  234-block  6
+call   22 never executed
+    $$$$$:  234-block  7
+    $$$$$:  234-block  8
+call   23 never executed
+    $$$$$:  234-block  9
+    $$$$$:  234-block 10
+call   24 never executed
+    $$$$$:  234-block 11
+    $$$$$:  234-block 12
+call   25 never executed
+    $$$$$:  234-block 13
+    $$$$$:  234-block 14
+call   26 never executed
+    $$$$$:  234-block 15
+        1:  235:    test_service.add_medicament("coldrex","alfa","paracetamol",9);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  235-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  235-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  235-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  235-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  235-block  4
+call   21 never executed
+    $$$$$:  235-block  5
+    $$$$$:  235-block  6
+call   22 never executed
+    $$$$$:  235-block  7
+    $$$$$:  235-block  8
+call   23 never executed
+    $$$$$:  235-block  9
+    $$$$$:  235-block 10
+call   24 never executed
+    $$$$$:  235-block 11
+    $$$$$:  235-block 12
+call   25 never executed
+    $$$$$:  235-block 13
+    $$$$$:  235-block 14
+call   26 never executed
+    $$$$$:  235-block 15
+        1:  236:    test_service.add_medicament("theraflu","omega","calciu",9);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  236-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  236-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  236-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  236-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:  236-block  4
+call   21 never executed
+    $$$$$:  236-block  5
+    $$$$$:  236-block  6
+call   22 never executed
+    $$$$$:  236-block  7
+    $$$$$:  236-block  8
+call   23 never executed
+    $$$$$:  236-block  9
+    $$$$$:  236-block 10
+call   24 never executed
+    $$$$$:  236-block 11
+    $$$$$:  236-block 12
+call   25 never executed
+    $$$$$:  236-block 13
+    $$$$$:  236-block 14
+call   26 never executed
+    $$$$$:  236-block 15
+        -:  237:
+        1:  238:    auto first = test_service.sortdenumire(0).get(0);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  238-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+    $$$$$:  238-block  1
+       1*:  239:    assert(first.get_producator() == "alfa");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  239-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  239-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  239-block  2
+    %%%%%:  239-block  3
+        1:  239-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  239-block  5
+call   11 returned 1
+    $$$$$:  239-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  239-block  7
+call   14 never executed
+    $$$$$:  239-block  8
+        -:  240:
+        1:  241:    first = test_service.sortdenumire(1).get(1);
+        1:  241-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  241-block  1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  241-block  2
+call    7 returned 1
+    $$$$$:  241-block  3
+call    8 never executed
+    $$$$$:  241-block  4
+       1*:  242:    assert(first.get_substanta_activa() == "calciu");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  242-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  242-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  242-block  2
+    %%%%%:  242-block  3
+        1:  242-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  242-block  5
+call   11 returned 1
+    $$$$$:  242-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  242-block  7
+call   14 never executed
+    $$$$$:  242-block  8
+        -:  243:
+        1:  244:    first = test_service.sortproducator(0).get(0);
+        1:  244-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  244-block  1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  244-block  2
+call    7 returned 1
+    $$$$$:  244-block  3
+call    8 never executed
+    $$$$$:  244-block  4
+       1*:  245:    assert(first.get_denumire() == "coldrex");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  245-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  245-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  245-block  2
+    %%%%%:  245-block  3
+        1:  245-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  245-block  5
+call   11 returned 1
+    $$$$$:  245-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  245-block  7
+call   14 never executed
+    $$$$$:  245-block  8
+        -:  246:
+        1:  247:    first = test_service.sortproducator(1).get(0);
+        1:  247-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  247-block  1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  247-block  2
+call    7 returned 1
+    $$$$$:  247-block  3
+call    8 never executed
+    $$$$$:  247-block  4
+       1*:  248:    assert(first.get_substanta_activa() == "calciu");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  248-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  248-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  248-block  2
+    %%%%%:  248-block  3
+        1:  248-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  248-block  5
+call   11 returned 1
+    $$$$$:  248-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  248-block  7
+call   14 never executed
+    $$$$$:  248-block  8
+        -:  249:
+        1:  250:    first = test_service.sortdsubstpret(0).get(0);
+        1:  250-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  250-block  1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  250-block  2
+call    7 returned 1
+    $$$$$:  250-block  3
+call    8 never executed
+    $$$$$:  250-block  4
+       1*:  251:    assert(first.get_denumire() == "theraflu");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  251-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  251-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  251-block  2
+    %%%%%:  251-block  3
+        1:  251-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  251-block  5
+call   11 returned 1
+    $$$$$:  251-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  251-block  7
+call   14 never executed
+    $$$$$:  251-block  8
+        -:  252:
+        1:  253:    first = test_service.sortdsubstpret(1).get(0);
+        1:  253-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  253-block  1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  253-block  2
+call    7 returned 1
+    $$$$$:  253-block  3
+call    8 never executed
+    $$$$$:  253-block  4
+       1*:  254:    assert(first.get_denumire() == "coldrex");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  254-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  254-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+        1:  254-block  2
+    %%%%%:  254-block  3
+        1:  254-block  4
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:  254-block  5
+call   11 returned 1
+    $$$$$:  254-block  6
+branch 12 never executed
+branch 13 never executed
+    $$$$$:  254-block  7
+call   14 never executed
+    $$$$$:  254-block  8
+        -:  255:
+        1:  256:}
+        1:  256-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:  256-block  1
+call    2 never executed
+    $$$$$:  256-block  2
+call    3 never executed
+        -:  257:
+function _Z8test_allv called 1 returned 100% blocks executed 100%
+        1:  258:void test_all(){
+        -:  259:
+        1:  260:    test_get_set();
+        1:  260-block  0
+call    0 returned 1
+        -:  261:
+        1:  262:    test_find_repo();
+call    0 returned 1
+        -:  263:
+        1:  264:    test_add_repo();
+call    0 returned 1
+        1:  265:    test_add_medicament_service();
+call    0 returned 1
+        -:  266:
+        1:  267:    test_modificare_repo();
+call    0 returned 1
+        1:  268:    test_modificare_service();
+call    0 returned 1
+        -:  269:
+        1:  270:    test_stergere_repo();
+call    0 returned 1
+        1:  271:    test_stergere_service();
+call    0 returned 1
+        -:  272:
+        1:  273:    test_filtrare_service();
+call    0 returned 1
+        1:  274:    test_sort_service();
+call    0 returned 1
+        -:  275:
+        -:  276:
+        -:  277:
+        1:  278:}

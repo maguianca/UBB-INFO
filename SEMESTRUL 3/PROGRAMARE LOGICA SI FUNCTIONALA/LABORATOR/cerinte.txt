@@ -1,0 +1,7 @@
+Tema:
+	-Model Recursiv 2P
+	-cod(SWI Prolog)1,5P
+	-semnificatia parametrilor 
+	-teste 
+	-**Model de flux 
+	-(toate materialele curs,seminar intrebari)

@@ -1,0 +1,38 @@
+use JewelryShop
+GO
+
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED 
+BEGIN TRAN 
+PRINT 'FIRST READ'
+SELECT * FROM Angajati WHERE post='m'
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','SELECT',GETDATE())
+WAITFOR DELAY '00:00:15'
+PRINT 'SECOND READ'
+SELECT * FROM Angajati WHERE post='m'
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','SELECT',GETDATE())
+COMMIT 
+
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+BEGIN TRAN 
+PRINT 'FIRST READ'
+SELECT * FROM Angajati WHERE post='m'
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','SELECT',GETDATE())
+WAITFOR DELAY '00:00:15'
+PRINT 'SECOND READ'
+SELECT * FROM Angajati WHERE post='m'
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','SELECT',GETDATE())
+COMMIT 
+
+/* se rezolva cu SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+BEGIN TRAN 
+PRINT 'FIRST READ'
+SELECT * FROM Angajati WHERE post='m'
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','SELECT',GETDATE())
+WAITFOR DELAY '00:00:15'
+PRINT 'SECOND READ'
+SELECT * FROM Angajati WHERE post='m'
+INSERT INTO LogActiuni(nume_tabel,tip_operatie,data) VALUES ('Angajati','SELECT',GETDATE())
+COMMIT 
+*/

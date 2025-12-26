@@ -1,0 +1,8 @@
+1,rochie cu paiete,s,890,False
+23,fusta aurie,m,125,False
+24,rochie mireasa,xs,8900,False
+44,bustiera sport,m,125,True
+90,cordeluta,xs,20,False
+11,geanta,xxl,120,False
+91,palton zara,m,560,True
+12,blana vulpe,xs,2500,True

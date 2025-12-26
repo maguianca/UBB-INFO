@@ -1,0 +1,3 @@
+ana,arhitect,hired,1
+anca,it,hired,2
+gigel,med,pending,3

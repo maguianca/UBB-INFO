@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taximetrie.controller.ClientController">
+   <children>
+      <Label layoutX="42.0" layoutY="34.0" text="Adresa:" />
+      <TextField fx:id="adresa_field" layoutX="115.0" layoutY="30.0" />
+      <Button fx:id="cauta_button" layoutX="287.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleCauta" text="Cauta" />
+      <TableView fx:id="tabel" layoutX="34.0" layoutY="80.0" prefHeight="200.0" prefWidth="345.0">
+        <columns>
+          <TableColumn fx:id="sofer" prefWidth="120.0" text="Sofer" />
+          <TableColumn fx:id="minute" prefWidth="129.0" text="Minute" />
+            <TableColumn fx:id="actiuni" prefWidth="95.0" text="Actiuni" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

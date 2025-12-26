@@ -1,0 +1,3 @@
+C:/Structuri de date si algoritmi/Lab1_11_GravaBianca/Lab1_11_GravaBianca/out/build/x64-Debug/CMakeFiles/Lab1_11_GravaBianca.dir
+C:/Structuri de date si algoritmi/Lab1_11_GravaBianca/Lab1_11_GravaBianca/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Structuri de date si algoritmi/Lab1_11_GravaBianca/Lab1_11_GravaBianca/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

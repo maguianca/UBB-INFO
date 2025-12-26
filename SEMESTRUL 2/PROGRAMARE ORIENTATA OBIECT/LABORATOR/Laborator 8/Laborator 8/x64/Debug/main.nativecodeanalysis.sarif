@@ -1,0 +1,99 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.38.33134.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "5952bf5c27e17c083b4b8f49a372f36a1f1c0edfaa247b0a282116161a69380f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/domeniu.h"
+          },
+          "hashes": {
+            "sha-256": "7ec0f87a3f6193ed4b85ac2b65d42938a81deb88bc61b9231d5d823674cbdf0a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/repo.h"
+          },
+          "hashes": {
+            "sha-256": "f5b0bdc722a520a82f3519448c6d392bc3b13b0bdedfff0f61489af9696fc978"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/ui.h"
+          },
+          "hashes": {
+            "sha-256": "c057c8e33e26bdd29cbf7a7c842d1dd0d01b2695e75a30b285ce3973b55af0e1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/service.h"
+          },
+          "hashes": {
+            "sha-256": "bb5cb8629f59cd5c8f236c47245ca33e1d0b63d6bb74dca2b9d55549d2f9b986"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/validator.h"
+          },
+          "hashes": {
+            "sha-256": "fa9d3e72cb315926b882665bf256ef89c587591959f0e6573de9336ba58eca4c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/cosoferte.h"
+          },
+          "hashes": {
+            "sha-256": "86ed819f658868f5c9daf2ffc4c79ffb4146b500994639ee5cbd328820e99d24"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/teste.h"
+          },
+          "hashes": {
+            "sha-256": "67d5f91c7300d29a6e7d34c0caf9bce821b1d1c40b56573e4df9e0a8f0ed4742"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/vector.h"
+          },
+          "hashes": {
+            "sha-256": "8c0b911a387c04441fc5e04009dbf5f4ec1baf56cd10acc51b0ce81c0e89d107"
+          }
+        }
+      ]
+    }
+  ]
+}

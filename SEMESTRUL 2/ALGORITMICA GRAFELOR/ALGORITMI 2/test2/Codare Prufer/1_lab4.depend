@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1716713825 source:d:\2024_2\ubb\algoritmica_grafelor\laborator\laborator4\1_lab4\main.cpp
+	<iostream>
+	<fstream>
+	<queue>
+	<vector>
+

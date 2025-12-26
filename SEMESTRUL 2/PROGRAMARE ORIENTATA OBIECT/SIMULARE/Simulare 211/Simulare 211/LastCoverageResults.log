@@ -1,0 +1,21 @@
+[2024-05-21 18:59:52] [info] Start Program:
+Path:"C:\Programare orientata obiect\Pregatire Simulare\Simulare 211\x64\Debug\Simulare 211.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\Pregatire Simulare\Simulare 211\Simulare 211\"
+Modules: Selected: C:\Programare orientata obiect\Pregatire Simulare\Simulare 211\x64\Debug\Simulare 211.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\Pregatire Simulare\Simulare 211\Simulare 211 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\0hsyehmq.0f0 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-05-21 18:59:52] [info] Module: C:\Programare orientata obiect\Pregatire Simulare\Simulare 211\x64\Debug\Simulare 211.exe is selected because it matches selected pattern: C:\Programare orientata obiect\Pregatire Simulare\Simulare 211\x64\Debug\Simulare 211.exe
+[2024-05-21 18:59:54] [info] ----------------------------------------------------
+[2024-05-21 18:59:54] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\0hsyehmq.0f0
+[2024-05-21 18:59:54] [info] ----------------------------------------------------

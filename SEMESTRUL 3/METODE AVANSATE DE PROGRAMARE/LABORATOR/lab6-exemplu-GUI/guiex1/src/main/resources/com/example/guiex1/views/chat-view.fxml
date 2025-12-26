@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/chat.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.ChatViewController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ListView fx:id="friendListView" onMouseClicked="#handleSelection" prefHeight="400.0" prefWidth="175.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <VBox fx:id="messageVBox" prefHeight="398.0" prefWidth="418.0">
+               <children>
+                  <HBox prefHeight="41.0" prefWidth="418.0">
+                     <children>
+                        <Region prefHeight="42.0" prefWidth="330.0" />
+                        <Button fx:id="backToAccountViewButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="70.0" text="Back" onAction="#handleBackButton"/>
+                     </children>
+                  </HBox>
+                  <ScrollPane prefHeight="338.0" prefWidth="418.0">
+                    <content>
+                              <VBox fx:id="messageListVBox" prefHeight="306.0" prefWidth="402.0" />
+                    </content>
+                  </ScrollPane>
+                  <HBox prefHeight="99.0" prefWidth="417.0">
+                     <children>
+                        <TextField fx:id="textFieldChat" prefHeight="47.0" prefWidth="304.0" />
+                        <Region prefHeight="62.0" prefWidth="17.0" />
+                        <Button fx:id="sendMessageButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" text="Send" onAction="#handleMessageSend"/>
+                     </children>
+                  </HBox>
+               </children></VBox>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

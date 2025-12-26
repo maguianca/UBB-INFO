@@ -1,0 +1,2 @@
+2,dorobanti,Cluj,2000.0,800.0
+1,dorobanti,Cluj,1700.0,800.0

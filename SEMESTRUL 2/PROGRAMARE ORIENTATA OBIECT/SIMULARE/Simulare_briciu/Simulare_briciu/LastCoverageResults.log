@@ -1,0 +1,18 @@
+[2024-05-20 21:20:50] [info] Start Program:
+Path:"C:\Programare orientata obiect\Pregatire Simulare\Simulare_briciu\x64\Debug\Simulare_briciu.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\Pregatire Simulare\Simulare_briciu\Simulare_briciu\"
+Modules: Selected: C:\Programare orientata obiect\Pregatire Simulare\Simulare_briciu\x64\Debug\Simulare_briciu.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\Pregatire Simulare\Simulare_briciu\Simulare_briciu Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\oooyeizb.djw 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-05-20 21:20:50] [info] Module: C:\Programare orientata obiect\Pregatire Simulare\Simulare_briciu\x64\Debug\Simulare_briciu.exe is selected because it matches selected pattern: C:\Programare orientata obiect\Pregatire Simulare\Simulare_briciu\x64\Debug\Simulare_briciu.exe

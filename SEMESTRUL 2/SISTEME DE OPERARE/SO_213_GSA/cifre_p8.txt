@@ -1,0 +1,5 @@
+	In anul 1932, preturile la parizer erau imense.  -> se afiseaza
+	Cate 1, cate 2, cate 3, cate 4, cate 5, cate 6 zile beau  -> nu se afiseaza
+	La momentul impactului, masina circula cu o viteza de 50.8km/h -> se afiseaza
+	Stiti gluma cu "Cum arata cosmarul unui procesor? 1 0 1 0 1 0 2!" -> nu se afiseaza
+	Gluma anterioara mi-a fost spusa la un curs, si de atunci am ramas marcat -> se afiseaza

@@ -1,0 +1,21 @@
+void dfs(int k)
+{
+    viz[k] = true;
+    //cout << k << " ";
+    for (int i = 1; i <= n; i++) 
+        if (a[k][i] == 1 && viz[i] == false)
+        {
+            dfs(i); 
+        }
+}
+
+void parcurgere()
+{
+    dfs(1);
+    for (int i = 1; i <= n; i++)
+        if (viz[i] == false)
+        {
+            cout << "nu e conex";
+            return;
+        }
+}

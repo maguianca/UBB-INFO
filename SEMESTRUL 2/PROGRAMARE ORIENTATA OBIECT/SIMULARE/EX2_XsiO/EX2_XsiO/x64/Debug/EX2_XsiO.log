@@ -1,0 +1,5 @@
+﻿  gui.cpp
+C:\Programare orientata obiect\Pregatire Simulare\EX2_XsiO\EX2_XsiO\model.h(16,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'gui.cpp')
+  
+  EX2_XsiO.vcxproj -> C:\Programare orientata obiect\Pregatire Simulare\EX2_XsiO\x64\Debug\EX2_XsiO.exe

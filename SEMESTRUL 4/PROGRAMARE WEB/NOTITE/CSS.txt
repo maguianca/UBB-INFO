@@ -1,0 +1,67 @@
+CSS
+-cum includem cod css in html
+
+fisier separat (extern) 2️⃣
+intern cu tag <style> sau atribut..style ->inline style 1️⃣ (prioritate 1 suprascrie tag-urile externe ..etc)
+cu stiluri css -browser 3️⃣ 
+<link rel="stylesheet" type="textless" href="file.css">
+
+display inline : a, cite, em, input, img, select, label, span
+        block: p, div, section, table, h1..6, forms  
+        none vs visibility "hidden" vs input type="hidden"
+        flex: 
+
+position: 
+static(default)
+relative -mutam relativ cu pozitia lui statica
+absolute -fata de primul parinte care are pozitionare relativa (cea relativa de cea statica ⬆️)
+fixed -
+sticky -combinatie intre fix si absolut/relativ?? 
+z-index 
+
+The box model
+
+https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png
+https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png
+
+
++---------------------------+  <-- outline -->
+|   +-------------------+   |  <-- margin -->
+|   |   +-----------+   |   |  <-- border -->
+|   |   |  Content  |   |   |  <-- padding -->
+|   |   +-----------+   |   |
+|   +-------------------+   |
++---------------------------+
+
+Selection
+
+p                               
+.clasa  BEM block element modify                                                                                     
+<label class="clasa" id="id"  (se poate adauga mai multe clase>                          SELECTORI SIMPLI
+#id 
+* (selectare toate elem)
+
+Combinator selectori: _ > + ~
+
+_ avem descendenti toate paragrafele dintr-un div  (div p)
+> descendent direct, copil (div > p)
++ adjacent sibling 
+~ general sibling
+
+Pseudoclase    :focus (stare pentru ??)
+Pseudoelemente ::before   ::after ::first-line
+
+input[type="text"]
+RESPONSIVNESS
+
+@media only screen/print and (max-width, 900 px) 
+se pot defini variabile
+
+EFECTUL 
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="394.0" prefWidth="409.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.AddUserController">
+    <children>
+        <Button layoutX="61.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="25.0" prefWidth="121.0" text="Save">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+            </font></Button>
+        <Label layoutX="146.0" layoutY="36.0" prefHeight="33.0" prefWidth="133.0" text="Add New User">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+            </font>
+        </Label>
+        <TextField fx:id="fieldSaveFirst" layoutX="128.0" layoutY="102.0" promptText="First Name" />
+        <TextField fx:id="fieldSaveLast" layoutX="130.0" layoutY="152.0" promptText="Last Name" />
+        <Button layoutX="247.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleUpdateCancel" prefHeight="33.0" prefWidth="133.0" text="Cancel">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+            </font>
+        </Button>
+      <PasswordField fx:id="fieldpass" layoutX="130.0" layoutY="197.0" promptText="Password" />
+      <TextField fx:id="fieldusername" layoutX="130.0" layoutY="243.0" promptText="Username"/>
+    </children>
+</AnchorPane>

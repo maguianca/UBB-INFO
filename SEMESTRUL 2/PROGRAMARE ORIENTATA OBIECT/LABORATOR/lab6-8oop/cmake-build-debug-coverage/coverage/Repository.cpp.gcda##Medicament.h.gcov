@@ -1,0 +1,111 @@
+        -:    0:Source:C:/Users/Ilinca/Desktop/facultate/semestru 2/oop/lab 7/lab6-8oop/Medicament.h
+        -:    0:Graph:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Repository.cpp.gcno
+        -:    0:Data:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Repository.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Ilinca on 30-Mar-22.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB4_6OOP_MEDICAMENT_H
+        -:    6:#define LAB4_6OOP_MEDICAMENT_H
+        -:    7:
+        -:    8:#pragma once
+        -:    9:#include <string>
+        -:   10:#include <iostream>
+        -:   11:
+        -:   12:using std::string;
+        -:   13:using std::cout;
+        -:   14:using std::endl;
+        -:   15:
+        -:   16:class Medicament{
+        -:   17:private:
+        -:   18:    string denumire;
+        -:   19:    string producator;
+        -:   20:    string substanta_activa;
+        -:   21:    double pret;
+        -:   22:
+        -:   23:public:
+function _ZN10MedicamentC1Ev called 0 returned 0% blocks executed 0%
+    #####:   24:    Medicament() = default;
+    %%%%%:   24-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:   25:    Medicament(string denumire, string producator, string substanta_activa, double pret): denumire { denumire }, producator { producator }, substanta_activa{ substanta_activa }, pret{ pret } {};
+function _ZN10MedicamentC1ERKS_ called 37 returned 100% blocks executed 62%
+       37:   26:    Medicament(const Medicament& ot) :denumire{ ot.denumire }, producator{ ot.producator }, substanta_activa{ ot.substanta_activa }, pret{ ot.pret }{
+       37:   26-block  0
+call    0 returned 37
+call    1 returned 37
+branch  2 taken 37 (fallthrough)
+branch  3 taken 0 (throw)
+       37:   26-block  1
+call    4 returned 37
+branch  5 taken 37 (fallthrough)
+branch  6 taken 0 (throw)
+        -:   27:        //cout << "[MEDICAMENT] Copy constructor called."<<endl;
+       37:   28:    }
+       37:   28-block  0
+    $$$$$:   28-block  1
+call    0 never executed
+    $$$$$:   28-block  2
+call    1 never executed
+        -:   29:    /*
+        -:   30:     * Get-er pentru denumirea unui medicament
+        -:   31:     * @return: denumirea medicamentului
+        -:   32:     */
+        -:   33:    string get_denumire() const;
+        -:   34:    /*
+        -:   35:     * Get-er pentru producatorul unui medicament
+        -:   36:     * @return: producatorul medicamentului
+        -:   37:     */
+        -:   38:    string get_producator() const;
+        -:   39:    /*
+        -:   40:     * Get-er pentru substanta activa a unui medicament
+        -:   41:     * @return: substanta activa a medicamentului
+        -:   42:     */
+        -:   43:    string get_substanta_activa() const;
+        -:   44:    /*
+        -:   45:     * Get-er pentru pretul unui medicament
+        -:   46:     * @return: pretul unui medicamentului
+        -:   47:     */
+        -:   48:    double get_pret() const;
+        -:   49:    /*
+        -:   50:     * Set-er pentru denumirea unui medicament
+        -:   51:     */
+        -:   52:    void set_denumire(string denumire_noua);
+        -:   53:    /*
+        -:   54:     * Set-er pentru producatorul unui medicament
+        -:   55:     */
+        -:   56:    void set_producator(string producator_nou);
+        -:   57:    /*
+        -:   58:     * Set-er pentru substanta activa a unui medicament
+        -:   59:     */
+        -:   60:    void set_substanta_activa(string substanta_activa_noua);
+        -:   61:    /*
+        -:   62:     * Set-er pentru pretul unui medicament
+        -:   63:     */
+        -:   64:    void set_pret(double pret_nou);
+        -:   65:
+        -:   66:};
+        -:   67:
+        -:   68:/*
+        -:   69: * Compara 2 melodii dupa denumire
+        -:   70: * @return: true daca denumirea medicamentului e mai mica lexicografic decat
+        -:   71: *          denumirea medicamentului m2, false altfel
+        -:   72: */
+        -:   73:bool cmp_denumire(Medicament& m1, Medicament& m2);
+        -:   74:
+        -:   75:
+        -:   76:/*
+        -:   77: * Compara 2 melodii dupa producator
+        -:   78: * @return: true daca producatorul medicamentului e mai mic lexicografic decat
+        -:   79: *          producatorul medicamentului m2, false altfel
+        -:   80: */
+        -:   81:bool cmp_producator(Medicament& m1, Medicament& m2);
+        -:   82:
+        -:   83:bool cmp_substspret(Medicament& m1, Medicament& m2);
+        -:   84:
+        -:   85:void teste_domain();
+        -:   86:
+        -:   87:#endif //LAB4_6OOP_MEDICAMENT_H

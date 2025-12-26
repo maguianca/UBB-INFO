@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'ro.mpp2025'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':FestivalDomain')
+    implementation project(':FestivalRepository')
+    implementation project(':FestivalService')
+    implementation project(':FestivalNetworking')
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+application {
+    mainClass = 'ro.mpp2025.Main'
+}
+
+jar {
+    duplicatesStrategy (DuplicatesStrategy.EXCLUDE)
+    manifest {
+        attributes('Main-Class':'ro.mpp2025.Main')
+    }
+    from {
+        configurations.runtimeClasspath.collect{it.isDirectory()?it:zipTree(it)}
+    }
+}
+
+
+test {
+    useJUnitPlatform()
+}

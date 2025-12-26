@@ -1,0 +1,21 @@
+[2024-05-18 12:03:12] [info] Start Program:
+Path:"C:\Programare orientata obiect\Pregatire Simulare\Angajat\x64\Debug\Angajat.exe"
+Arguments:
+Working directory: "C:\Programare orientata obiect\Pregatire Simulare\Angajat\Angajat\"
+Modules: Selected: C:\Programare orientata obiect\Pregatire Simulare\Angajat\x64\Debug\Angajat.exe Excluded: 
+Sources: Selected: C:\Programare orientata obiect\Pregatire Simulare\Angajat\Angajat Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\magui\AppData\Local\Temp\iafr2wkj.gh2 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-05-18 12:03:12] [info] Module: C:\Programare orientata obiect\Pregatire Simulare\Angajat\x64\Debug\Angajat.exe is selected because it matches selected pattern: C:\Programare orientata obiect\Pregatire Simulare\Angajat\x64\Debug\Angajat.exe
+[2024-05-18 12:03:15] [info] ----------------------------------------------------
+[2024-05-18 12:03:15] [info] Coverage binary generated in file: C:\Users\magui\AppData\Local\Temp\iafr2wkj.gh2
+[2024-05-18 12:03:15] [info] ----------------------------------------------------

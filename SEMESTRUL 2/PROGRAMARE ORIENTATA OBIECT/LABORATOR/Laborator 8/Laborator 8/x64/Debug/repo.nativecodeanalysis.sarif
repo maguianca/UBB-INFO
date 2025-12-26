@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.38.33134.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/repo.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "03c072d84e678eac42e6bf8223d97c3f6e01487865070c4515bb3147eb1def5c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/repo.h"
+          },
+          "hashes": {
+            "sha-256": "f5b0bdc722a520a82f3519448c6d392bc3b13b0bdedfff0f61489af9696fc978"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/programare orientata obiect/laborator 8/laborator 8/domeniu.h"
+          },
+          "hashes": {
+            "sha-256": "7ec0f87a3f6193ed4b85ac2b65d42938a81deb88bc61b9231d5d823674cbdf0a"
+          }
+        }
+      ]
+    }
+  ]
+}

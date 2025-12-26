@@ -1,0 +1,13 @@
+An,Pote,Rock,370
+PO,Pote,Pop,47
+Invitatie,Florin,Altele,20
+Sacul,Guta,Altele,40
+Primavara,Ania,Rock,30
+Nostalgia,Ami,Pop,40
+abc,Gipsi,Rock,370
+More than you now,LAdy Gaga,Rock,370
+LOvE,Motans,Pop,47
+Vara nu dorm,Adele,Altele,282
+Eclipse,Adele,Pop,267
+ciocolata,Ion,Rock,370
+Para,Ion,Pop,47

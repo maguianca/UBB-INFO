@@ -1,0 +1,16 @@
+# Visual Studio fișiere temporare
+.vs/
+*.ipch
+*.aps
+*.user
+*.opendb
+*.pdb
+*.exe
+*.dll
+
+# Foldere de compilare
+[Bb]in/
+[Oo]bj/
+
+# Arhive (dacă vrei să nu urci zip-uri)
+*.zip

@@ -1,0 +1,131 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit,printf,scanf,fclose,fopen,fprintf
+     8                                  import exit msvcrt.dll  
+     9                                  import printf msvcrt.dll  
+    10                                  import scanf msvcrt.dll
+    11                                  import fclose msvcrt.dll
+    12                                  import fopen msvcrt.dll
+    13                                  import fprintf msvcrt.dll
+    14                                  
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17 00000000 00<rept>                    cuvant times 100 db 0
+    18 00000064 00<rept>                    invers times 100 db 0
+    19 000000C8 00000000                    len dd 0
+    20 000000CC <res 00000064>              text resb 100
+    21 00000130 256300                      format db "%c",0
+    22 00000133 25732000                    afisare db "%s ",0
+    23                                      
+    24 00000137 7700                        mod_acces db "w",0
+    25 00000139 6F75747075742E7478-         nume_fisier db "output.txt",0
+    25 00000142 7400               
+    26 00000144 00000000                    descriptor_fisier dd 0
+    27                                      
+    28                                  
+    29                                  ; our code starts here
+    30                                  segment code use32 class=code
+    31                                      reset:
+    32 00000000 60                                pushad 
+    33 00000001 B964000000                        mov ecx,100
+    34 00000006 BF[00000000]                      mov edi, cuvant
+    35 0000000B FC                                cld
+    36 0000000C B000                              mov al,0
+    37 0000000E F3AA                              rep stosb
+    38 00000010 61                                popad 
+    39 00000011 C3                                ret
+    40                                      reset_invers:
+    41 00000012 60                                pushad 
+    42 00000013 B964000000                        mov ecx,100
+    43 00000018 BF[64000000]                      mov edi, invers
+    44 0000001D FC                                cld
+    45 0000001E B000                              mov al,0
+    46 00000020 F3AA                              rep stosb
+    47 00000022 61                                popad 
+    48 00000023 C3                                ret
+    49                                      start:
+    50 00000024 68[37010000]                    push dword mod_acces
+    51 00000029 68[39010000]                    push dword nume_fisier
+    52 0000002E FF15[00000000]                  call [fopen]
+    53 00000034 83C408                          add esp,4*2
+    54                                          
+    55 00000037 83F800                          cmp eax,0
+    56 0000003A 0F848F000000                    je final 
+    57 00000040 A3[44010000]                    mov[descriptor_fisier],eax
+    58                                     urmator:     
+    59 00000045 E8B6FFFFFF                      call reset
+    60 0000004A E8C3FFFFFF                      call reset_invers
+    61 0000004F BF[00000000]                    mov edi,cuvant
+    62 00000054 BB00000000                      mov ebx,0
+    63                                      citire:
+    64 00000059 68[CC000000]                     push dword text
+    65 0000005E 68[30010000]                     push dword format 
+    66 00000063 FF15[00000000]                   call [scanf]
+    67 00000069 83C408                           add esp,4*2
+    68                                           
+    69 0000006C B800000000                       mov eax,0
+    70 00000071 A0[CC000000]                     mov al,byte[text]
+    71 00000076 3C2E                             cmp al,'.'
+    72 00000078 7455                             je final
+    73                                           
+    74 0000007A 3C20                             cmp al,' '
+    75 0000007C 741B                             je inverseaza
+    76 0000007E 43                               inc ebx
+    77 0000007F AA                               stosb 
+    78 00000080 EBD7                             jmp citire
+    79                                           
+    80                                      finalizare_scriere:
+    81 00000082 FF35[44010000]                  push dword[descriptor_fisier]
+    82 00000088 FF15[00000000]                  call [fclose]
+    83 0000008E 83C404                          add esp,4
+    84                                      
+    85 00000091 6A00                            push    dword 0      
+    86 00000093 FF15[00000000]                  call    [exit]   
+    87                                      inverseaza:
+    88 00000099 60                              pushad 
+    89 0000009A 89D9                            mov ecx,ebx
+    90 0000009C BE[00000000]                    mov esi,cuvant
+    91 000000A1 BF[64000000]                    mov edi,invers
+    92 000000A6 01DF                            add edi,ebx
+    93 000000A8 4F                              dec edi
+    94                                      repeta:
+    95 000000A9 FC                              cld 
+    96 000000AA AC                              lodsb 
+    97 000000AB FD                              std
+    98 000000AC AA                              stosb
+    99 000000AD E2FA                            loop repeta
+   100                                      afis:
+   101 000000AF FC                              cld 
+   102 000000B0 68[64000000]                    push dword invers
+   103 000000B5 68[33010000]                    push dword afisare
+   104 000000BA FF35[44010000]                  push dword [descriptor_fisier]
+   105 000000C0 FF15[00000000]                  call [fprintf]
+   106 000000C6 83C40C                          add esp,4*3
+   107 000000C9 61                              popad
+   108 000000CA E976FFFFFF                      jmp urmator
+   109                                      final:
+   110 000000CF 60                              pushad 
+   111 000000D0 89D9                            mov ecx,ebx
+   112 000000D2 BE[00000000]                    mov esi,cuvant
+   113 000000D7 BF[64000000]                    mov edi,invers
+   114 000000DC 01DF                            add edi,ebx
+   115 000000DE 4F                              dec edi
+   116                                      loop1:
+   117 000000DF FC                              cld 
+   118 000000E0 AC                              lodsb 
+   119 000000E1 FD                              std
+   120 000000E2 AA                              stosb
+   121 000000E3 E2FA                            loop loop1
+   122                                      afis_2:
+   123 000000E5 FC                              cld 
+   124 000000E6 68[64000000]                    push dword invers
+   125 000000EB 68[33010000]                    push dword afisare
+   126 000000F0 FF35[44010000]                  push dword [descriptor_fisier]
+   127 000000F6 FF15[00000000]                  call [fprintf]
+   128 000000FC 83C40C                          add esp,4*3
+   129 000000FF 61                              popad
+   130 00000100 EB80                            jmp finalizare_scriere

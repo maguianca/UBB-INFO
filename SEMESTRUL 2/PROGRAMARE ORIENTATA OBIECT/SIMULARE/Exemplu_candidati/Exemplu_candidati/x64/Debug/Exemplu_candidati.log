@@ -1,0 +1,35 @@
+﻿  Gui.cpp
+  main.cpp
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.h(1,1): warning C4828: The file contains a character starting at offset 0x384 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'Gui.cpp')
+  
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.h(1,1): warning C4828: The file contains a character starting at offset 0x384 that is illegal in the current source character set (codepage 65001).
+  (compiling source file 'main.cpp')
+  
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.h(33,44): error C2001: newline in constant
+  (compiling source file 'Gui.cpp')
+  
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.cpp(3,11): error C4596: 'init': illegal qualified name in member declaration
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.cpp(3,11): error C2535: 'void GUI::init(void)': member function already defined or declared
+  C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.h(18,10):
+  see declaration of 'GUI::init'
+  
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.cpp(20,11): error C4596: 'conec': illegal qualified name in member declaration
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.cpp(20,11): error C2535: 'void GUI::conec(void)': member function already defined or declared
+  C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.h(19,10):
+  see declaration of 'GUI::conec'
+  
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.cpp(54,11): error C4596: 'reloadPlaciList': illegal qualified name in member declaration
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.cpp(54,11): error C2535: 'void GUI::reloadPlaciList(const std::vector<Candidat,std::allocator<Candidat>> &)': member function already defined or declared
+  C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.h(20,10):
+  see declaration of 'GUI::reloadPlaciList'
+  
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.h(14,28): error C1075: '{': no matching token found
+  (compiling source file 'Gui.cpp')
+  
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.h(33,44): error C2001: newline in constant
+  (compiling source file 'main.cpp')
+  
+C:\Programare orientata obiect\Pregatire Simulare\Exemplu_candidati\Exemplu_candidati\Gui.h(14,28): error C1075: '{': no matching token found
+  (compiling source file 'main.cpp')
+  

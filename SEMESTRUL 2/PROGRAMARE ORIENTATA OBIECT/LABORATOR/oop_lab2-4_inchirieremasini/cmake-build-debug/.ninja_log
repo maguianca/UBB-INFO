@@ -1,0 +1,8 @@
+# ninja log v5
+6	86	7319580542389834	CMakeFiles/oop_lab2_4_inchirieremasini.dir/service.c.obj	3d3ab861400bdd2d
+12	139	7319453650174185	CMakeFiles/oop_lab2_4_inchirieremasini.dir/domain.c.obj	daf89173079645e5
+2	71	7319580542226984	CMakeFiles/oop_lab2_4_inchirieremasini.dir/repo.c.obj	d4db4ed187b3a14a
+1	58	7320134606311072	CMakeFiles/oop_lab2_4_inchirieremasini.dir/UI.c.obj	4abef8f063089bc4
+59	128	7320134606985103	oop_lab2_4_inchirieremasini.exe	e0eda22e00e00efa
+9	67	7319580542196988	CMakeFiles/oop_lab2_4_inchirieremasini.dir/validator.c.obj	7c9d3ad298bf1691
+7	77	7319594986832206	CMakeFiles/oop_lab2_4_inchirieremasini.dir/teste.c.obj	24a862c536584cda

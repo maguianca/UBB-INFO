@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="667.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.UtilizatorController">
+    <children>
+        <SplitPane dividerPositions="0.750965250965251" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <SplitPane prefHeight="329.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                    <children>
+                                        <TableView fx:id="tableView" layoutX="6.0" layoutY="2.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="164.0" prefWidth="386.0" AnchorPane.bottomAnchor="218.0" AnchorPane.leftAnchor="6.0" AnchorPane.topAnchor="2.0">
+                                            <columns>
+                                                <TableColumn fx:id="tableColumnId" prefWidth="150.0" text="ID" />
+                                                <TableColumn fx:id="tableColumnFirstName" prefWidth="150.0" text="First Name" />
+                                                <TableColumn fx:id="tableColumnLastName" prefWidth="150.0" text="Last Name" />
+                                            </columns>
+                                            <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                            </columnResizePolicy>
+                                        </TableView>
+                            <Label layoutX="423.0" layoutY="4.0" text="Nume" textFill="#302f2f" />
+                              <TextField fx:id="fieldNume" layoutX="424.0" layoutY="34.0" />
+
+                              <Label layoutX="423.0" layoutY="74.0" text="Prenume" wrapText="true">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Label>
+                              <TextField fx:id="fieldPrenume" layoutX="424.0" layoutY="102.0" />
+                              <TableView fx:id="tableFriendship" layoutX="6.0" layoutY="200.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="386.0">
+                                 <columns>
+                                    <TableColumn fx:id="tableColumnId1" prefWidth="129.0" text="ID" />
+                                    <TableColumn fx:id="tableColumnFirstName1" prefWidth="129.0" text="First Name" />
+                                    <TableColumn fx:id="tableColumnLastName1" prefWidth="38.0" text="Last Name" />
+                                    <TableColumn fx:id="tableColumnDate" prefWidth="129.0" text="Date" />
+                                 </columns>
+                                 <columnResizePolicy>
+                                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                 </columnResizePolicy>
+                              </TableView>
+                              <Label layoutX="118.0" layoutY="172.0" prefHeight="20.0" prefWidth="162.0" text="Prietenii Utilizatorului" textAlignment="CENTER" underline="true" />
+                              <Button layoutX="425.0" layoutY="141.0" mnemonicParsing="false" onAction="#handleLoadFriendships" prefHeight="23.0" prefWidth="149.0" text="Load Friendships" textOverrun="CLIP">
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill></Button>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="81.0" prefWidth="664.0">
+                    <children>
+                        <HBox layoutY="49.0" prefHeight="0.0" prefWidth="418.0" spacing="20.0">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </HBox>
+                  <Label layoutX="14.0" layoutY="15.0" prefHeight="20.0" prefWidth="176.0" text="Comenzi Useri" wrapText="true" />
+                          <Button layoutX="235.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleDeleteUtilizator" prefHeight="23.0" prefWidth="134.0" text="Delete" />
+                  <Button layoutX="401.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleUpdateUtilizator" prefHeight="23.0" prefWidth="149.0" text="Update" />
+                  <Button layoutX="577.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleAddUtilizator" prefHeight="10.0" prefWidth="112.0" text="Add" />
+                  <Label layoutX="14.0" layoutY="63.0" text="Comenzi Friendship" />
+                  <Button layoutX="236.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleDeleteFriendship" prefHeight="25.0" prefWidth="193.0" text="Delete Friendship" />
+                  <Button layoutX="496.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleAddFriendship" prefHeight="25.0" prefWidth="162.0" text="Add New Friendship" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+     1                                  bits 32 
+     2                                  
+     3                                  global start        
+     4                                  
+     5                                  ; declare external functions needed by our program
+     6                                  extern exit, fopen, fread, fclose, printf
+     7                                  import exit msvcrt.dll  
+     8                                  import fopen msvcrt.dll  
+     9                                  import fread msvcrt.dll
+    10                                  import fclose msvcrt.dll
+    11                                  import printf msvcrt.dll
+    12                                  
+    13                                  ; our data is declared here (the variables needed by our program)
+    14                                  segment data use32 class=data
+    15 00000000 696E7075742E747874-         nume_fisier db "input.txt", 0
+    15 00000009 00                 
+    16 0000000A 7200                        mod_acces db "r", 0
+    17 0000000C 00000000                    descriptor_fisier dd 0
+    18                                      
+    19 00000010 01000000                    dimensiune dd 1
+    20 00000014 64000000                    count dd 100
+    21                                  
+    22 00000018 <res 00000064>              sir resb 100
+    23 0000007C 00000000                    lungime_sir dd 0
+    24 00000080 FF                          cifra_max db -1
+    25                                      
+    26 00000081 256400                      format_afisare db "%d", 0
+    27                                      
+    28                                  ; our code starts here
+    29                                  segment code use32 class=code
+    30                                      start:
+    31                                          ; FILE * fopen(const char* nume_fisier, const char * mod_acces)
+    32 00000000 68[0A000000]                    push dword mod_acces
+    33 00000005 68[00000000]                    push dword nume_fisier
+    34 0000000A FF15[00000000]                  call [fopen]
+    35 00000010 83C408                          add esp, 4 * 2
+    36                                          
+    37 00000013 83F800                          cmp EAX, 0
+    38 00000016 7476                            je final
+    39                                          
+    40 00000018 A3[0C000000]                    mov [descriptor_fisier], EAX
+    41                                          
+    42                                          ; int fread(void * str, int size, int count, FILE * stream)
+    43 0000001D FF35[0C000000]                  push dword [descriptor_fisier]
+    44 00000023 FF35[14000000]                  push dword [count]
+    45 00000029 FF35[10000000]                  push dword [dimensiune]
+    46 0000002F 68[18000000]                    push dword sir
+    47 00000034 FF15[00000000]                  call [fread]
+    48 0000003A 83C410                          add esp, 4*4
+    49                                          
+    50 0000003D A3[7C000000]                    mov [lungime_sir], EAX
+    51                                          
+    52 00000042 BE[18000000]                    mov esi, sir
+    53 00000047 8B0D[7C000000]                  mov ecx, [lungime_sir]
+    54 0000004D FC                              cld
+    55 0000004E E316                            jecxz sfarsitBucla
+    56                                          
+    57                                          bucla:
+    58                                              ; Determinam cifra para maxima
+    59 00000050 AC                                  lodsb ; AL <- sir[i]
+    60                                              
+    61 00000051 2C30                                sub AL, '0'
+    62                                              
+    63 00000053 A801                                test AL, 1
+    64 00000055 750D                                jnz salt     ; Verificam daca e par
+    65                                              
+    66 00000057 3A05[80000000]                      cmp AL, [cifra_max]
+    67 0000005D 7E05                                jle salt     ; Verificam daca e mai mare decat cifra_max
+    68                                              
+    69 0000005F A2[80000000]                        mov [cifra_max], AL
+    70                                              
+    71                                              salt:
+    72 00000064 E2EA                                loop bucla
+    73                                          sfarsitBucla:
+    74                                          
+    75                                          ; int printf(const char * format, variabila_1);
+    76                                          ; GRESIT: push dword [cifra_max]
+    77                                          
+    78 00000066 B800000000                      mov EAX, 0
+    79 0000006B A0[80000000]                    mov AL, [cifra_max]
+    80                                          
+    81 00000070 50                              push EAX
+    82 00000071 68[81000000]                    push dword format_afisare
+    83 00000076 FF15[00000000]                  call [printf]
+    84 0000007C 83C408                          add esp, 4*2
+    85                                          
+    86                                          ; int fclose(FILE * descriptor)
+    87 0000007F FF35[0C000000]                  push dword [descriptor_fisier]
+    88 00000085 FF15[00000000]                  call [fclose]
+    89 0000008B 83C404                          add esp, 4
+    90                                          
+    91                                          
+    92                                          final:
+    93                                          ; exit(0)
+    94 0000008E 6A00                            push    dword 0      
+    95 00000090 FF15[00000000]                  call    [exit]       
+    96                                          
+    97                                          
+    98                                          
+    99                                          
+   100                                          
+   101                                          
+   102                                          
+   103                                          
+   104                                          

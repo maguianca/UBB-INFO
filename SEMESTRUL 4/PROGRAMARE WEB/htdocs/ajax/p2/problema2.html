@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Paginare persoane</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Lista persoane</h2>
+<table id="table">
+    <thead>
+    <tr>
+        <th>Nume</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<br>
+<button id="prev">Previous</button>
+<button id="next">Next</button>
+
+<script>
+    let currentPage = 0;
+
+    function loadPage(page) {
+        $.get("get_records.php", { page: page }, function(data) {
+            const tbody = $("#table tbody");
+            tbody.empty();
+
+            if (data.length === 0 && page > 0) {
+                return;
+            }
+
+            data.forEach(function(person) {
+                const row = `<tr>
+                    <td>${person.username}</td>
+                    <td>${person.email}</td>
+                </tr>`;
+                tbody.append(row);
+            });
+
+            $("#prev").prop("disabled", page === 0);
+            $("#next").prop("disabled", data.length < 3);
+
+            currentPage = page;
+        }, "json");
+    }
+
+    $("#prev").click(function() {
+        if (currentPage > 0) {
+            loadPage(currentPage - 1);
+        }
+    });
+
+    $("#next").click(function() {
+        loadPage(currentPage + 1);
+    });
+
+    loadPage(0);
+</script>
+
+</body>
+</html>

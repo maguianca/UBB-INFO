@@ -1,0 +1,119 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit,fread,printf,scanf,fclose,fopen,fscanf
+     8                                  import exit msvcrt.dll    
+     9                                  import fopen msvcrt.dll    
+    10                                  import fclose msvcrt.dll    
+    11                                  import printf msvcrt.dll    
+    12                                  import fread msvcrt.dll    
+    13                                  import scanf msvcrt.dll    
+    14                                  import fscanf msvcrt.dll    
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17 00000000 00000000                    n dd 0
+    18 00000004 00000000                    char dd 0
+    19 00000008 <res 00000064>              text resb 100
+    20 0000006C <res 00000064>              citire resb 100
+    21 000000D0 25730D00                    format_nume_fisier db "%s",13,0
+    22 000000D4 256400                      format_citire_numar db "%d",0
+    23 000000D7 25630D0A00                  format_citire_caracter db "%c",13,10,0
+    24 000000DC 4E756D6172756C2064-         format_scriere_buna db "Numarul de aparitii a caracterului %c este: %d",0
+    24 000000E5 652061706172697469-
+    24 000000EE 692061206361726163-
+    24 000000F7 746572756C75692025-
+    24 00000100 6320657374653A2025-
+    24 00000109 6400               
+    25 0000010B 4E756D6172756C2064-         format_scriere_proasta db "Numarul de aparitii a caracterului %c nu este: %d",0
+    25 00000114 652061706172697469-
+    25 0000011D 692061206361726163-
+    25 00000126 746572756C75692025-
+    25 0000012F 63206E752065737465-
+    25 00000138 3A20256400         
+    26 0000013D 00<rept>                    sir times 100 db 0
+    27 000001A1 01000000                    dimensiune dd 1
+    28 000001A5 64000000                    count dd 100
+    29 000001A9 7200                        mod_acces db "r",0
+    30 000001AB FFFFFFFF                    descriptor_fisier dd -1
+    31 000001AF 00000000                    len dd 0
+    32 000001B3 00000000                    aparitii dd 0
+    33                                  
+    34                                  ; our code starts here
+    35                                  segment code use32 class=code
+    36                                      start:
+    37 00000000 68[08000000]                    push dword text
+    38 00000005 68[D0000000]                    push dword format_nume_fisier
+    39 0000000A FF15[00000000]                  call [scanf]
+    40 00000010 83C408                          add esp,4*2
+    41                                          
+    42 00000013 68[04000000]                    push dword char 
+    43 00000018 68[D7000000]                    push dword format_citire_caracter
+    44 0000001D FF15[00000000]                  call [scanf]
+    45 00000023 83C408                          add esp,4*2
+    46                                          
+    47 00000026 68[00000000]                    push dword n
+    48 0000002B 68[D4000000]                    push dword format_citire_numar
+    49 00000030 FF15[00000000]                  call [scanf]
+    50 00000036 83C408                          add esp,4*2
+    51                                      
+    52 00000039 68[A9010000]                    push dword mod_acces
+    53 0000003E 68[08000000]                    push dword text
+    54 00000043 FF15[00000000]                  call [fopen]
+    55 00000049 83C408                          add esp,4*2
+    56                                          
+    57 0000004C 83F800                          cmp eax,0
+    58 0000004F 0F849F000000                    je finalizare_scriere
+    59 00000055 A3[AB010000]                    mov [descriptor_fisier],eax
+    60                                          
+    61 0000005A FF35[AB010000]                  push dword [descriptor_fisier]
+    62 00000060 FF35[A5010000]                  push dword [count]
+    63 00000066 FF35[A1010000]                  push dword [dimensiune]
+    64 0000006C 68[3D010000]                    push dword sir 
+    65 00000071 FF15[00000000]                  call [fread]
+    66 00000077 83C410                          add esp,4*4
+    67                                          
+    68 0000007A A3[AF010000]                    mov dword[len],eax
+    69 0000007F 8B0D[AF010000]                  mov ecx,dword[len]
+    70 00000085 E36D                            jecxz finalizare_scriere
+    71 00000087 BE[3D010000]                    mov esi,sir
+    72 0000008C FC                              cld
+    73 0000008D B800000000                      mov eax,0
+    74 00000092 C705[B3010000]0000-             mov dword[aparitii],0
+    74 0000009A 0000               
+    75                                      bucla:
+    76 0000009C AC                              lodsb
+    77 0000009D 8A1D[04000000]                  mov bl,byte[char]
+    78 000000A3 38D8                            cmp al,bl
+    79 000000A5 7507                            jne peste
+    80 000000A7 8305[B3010000]01                add dword[aparitii],1
+    81                                      
+    82                                          peste:
+    83 000000AE E2EC                            loop bucla
+    84 000000B0 FC                              cld 
+    85 000000B1 A1[B3010000]                    mov eax,dword[aparitii]
+    86 000000B6 3B05[00000000]                  cmp eax,dword[n]
+    87 000000BC 751C                            jne sari
+    88 000000BE FF35[00000000]                  push dword[n]
+    89 000000C4 FF35[04000000]                  push dword[char]
+    90 000000CA 68[DC000000]                    push dword format_scriere_buna
+    91 000000CF FF15[00000000]                  call [printf]
+    92 000000D5 83C40C                          add esp,4*3
+    93 000000D8 EB1A                            jmp aici
+    94                                     
+    95                                          sari:
+    96 000000DA FF35[00000000]                      push dword[n]
+    97 000000E0 FF35[04000000]                      push dword[char]
+    98 000000E6 68[0B010000]                        push dword format_scriere_proasta
+    99 000000EB FF15[00000000]                      call [printf]
+   100 000000F1 83C40C                              add esp,4*3
+   101                                          aici:
+   102                                          finalizare_scriere:
+   103 000000F4 FF35[AB010000]                  push dword [descriptor_fisier]
+   104 000000FA FF15[00000000]                  call [fclose]
+   105 00000100 83C404                          add esp,4
+   106                                          
+   107 00000103 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   108 00000105 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

@@ -1,0 +1,111 @@
+        -:    0:Source:C:/Users/Ilinca/Desktop/facultate/semestru 2/oop/lab 7/lab6-8oop/Repository.h
+        -:    0:Graph:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Teste.cpp.gcno
+        -:    0:Data:C:\Users\Ilinca\Desktop\facultate\semestru 2\oop\lab 7\lab6-8oop\cmake-build-debug-coverage\CMakeFiles\lab4_6oop.dir\Teste.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Ilinca on 30-Mar-22.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB4_6OOP_REPOSITORY_H
+        -:    6:#define LAB4_6OOP_REPOSITORY_H
+        -:    7:
+        -:    8:#pragma once
+        -:    9:#include "Medicament.h"
+        -:   10:#include <vector>
+        -:   11:#include "VectorDinamicTemplate.h"
+        -:   12:using std::vector;
+        -:   13:
+        -:   14:/*
+        -:   15: * Clasa de exceptii specifice Repository
+        -:   16: */
+        -:   17:
+        -:   18:class Repo_Exception{
+        -:   19:
+        -:   20:private:
+        -:   21:    string error_msg;
+        -:   22:public:
+        -:   23:    Repo_Exception(string error_msg) :error_msg{ error_msg } {};
+function _ZN14Repo_Exception17get_error_messageB5cxx11Ev called 1 returned 100% blocks executed 100%
+        1:   24:    string get_error_message(){
+        1:   25:        return this->error_msg;
+        1:   25-block  0
+call    0 returned 1
+        -:   26:    }
+        -:   27:};
+        -:   28:
+        -:   29:class Medicament_Repository{
+        -:   30:
+        -:   31:private:
+        -:   32:    VectorDinamic<Medicament> all_medicamente;
+        -:   33:public:
+function _ZN21Medicament_RepositoryC1Ev called 0 returned 0% blocks executed 0%
+    #####:   34:    Medicament_Repository() = default;
+    %%%%%:   34-block  0
+call    0 never executed
+        -:   35:    //constructor de copiere
+        -:   36:    //punem delete fiindca nu vrem sa se faca nicio copie la Repository
+        -:   37:    //(in aplicatie avem 1 singur Repo)
+        -:   38:    Medicament_Repository(const Medicament_Repository& ot) = delete;
+        -:   39:
+        -:   40:    /*
+        -:   41:	Adauga un medicament in lista
+        -:   42:	@param m: medicamentul care se adauga (Medicament)
+        -:   43:	@return -
+        -:   44:	post: medicamentul va fi adaugat in lista
+        -:   45:
+        -:   46:	@throws: RepoException daca un medicament cu aceeasi denumire si acelasi producator
+        -:   47:			 exista deja
+        -:   48:	*/
+        -:   49:    void store(const Medicament& m);
+        -:   50:
+        -:   51:    /*
+        -:   52:	Returneaza o lista cu toate medicamentele
+        -:   53:	@return: lista cu medicamentele (vector of Medicament objects)
+        -:   54:	*/
+        -:   55:    VectorDinamic<Medicament>& get_all_medicamente();
+        -:   56:
+        -:   57:    /*
+        -:   58:	Cauta un medicament cu denumirea si producatorul dat
+        -:   59:
+        -:   60:	@param denumire: denumirea dupa care se cauta
+        -:   61:	@param producator: producatorul dupa care se cauta
+        -:   62:	@returns: entitatea Medicament cu denumirea si producatorul dat (daca aceasta exista)
+        -:   63:	@throws: RepoException daca nu exista medicamentul cu denumirea si producatorul dat*/
+        -:   64:    const Medicament& find(string denumire, string producator);
+        -:   65:
+        -:   66:
+        -:   67:    int findindex(string denumire, string producator);
+        -:   68:
+        -:   69:
+        -:   70:    /*
+        -:   71:	Verifica daca un medicament dat exista in lista
+        -:   72:
+        -:   73:	@param m: medicamentul care se cauta in lista
+        -:   74:	@return: true daca medicamentul exista, false altfel
+        -:   75:	*/
+        -:   76:    bool exists(const Medicament& m);
+        -:   77:
+        -:   78:    /*
+        -:   79:     * Modifica pretul unui medicament dat
+        -:   80:     * @param med: medicamentul ce se doreste sa fie modificat
+        -:   81:     * @throws: RepoException daca medicamentul nu se afla
+        -:   82:			    in lista
+        -:   83:     */
+        -:   84:    void modificare_pret_repo(const Medicament& med);
+        -:   85:
+        -:   86:    /*
+        -:   87:     * Sterge din lista un medicament dat
+        -:   88:     * @param med: medicamentul ce se doreste sa fie sters
+        -:   89:     * @throws: RepoException daca medicamentul nu se afla
+        -:   90:			    in lista
+        -:   91:     */
+        -:   92:
+        -:   93:    void stergere_repo(const Medicament& med);
+        -:   94:};
+        -:   95:
+        -:   96:
+        -:   97:
+        -:   98:
+        -:   99:void teste_repo();
+        -:  100:
+        -:  101:#endif //LAB4_6OOP_REPOSITORY_H

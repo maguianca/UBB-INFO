@@ -1,0 +1,6 @@
+60,Str.1989,110000
+120,Str.Marasti 120,112000
+30,Str.Maresal,66777
+110,Str.Crinului,223000
+190,Str.Vivo,350000
+45,Str.Pescarul,89000
